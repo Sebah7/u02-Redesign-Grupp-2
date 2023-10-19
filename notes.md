@@ -2,7 +2,7 @@
 - _Dennis Jensen_
 - _Matilda Källström_
 - _Simret Negash_
-- _Emre Kizillkaya_
+- _Emre Kizilkaya_
 - _Sebah Abubeker_
 - _Alexander Abreu Abreu_
 
