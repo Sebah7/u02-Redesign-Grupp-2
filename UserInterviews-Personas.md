@@ -89,7 +89,7 @@ His food truck business is getting popular and he wants to spread all over the l
 
 ## Persona Cards
 
-![Card with bob Persona](imgPersona\Bob.png)
+![Card with bob Persona](imgPersona/Bob.png)
 
 ![Card with Hanna Persona](imgPersona/Hanna.png)
 
