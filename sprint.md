@@ -1,14 +1,14 @@
 ***Sprint 1 - Planing and UX***
-- [ ] Intervju
-- [ ] personas
-- [ ] Low-fi
+- [x] Intervju
+- [x] personas
+- [x] Low-fi
 
 ***Sprint 2 - UX/UI***
 - [ ] Color
 - [ ] Fonts
 - [ ] Icons
 - [ ] Logo
-- [ ] Hight-fi
+- [ ] High-fi
 - [ ] Layout
 
 ***Sprint 3 - Development***
