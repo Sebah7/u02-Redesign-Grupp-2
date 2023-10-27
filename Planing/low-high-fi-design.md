@@ -5,6 +5,7 @@
 
 **Sprint 2 - Vecka 43**
  - Color scheme: #763A03 , #C9F0FF, #4D7EA8, #CCAD8F
+ ![Color scheme](/Planing/images/sketches/colorScheme.png)
  - Fonts: font-family: Tahoma, Arial, sans-serif;
  - Link to high-fi design: 
 

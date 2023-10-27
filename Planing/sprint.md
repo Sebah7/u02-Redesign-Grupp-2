@@ -4,8 +4,8 @@
 - [x] Low-fi
 
 ***Sprint 2 - UX/UI***
-- [ ] Color
-- [ ] Fonts
+- [x] Color
+- [x] Fonts
 - [ ] Icons
 - [ ] Logo
 - [ ] High-fi
@@ -20,6 +20,8 @@
 - [ ]
 
 **Sprint Meetings Notes**
+
+*Sprint 2*
  - We discussed the possibility starting html already
  - Took into consideration the 1.3.2 (A) Presentera innehållet i en meningsfull ordning för alla.
  - Working on the lofi to make it hi-fi and apply the colors and icons wanted. - Matilda, Sebah and Denise. 

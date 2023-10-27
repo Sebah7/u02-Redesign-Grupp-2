@@ -8,6 +8,8 @@
 
 [Planering *notiser*](/Planing/notes.md)
 
+[Figma](https://www.figma.com/file/BS3gmRgzbF4J5VBIGQhNh3/U02?type=design&node-id=0%3A1&mode=design&t=VkaigdUkG5lOVZHi-1)
+
 
 
 
