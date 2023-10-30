@@ -18,9 +18,9 @@
 - [x] Joina gruppen
 - [x] Kom överens om projektets struktur och agilt arbetssätt (Sprintar osv)
 - [x] Planera in möten
-- [ ] Skapa Intervjufrågor
-- [ ] Planera in intervjuer för UX-Arbetet
-- [ ] Lägg upp projektets struktur för - Versionshantering - Filstruktur - HTML & SASS (Vilka filer befinner sig vart?)
+- [x] Skapa Intervjufrågor
+- [x] Planera in intervjuer för UX-Arbetet
+- [x] Lägg upp projektets struktur för - Versionshantering - Filstruktur - HTML & SASS (Vilka filer befinner sig vart?)
 
 ---
 
