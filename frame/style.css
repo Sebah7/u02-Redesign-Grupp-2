@@ -58,15 +58,14 @@ footer .text .contact, footer .text .list {
   margin: 10px;
 }
 footer .icon {
-  color: purple;
   min-width: 330px;
-  height: 20%;
+  height: 50px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
   width: 24px;
   height: 24px;
   margin: 5px;
-  max-width: 15%;
 }/*# sourceMappingURL=style.css.map */
