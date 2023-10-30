@@ -4,8 +4,8 @@
 - [x] Low-fi
 
 ***Sprint 2 - UX/UI***
-- [ ] Color
-- [ ] Fonts
+- [x] Color
+- [x] Fonts
 - [ ] Icons
 - [ ] Logo
 - [ ] High-fi
