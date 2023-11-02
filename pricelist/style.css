@@ -1,0 +1,143 @@
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #763a03;
+}
+
+h2 {
+  color: #4d7ea8;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0);
+}
+
+p {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.wrapper {
+  max-width: 440px;
+  min-height: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 2%;
+}
+
+p {
+  color: #4d7ea8;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.card {
+  width: 45%;
+  height: 250;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 125px;
+}
+
+.service-text {
+  padding: 10px;
+}
+
+.btn-box {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+/* HEADER SECTION */
+.header-section, .login, header section .toggle-btn, header section .search, .search, .resto, .toggle-btn, .phone {
+  border: 1px solid red;
+}
+
+header {
+  /* Section Styling */
+  /* Phone button | Bottom of the page */
+}
+header section {
+  max-width: 440px;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Login button */
+  /* Search Button */
+  /* Resto Logo */
+  /* Toggle Button | Drop-down button */
+}
+header section .login, header section .toggle-btn, header section .search {
+  width: 41px;
+  height: 41px;
+}
+header section .resto {
+  width: 203px;
+  height: 59px;
+}
+header .phone {
+  width: 30px;
+  height: 30px;
+  bottom: 235px;
+  right: 0%;
+  position: fixed;
+}
+
+.wrapper {
+  min-width: 330px;
+  max-width: 440px;
+  min-height: 1600px;
+}
+
+footer, .text, .contact, footer .text .list, .list, .icon, .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram, .instagram, .twitter, .klarna, .visa, .mastercard {
+  border: 1px solid red;
+}
+
+footer {
+  max-width: 100%;
+  min-height: 227px;
+}
+footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .text .contact, footer .text .list {
+  width: 50%;
+  height: 150px;
+  margin: 10px;
+}
+footer .icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}/*# sourceMappingURL=style.css.map */
