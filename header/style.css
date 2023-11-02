@@ -17,7 +17,13 @@ p {
 
 /* HEADER SECTION */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   /* Section Styling */
+  /* DROPDOWN */
+  /* Dropdown Container */
   /* Phone button | Bottom of the page */
 }
 header section {
@@ -39,6 +45,11 @@ header section .login, header section .toggle-btn, header section .search {
 header section .login .login-icon, header section .toggle-btn .login-icon, header section .toggle-btn .toggle-btn-icon, header section .search .login-icon, header section .search .search-icon {
   font-size: 41px;
   color: rgba(0, 0, 0, 0.8);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
 }
 header section .resto {
   width: 203px;
@@ -47,6 +58,47 @@ header section .resto {
 header section .resto img {
   width: inherit;
   height: inherit;
+}
+header .dropdown {
+  min-width: 100vw;
+  height: 100vh;
+  top: 10vh;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.288);
+  /* Content Container */
+}
+header .dropdown .dropdown-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Login Container */
+}
+header .dropdown .dropdown-content .dropdown-content-login, header .dropdown .dropdown-content .dropdown-language, header .dropdown .dropdown-content .dropdown-content-menu {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: rgba(30, 73, 212, 0.788);
+}
+header .dropdown .dropdown-content .dropdown-content-menu {
+  top: 10vh;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.788);
+}
+header .dropdown .dropdown-content .dropdown-language {
+  top: 50vh;
+  height: 10vh;
+  background-color: rgba(30, 212, 69, 0.788);
+}
+header .dropdown .dropdown-content .dropdown-footer {
+  max-width: 100vw;
+  min-height: 227px;
+  top: 50vh;
+  background-color: aqua;
 }
 header .phone {
   width: 30px;
@@ -98,29 +150,29 @@ header .phone {
   min-height: 1600px;
 }
 
-footer {
+footer, header .dropdown .dropdown-content .dropdown-footer {
   max-width: 100%;
   min-height: 227px;
 }
-footer .text {
+footer .text, header .dropdown .dropdown-content .dropdown-footer .text {
   min-width: 330px;
   max-height: 80%;
   display: flex;
   justify-content: space-evenly;
 }
-footer .text .contact, footer .text .list {
+footer .text .contact, footer .text .list, header .dropdown .dropdown-content .dropdown-footer .text .contact, header .dropdown .dropdown-content .dropdown-footer .text .list {
   width: 50%;
   height: 150px;
   margin: 10px;
 }
-footer .icon {
+footer .icon, header .dropdown .dropdown-content .dropdown-footer .icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram, header .dropdown .dropdown-content .dropdown-footer .icon .fb, header .dropdown .dropdown-content .dropdown-footer .icon .mastercard, header .dropdown .dropdown-content .dropdown-footer .icon .visa, header .dropdown .dropdown-content .dropdown-footer .icon .klarna, header .dropdown .dropdown-content .dropdown-footer .icon .twitter, header .dropdown .dropdown-content .dropdown-footer .icon .instagram {
   width: 24px;
   height: 24px;
   margin: 5px;
