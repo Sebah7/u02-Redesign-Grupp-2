@@ -52,6 +52,10 @@ body {
   height: 132px;
 }
 
+footer {
+  background-color: #4d7ea8;
+}
+
 * {
   padding: 0;
   margin: 0;
