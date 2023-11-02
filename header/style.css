@@ -1,0 +1,127 @@
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #763a03;
+}
+
+h2 {
+  color: #4d7ea8;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0);
+}
+
+/* HEADER SECTION */
+header {
+  /* Section Styling */
+  /* Phone button | Bottom of the page */
+}
+header section {
+  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
+  max-width: 440px;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Login button */
+  /* Search Button */
+  /* Resto Logo */
+  /* Toggle Button | Drop-down button */
+}
+header section .login, header section .toggle-btn, header section .search {
+  width: 41px;
+  height: 41px;
+}
+header section .login .login-icon, header section .toggle-btn .login-icon, header section .toggle-btn .toggle-btn-icon, header section .search .login-icon, header section .search .search-icon {
+  font-size: 41px;
+  color: rgba(0, 0, 0, 0.8);
+}
+header section .resto {
+  width: 203px;
+  height: 59px;
+}
+header section .resto img {
+  width: inherit;
+  height: inherit;
+}
+header .phone {
+  width: 30px;
+  height: 30px;
+  bottom: 235px;
+  right: 0%;
+  position: fixed;
+}
+
+* {
+  font-family: tahoma, sans-serif;
+}
+
+/* HEADER SECTION */
+header {
+  /* Section Styling */
+  /* Phone button | Bottom of the page */
+}
+header section {
+  max-width: 440px;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Login button */
+  /* Search Button */
+  /* Resto Logo */
+  /* Toggle Button | Drop-down button */
+}
+header section .login, header section .search, header section .toggle-btn {
+  width: 41px;
+  height: 41px;
+}
+header section .resto {
+  width: 203px;
+  height: 59px;
+}
+header .phone {
+  width: 30px;
+  height: 30px;
+  bottom: 235px;
+  right: 0%;
+  position: fixed;
+}
+
+.wrapper {
+  min-width: 330px;
+  max-width: 440px;
+  min-height: 1600px;
+}
+
+footer {
+  max-width: 100%;
+  min-height: 227px;
+}
+footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .text .contact, footer .text .list {
+  width: 50%;
+  height: 150px;
+  margin: 10px;
+}
+footer .icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+/* HEADER SECTION */
+header {
+  //   .header-bg {
+  //     background-image: linear-gradient(#763a03, #ccad8f);
+  //     opacity: 20%;
+  //     width: 440px;
+  //     height: 100px;
+  //   }
+  /* Section Styling */
+  section {
+    background-image: linear-gradient(
+      hsl(29, 95%, 24%, 20%),
+      hsl(30, 37%, 68%, 20%)
+    );
+    max-width: 440px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* Login button */
+    .login {
+      width: 41px;
+      height: 41px;
+
+      .login-icon {
+        font-size: 41px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    /* Search Button */
+    .search {
+      @extend .login;
+
+      .search-icon {
+        @extend .login-icon;
+      }
+    }
+
+    /* Resto Logo */
+    .resto {
+      width: 203px;
+      height: 59px;
+
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    /* Toggle Button | Drop-down button */
+    .toggle-btn {
+      @extend .login;
+
+      .toggle-btn-icon {
+        @extend .login-icon;
+      }
+    }
+  }
+
+  /* Phone button | Bottom of the page */
+  .phone {
+    width: 30px;
+    height: 30px;
+    bottom: 235px;
+    right: 0%;
+    position: fixed;
+  }
+}
