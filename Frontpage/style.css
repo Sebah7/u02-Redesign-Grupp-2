@@ -20,43 +20,6 @@ p {
   color: rgba(0, 0, 0, 0);
 }
 
-.wrapper {
-  max-width: 440px;
-  min-height: 1600px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1rem;
-  margin: 2%;
-}
-
-p {
-  color: #4d7ea8;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.card {
-  width: 45%;
-  height: 250;
-  display: inline-block;
-  box-shadow: 2px 2px 20px black;
-  border-radius: 5px;
-}
-
-.image-box img {
-  width: 100%;
-  height: 125px;
-}
-
-.service-text {
-  padding: 10px;
-}
-
-.btn-box {
-  text-align: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -136,6 +99,92 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   height: 24px;
   margin: 5px;
 }
+.search-bar {
+  width: 310px;
+  height: 119px;
+  flex-shrink: 0;
+  margin-top: 79px;
+  display: flex;
+  position: relative;
+}
+
+.search-box {
+  align-items: center;
+  gap: 20px;
+  width: 265px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px 0px 0px 15px;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  padding: 0px 10px;
+  margin: 275px 85px 2209px 40px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px, 15px, 15px, 0px;
+  margin-left: 285px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: -40px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.text-and-icon {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px 15px 10px 0px;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+}
+
+.vector {
+  width: 13px;
+  height: 20px;
+  margin: 8px;
+  margin: 0px 8px 0px 12px;
+}
+
+.text-wrapper {
+  flex: 1;
+  width: 100%;
+  height: 48px;
+  vertical-align: top;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+::-moz-placeholder {
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+
+::placeholder {
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+
 * {
   padding: 0;
   margin: 0;
