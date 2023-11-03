@@ -1,0 +1,56 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
+body {
+  background-color: $colorBrown;
+}
+
+.card {
+  display: flex;
+  margin: 15px;
+  width: 355px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid $colorBrown;
+  background: #d9d9d9;
+}
+.customer-image {
+  // padding: 10px;
+  border-right: 1px solid $colorBrown;
+
+  img {
+    width: 144px;
+    height: 82px;
+  }
+}
+
+.customer-details {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  .details-container {
+    text-align: left;
+    width: 144px;
+    height: 60px;
+    padding: 33px;
+
+    ul {
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+h2 {
+  font-size: 15px;
+}
