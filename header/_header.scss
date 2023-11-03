@@ -1,31 +1,40 @@
+body {
+  background-color: $colorSand; // Background-color
+}
+
 /* HEADER SECTION */
 header {
-  //   .header-bg {
-  //     background-image: linear-gradient(#763a03, #ccad8f);
-  //     opacity: 20%;
-  //     width: 440px;
-  //     height: 100px;
-  //   }
-  /* Section Styling */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* Header | Container */
   section {
     background-image: linear-gradient(
       hsl(29, 95%, 24%, 20%),
       hsl(30, 37%, 68%, 20%)
     );
-    max-width: 440px;
-    max-height: 100px;
+    max-width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    /* Login button */
+    /* Header-Login | Container */
     .login {
       width: 41px;
       height: 41px;
 
-      .login-icon {
+      /* Header-Login | BTN */
+      .login-btn {
         font-size: 41px;
         color: rgba(0, 0, 0, 0.8);
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
       }
     }
 
@@ -33,8 +42,8 @@ header {
     .search {
       @extend .login;
 
-      .search-icon {
-        @extend .login-icon;
+      .search-btn {
+        @extend .login-btn;
       }
     }
 
@@ -49,14 +58,147 @@ header {
       }
     }
 
-    /* Toggle Button | Drop-down button */
-    .toggle-btn {
-      @extend .login;
+    /* DROPDOWN */
+    /* Dropdown | Container */
+    .dropdown {
+      /* Toggle Button | Drop-down button */
+      .toggle-btn {
+        @extend .login;
+        position: inherit;
 
-      .toggle-btn-icon {
-        @extend .login-icon;
+        .toggle-btn-icon {
+          @extend .login-btn;
+        }
+      }
+
+      /* Dropdown-Content | Container */
+      .dropdown-content {
+        width: 100%;
+        height: 536px;
+        top: 100px;
+        left: 0;
+        position: absolute;
+        display: none; // Hides the dropdown menu
+        flex-direction: column;
+        align-items: center;
+        background: $colorSand;
+      }
+
+      /* Dropdown-Login | Container */
+      .dropdown-content-login {
+        width: 280px;
+        height: 43px;
+        flex-shrink: 0;
+      }
+      ul {
+        li {
+          width: 280px;
+          height: 15px;
+          flex-shrink: 0;
+          margin-bottom: 6px;
+          border: 1px solid rgba(0, 0, 0, 0.788);
+        }
+      }
+
+      /* Dropdown-Menu | Container */
+      .dropdown-content-menu {
+        display: flex;
+        width: 310px;
+        height: 266px;
+        top: 78px;
+        position: absolute;
+      }
+
+      ol {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        flex-shrink: 0;
+
+        li:hover {
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 310px;
+          gap: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.788);
+
+          h3 {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 5px;
+          }
+
+          p {
+            color: #000;
+            text-align: right;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-right: 5px;
+          }
+        }
+      }
+      .dropdown-language {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 8px;
+        gap: 10px;
+        bottom: 44px;
+        border: 1px solid black;
+
+        button {
+          width: 100%;
+          height: 100%;
+          letter-spacing: 3px;
+          font-size: 15px;
+          background: local;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+
+          :hover {
+            background: rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        .se {
+          font-weight: 700;
+        }
+
+        .separator {
+          width: 1px;
+          height: 15px;
+          border: 1px solid black;
+        }
+
+        .en {
+          font-weight: 400;
+        }
+      }
+
+      /* Dropdown-Footer */
+      .dropdown-footer {
+        position: fixed;
+        width: 390px;
+        height: 227px;
+        flex-shrink: 0;
+        bottom: 0px;
       }
     }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
   }
 
   /* Phone button | Bottom of the page */
