@@ -1,27 +1,33 @@
+body {
+  background-color: $colorSand; // Background-color
+}
+
 /* HEADER SECTION */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* Section Styling */
+
+  /* Header | Container */
   section {
     background-image: linear-gradient(
       hsl(29, 95%, 24%, 20%),
       hsl(30, 37%, 68%, 20%)
     );
-    max-width: 440px;
-    max-height: 100px;
-    display: flex;
+    min-width: 390px;
+    min-height: 100px;
+    display: block;
     justify-content: space-around;
     align-items: center;
 
-    /* Login button */
+    /* Header-Login | Container */
     .login {
       width: 41px;
       height: 41px;
 
-      .login-icon {
+      /* Header-Login | BTN */
+      .login-btn {
         font-size: 41px;
         color: rgba(0, 0, 0, 0.8);
         background: none;
@@ -36,8 +42,8 @@ header {
     .search {
       @extend .login;
 
-      .search-icon {
-        @extend .login-icon;
+      .search-btn {
+        @extend .login-btn;
       }
     }
 
@@ -52,127 +58,147 @@ header {
       }
     }
 
-    /* Toggle Button | Drop-down button */
-    .toggle-btn {
-      @extend .login;
+    /* DROPDOWN */
+    /* Dropdown | Container */
+    .dropdown {
+      /* Toggle Button | Drop-down button */
+      .toggle-btn {
+        @extend .login;
+        position: inherit;
 
-      .toggle-btn-icon {
-        @extend .login-icon;
-      }
-    }
-  }
-
-  /* DROPDOWN */
-  /* Dropdown Container */
-  .dropdown {
-    min-width: 99vw;
-    height: 89vh;
-    top: 10vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.288);
-    border: 1px solid rgb(255, 238, 0);
-
-    /* Content Container */
-    .dropdown-content {
-      width: 95vw;
-      height: 87vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 1px solid rgb(0, 225, 255);
-
-      /* Login Container */
-      .dropdown-content-login {
-        @extend .dropdown-content;
-        width: 280px;
-        height: 47px;
-        display: flex;
-        position: absolute;
-        border: 1px solid rgba(30, 73, 212, 0.788);
-
-        ul {
-          li {
-            width: 280px;
-            height: 16px;
-            margin-bottom: 12px;
-            border: 1px solid rgba(0, 0, 0, 0.788);
-          }
+        .toggle-btn-icon {
+          @extend .login-btn;
         }
       }
 
-      .dropdown-content-menu {
-        width: 98%;
-        height: 55vh;
-        top: 6vh;
-        position: relative;
-        display: flex;
-        border: solid rgba(255, 255, 255, 0.788);
-        justify-content: center;
+      /* Dropdown-Content | Container */
+      .dropdown-content {
+        width: 390px;
+        height: 536px;
+        top: 100px;
+        left: 0;
+        position: absolute;
+        display: none; // Hides the dropdown menu
+        flex-direction: column;
+        align-items: center;
+        background: $colorSand;
+      }
 
-        ol {
-          li {
-            width: 310px;
-            height: 25px;
-            margin: 18px 0px 18px 0px;
-            border: 1px solid rgba(0, 0, 0, 0.788);
+      /* Dropdown-Login | Container */
+      .dropdown-content-login {
+        width: 280px;
+        height: 43px;
+        flex-shrink: 0;
+      }
+      ul {
+        li {
+          width: 280px;
+          height: 15px;
+          flex-shrink: 0;
+          margin-bottom: 6px;
+          border: 1px solid rgba(0, 0, 0, 0.788);
+        }
+      }
+
+      /* Dropdown-Menu | Container */
+      .dropdown-content-menu {
+        display: flex;
+        width: 310px;
+        height: 266px;
+        top: 78px;
+        position: absolute;
+      }
+
+      ol {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        flex-shrink: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 310px;
+          gap: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.788);
+
+          h3 {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 5px;
+          }
+
+          p {
+            color: #000;
+            text-align: right;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-right: 5px;
           }
         }
       }
       .dropdown-language {
-        width: 188px;
-        height: 34px;
         display: flex;
-        border: 1px solid rgba(0, 0, 0, 0.788);
-        justify-content: space-evenly;
         align-items: center;
+        position: absolute;
+        padding: 8px;
+        gap: 10px;
+        bottom: 44px;
+        border: 1px solid black;
 
         button {
           width: 100%;
           height: 100%;
           letter-spacing: 3px;
           font-size: 15px;
-          padding: 0;
           background: local;
           border: none;
           cursor: pointer;
           outline: inherit;
         }
+
         .se {
-          background-color: rgba(0, 0, 0, 0.1);
           font-weight: 700;
         }
 
         .separator {
-          height: 80%;
           width: 1px;
-          background-color: black;
+          height: 15px;
+          border: 1px solid black;
         }
 
         .en {
           font-weight: 400;
         }
       }
-    }
-    .dropdown-footer {
-      @extend footer;
-      width: 390px;
-      bottom: -8px;
-      position: absolute;
 
-      border: 1px solid rgb(124, 50, 134);
+      /* Dropdown-Footer */
+      .dropdown-footer {
+        position: fixed;
+        width: 390px;
+        height: 227px;
+        flex-shrink: 0;
+        bottom: 0px;
+      }
     }
+  }
 
-    /* Phone button | Bottom of the page */
-    .phone {
-      width: 30px;
-      height: 30px;
-      bottom: 235px;
-      right: 0%;
-      position: fixed;
-    }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  /* Phone button | Bottom of the page */
+  .phone {
+    width: 30px;
+    height: 30px;
+    bottom: 235px;
+    right: 0%;
+    position: fixed;
   }
 }

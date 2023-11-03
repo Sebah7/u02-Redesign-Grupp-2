@@ -21,20 +21,25 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
-  <body style="background-color: #763b0381">
+  <body>
     <!-- HEADER SECTION -->
-    <!-- Background gradient | Container -->
+
     <header>
+      <!-- Background gradient | Container -->
+      <!-- <div class="header-bg"></div> -->
+
       <!-- Header Section -->
       <section class="header-section">
+        <!-- Fixed with for eazy responsive design -->
+
         <!-- Container for login logo -->
         <div class="login">
-          <button class="login-icon material-icons">person</button>
+          <button class="login-btn material-icons">person</button>
         </div>
 
         <!-- Container for search logo -->
         <div class="search">
-          <button class="search-icon material-icons">search</button>
+          <button class="search-btn material-icons">search</button>
         </div>
 
         <!-- Container for Resto Culinair logo -->
@@ -45,15 +50,13 @@
           />
         </div>
 
-        <!-- -- -- -- DROPDOWN -- -- -- -->
-        <!-- Dropdown-BTN | Container -->
-        <div class="toggle-btn">
-          <!-- Dropdown-BTN -->
-          <button class="toggle-btn-icon material-icons">menu</button>
-        </div>
-
-        <!-- Dropdown | Container -->
+        <!-- DROPDOWN -->
         <div class="dropdown">
+          <!-- Container for drop-down logo -->
+          <div class="toggle-btn">
+            <button class="toggle-btn-icon material-icons">menu</button>
+          </div>
+
           <!-- Dropdown-Content | Container -->
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
@@ -63,14 +66,30 @@
                 <li></li>
               </ul>
             </div>
+
             <!-- Dropdown-Menu | Container -->
             <div class="dropdown-content-menu">
               <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  <h3>News</h3>
+                  <p>Read what´s going on in your area</p>
+                </li>
+                <li>
+                  <h3>Contacts</h3>
+                  <p>Contact Resto Culinair</p>
+                </li>
+                <li>
+                  <h3>Rentals</h3>
+                  <p>Rentals & Event must havs</p>
+                </li>
+                <li>
+                  <h3>Partners</h3>
+                  <p>Our partners and locations</p>
+                </li>
+                <li>
+                  <h3>Menu & Board</h3>
+                  <p>Design a menu</p>
+                </li>
               </ol>
             </div>
             <!-- Dropdown-Language-BTN | Container -->
@@ -79,34 +98,11 @@
               <span class="separator"></span>
               <button class="en">English</button>
             </div>
-          </div>
 
-          <!-- Dropdown-Footer | Container -->
-          <div class="dropdown-footer">
-            <section class="text" style="border: 1px solid red">
-              <!-- Container for contact information -->
-              <div class="contact" style="border: 1px solid red"></div>
-              <!-- Container for list information -->
-              <div class="list" style="border: 1px solid red"></div>
-            </section>
-            <!-- Icon Section -->
-            <section class="icon" style="border: 1px solid red">
-              <!-- Conatiner for icon 1 -->
-              <div class="fb" style="border: 1px solid red"></div>
-              <!-- Conatiner for icon 2 -->
-              <div class="instagram" style="border: 1px solid red"></div>
-              <!-- Conatiner for icon 3 -->
-              <div class="twitter" style="border: 1px solid red"></div>
-              <!-- Conatiner for icon 4 -->
-              <div class="klarna" style="border: 1px solid red"></div>
-              <!-- Conatiner for icon 5 -->
-              <div class="visa" style="border: 1px solid red"></div>
-              <!-- Conatiner for icon 6 -->
-              <div class="mastercard" style="border: 1px solid red"></div>
-            </section>
+            <!-- Dropdown-Footer | Container -->
+            <div class="dropdown-footer"></div>
           </div>
         </div>
-
         <!-- Container for phone icon -->
         <div class="phone" style="border: 1px solid red"></div>
       </section>
