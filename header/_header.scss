@@ -15,9 +15,9 @@ header {
       hsl(29, 95%, 24%, 20%),
       hsl(30, 37%, 68%, 20%)
     );
-    min-width: 390px;
-    min-height: 100px;
-    display: block;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 
@@ -73,7 +73,7 @@ header {
 
       /* Dropdown-Content | Container */
       .dropdown-content {
-        width: 390px;
+        width: 100%;
         height: 536px;
         top: 100px;
         left: 0;
@@ -115,6 +115,10 @@ header {
         align-items: flex-start;
         gap: 36px;
         flex-shrink: 0;
+
+        li:hover {
+          background: rgba(255, 255, 255, 0.5);
+        }
 
         li {
           display: flex;
@@ -161,6 +165,10 @@ header {
           border: none;
           cursor: pointer;
           outline: inherit;
+
+          :hover {
+            background: rgba(255, 255, 255, 0.5);
+          }
         }
 
         .se {
