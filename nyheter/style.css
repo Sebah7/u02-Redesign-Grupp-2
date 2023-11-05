@@ -1,3 +1,40 @@
+.container-resto-culinair {
+  position: relative;
+  text-align: center;
+  color: black;
+
+}
+
+
+.resto-culinair {
+  height:40%;
+  width: 100%;
+  color: white;
+  
+}
+
+  /* Centered text */
+  .center {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  
+  .centered-dropdown {
+      text-align: center;
+  
+
+  }
+
+  .search {
+    text-align: center;
+ 
+}
+
 .dropbtn {
   background-color: white;
   color: black;
@@ -140,9 +177,3 @@
 .extra:has(~input[type="checkbox"]:checked){
 display: inline;
 }
-
-
-
-
-
-
