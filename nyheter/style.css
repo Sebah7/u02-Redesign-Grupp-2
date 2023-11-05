@@ -46,7 +46,7 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #dfeee8;
+  background-color: white;
 }
 
 #myInput {
@@ -87,11 +87,6 @@
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-
-
-
-
-
 
 
 
@@ -163,7 +158,6 @@
 
   label:before{
   content: "Läs mer";
-
   }
 
   input[type="checkbox"]:checked ~ label:before 
