@@ -26,6 +26,7 @@ footer {
   background-color: #763a03;
   position: absolute;
   bottom: 0;
+  margin-top: auto;
 }
 footer .text {
   min-width: 330px;
@@ -83,4 +84,10 @@ footer a {
   margin: 0;
   font-family: tahoma, sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
