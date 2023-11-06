@@ -20,14 +20,43 @@ p {
   color: rgba(0, 0, 0, 0);
 }
 
+body {
+  min-width: 390px;
+  min-height: 844px;
+  background: #CCAD8F;
+}
+
 .wrapper {
-  max-width: 440px;
-  min-height: 1600px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1rem;
-  margin: 2%;
+  text-align: center;
+  height: 878px;
+}
+
+.card-body {
+  /* Temp */
+  background: url(imgPriceList/placeholder.png);
+  margin-top: 39px;
+  margin-left: 19px;
+  margin-right: 20px;
+  margin-bottom: 239px;
+}
+
+.background-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards-heading {
+  width: 314px;
+  height: 30px;
+  margin-top: 22px;
+  overflow: visible;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.cards-wrapper {
+  margin-top: 81px;
 }
 
 p {
@@ -37,24 +66,63 @@ p {
 }
 
 .card {
-  width: 45%;
-  height: 250;
+  width: 156px;
+  height: 250px;
+  margin-top: 59px;
+  margin-bottom: 35px;
+  margin-right: 8px;
+  margin-left: 8px;
   display: inline-block;
-  box-shadow: 2px 2px 20px black;
   border-radius: 5px;
 }
 
 .image-box img {
   width: 100%;
+  height: 128px;
+  border: black solid; /* Temp */
+}
+
+.content {
   height: 125px;
+  width: 156px;
+  background-color: #CCAD8F;
 }
 
 .service-text {
-  padding: 10px;
+  margin-top: 3.2px;
+  height: 68.9px;
 }
 
 .btn-box {
+  height: 43px;
+  display: flex;
+  width: 138px;
+  margin-bottom: 8px;
+  margin-top: 18px;
+  margin-left: 8.9px;
+  margin-right: 8.99px;
+}
+
+.btn {
+  width: 65.62px;
+  height: 17px;
+  background: #4D7EA8;
+  border-radius: 50px;
+  border-color: none;
+  border: none;
+}
+
+.btn-txt {
+  width: 51.24px;
+  height: 7px;
+  left: 6.29px;
+  top: 4px;
   text-align: center;
+  color: white;
+  font-size: 7px;
+  font-family: Tahoma;
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
 * {
