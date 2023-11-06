@@ -1,5 +1,11 @@
 @import "_design";
+@import "_smullbox";
+// @import "_member";
+@import "_footer";
 
 *{
+    padding:0;
+    margin:0;
     font-family: tahoma, sans-serif;
+    box-sizing: border-box;
 }
