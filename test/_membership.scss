@@ -3,6 +3,7 @@ $colorLB: #c9f0ff;
 $colorDB: #4d7ea8;
 $colorSand: #ccad8f;
 $colorBlack: #0000;
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +12,6 @@ $colorBlack: #0000;
 body {
   background-color: $colorBrown;
 }
-
 .card {
   display: flex;
   margin: 15px;
@@ -22,7 +22,6 @@ body {
   border: 1px solid $colorBrown;
   background: #d9d9d9;
 }
-
 .customer-image {
   // padding: 10px;
   border-right: 1px solid $colorBrown;
@@ -51,7 +50,4 @@ body {
       line-height: normal;
     }
   }
-}
-h2 {
-  font-size: 15px;
 }

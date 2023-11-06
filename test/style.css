@@ -20,13 +20,59 @@ p {
   color: #000;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
+
+body {
+  background-color: #763a03;
+}
+
+.card {
+  display: flex;
+  margin: 15px;
+  width: 355px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #763a03;
+  background: #d9d9d9;
+}
+
+.customer-image {
+  border-right: 1px solid #763a03;
+}
+.customer-image img {
+  width: 144px;
+  height: 82px;
+}
+
+.customer-details {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.customer-details .details-container {
+  text-align: left;
+  width: 144px;
+  height: 60px;
+  padding: 33px;
+}
+.customer-details .details-container ul {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 footer {
   width: 100%;
   height: 227px;
   background-color: #763a03;
   position: absolute;
   bottom: 0;
-  margin-top: auto;
 }
 footer .text {
   min-width: 330px;
@@ -34,8 +80,7 @@ footer .text {
   display: flex;
   justify-content: space-evenly;
 }
-footer .contact,
-footer .list {
+footer .contact, footer .list {
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -56,7 +101,6 @@ footer address p {
 }
 footer .list {
   border-left: 1px solid #ccad8f;
-  padding-top: 15px;
 }
 footer h3 {
   color: whitesmoke;
@@ -75,12 +119,7 @@ footer a {
   align-items: center;
   border-top: 1px solid #ccad8f;
 }
-.icon .fb,
-.icon .mastercard,
-.icon .visa,
-.icon .klarna,
-.icon .twitter,
-.icon .instagram {
+.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -91,9 +130,3 @@ footer a {
   font-family: tahoma, sans-serif;
   box-sizing: border-box;
 }
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} /*# sourceMappingURL=style.css.map */
