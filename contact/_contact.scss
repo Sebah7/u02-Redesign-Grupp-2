@@ -5,8 +5,8 @@
 }
 
 body {
-  min-height: 100vh;
-  width: 100%;
+  min-height: 844px;
+  max-width: 390px;
   background: url("../contact/images/background.png");
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@ select {
   margin-bottom: 15px;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   body{
     width: 100%;
     background-size: contain;
@@ -92,6 +92,18 @@ select {
   }
   .row {
     width: 100%;
+  }
+}
+/* Media query for desktop screens */
+/*@media screen and (min-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
   }
 }
 
