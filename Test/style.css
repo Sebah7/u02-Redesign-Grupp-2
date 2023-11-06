@@ -297,9 +297,7 @@ footer .contact, footer .list {
   width: 50%;
   height: 150px;
   text-align: center;
-}
-footer address {
-  padding-top: 20px;
+  padding-top: 35px;
 }
 footer address .titleAddress {
   font-size: 20px;
@@ -311,7 +309,6 @@ footer address p {
 }
 footer .list {
   border-left: 1px solid #ccad8f;
-  padding-top: 15px;
 }
 footer h3 {
   color: whitesmoke;
