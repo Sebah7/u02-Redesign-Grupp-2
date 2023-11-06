@@ -10,8 +10,13 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0);
+}
+
 p {
-  font-size: 18px;
+  font-size: 10px;
   color: rgba(0, 0, 0, 0);
 }
 
@@ -186,6 +191,92 @@ header .phone {
   bottom: 235px;
   right: 0%;
   position: fixed;
+}
+
+.search-bar {
+  width: 310px;
+  height: 119px;
+  flex-shrink: 0;
+  margin-top: 79px;
+  display: flex;
+  position: relative;
+}
+
+.search-box {
+  align-items: center;
+  gap: 20px;
+  width: 265px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px 0px 0px 15px;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  padding: 0px 10px;
+  margin: 275px 85px 2209px 40px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px, 15px, 15px, 0px;
+  margin-left: 285px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: -40px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.text-and-icon {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px 15px 10px 0px;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+}
+
+.vector {
+  width: 13px;
+  height: 20px;
+  margin: 8px;
+  margin: 0px 8px 0px 12px;
+}
+
+.text-wrapper {
+  flex: 1;
+  width: 100%;
+  height: 48px;
+  vertical-align: top;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+::-moz-placeholder {
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+
+::placeholder {
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
 }
 
 * {
