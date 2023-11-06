@@ -33,8 +33,12 @@ header {
   /* Header | Container */
   /* Phone button | Bottom of the page */
 }
+
 header section {
-  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
+  background-image: linear-gradient(
+    hsla(29, 95%, 24%, 0.2),
+    hsla(30, 37%, 68%, 0.2)
+  );
   max-width: 100%;
   height: 100px;
   display: flex;
@@ -46,12 +50,18 @@ header section {
   /* DROPDOWN */
   /* Dropdown | Container */
 }
-header section .login, header section .dropdown .toggle-btn, header section .search {
+header section .login,
+header section .dropdown .toggle-btn,
+header section .search {
   width: 41px;
   height: 41px;
   /* Header-Login | BTN */
 }
-header section .login .login-btn, header section .dropdown .toggle-btn .login-btn, header section .dropdown .toggle-btn .toggle-btn-icon, header section .search .login-btn, header section .search .search-btn {
+header section .login .login-btn,
+header section .dropdown .toggle-btn .login-btn,
+header section .dropdown .toggle-btn .toggle-btn-icon,
+header section .search .login-btn,
+header section .search .search-btn {
   font-size: 41px;
   color: rgba(0, 0, 0, 0.8);
   background: none;
@@ -326,7 +336,8 @@ footer .text {
   display: flex;
   justify-content: space-evenly;
 }
-footer .contact, footer .list {
+footer .contact,
+footer .list {
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -362,7 +373,12 @@ footer a {
   align-items: center;
   border-top: 1px solid #ccad8f;
 }
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+.icon .fb,
+.icon .mastercard,
+.icon .visa,
+.icon .klarna,
+.icon .twitter,
+.icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -382,4 +398,4 @@ body {
 .wrapper {
   min-width: 100%;
   min-height: 1600px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
