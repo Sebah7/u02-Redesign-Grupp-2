@@ -90,13 +90,35 @@ header {
         height: 43px;
         flex-shrink: 0;
       }
-      ul {
-        li {
+      form {
+        input {
+          display: flex;
+          align-items: center;
           width: 280px;
           height: 15px;
-          flex-shrink: 0;
           margin-bottom: 6px;
-          border: 1px solid rgba(0, 0, 0, 0.788);
+          #dropdown-customer-nr {
+            width: 100%;
+            height: 100%;
+            left: 5px;
+            background: none;
+            position: relative;
+            border: none;
+            border-bottom: 1px solid #000;
+            color: #000;
+            font-size: 13px;
+            letter-spacing: 1.95px;
+          }
+          .dropdown-login-icon {
+            width: 10px;
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .dropdown-lock-icon {
+            @extend .dropdown-login-icon;
+          }
         }
       }
 

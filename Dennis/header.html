@@ -20,7 +20,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <script src="https://kit.fontawesome.com/a0315d2788.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a0315d2788.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- HEADER SECTION -->
@@ -60,10 +63,28 @@
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
             <div class="dropdown-content-login">
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
+              <form action="" method="post">
+                <i class="dropdown-login-icon material-icons">person</i>
+                <span>customer nr:</span>
+                <input
+                  type="text"
+                  name="customer nr"
+                  id="dropdown-customer-nr"
+                  size="10"
+                  maxlength="6"
+                  value="000000"
+                />
+                <i class="dropdown-lock-icon material-icons">lock</i>
+                <span>password:</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="dropdown-password"
+                  size="10"
+                  maxlength="25"
+                  value="password"
+                />
+              </form>
             </div>
 
             <!-- Dropdown-Menu | Container -->
@@ -169,16 +190,17 @@
 
     <!-- FOOTER SECTION -->
     <!-- Container for the Footer -->
-    <footer >
+    <footer>
       <!-- Text and information Section -->
-      <section class="text" >
+      <section class="text">
         <!-- Container for contact information -->
-          <address class="contact">
-              <p class="titleAddress">Adress</p><br>
-              <p>Resto Culinair</p>
-              <p>leftline 5</p>
-              <p>111 11 Stockholm</p>
-          </address>
+        <address class="contact">
+          <p class="titleAddress">Adress</p>
+          <br />
+          <p>Resto Culinair</p>
+          <p>leftline 5</p>
+          <p>111 11 Stockholm</p>
+        </address>
         <!-- Container for list information -->
         <div class="list">
           <h3>Genvägar</h3>
@@ -188,22 +210,32 @@
           <div><a href="#">Prislista</a></div>
           <div><a href="/smullbox.html">Smullbox</a></div>
           <div><a href="#">Kontakt</a></div>
-         </div>
+        </div>
       </section>
       <!-- Icon Section -->
       <section class="icon">
         <!-- Conatiner for icon 1 -->
-        <div class="fb"> <span><i class="fa-brands fa-square-facebook"></i></span></div>
+        <div class="fb">
+          <span><i class="fa-brands fa-square-facebook"></i></span>
+        </div>
         <!-- Conatiner for icon 2 -->
-        <div class="instagram" ><span><i class="fa-brands fa-square-instagram"></i></span></div>
+        <div class="instagram">
+          <span><i class="fa-brands fa-square-instagram"></i></span>
+        </div>
         <!-- Conatiner for icon 3 -->
-        <div class="twitter" ><span><i class="fa-brands fa-square-twitter"></i></span></div>
+        <div class="twitter">
+          <span><i class="fa-brands fa-square-twitter"></i></span>
+        </div>
         <!-- Conatiner for icon 4 -->
-        <div class="klarna" ><span >K.</span></div>
+        <div class="klarna"><span>K.</span></div>
         <!-- Conatiner for icon 5 -->
-        <div class="visa"><span><i class="fa-brands fa-cc-visa"></i></span></div>
+        <div class="visa">
+          <span><i class="fa-brands fa-cc-visa"></i></span>
+        </div>
         <!-- Conatiner for icon 6 -->
-        <div class="mastercard"> <span><i class="fa-brands fa-cc-mastercard"></i></span></div>
+        <div class="mastercard">
+          <span><i class="fa-brands fa-cc-mastercard"></i></span>
+        </div>
       </section>
     </footer>
   </body>
