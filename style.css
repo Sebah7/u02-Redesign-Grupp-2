@@ -50,7 +50,6 @@ footer address .titleAddress {
 }
 footer address p {
   color: whitesmoke;
-  font-size: 15px;
 }
 footer .list {
   border-left: 1px solid #ccad8f;
@@ -64,20 +63,118 @@ footer a {
   color: whitesmoke;
   font-size: 10px;
 }
-
-.icon {
+footer .icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid #ccad8f;
+  border-top: 1px solid whitesmoke;
 }
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
 }
+footer .bottomIcons {
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 24px;
+  display: none;
+}
+footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15%;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  footer .text {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .contact address, footer .text .list address, footer .text .contact p, footer .text .list p {
+    font-size: 1.4em;
+  }
+  footer .text .list {
+    border: none;
+  }
+  footer .text .list .list:hover {
+    color: #4d7ea8;
+  }
+  footer .text .list h3, footer .text .list a {
+    font-size: 1.3em;
+  }
+  footer .text .bottomIcons {
+    display: flex;
+    text-align: center;
+    padding-top: 15px;
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    width: 100%;
+  }
+  footer .text .bottomIcons .socialMedia, footer .text .bottomIcons .payMethods {
+    width: 50%;
+  }
+  footer .text .bottomIcons .socialMedia h3, footer .text .bottomIcons .payMethods h3 {
+    font-size: 0.6em;
+  }
+  footer .text .bottomIcons .socialMedia ul, footer .text .bottomIcons .payMethods ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .icon {
+    display: none;
+  }
+}
+
+body {
+  background-color: #c9f0ff;
+}
+
+.card {
+  display: flex;
+  margin: 15px;
+  width: 355px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #763a03;
+  background: #d9d9d9;
+}
+
+.customer-image {
+  border-right: 1px solid #763a03;
+}
+.customer-image img {
+  width: 144px;
+  height: 82px;
+}
+
+.customer-details {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.customer-details .details-container {
+  text-align: left;
+  width: 144px;
+  height: 60px;
+}
+.customer-details .details-container ul {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+}
+
+h2 {
+  font-size: 15px;
+}
+
 * {
   padding: 0;
   margin: 0;
