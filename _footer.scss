@@ -1,18 +1,16 @@
 footer {
-    max-width: 100%;
-    min-height: 227px;
+    width: 100%;
+    height: 227px;
     background-color: $colorBrown;
+    position: absolute;
+    bottom: 0;
   
     .text {
       min-width: 330px;
       max-height: 80%;
       display: flex;
       justify-content: space-evenly;
-
-      ::after {
-        content: "";
-        display: table;
-        clear: both;
+    
     }
       
   
@@ -22,15 +20,35 @@ footer {
         width: 50%;
         height: 150px;
         margin: 10px;
+        text-align: center;
+      }
+      address{
+        padding-top: 20px;
+
+        .titleAddress {
+          font-size: 20px;
+          color: whitesmoke;
+        }
+
+        p{
+          color: whitesmoke;
+          font-size: 15px
+        }
       }
   
       .list {
         @extend .contact;
-
-        ul li {
-            list-style: none;
-        }
+        border-left: 1px solid $colorSand;
       }
+      h3 {
+        color: whitesmoke;
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 10px;
+
+    }
 
     }
   
@@ -40,13 +58,12 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      cursor: pointer;
       border-top: 1px solid $colorSand;
   
       .fb {
-        width: 24px;
-        height: 24px;
+        font-size: 24px;
         margin: 5px;
+        color: whitesmoke;
       }
   
       .instagram {
@@ -69,4 +86,3 @@ footer {
         @extend .fb;
       }
     }
-}
