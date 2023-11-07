@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+/* HEADER SECTION */
+header {
+  /* Section Styling */
+  /* Phone button | Bottom of the page */
+}
+header section {
+  max-width: 440px;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Login button */
+  /* Search Button */
+  /* Resto Logo */
+  /* Toggle Button | Drop-down button */
+}
+header section .login, header section .toggle-btn, header section .search {
+  width: 41px;
+  height: 41px;
+}
+header section .resto {
+  width: 203px;
+  height: 59px;
+}
+header .phone {
+  width: 30px;
+  height: 30px;
+  bottom: 235px;
+  right: 0%;
+  position: fixed;
+}
+
+.wrapper {
+  min-width: 330px;
+  max-width: 440px;
+  min-height: 1600px;
+}
+
+footer {
+  max-width: 100%;
+  min-height: 227px;
+}
+footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .text .contact, footer .text .list {
+  width: 50%;
+  height: 150px;
+  margin: 10px;
+}
+footer .icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */
