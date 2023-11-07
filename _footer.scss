@@ -3,7 +3,7 @@ $colorWhite: whitesmoke;
 footer {
     width: 100%;
     height: 227px;
-    background-color: $colorBrown;
+    background-color: $colorBlack;
     bottom: 0;
     margin-top: auto;
   
@@ -42,14 +42,17 @@ footer {
         @extend .contact;
         border-left: 1px solid $colorWhite;
         padding-top: 15px;
+
+        h3 {
+          color: $colorWhite;
+        }
+        a {
+          text-decoration: none;
+          color: $colorWhite;
+          font-size: 10px;
       }
-      h3 {
-        color: $colorWhite;
-      }
-      a {
-        text-decoration: none;
-        color: $colorWhitesmoke;
-        font-size: 10px;
+
+
 
     }
   
@@ -108,51 +111,65 @@ footer {
       .payMethods{
           @extend .socialMedia;
       }
-    }
-        // For Tablets Ipads portrait mode and up
-        @media screen and (min-width: 768px) {
-          .text {
-            display: flex;
-            justify-content: space-evenly;
+    }  
+}
+ // For Tablets Ipads portrait mode and up
+ @media screen and (min-width: 768px) {
+  footer {
     
-    
-            .contact {
-              address, p {
-                font-size: 1.4em;
-              }
-            }
-            .list{
-              border: none;
-    
-              h3, a {
-                font-size: 1.3em;
-              }
-            }
-    
-            .bottomIcons {
-              display: flex;
-              text-align: center;
-              padding-top: 15px;
-              margin: 10px;
-              padding-left: 20px;
-              font-size: 32px;
-              width: 100%;
-              
-              .socialMedia, .payMethods{
-                width: 50%;
-                h3 {
-                  font-size: 0.6em;
-                }
-                ul {
-                    display: flex;  
-                    justify-content: space-evenly;  
-                }
-              }
-            }
+    .text {
+      display: flex;
+      justify-content: space-evenly;
+
+
+      .contact {
+        address, p {
+          font-size: 1.4em;
+        }
+      }
+      .list{
+        border: none;
+
+        a:hover {
+         color: $colorDB;
+        }
+
+        h3, a {
+          font-size: 1.3em;
+        }
+      }
+
+      .bottomIcons {
+        display: flex;
+        text-align: center;
+        padding-top: 15px;
+        margin: 10px;
+        padding-left: 20px;
+        font-size: 32px;
+        width: 100%;
       
+        .socialMedia, .payMethods{
+          width: 50%;
+          h3 {
+            color: $colorWhite;
+            font-size: 0.6em;
           }
-          .icon {
-            display: none;
+          ul {
+            padding-top: 20px;
+            display: flex;  
+            justify-content: space-evenly; 
+            
+            :hover {
+              color: $colorDB;
+              cursor: pointer;
+            }
           }
         }
+      }
+
+    }
+    .icon {
+      display: none;
+    }
+  }
 }
