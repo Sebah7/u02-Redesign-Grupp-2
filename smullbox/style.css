@@ -50,7 +50,6 @@ footer address .titleAddress {
 }
 footer address p {
   color: whitesmoke;
-  font-size: 15px;
 }
 footer .list {
   border-left: 1px solid whitesmoke;
@@ -64,21 +63,19 @@ footer .list a {
   color: whitesmoke;
   font-size: 10px;
 }
-
-.icon {
+footer .icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid #ccad8f;
+  border-top: 1px solid whitesmoke;
 }
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
 }
-<<<<<<< HEAD
 footer .bottomIcons {
   padding: 5px;
   color: whitesmoke;
@@ -138,17 +135,57 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
     display: none;
   }
 }
-=======
->>>>>>> parent of a524a60 (Added Media Querie)
+.smullBody {
+  background-image: url(/smullbox/assets/oranges.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.smullBody .container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.smullBody .container .smullCard {
+  height: 132px;
+  width: 100%;
+}
+.smullBody .container .smullCard .smullbox {
+  display: flex;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #ccad8f;
+}
+.smullBody .container .smullCard .smullbox img {
+  height: 132px;
+  width: 164px;
+}
+.smullBody .container .smullCard .smullbox .smullText {
+  padding: 15px;
+  text-align: left;
+  width: 200px;
+  height: 132px;
+}
+.smullBody .container .smullCard .smullbox .smullText p {
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .smullCard {
+    flex: 50%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .container .smullCard {
+    flex: 25%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
   box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
