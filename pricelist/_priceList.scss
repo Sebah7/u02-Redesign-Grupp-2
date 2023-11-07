@@ -1,26 +1,28 @@
 body {
-  min-width: 390px;
-  min-height: 844px;
-  background: #CCAD8F;
+width: 390px;
+height: 1240px;
+background: #CCAD8F;
 }
 
-.wrapper {
-  text-align: center;
-  height: 878px;
+.price-wrapper {
+  height: 908px;
 }
 
 .card-body {
   /* Temp */
-  background: url(imgPriceList/placeholder.png);
-  margin-top: 39px;
+  background: url(imgPriceList/backG.png);
+  width: 351px;
+  height: 867px;
+  margin-top: 17px;
+  margin-bottom: 7px;
   margin-left: 19px;
   margin-right: 20px;
-  margin-bottom: 239px;
 }
 
 .background-img {
   object-fit: cover;
 }
+
 .cards-heading {
   width: 314px; 
   height: 30px; 
@@ -29,10 +31,12 @@ body {
   text-align: center; 
   word-wrap: break-word;
   font-weight: 700;
+  position: relative; 
 }
 
-.cards-wrapper {
-  margin-top: 81px;
+.cards-heading h1 {
+  position: absolute; 
+  margin-top: -30px; 
 }
 
 p {
@@ -40,33 +44,42 @@ p {
   font-size: 10px;
   font-weight: bold;
 }
- 
-.card{
+
+.card {
   width: 156px;
   height: 250px;
-  margin-top: 59px;
-  margin-bottom: 35px;
   margin-right: 8px;
   margin-left: 8px;
   display: inline-block;  
   border-radius: 5px;
   }
+
+  .first, .second {
+    margin-top: 42px;
+    margin-bottom: 35px;
+  }
+
+  .third, .forth {
+    margin-bottom: 34px;
+  }
+  .fifth {
+    margin-bottom: 6px;
+  }
  
 .image-box img{
-  width: 100%;
+  width: 156px;
   height: 128px;
-  border: black solid; /* Temp */
   }
  
 .content{
   height: 125px;
   width: 156px;
   background-color: #CCAD8F;
+  position: relative;
   }
  
   .service-text {
-    margin-top: 3.2px;
-    height: 68.9px;
+    margin: 0;
   }
 
 .btn-box{
@@ -84,8 +97,8 @@ p {
  height: 17px;  
  background: #4D7EA8; 
  border-radius: 50px;
- border-color: none;
  border: none;
+ margin-bottom: 5px;
  }
  
  .btn-txt {
