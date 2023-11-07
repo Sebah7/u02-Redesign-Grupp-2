@@ -27,6 +27,7 @@ body {
 }
 
 .price-wrapper {
+  margin-top: 167px;
   height: 908px;
 }
 
@@ -138,39 +139,223 @@ p {
   word-wrap: break-word;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Tahoma, sans-serif;
+footer {
+  width: 100%;
+  height: 227px;
+  background-color: #763a03;
+  bottom: 0;
+}
+footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .contact, footer .list {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  padding-top: 35px;
+}
+footer address .titleAddress {
+  font-size: 20px;
+  color: whitesmoke;
+}
+footer address p {
+  color: whitesmoke;
+  font-size: 15px;
+}
+footer .list {
+  border-left: 1px solid #ccad8f;
+}
+footer h3 {
+  color: whitesmoke;
+}
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 10px;
+}
+
+.icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #ccad8f;
+}
+.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+  font-size: 24px;
+  margin: 5px;
+  color: whitesmoke;
+}
+body {
+  background-color: #ccad8f;
 }
 
 /* HEADER SECTION */
-.header-section, .login, header section .toggle-btn, header section .search, .search, .resto, .toggle-btn, .phone {
-  border: 1px solid red;
-}
-
 header {
-  /* Section Styling */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Header | Container */
   /* Phone button | Bottom of the page */
 }
 header section {
-  max-width: 440px;
-  max-height: 100px;
+  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
+  max-width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* Login button */
+  /* Header-Login | Container */
   /* Search Button */
   /* Resto Logo */
-  /* Toggle Button | Drop-down button */
+  /* DROPDOWN */
+  /* Dropdown | Container */
 }
-header section .login, header section .toggle-btn, header section .search {
+header section .login, header section .dropdown .toggle-btn, header section .search {
   width: 41px;
   height: 41px;
+  /* Header-Login | BTN */
+}
+header section .login .login-btn, header section .dropdown .toggle-btn .login-btn, header section .dropdown .toggle-btn .toggle-btn-icon, header section .search .login-btn, header section .search .search-btn {
+  font-size: 41px;
+  color: rgba(0, 0, 0, 0.8);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
 }
 header section .resto {
   width: 203px;
   height: 59px;
+}
+header section .resto img {
+  width: inherit;
+  height: inherit;
+}
+header section .dropdown {
+  /* Toggle Button | Drop-down button */
+  /* Dropdown-Content | Container */
+  /* Dropdown-Login | Container */
+  /* Dropdown-Menu | Container */
+  /* Dropdown-Footer */
+}
+header section .dropdown .toggle-btn {
+  position: inherit;
+}
+header section .dropdown .dropdown-content {
+  width: 100%;
+  height: 536px;
+  top: 100px;
+  left: 0;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: #ccad8f;
+}
+header section .dropdown .dropdown-content-login {
+  width: 280px;
+  height: 43px;
+  flex-shrink: 0;
+}
+header section .dropdown ul li {
+  width: 280px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-bottom: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.788);
+}
+header section .dropdown .dropdown-content-menu {
+  display: flex;
+  width: 310px;
+  height: 266px;
+  top: 78px;
+  position: absolute;
+}
+header section .dropdown ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  flex-shrink: 0;
+}
+header section .dropdown ol li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+header section .dropdown ol li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.788);
+}
+header section .dropdown ol li h3 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+header section .dropdown ol li p {
+  color: #000;
+  text-align: right;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-right: 5px;
+}
+header section .dropdown .dropdown-language {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 8px;
+  gap: 10px;
+  bottom: 44px;
+  border: 1px solid black;
+}
+header section .dropdown .dropdown-language button {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 3px;
+  font-size: 15px;
+  background: local;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+header section .dropdown .dropdown-language button :hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+header section .dropdown .dropdown-language .se {
+  font-weight: 700;
+}
+header section .dropdown .dropdown-language .separator {
+  width: 1px;
+  height: 15px;
+  border: 1px solid black;
+}
+header section .dropdown .dropdown-language .en {
+  font-weight: 400;
+}
+header section .dropdown .dropdown-footer {
+  position: fixed;
+  width: 390px;
+  height: 227px;
+  flex-shrink: 0;
+  bottom: 0px;
+}
+header .dropdown:hover .dropdown-content {
+  display: flex;
 }
 header .phone {
   width: 30px;
@@ -180,43 +365,6 @@ header .phone {
   position: fixed;
 }
 
-.wrapper {
-  min-width: 330px;
-  max-width: 440px;
-  min-height: 1600px;
-}
-
-footer, .text, .contact, footer .text .list, .list, .icon, .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram, .instagram, .twitter, .klarna, .visa, .mastercard {
-  border: 1px solid red;
-}
-
-footer {
-  max-width: 100%;
-  min-height: 227px;
-}
-footer .text {
-  min-width: 330px;
-  max-height: 80%;
-  display: flex;
-  justify-content: space-evenly;
-}
-footer .text .contact, footer .text .list {
-  width: 50%;
-  height: 150px;
-  margin: 10px;
-}
-footer .icon {
-  min-width: 330px;
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
-  width: 24px;
-  height: 24px;
-  margin: 5px;
-}
 * {
   padding: 0;
   margin: 0;
