@@ -50,6 +50,7 @@ footer address .titleAddress {
 }
 footer address p {
   color: whitesmoke;
+  font-size: 15px;
 }
 footer .list {
   border-left: 1px solid whitesmoke;
@@ -63,19 +64,21 @@ footer .list a {
   color: whitesmoke;
   font-size: 10px;
 }
-footer .icon {
+
+.icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid #ccad8f;
 }
-footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
 }
+<<<<<<< HEAD
 footer .bottomIcons {
   padding: 5px;
   color: whitesmoke;
@@ -135,6 +138,8 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
     display: none;
   }
 }
+=======
+>>>>>>> parent of a524a60 (Added Media Querie)
 * {
   padding: 0;
   margin: 0;
