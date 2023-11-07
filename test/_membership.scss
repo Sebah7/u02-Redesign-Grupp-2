@@ -10,9 +10,14 @@ body {
   border-radius: 5px;
   border: 1px solid $colorBrown;
   background: #d9d9d9;
+
+  @media screen and (min-width: 768px) {
+    width: 355px;
+    height: 82px;
+  }
 }
+
 .customer-image {
-  // padding: 10px;
   border-right: 1px solid $colorBrown;
 
   img {
@@ -30,7 +35,6 @@ body {
     text-align: left;
     width: 144px;
     height: 60px;
-    // padding: 33px;
 
     ul {
       font-size: 10px;
