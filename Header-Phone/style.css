@@ -33,12 +33,8 @@ header {
   /* Header | Container */
   /* Phone button | Bottom of the page */
 }
-
-header section {
-  background-image: linear-gradient(
-    hsla(29, 95%, 24%, 0.2),
-    hsla(30, 37%, 68%, 0.2)
-  );
+header .header-section {
+  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   max-width: 100%;
   height: 100px;
   display: flex;
@@ -50,18 +46,12 @@ header section {
   /* DROPDOWN */
   /* Dropdown | Container */
 }
-header section .login,
-header section .dropdown .toggle-btn,
-header section .search {
+header .header-section .login, header .header-section .dropdown .toggle-btn, header .header-section .search {
   width: 41px;
   height: 41px;
   /* Header-Login | BTN */
 }
-header section .login .login-btn,
-header section .dropdown .toggle-btn .login-btn,
-header section .dropdown .toggle-btn .toggle-btn-icon,
-header section .search .login-btn,
-header section .search .search-btn {
+header .header-section .login .login-btn, header .header-section .dropdown .toggle-btn .login-btn, header .header-section .dropdown .toggle-btn .toggle-btn-icon, header .header-section .search .login-btn, header .header-section .search .search-btn {
   font-size: 41px;
   color: rgba(0, 0, 0, 0.8);
   background: none;
@@ -70,25 +60,25 @@ header section .search .search-btn {
   cursor: pointer;
   outline: inherit;
 }
-header section .resto {
+header .header-section .resto {
   width: 203px;
   height: 59px;
 }
-header section .resto img {
+header .header-section .resto img {
   width: inherit;
   height: inherit;
 }
-header section .dropdown {
+header .header-section .dropdown {
   /* Toggle Button | Drop-down button */
   /* Dropdown-Content | Container */
   /* Dropdown-Login | Container */
   /* Dropdown-Menu | Container */
   /* Dropdown-Footer */
 }
-header section .dropdown .toggle-btn {
+header .header-section .dropdown .toggle-btn {
   position: inherit;
 }
-header section .dropdown .dropdown-content {
+header .header-section .dropdown .dropdown-content {
   width: 100%;
   height: 536px;
   top: 100px;
@@ -99,12 +89,12 @@ header section .dropdown .dropdown-content {
   align-items: center;
   background: #ccad8f;
 }
-header section .dropdown .dropdown-content-login {
+header .header-section .dropdown .dropdown-content-login {
   width: 280px;
   height: 43px;
   flex-shrink: 0;
 }
-header section .dropdown form {
+header .header-section .dropdown form {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -113,7 +103,7 @@ header section .dropdown form {
   height: 45px;
   font-size: 13px;
 }
-header section .dropdown form i {
+header .header-section .dropdown form i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,13 +111,13 @@ header section .dropdown form i {
   width: 10px;
   height: 10px;
 }
-header section .dropdown form span {
+header .header-section .dropdown form span {
   position: relative;
   letter-spacing: 1.95px;
   left: 10px;
   margin-right: 5px;
 }
-header section .dropdown form input {
+header .header-section .dropdown form input {
   display: flex;
   background: none;
   position: relative;
@@ -140,30 +130,30 @@ header section .dropdown form input {
   letter-spacing: 1.95px;
   border-bottom: 1px solid #000;
 }
-header section .dropdown form input:focus {
+header .header-section .dropdown form input:focus {
   outline: none;
 }
-header section .dropdown form #dropdown-password {
+header .header-section .dropdown form #dropdown-password {
   width: 165px;
 }
-header section .dropdown .dropdown-content-menu {
+header .header-section .dropdown .dropdown-content-menu {
   display: flex;
   width: 310px;
   height: 266px;
   top: 78px;
   position: absolute;
 }
-header section .dropdown ol {
+header .header-section .dropdown ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 36px;
   flex-shrink: 0;
 }
-header section .dropdown ol li:hover {
+header .header-section .dropdown ol li:hover {
   background: rgba(255, 255, 255, 0.5);
 }
-header section .dropdown ol li {
+header .header-section .dropdown ol li {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -171,7 +161,7 @@ header section .dropdown ol li {
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.788);
 }
-header section .dropdown ol li h3 {
+header .header-section .dropdown ol li h3 {
   color: #000;
   font-size: 20px;
   font-style: normal;
@@ -179,7 +169,7 @@ header section .dropdown ol li h3 {
   letter-spacing: 2px;
   margin-left: 5px;
 }
-header section .dropdown ol li p {
+header .header-section .dropdown ol li p {
   color: #000;
   text-align: right;
   font-size: 10px;
@@ -187,7 +177,7 @@ header section .dropdown ol li p {
   letter-spacing: 1.5px;
   margin-right: 5px;
 }
-header section .dropdown .dropdown-language {
+header .header-section .dropdown .dropdown-language {
   display: flex;
   align-items: center;
   position: absolute;
@@ -196,7 +186,7 @@ header section .dropdown .dropdown-language {
   bottom: 44px;
   border: 1px solid black;
 }
-header section .dropdown .dropdown-language button {
+header .header-section .dropdown .dropdown-language button {
   width: 100%;
   height: 100%;
   letter-spacing: 3px;
@@ -206,21 +196,21 @@ header section .dropdown .dropdown-language button {
   cursor: pointer;
   outline: inherit;
 }
-header section .dropdown .dropdown-language button :hover {
+header .header-section .dropdown .dropdown-language button :hover {
   background: rgba(255, 255, 255, 0.5);
 }
-header section .dropdown .dropdown-language .se {
+header .header-section .dropdown .dropdown-language .se {
   font-weight: 700;
 }
-header section .dropdown .dropdown-language .separator {
+header .header-section .dropdown .dropdown-language .separator {
   width: 1px;
   height: 15px;
   border: 1px solid black;
 }
-header section .dropdown .dropdown-language .en {
+header .header-section .dropdown .dropdown-language .en {
   font-weight: 400;
 }
-header section .dropdown .dropdown-footer {
+header .header-section .dropdown .dropdown-footer {
   position: fixed;
   width: 390px;
   height: 227px;
@@ -230,12 +220,55 @@ header section .dropdown .dropdown-footer {
 header .dropdown:hover .dropdown-content {
   display: flex;
 }
-header .phone {
-  width: 30px;
-  height: 30px;
+header .phone-btn-container {
+  position: fixed;
+  width: 50px;
+  height: 50px;
   bottom: 235px;
   right: 0%;
+}
+header .phone-btn-container .phone-toggle, header .phone-btn-container .phone-toggle .phone {
+  display: flex;
   position: fixed;
+  width: 194px;
+  height: 100px;
+  bottom: 235px;
+  right: 0%;
+}
+header .phone-btn-container .phone-toggle .phone {
+  width: 50px;
+  height: 50px;
+}
+header .phone-btn-container .phone-toggle .phone-card {
+  display: none;
+  width: 294px;
+  height: 100px;
+  background-color: rgba(77, 126, 168, 0.8);
+}
+header .phone-btn-container .phone-toggle .phone-phone-nr, header .phone-btn-container .phone-toggle .phone-text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  letter-spacing: 1.95px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+header .phone-btn-container .phone-toggle .phone-text {
+  width: 200px;
+  height: 50px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-line: none;
+  font-family: Tahoma;
+  font-style: normal;
+}
+header .phone-btn-container:hover .phone-card {
+  display: block;
 }
 
 .search-bar {
@@ -336,8 +369,7 @@ footer .text {
   display: flex;
   justify-content: space-evenly;
 }
-footer .contact,
-footer .list {
+footer .contact, footer .list {
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -373,12 +405,7 @@ footer a {
   align-items: center;
   border-top: 1px solid #ccad8f;
 }
-.icon .fb,
-.icon .mastercard,
-.icon .visa,
-.icon .klarna,
-.icon .twitter,
-.icon .instagram {
+.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -398,4 +425,4 @@ body {
 .wrapper {
   min-width: 100%;
   min-height: 1600px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
