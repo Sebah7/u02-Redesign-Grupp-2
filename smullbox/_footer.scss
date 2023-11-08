@@ -113,63 +113,63 @@ footer {
       }
     }  
 }
- // For Tablets Ipads portrait mode and up
- @media screen and (min-width: 768px) {
-  footer {
+//  // For Tablets Ipads portrait mode and up
+//  @media screen and (min-width: 768px) {
+//   footer {
     
-    .text {
-      display: flex;
-      justify-content: space-evenly;
+//     .text {
+//       display: flex;
+//       justify-content: space-evenly;
 
 
-      .contact {
-        address, p {
-          font-size: 1.4em;
-        }
-      }
-      .list{
-        border: none;
+//       .contact {
+//         address, p {
+//           font-size: 1.4em;
+//         }
+//       }
+//       .list{
+//         border: none;
 
-        a:hover {
-         color: $colorDB;
-        }
+//         a:hover {
+//          color: $colorDB;
+//         }
 
-        h3, a {
-          font-size: 1.3em;
-        }
-      }
+//         h3, a {
+//           font-size: 1.3em;
+//         }
+//       }
 
-      .bottomIcons {
-        display: flex;
-        text-align: center;
-        padding-top: 15px;
-        margin: 10px;
-        padding-left: 20px;
-        font-size: 32px;
-        width: 100%;
+//       .bottomIcons {
+//         display: flex;
+//         text-align: center;
+//         padding-top: 15px;
+//         margin: 10px;
+//         padding-left: 20px;
+//         font-size: 32px;
+//         width: 100%;
       
-        .socialMedia, .payMethods{
-          width: 50%;
-          h3 {
-            color: $colorWhite;
-            font-size: 0.6em;
-          }
-          ul {
-            padding-top: 20px;
-            display: flex;  
-            justify-content: space-evenly; 
+//         .socialMedia, .payMethods{
+//           width: 50%;
+//           h3 {
+//             color: $colorWhite;
+//             font-size: 0.6em;
+//           }
+//           ul {
+//             padding-top: 20px;
+//             display: flex;  
+//             justify-content: space-evenly; 
             
-            :hover {
-              color: $colorDB;
-              cursor: pointer;
-            }
-          }
-        }
-      }
+//             :hover {
+//               color: $colorDB;
+//               cursor: pointer;
+//             }
+//           }
+//         }
+//       }
 
-    }
-    .icon {
-      display: none;
-    }
-  }
-}
+//     }
+//     .icon {
+//       display: none;
+//     }
+//   }
+// }

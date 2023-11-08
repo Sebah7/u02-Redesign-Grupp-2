@@ -1,0 +1,51 @@
+body {
+    background-color: $colorBrown;
+  }
+  .container{
+    margin-top: 100px;
+  }
+  .card {
+    display: flex;
+    margin: 15px;
+    width: 355px;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid $colorBrown;
+    background: #d9d9d9;
+  
+    @media screen and (min-width: 768px) {
+      width: 355px;
+      height: 82px;
+    }
+  }
+  
+  .customer-image {
+    border-right: 1px solid $colorBrown;
+  
+    img {
+      width: 144px;
+      height: 82px;
+    }
+  }
+  
+  .customer-details {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  
+    .details-container {
+      text-align: left;
+      width: 144px;
+      height: 60px;
+  
+      ul {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        list-style: none;
+      }
+    }
+  }
+  
