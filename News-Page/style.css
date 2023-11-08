@@ -5,206 +5,6 @@ body {
 
 
 
-.container-resto-culinair {
-  position: relative;
-  text-align: center;
-  color: black;
-
-}
-
-
-.resto-culinair {
-  height:40%;
-  width: 100%;
-  color: #ccad8f;
-  
-}
-
-
-   /* Centered text */
-   .center-hero-image {
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color:#763a03cc;
-  }
-
-
-p {
-  color: #763a03cc;
-}
-
-h3 {
-  color: #763a03cc;
-}
- /* Sort | Filter */
-
-  .centered-dropdown {
-      text-align: center;
-  
-
-  }
-
-  .search {
-    text-align: center;
- 
-}
-
-.dropbtn {
-  background-color: none ;
-  color: #763a03cc;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
- 
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #ccad8f;
-}
-
-#myInput {
-  box-sizing: border-box;
-  background-image: url('searchicon.png');
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-
-
-
-
-
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 8px;
-  width: 100%;
-}
- 
-
-.flex-item-left
-{
-  flex: 1;
-
-  padding: 10px;
-  border: 1px solid #ccad8f;
-  background-color:#ccad8f;
-  border-radius: 8px;
-}
-
-.flex-item img {
-
-  border-radius: 8px;
-}
-
-.flex-item-right {
-  flex: 1;
-  color: #763a03cc;
-  padding: 10px;
-  border: 1px solid lightgrey;
-  background:lightgrey;
-  border-radius: 8px;
-}
-
-
-
-  @media (max-width: 768px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-
-  .cafe {
-    border-radius: 10px;
-  }
-
-
-  #more {display: none;}
-
-
-  .extra {
-    display: none;
-  }
-
-  p {
-    display: inline;
-  }
-  
-  input[type="checkbox"] {
-    height: 2em;
-    appearance: none;
-  }
-
-  label {
-    position: relative;
-    padding: 1em;
-  
-    border:#ddd;
-    color: red;
-    cursor: pointer;
-
-  }
-
-  label:before{
-  content: "Läs mer";
-  }
-
-  input[type="checkbox"]:checked ~ label:before 
-  {
-    content: "Läs mindre";
-  }
-
-.dots:has(~input[type="checkbox"]:checked) {
-  display: none;
-}
-.extra:has(~input[type="checkbox"]:checked){
-display: inline;
-}
-
-
-
-
-
 /* HEADER SECTION */
 header {
   position: fixed;
@@ -452,6 +252,552 @@ header .phone-btn-container:hover .phone-card {
   display: block;
 }
 
+
+
+
+
+/* HEADER SECTION */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* Header | Container */
+  .header-section {
+    background-image: linear-gradient(
+      hsl(29, 95%, 24%, 20%),
+      hsl(30, 37%, 68%, 20%)
+    );
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* Header-Login | Container */
+    .login {
+      width: 41px;
+      height: 41px;
+
+      /* Header-Login | BTN */
+      .login-btn {
+        font-size: 41px;
+        color: rgba(0, 0, 0, 0.8);
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
+      }
+    }
+
+    /* Search Button */
+    .search {
+      @extend .login;
+
+      .search-btn {
+        @extend .login-btn;
+      }
+    }
+
+    /* Resto Logo */
+    .resto {
+      width: 203px;
+      height: 59px;
+
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    /* DROPDOWN */
+    /* Dropdown | Container */
+    .dropdown {
+      /* Toggle Button | Drop-down button */
+      .toggle-btn {
+        @extend .login;
+        position: inherit;
+
+        .toggle-btn-icon {
+          @extend .login-btn;
+        }
+      }
+
+      /* Dropdown-Content | Container */
+      .dropdown-content {
+        width: 100%;
+        height: 536px;
+        top: 100px;
+        left: 0;
+        position: absolute;
+        display: none; // Hides the dropdown menu
+        flex-direction: column;
+        align-items: center;
+        background: $colorSand;
+      }
+
+      /* Dropdown-Login | Container */
+      .dropdown-content-login {
+        width: 280px;
+        height: 43px;
+        flex-shrink: 0;
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 264px;
+        height: 45px;
+        font-size: 13px;
+
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.3rem;
+          width: 10px;
+          height: 10px;
+        }
+
+        span {
+          position: relative;
+          letter-spacing: 1.95px;
+          left: 10px;
+          margin-right: 5px;
+        }
+
+        input {
+          display: flex;
+          background: none;
+          position: relative;
+          border: none;
+          width: 146px;
+          height: 15px;
+          margin-bottom: 6px;
+          left: 5px;
+          color: #000;
+          letter-spacing: 1.95px;
+          border-bottom: 1px solid #000;
+        }
+
+        input:focus {
+          outline: none; // Removes the box around the input area on 'focus'
+        }
+
+        #dropdown-password {
+          width: 165px;
+        }
+      }
+
+      /* Dropdown-Menu | Container */
+      .dropdown-content-menu {
+        display: flex;
+        width: 310px;
+        height: 266px;
+        top: 78px;
+        position: absolute;
+      }
+
+      ol {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        flex-shrink: 0;
+
+        li:hover {
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 310px;
+          gap: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.788);
+
+          h3 {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 5px;
+          }
+
+          p {
+            color: #000;
+            text-align: right;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-right: 5px;
+          }
+        }
+      }
+      .dropdown-language {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 8px;
+        gap: 10px;
+        bottom: 44px;
+        border: 1px solid black;
+
+        button {
+          width: 100%;
+          height: 100%;
+          letter-spacing: 3px;
+          font-size: 15px;
+          background: local;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+
+          :hover {
+            background: rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        .se {
+          font-weight: 700;
+        }
+
+        .separator {
+          width: 1px;
+          height: 15px;
+          border: 1px solid black;
+        }
+
+        .en {
+          font-weight: 400;
+        }
+      }
+
+      /* Dropdown-Footer */
+      .dropdown-footer {
+        position: fixed;
+        width: 390px;
+        height: 227px;
+        flex-shrink: 0;
+        bottom: 0px;
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  /* Phone button | Bottom of the page */
+  .phone-btn-container {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 235px;
+    right: 0%;
+
+    .phone-toggle {
+      display: flex;
+      position: fixed;
+      width: 194px;
+      height: 100px;
+      bottom: 235px;
+      right: 0%;
+
+      .phone {
+        @extend .phone-toggle;
+        width: 50px;
+        height: 50px;
+      }
+
+      .phone-card {
+        display: none;
+        width: 294px;
+        height: 100px;
+        background-color: rgba(77, 126, 168, 0.8);
+      }
+
+      .phone-phone-nr {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        letter-spacing: 1.95px;
+        font-weight: 400;
+        text-decoration-line: underline;
+      }
+
+      .phone-text {
+        @extend .phone-phone-nr;
+        width: 200px;
+        height: 50px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration-line: none;
+        font-family: Tahoma;
+        font-style: normal;
+      }
+    }
+  }
+  .phone-btn-container:hover .phone-card {
+    display: block;
+  }
+}
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* NEWS SECTION */
+
+.container-resto-culinair {
+  position: relative;
+  text-align: center;
+  color: black;
+
+}
+
+
+  .resto-culinair {
+    color: #ccad8f;
+    flex-shrink: 0;
+    margin-top: 79px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height:40%;
+    width: 100%;
+    margin-bottom: 20x;
+ 
+  }
+  
+  @media (max-width: 768px) {
+    .center-hero-image {
+      margin-top: 12%;
+        flex-direction: column;
+      }
+}
+
+   /* Centered text */
+   .center-hero-image {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:#763a03cc;
+    margin-bottom: 30x;
+    margin-top: 30x;
+
+  }
+
+
+
+
+p {
+  color: #763a03cc;
+}
+
+h3 {
+  color: #763a03cc;
+}
+ /* Sort | Filter */
+
+  .centered-dropdown {
+      text-align: center;
+  
+
+  }
+
+
+
+.dropbtn {
+  background-color: none ;
+  color: #763a03cc;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+ 
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ccad8f;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+}
+ 
+
+.flex-item-left
+{
+  flex: 1;
+
+  padding: 10px;
+  border: 1px solid #ccad8f;
+  background-color:#ccad8f;
+  border-radius: 8px;
+}
+
+.flex-item img {
+
+  border-radius: 8px;
+}
+
+.flex-item-right {
+  flex: 1;
+  color: #763a03cc;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  background:lightgrey;
+  border-radius: 8px;
+}
+
+
+
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  .cafe {
+    border-radius: 10px;
+  }
+
+
+  #more {display: none;}
+
+
+  .extra {
+    display: none;
+  }
+
+  p {
+    display: inline;
+  }
+  
+  input[type="checkbox"] {
+    height: 2em;
+    appearance: none;
+  }
+
+  label {
+    position: relative;
+    padding: 1em;
+  
+    border:#ddd;
+    color: red;
+    cursor: pointer;
+
+  }
+
+  label:before{
+  content: "Läs mer";
+  }
+
+  input[type="checkbox"]:checked ~ label:before 
+  {
+    content: "Läs mindre";
+  }
+
+.dots:has(~input[type="checkbox"]:checked) {
+  display: none;
+}
+.extra:has(~input[type="checkbox"]:checked){
+display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION */
 
 footer {
   width: 100%;

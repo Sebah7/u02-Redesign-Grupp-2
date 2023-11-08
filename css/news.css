@@ -1,9 +1,5 @@
 @charset "UTF-8";
-body {
-  background-color: #ccad8f;
-  font-family: tahoma, sans-serif;
-}
-
+/* NEWS SECTION */
 .container-resto-culinair {
   position: relative;
   text-align: center;
@@ -11,20 +7,34 @@ body {
 }
 
 .resto-culinair {
+  color: #ccad8f;
+  flex-shrink: 0;
+  margin-top: 79px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   height: 40%;
   width: 100%;
-  color: #ccad8f;
+  margin-bottom: 20x;
 }
 
+@media (max-width: 768px) {
+  .center-hero-image {
+    margin-top: 12%;
+    flex-direction: column;
+  }
+}
 /* Centered text */
 .center-hero-image {
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   color: rgba(118, 58, 3, 0.8);
+  margin-bottom: 30x;
+  margin-top: 30x;
 }
 
 p {
@@ -37,10 +47,6 @@ h3 {
 
 /* Sort | Filter */
 .centered-dropdown {
-  text-align: center;
-}
-
-.search {
   text-align: center;
 }
 
