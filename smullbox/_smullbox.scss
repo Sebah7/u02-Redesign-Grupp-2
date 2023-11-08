@@ -1,5 +1,6 @@
 .smullBody{
-    background-image: url(/smullbox/assets/oranges.webp);
+    background-image: url(assets/oranges.webp);
+    background-color: $colorLB;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -7,58 +8,39 @@
     display: flex;
     flex-direction: column;
 
-    // min-height: 1600px;
-
-
     .container{
         display: flex;
         flex-wrap: wrap;
         row-gap: 1rem;
 
         .smullCard{
-            height: 132px;
-            width: 100%;
-   
-            .smullbox{
-                display: flex;
-                margin: 10px; 
-                border-radius: 5px; 
-                background-color: $colorSand;
+            display: flex;
+            margin: 15px;
+            width: 360px;
+            height: 140px;
+            background-color: $colorSand;
+            border-radius: 5px; 
     
                 img {
-                    height: 132px;
+                    height: 140px;
                     width: 164px;
                 }
-                .smullText{
-                    padding: 15px;
-                    text-align: left;
-                    width: 200px;
-                    height: 132px;
+                .smullContainer{
+                    display: flex;
+                    align-items: center;
 
-                    p {
-                        padding-top: 15px;
+                    .smullText{
+                        padding-top: 5px;
+                        text-align: left;
+                        width: 144px;
+                        height: 132px;
+
+                        p {
+                            padding-top: 20px;
+                        }
                     }
                 }
-            }
         }
-    }
-}
-
-
-@media screen and (min-width: 768px) {
-    .container{
-        .smullCard{
-            flex: 50%;    
-        } 
-    }
-
-}
-@media screen and (min-width: 1080px) {
-
-    .container{
-        .smullCard{
-            flex: 25%;    
-        } 
     }
 }
 

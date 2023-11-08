@@ -89,8 +89,55 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   gap: 15%;
   list-style: none;
 }
+@media screen and (min-width: 768px) {
+  footer .text {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .contact address, footer .text .list address, footer .text .contact p, footer .text .list p {
+    font-size: 1.4em;
+  }
+  footer .text .list {
+    border: none;
+  }
+  footer .text .list a:hover {
+    color: #4d7ea8;
+  }
+  footer .text .list h3, footer .text .list a {
+    font-size: 1.3em;
+  }
+  footer .text .bottomIcons {
+    display: flex;
+    text-align: center;
+    padding-top: 15px;
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    width: 100%;
+  }
+  footer .text .bottomIcons .socialMedia, footer .text .bottomIcons .payMethods {
+    width: 50%;
+  }
+  footer .text .bottomIcons .socialMedia h3, footer .text .bottomIcons .payMethods h3 {
+    color: whitesmoke;
+    font-size: 0.6em;
+  }
+  footer .text .bottomIcons .socialMedia ul, footer .text .bottomIcons .payMethods ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .bottomIcons .socialMedia ul :hover, footer .text .bottomIcons .payMethods ul :hover {
+    color: #4d7ea8;
+    cursor: pointer;
+  }
+  footer .icon {
+    display: none;
+  }
+}
 .smullBody {
-  background-image: url(/smullbox/assets/oranges.webp);
+  background-image: url(assets/oranges.webp);
+  background-color: #c9f0ff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -104,39 +151,31 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   row-gap: 1rem;
 }
 .smullBody .container .smullCard {
-  height: 132px;
-  width: 100%;
-}
-.smullBody .container .smullCard .smullbox {
   display: flex;
-  margin: 10px;
-  border-radius: 5px;
+  margin: 15px;
+  width: 360px;
+  height: 140px;
   background-color: #ccad8f;
+  border-radius: 5px;
 }
-.smullBody .container .smullCard .smullbox img {
-  height: 132px;
+.smullBody .container .smullCard img {
+  height: 140px;
   width: 164px;
 }
-.smullBody .container .smullCard .smullbox .smullText {
-  padding: 15px;
+.smullBody .container .smullCard .smullContainer {
+  display: flex;
+  align-items: center;
+}
+.smullBody .container .smullCard .smullContainer .smullText {
+  padding-top: 5px;
   text-align: left;
-  width: 200px;
+  width: 144px;
   height: 132px;
 }
-.smullBody .container .smullCard .smullbox .smullText p {
-  padding-top: 15px;
+.smullBody .container .smullCard .smullContainer .smullText p {
+  padding-top: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .container .smullCard {
-    flex: 50%;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .container .smullCard {
-    flex: 25%;
-  }
-}
 body {
   background-color: #ccad8f;
 }
@@ -390,13 +429,17 @@ header .phone-btn-container:hover .phone-card {
 
 body {
   background-color: #763a03;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-.container {
+body .container {
   margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
 }
-
-.card {
+body .container .card {
   display: flex;
   margin: 15px;
   width: 355px;
@@ -406,32 +449,24 @@ body {
   border: 1px solid #763a03;
   background: #d9d9d9;
 }
-@media screen and (min-width: 768px) {
-  .card {
-    width: 355px;
-    height: 82px;
-  }
-}
-
-.customer-image {
+body .container .card .customer-image {
   border-right: 1px solid #763a03;
 }
-.customer-image img {
+body .container .card .customer-image img {
   width: 144px;
   height: 82px;
 }
-
-.customer-details {
+body .container .card .customer-details {
   padding: 10px;
   display: flex;
   align-items: center;
 }
-.customer-details .details-container {
+body .container .card .customer-details .details-container {
   text-align: left;
   width: 144px;
   height: 60px;
 }
-.customer-details .details-container ul {
+body .container .card .customer-details .details-container ul {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -463,7 +498,7 @@ body {
 .btn {
   width: 40px;
   height: 40px;
-  border-radius: 0px, 15px, 15px, 0px;
+  border-radius: 0px 15px 15px 0px;
   margin-left: 285px;
   background: transparent;
   border: none;
