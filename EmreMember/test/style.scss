@@ -1,7 +1,10 @@
-@import "_design";
+@import "design";
 //@import "_smullbox";
-@import "_membership";
-@import "_footer";
+@import "membership";
+@import "header";
+@import "footer";
+@import "frontPage";
+
 * {
   padding: 0;
   margin: 0;
