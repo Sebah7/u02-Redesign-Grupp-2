@@ -1,0 +1,14 @@
+@import "_design";
+@import "_header";
+@import "_footer";
+@import "_contact";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

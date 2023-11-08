@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: url("/u02-redesign-grupp-2-1/Contact-Page/images/background.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    position: relative;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #ccad8f;
+  }
+  .card {
+    padding: 20px 40px;
+    margin: 3px;
+    width: 100%;
+  }
+  h1 {
+    color: #4d7ea8;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .field {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 3px;
+    outline: none;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .row span {
+    flex-basis: 50%;
+    margin-left: 20px;
+    align-items: center;
+  }
+  button {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    margin-left: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4d7ea8;
+    color: white;
+  }
+
+  select {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* @media (max-width: 400px) {
+  body{
+    width: 100%;
+    background-size: contain;
+    padding: 0 0;
+    margin-top: 20px;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 80%;
+
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .field {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+}
+/* Media query for desktop screens */
+  /*@media screen and (min-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+}
+ */
+}
