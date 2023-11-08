@@ -155,9 +155,9 @@
          
  
         <div class="centered-dropdown">
-          <div class="dropdown">
-            <div onclick="myFunction()" class="dropbtn"><b>Sort </b><i class="fa fa-chevron-down"></i></div>
-            <div id="myDropdown" class="dropdown-content">
+          <div class="dropdown1">
+            <div onclick="myFunction1()" class="dropbtn"><b>Sort </b><i class="fa fa-chevron-down"></i></div>
+            <div id="myDropdown1" class="dropdown-content1">
               <a href="#Dyrare-Skolmat">Dyrare Skolmat</a>
               <a href="#Kottkonsumtion">Svensk Köttkonsumtion</a>
               <a href="#Alkoholskatt">Ändring av Alkoholskatt</a>
@@ -168,10 +168,10 @@
           </div>
        
     
-        <div class="dropdown">
+        <div class="dropdown1">
             <h4 onclick="myFunction2()" class="dropbtn"><b>Filter</b> <i class="fa fa-chevron-down"></i>
             </h4>
-            <div id="myDropdown2" class="dropdown-content">
+            <div id="myDropdown2" class="dropdown-content1">
               <a href="#Date1">2023.09.21 09:00</a>
               <a href="#Date2">2023.10.27 20:00</a>
               <a href="#Date3">2023.10.15 13:00</a>
@@ -184,12 +184,8 @@
 </div>
 </div>
 </div>
-    </div>
+</div>
 
-
-
-
-      
 
 <div class="flex-container">
   <div class="flex-item-left">
@@ -219,7 +215,7 @@
  <p class="extra">På Resto Culinair är vi angelägna om att förstå och anpassa oss till dessa nya trender för att fortsätta erbjuda våra kunder högkvalitativ mat och service som är i linje med de senaste utvecklingarna.</p><br>
   <input type="checkbox" id="btn" />
   <label for="btn"></label><br><br>
-  <datetime><i>2023.10.27 20:00</i></datetime>
+  <datetime><i id="Date2">2023.10.27 20:00</i></datetime>
   
 
 </div>
@@ -235,10 +231,10 @@
   <p class="extra">inverkan på både samhället och ekonomin. Här utforskar vi de senaste ändringarna i alkoholskatt och deras konsekvenser för både konsumenter och branschen. </p><br>
   <input type="checkbox" id="btn2" />
   <label for="btn2"></label><br><br>
-  <datetime><i>2023.10.15 13:00</i></datetime>
+  <datetime><i id="Date3">2023.10.15 13:00</i></datetime>
 </div> 
 </div>
-</div><br>
+</div>
 
 
 <div class="flex-container">
@@ -252,7 +248,7 @@
   <p class="extra">Oavsett om det är en bröllopsbankett, en privat middag eller något annat evenemang, har vi expertisen för att leverera de mest utsökta rätterna som kommer att imponera på dina gäster. Vi ser fram emot att samarbeta med dig för att skapa ett evenemang som kommer att skapa minnen i livet. Kontakta oss för en kostnadsfri konsultation och offert.</p><br>
   <input type="checkbox" id="btn3" />
   <label for="btn3"></label><br><br>
-  <datetime><i>2023.10.15 13:00</i></datetime>
+  <datetime><i id="Date4">2023.10.20 13:00</i></datetime>
 </div> 
 </div>
 
@@ -266,7 +262,7 @@
 <p class="extra">Såsen tillverkas vanligtvis genom att smälta smör och sedan vispa det med äggulor och citronsaft tills det bildar en len emulsion. Hollandaisesås är en klassisk följeslagare till olika rätter, inklusive ägg Benedict, grillad sparris och fisk. Dess krämiga textur och distinkta smak har gjort den till en favorit i det franska och internationella köket.</p><br>
 <input type="checkbox" id="btn4" />
 <label for="btn4"></label><br><br>
-<datetime><i>2023.10.15 13:00</i></datetime>
+<datetime><i id="Date5">2023.10.24 09:00</i></datetime>
 </div> 
 </div>
 
@@ -280,10 +276,10 @@
 <p class="extra">citronsaft, vilket ger den en delikat balans mellan krämighet och friskhet. Sandefjordsås är en populär kompanjon till fiskrätter och är välkänd för att komplettera den rena smaken av färsk sjömat perfekt. Sandefjordsås har blivit en älskad del av det norska köket och en smakupplevelse som inte får missas för alla matälskare.</p><br>
 <input type="checkbox" id="btn5" />
 <label for="btn5"></label><br><br>
-<datetime><i>2023.10.15 13:00</i></datetime>
+<datetime><i id="Date6">2023.10.26 14:00</i></datetime>
 </div>
 </div>
-</div><br>
+</div>
 
 
 
@@ -344,15 +340,15 @@
 <script>
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
   }
   
   function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown");
+    div = document.getElementById("myDropdown1");
     a = div.getElementsByTagName("a");
     for (i = 0; i < a.length; i++) {
       txtValue = a[i].textContent || a[i].innerText;
