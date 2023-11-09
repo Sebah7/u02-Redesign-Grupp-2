@@ -69,38 +69,38 @@ footer {
     color: whitesmoke;
     font-size: 10px;
   }
-}
 
-.icon {
-  min-width: 330px;
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  .icon {
+    min-width: 330px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-  .fb {
-    font-size: 24px;
-    margin: 5px;
-    color: whitesmoke;
-  }
+    .fb {
+      font-size: 24px;
+      margin: 5px;
+      color: whitesmoke;
+    }
 
-  .instagram {
-    @extend .fb;
-  }
+    .instagram {
+      @extend .fb;
+    }
 
-  .twitter {
-    @extend .fb;
-  }
+    .twitter {
+      @extend .fb;
+    }
 
-  .klarna {
-    @extend .fb;
-  }
+    .klarna {
+      @extend .fb;
+    }
 
-  .visa {
-    @extend .fb;
-  }
+    .visa {
+      @extend .fb;
+    }
 
-  .mastercard {
-    @extend .fb;
+    .mastercard {
+      @extend .fb;
+    }
   }
 }

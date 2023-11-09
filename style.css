@@ -178,11 +178,11 @@ p {
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.788);
 }
-.header-container .header-section .dropdown ol li a, .header-container .header-section .dropdown ol li a .dropdown-menu-btn {
+.header-container .header-section .dropdown ol li a {
   all: unset;
   display: contents;
 }
-.header-container .header-section .dropdown ol li a .dropdown-menu-btn h3 {
+.header-container .header-section .dropdown ol li a h3 {
   color: #000;
   font-size: 20px;
   font-style: normal;
@@ -190,7 +190,7 @@ p {
   letter-spacing: 2px;
   margin-left: 5px;
 }
-.header-container .header-section .dropdown ol li a .dropdown-menu-btn p {
+.header-container .header-section .dropdown ol li a p {
   color: #000;
   text-align: right;
   font-size: 10px;
@@ -237,6 +237,54 @@ p {
   height: 227px;
   flex-shrink: 0;
   bottom: 0px;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer {
+  width: 100%;
+  height: 227px;
+  bottom: 0;
+  background-color: #763a03;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer .contact, .header-container .header-section .dropdown .dropdown-footer .header-footer .list {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  padding-top: 35px;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer address .titleAddress {
+  font-size: 20px;
+  color: whitesmoke;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer address p {
+  color: whitesmoke;
+  font-size: 15px;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer h3 {
+  color: whitesmoke;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 10px;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer .icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer .icon .fb, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .mastercard, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .visa, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .klarna, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .twitter, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .instagram {
+  font-size: 24px;
+  margin: 5px;
+  color: whitesmoke;
 }
 .header-container .dropdown:hover .dropdown-content {
   display: flex;
@@ -300,7 +348,6 @@ p {
   font-style: italic;
   background-repeat: no-repeat;
   background-size: cover;
-  snap-margin: 0.75rem;
 }
 
 * h1 {
@@ -358,15 +405,14 @@ footer a {
   color: whitesmoke;
   font-size: 10px;
 }
-
-.icon {
+footer .icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
