@@ -9,9 +9,9 @@
     <!-- STYLE SHEETS -->
 
     <!-- Reset file for margin & padding -->
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="/reset.css" />
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- FONTS & ICONS -->
     <!-- Icons -->
@@ -46,7 +46,7 @@
         <!-- Container for Resto Culinair logo -->
         <div class="resto">
           <img
-            src="img/Resto-logo-text-and-icon.png"
+            src="/img/Resto-logo-text-and-icon.png"
             alt="Resto Culinair Logo"
           />
         </div>
@@ -127,7 +127,7 @@
             <button class="phone material-icons">
               <img
                 class="phone-icon"
-                src="assets/Phone Icon.svg"
+                src="/assets/Phone Icon.svg"
                 alt="Phone-Button"
               />
             </button>
@@ -141,31 +141,30 @@
     </header>
 
     <!-- WRAPPER -->
-    <main class="wrapper">
-      <div class="container">
-        <div class="card">
-          <h1>GET IN CONTACT</h1>
-          <input class="field" type="text" placeholder="first name" />
-          <input class="field" type="text" placeholder="last name" />
-          <input class="field" type="email" placeholder="email@gmail.com" />
 
-          <div class="row">
-            <input class="field" type="email" placeholder="zipCode" />
-            <span class="field">or</span>
-            <input class="field" type="email" placeholder="city" />
-          </div>
-          <select class="select" name="subject">
-            <option value="">subject</option>
-            <option value="delivery">Orders</option>
-            <option value="delivery">Delivery</option>
-            <option value="other">Other</option>
-          </select>
+    <div class="container">
+      <div class="card">
+        <h1>GET IN CONTACT</h1>
+        <input class="field" type="text" placeholder="first name" />
+        <input class="field" type="text" placeholder="last name" />
+        <input class="field" type="email" placeholder="email@gmail.com" />
 
-          <textarea class="field" rows="7" placeholder=""></textarea>
-          <button type="button">send</button>
+        <div class="row">
+          <input class="field" type="email" placeholder="zipCode" />
+          <span class="field">or</span>
+          <input class="field" type="email" placeholder="city" />
         </div>
+        <select class="select" name="subject">
+          <option value="">subject</option>
+          <option value="delivery">Orders</option>
+          <option value="delivery">Delivery</option>
+          <option value="other">Other</option>
+        </select>
+
+        <textarea class="field" rows="7" placeholder=""></textarea>
+        <button type="button">send</button>
       </div>
-    </main>
+    </div>
 
     <!-- FOOTER SECTION -->
     <!-- Container for the Footer -->

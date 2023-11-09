@@ -1,0 +1,23 @@
+@use "design";
+@use "header";
+@use "footer";
+@use "frontPage";
+@use "Contact-Page/contact";
+@use "News-Page/news.scss";
+@use "PriceList-Page/priceList";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 1600px;
+}
