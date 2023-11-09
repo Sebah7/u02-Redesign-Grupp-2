@@ -1,16 +1,42 @@
-body {
-  background-color: $colorSand; // Background-color
+// DESIGN
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+* {
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: $colorBrown;
+  }
+  h2 {
+    color: $colorDB;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 15px;
+    color: $colorBlack;
+  }
+  p {
+    font-size: 10px;
+    color: $colorBlack;
+  }
 }
 
 /* HEADER SECTION */
-header {
+.header-container {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
 
   /* Header | Container */
   .header-section {
+    z-index: 1;
+
     background-image: linear-gradient(
       hsl(29, 95%, 24%, 20%),
       hsl(30, 37%, 68%, 20%)
@@ -81,7 +107,7 @@ header {
         display: none; // Hides the dropdown menu
         flex-direction: column;
         align-items: center;
-        background: $colorSand;
+        background-color: $colorSand;
       }
 
       /* Dropdown-Login | Container */
@@ -165,23 +191,30 @@ header {
           width: 310px;
           gap: 10px;
           border: 1px solid rgba(0, 0, 0, 0.788);
+          a {
+            all: unset;
+            display: contents;
+            .dropdown-menu-btn {
+              @extend a;
 
-          h3 {
-            color: #000;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-left: 5px;
-          }
+              h3 {
+                color: #000;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin-left: 5px;
+              }
 
-          p {
-            color: #000;
-            text-align: right;
-            font-size: 10px;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-            margin-right: 5px;
+              p {
+                color: #000;
+                text-align: right;
+                font-size: 10px;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+                margin-right: 5px;
+              }
+            }
           }
         }
       }
@@ -259,13 +292,14 @@ header {
         @extend .phone-toggle;
         width: 50px;
         height: 50px;
+        border: 0;
       }
 
       .phone-card {
         display: none;
         width: 294px;
         height: 100px;
-        background-color: rgba(77, 126, 168, 0.8);
+        background-color: $colorDB;
       }
 
       .phone-phone-nr {
@@ -297,4 +331,15 @@ header {
   .phone-btn-container:hover .phone-card {
     display: block;
   }
+}
+
+// Just TEST for header behaviour
+.ooo {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  snap-margin: 0.75rem;
 }
