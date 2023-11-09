@@ -1,25 +1,40 @@
 body {
-width: 390px;
-background: #CCAD8F;
+  margin: 0;
+  padding: 0;
+}
+
+.priceBody {
+width: 100%;
+background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,.5)), url(img/cake-balls-4139982_1280.jpg);
+margin: 0;
+padding: 0;
 }
 
 .price-wrapper {
+  // height: 908px;
   margin-top: 167px;
-  height: 908px;
+  height: 913px; /* Use viewport height for full height */
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  margin-bottom: 7px;
+  
 
   .card-body {
-    /* Temp */
-    background: url(imgPriceList/backG.png);
-    width: 351px;
+    position: relative;
+    background: linear-gradient(rgba(117, 106, 219, 0.5), rgba(41, 99, 61, 0.5));
+    margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
+    width: 90%;
     height: 867px;
-    margin-top: 17px;
-    margin-bottom: 7px;
-    margin-left: 19px;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
   }
-  
-  .background-img {
-    object-fit: cover;
+
+  .image-box {
+    width: 155px;
+    height: 125px;
   }
   
   .cards-heading {
@@ -35,7 +50,7 @@ background: #CCAD8F;
   
   .cards-heading h1 {
     position: absolute; 
-    margin-top: -30px; 
+    margin-top: -60px;
   }
   
   p {
@@ -52,9 +67,12 @@ background: #CCAD8F;
     display: inline-block;  
     border-radius: 5px;
     }
+
+    .cards-wrapper {
+      margin-top: 29px;
+    }
   
     .first, .second {
-      margin-top: 42px;
       margin-bottom: 35px;
     }
   
@@ -83,12 +101,22 @@ background: #CCAD8F;
   
   .btn-box{
     height: 43px;
-    display: flex;
     width: 138px;
     margin-bottom: 8px;
     margin-top: 18px;
     margin-left: 8.9px;
     margin-right: 8.99px;
+  }
+
+  .btn-box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-box2 {
+    display: flex;
+    justify-content: center;
   }
   
    .btn {
@@ -112,5 +140,6 @@ background: #CCAD8F;
     font-weight: 700; 
     word-wrap: break-word;
    }
+
 }
 
