@@ -22,13 +22,17 @@ p {
 
 body {
   background-color: #763a03;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-.container {
+body .container {
   margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
 }
-
-.card {
+body .container .card {
   display: flex;
   margin: 15px;
   width: 355px;
@@ -38,32 +42,24 @@ body {
   border: 1px solid #763a03;
   background: #d9d9d9;
 }
-@media screen and (min-width: 768px) {
-  .card {
-    width: 355px;
-    height: 82px;
-  }
-}
-
-.customer-image {
+body .container .card .customer-image {
   border-right: 1px solid #763a03;
 }
-.customer-image img {
+body .container .card .customer-image img {
   width: 144px;
   height: 82px;
 }
-
-.customer-details {
+body .container .card .customer-details {
   padding: 10px;
   display: flex;
   align-items: center;
 }
-.customer-details .details-container {
+body .container .card .customer-details .details-container {
   text-align: left;
   width: 144px;
   height: 60px;
 }
-.customer-details .details-container ul {
+body .container .card .customer-details .details-container ul {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
