@@ -1,12 +1,17 @@
+// @use 'design';
+// @use 'footer';
+// @use 'smullbox';
+// @use 'header';
+// @use 'frontPage';
 @import "_design";
 @import "_footer";
 @import "_smullbox";
 @import "_header";
-@import "_membership";
 @import "_frontPage";
+
 *{
     padding:0;
     margin:0;
     font-family: tahoma, sans-serif;
-    box-sizing: border-box;
+    // box-sizing: border-box;
 }
