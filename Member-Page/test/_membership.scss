@@ -4,13 +4,15 @@ body {
   display: flex;
   flex-direction: column;
 
-  .container {
+  .member-container {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem;
+    margin-left: 10px;
+    margin-right: 20px;
 
-    .card {
+    .member-card {
       display: flex;
       margin: 15px;
       width: 355px;
@@ -20,7 +22,7 @@ body {
       border: 1px solid $colorBrown;
       background: #d9d9d9;
 
-      .customer-image {
+      .member-customer-image {
         border-right: 1px solid $colorBrown;
 
         img {
@@ -29,12 +31,12 @@ body {
         }
       }
 
-      .customer-details {
+      .member-customer-details {
         padding: 10px;
         display: flex;
         align-items: center;
 
-        .details-container {
+        .member-details-container {
           text-align: left;
           width: 144px;
           height: 60px;

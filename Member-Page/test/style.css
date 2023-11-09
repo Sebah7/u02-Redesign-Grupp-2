@@ -26,13 +26,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-body .container {
+body .member-container {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 1rem;
+  margin-left: 10px;
+  margin-right: 20px;
 }
-body .container .card {
+body .member-container .member-card {
   display: flex;
   margin: 15px;
   width: 355px;
@@ -42,24 +44,24 @@ body .container .card {
   border: 1px solid #763a03;
   background: #d9d9d9;
 }
-body .container .card .customer-image {
+body .member-container .member-card .member-customer-image {
   border-right: 1px solid #763a03;
 }
-body .container .card .customer-image img {
+body .member-container .member-card .member-customer-image img {
   width: 144px;
   height: 82px;
 }
-body .container .card .customer-details {
+body .member-container .member-card .member-customer-details {
   padding: 10px;
   display: flex;
   align-items: center;
 }
-body .container .card .customer-details .details-container {
+body .member-container .member-card .member-customer-details .member-details-container {
   text-align: left;
   width: 144px;
   height: 60px;
 }
-body .container .card .customer-details .details-container ul {
+body .member-container .member-card .member-customer-details .member-details-container ul {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
