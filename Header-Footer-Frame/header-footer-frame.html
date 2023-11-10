@@ -34,12 +34,25 @@
       <section class="header-section">
         <!-- Container for login logo -->
         <div class="login">
-          <button class="login-btn material-icons">person</button>
+          <button class="login-btn">
+            <img
+              class="login-btn-icon-1"
+              src="/assets/person-vector.svg"
+              alt="Login button"
+            />
+            <img
+              class="login-btn-icon-2"
+              src="/assets/person-dark.svg"
+              alt="Login button (clicked)"
+            />
+          </button>
         </div>
 
         <!-- Container for search logo -->
         <div class="search">
-          <button class="search-btn material-icons">search</button>
+          <button class="search-btn">
+            <img src="/assets/search.svg" alt="Search button" />
+          </button>
         </div>
 
         <!-- Container for Resto Culinair logo -->
@@ -54,7 +67,18 @@
         <div class="dropdown">
           <!-- Container for drop-down logo -->
           <div class="toggle-btn">
-            <button class="toggle-btn-icon material-icons">menu</button>
+            <button class="toggle-btn-icon">
+              <img
+                class="menu-btn-icon-1"
+                src="/assets/menu.svg"
+                alt="Menu button"
+              />
+              <img
+                class="menu-btn-icon-2"
+                src="/assets/x.svg"
+                alt="Menu button"
+              />
+            </button>
           </div>
 
           <!-- Dropdown-Content | Container -->
@@ -180,19 +204,19 @@
         </div>
 
         <!-- Container for phone icon -->
-        <div class="phone-btn-container">
-          <div class="phone-toggle">
-            <button class="phone material-icons">
+        <div class="phone-dropdown">
+          <div class="phone-toggle-btn">
+            <button class="phone-toggle-btn-icon">
               <img
-                class="phone-icon"
+                class="phone-toggle-btn-icon"
                 src="/assets/Phone-Icon.svg"
                 alt="Phone-Button"
               />
             </button>
-            <div class="phone-card">
-              <span class="phone-text">Call & Order</span>
-              <div class="phone-phone-nr">08 555 69 76</div>
-            </div>
+          </div>
+          <div class="phone-dropdown-content">
+            <span class="phone-text">Call & Order</span>
+            <div class="phone-phone-nr">08 555 69 76</div>
           </div>
         </div>
       </section>

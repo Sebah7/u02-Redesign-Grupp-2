@@ -49,18 +49,31 @@ $colorBlack: #0000;
 
     /* Header-Login | Container */
     .login {
-      width: 41px;
-      height: 41px;
+      @extend .toggle-btn;
 
       /* Header-Login | BTN */
       .login-btn {
-        font-size: 41px;
-        color: rgba(0, 0, 0, 0.8);
         background: none;
         border: none;
-        padding: 0;
         cursor: pointer;
         outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        .login-btn-icon-2 {
+          display: none; // Döljer 'X' knappen när menyn är stängd
+        }
+
+        &:hover {
+          .login-btn-icon-1 {
+            display: none; // Döljer 'Meny' knappen när menyn är öppen
+          }
+
+          .login-btn-icon-2 {
+            display: inline-block;
+          }
+        }
       }
     }
 
@@ -70,6 +83,13 @@ $colorBlack: #0000;
 
       .search-btn {
         @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(90deg); // Rotates the 'X' icon 180'
+          }
+        }
       }
     }
 
@@ -89,11 +109,36 @@ $colorBlack: #0000;
     .dropdown {
       /* Toggle Button | Drop-down button */
       .toggle-btn {
-        @extend .login;
-        position: inherit;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
 
+          &:hover {
+            transform: rotate(180deg); // Rotates the 'X' icon 180'
+          }
+        }
         .toggle-btn-icon {
-          @extend .login-btn;
+          position: relative;
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+
+          .menu-btn-icon-2 {
+            display: none; // Döljer 'X' knappen när menyn är stängd
+          }
+
+          &:hover {
+            .menu-btn-icon-1 {
+              display: none; // Döljer 'Meny' knappen när menyn är öppen
+            }
+
+            .menu-btn-icon-2 {
+              display: inline-block;
+            }
+          }
         }
       }
 
@@ -350,7 +395,7 @@ $colorBlack: #0000;
   }
 
   /* Phone button | Bottom of the page */
-  .phone-btn-container {
+  /* .phone-btn-container {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -365,49 +410,73 @@ $colorBlack: #0000;
       bottom: 235px;
       right: 0%;
 
-      .phone {
-        @extend .phone-toggle;
-        width: 50px;
-        height: 50px;
-        border: 0;
-      }
+      img {
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
 
-      .phone-card {
-        display: none;
-        width: 294px;
-        height: 100px;
-        background-color: $colorDB;
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
       }
-
-      .phone-phone-nr {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
-        width: 150px;
-        height: 50px;
-        letter-spacing: 1.95px;
-        font-weight: 400;
-        text-decoration-line: underline;
-      }
-
-      .phone-text {
-        @extend .phone-phone-nr;
-        width: 200px;
-        height: 50px;
-        letter-spacing: 3px;
-        font-size: 20px;
-        font-weight: 400;
-        text-decoration-line: none;
-        font-family: Tahoma;
-        font-style: normal;
+      .phone-icon {
+        position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
       }
     }
-  }
-  .phone-btn-container:hover .phone-card {
-    display: block;
-  }
+
+    .phone {
+      @extend .phone-toggle;
+      width: 50px;
+      height: 50px;
+      border: 0;
+      background: none;
+    }
+
+    .phone-card {
+      visibility: hidden;
+      width: 294px;
+      height: 100px;
+      background-color: $colorDB;
+      position: static;
+    }
+
+    .phone-phone-nr {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      letter-spacing: 1.95px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    .phone-text {
+      @extend .phone-phone-nr;
+      width: 200px;
+      height: 50px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration-line: none;
+      font-family: Tahoma;
+      font-style: normal;
+    }
+  } */
+}
+.phone-btn-container:hover .phone-card {
+  visibility: visible;
 }
 
 // Just TEST for header behaviour
@@ -418,4 +487,74 @@ $colorBlack: #0000;
   font-style: italic;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Phone button | Bottom of the page */
+.phone-dropdown {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 235px;
+  right: 0%;
+
+  /* Toggle Button | Drop-down button */
+  .phone-toggle-btn {
+    .phone-toggle-btn-icon {
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
+      img {
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
+
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .phone-dropdown-content {
+    visibility: hidden;
+    width: 294px;
+    height: 100px;
+    background-color: $colorDB;
+
+    .phone-phone-nr {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      letter-spacing: 1.95px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    .phone-text {
+      @extend .phone-phone-nr;
+      width: 200px;
+      height: 50px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration-line: none;
+      font-family: Tahoma;
+      font-style: normal;
+    }
+
+    .phone-dropdown:hover .phone-dropdown-content {
+      visibility: visible;
+    }
+  }
 }
