@@ -5,17 +5,21 @@
 }
 
 body {
-  min-height: 844px;
   max-width: 390px;
   background: url("../contact/images/background.png");
+}
+
+.main-wrapper {
+  height: auto;
+}
+
+.contact-us {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  
+  height: 700px;
 }
-
-
 
 .container {
   position: relative;
@@ -25,15 +29,13 @@ body {
   align-content: center;
   background: #ccad8f;
 }
-.wrapper {
-  padding: 20px 40px;
-  margin: 3px;
-  width: 100%;
-}
-h1 {
-  color: #4d7ea8;
-  font-size: 20px;
-  font-weight: bold;
+.contact-wrapper {
+  //padding: 20px 40px;
+  //margin: 3px;
+  // width: 100%;
+  float: right;
+  margin: 10px;
+  padding: 20px;
 }
 
 .field {
@@ -106,6 +108,4 @@ select {
       padding: 20px;
   }
 }
-
-
-
+*/
