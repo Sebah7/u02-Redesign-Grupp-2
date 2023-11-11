@@ -5,20 +5,30 @@
 }
 
 body {
-  max-width: 390px;
+  width: 100%;
   background: url("../contact/images/background.png");
 }
 
 .main-wrapper {
-  height: auto;
+  height: 728px;
+  margin-top: 114px;
+  //change this
 }
 
 .contact-us {
-  display: flex;
+  display: grid; //change this
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 700px;
+}
+
+//add this
+.text {
+  margin-top: 7px;
+  margin-bottom: 39px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .container {
