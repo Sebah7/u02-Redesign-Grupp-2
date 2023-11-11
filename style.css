@@ -1,207 +1,10 @@
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #763a03;
-}
-
-h2 {
-  color: #4d7ea8;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0);
-}
-
-p {
-  font-size: 10px;
-  color: rgba(0, 0, 0, 0);
-}
-
-body {
-  width: 390px;
-  height: 1240px;
-  background: #CCAD8F;
-}
-
-.price-wrapper {
-  margin-top: 167px;
-  height: 908px;
-}
-
-.card-body {
-  /* Temp */
-  background: url(imgPriceList/backG.png);
-  width: 351px;
-  height: 867px;
-  margin-top: 17px;
-  margin-bottom: 7px;
-  margin-left: 19px;
-  margin-right: 20px;
-}
-
-.background-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.cards-heading {
-  width: 314px;
-  height: 30px;
-  margin-top: 22px;
-  overflow: visible;
-  text-align: center;
-  word-wrap: break-word;
-  font-weight: 700;
-  position: relative;
-}
-
-.cards-heading h1 {
-  position: absolute;
-  margin-top: -30px;
-}
-
-p {
-  color: #4d7ea8;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.card {
-  width: 156px;
-  height: 250px;
-  margin-right: 8px;
-  margin-left: 8px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.first, .second {
-  margin-top: 42px;
-  margin-bottom: 35px;
-}
-
-.third, .forth {
-  margin-bottom: 34px;
-}
-
-.fifth {
-  margin-bottom: 6px;
-}
-
-.image-box img {
-  width: 156px;
-  height: 128px;
-}
-
-.content {
-  height: 125px;
-  width: 156px;
-  background-color: #CCAD8F;
-  position: relative;
-}
-
-.service-text {
-  margin: 0;
-}
-
-.btn-box {
-  height: 43px;
-  display: flex;
-  width: 138px;
-  margin-bottom: 8px;
-  margin-top: 18px;
-  margin-left: 8.9px;
-  margin-right: 8.99px;
-}
-
-.btn {
-  width: 65.62px;
-  height: 17px;
-  background: #4D7EA8;
-  border-radius: 50px;
-  border: none;
-  margin-bottom: 5px;
-}
-
-.btn-txt {
-  width: 51.24px;
-  height: 7px;
-  left: 6.29px;
-  top: 4px;
-  text-align: center;
-  color: white;
-  font-size: 7px;
-  font-family: Tahoma;
-  font-weight: 700;
-  word-wrap: break-word;
-}
-
-footer {
-  width: 100%;
-  height: 227px;
-  background-color: #763a03;
-  bottom: 0;
-}
-footer .text {
-  min-width: 330px;
-  max-height: 80%;
-  display: flex;
-  justify-content: space-evenly;
-}
-footer .contact, footer .list {
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 150px;
-  text-align: center;
-  padding-top: 35px;
-}
-footer address .titleAddress {
-  font-size: 20px;
-  color: whitesmoke;
-}
-footer address p {
-  color: whitesmoke;
-  font-size: 15px;
-}
-footer .list {
-  border-left: 1px solid #ccad8f;
-}
-footer h3 {
-  color: whitesmoke;
-}
-footer a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 10px;
-}
-
-.icon {
-  min-width: 330px;
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-top: 1px solid #ccad8f;
-}
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
-  font-size: 24px;
-  margin: 5px;
-  color: whitesmoke;
-}
-body {
-  background-color: #ccad8f;
-}
-
 /* HEADER SECTION */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
   /* Header | Container */
   /* Phone button | Bottom of the page */
 }
@@ -259,7 +62,6 @@ header section .dropdown .dropdown-content {
   display: none;
   flex-direction: column;
   align-items: center;
-  background: #ccad8f;
 }
 header section .dropdown .dropdown-content-login {
   width: 280px;
@@ -363,6 +165,204 @@ header .phone {
   bottom: 235px;
   right: 0%;
   position: fixed;
+}
+
+footer {
+  width: 100%;
+  height: 227px;
+  bottom: 0;
+}
+footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .contact, footer .list {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  padding-top: 35px;
+}
+footer address .titleAddress {
+  font-size: 20px;
+  color: whitesmoke;
+}
+footer address p {
+  color: whitesmoke;
+  font-size: 15px;
+}
+footer .list {
+  border-left: 1px solid;
+}
+footer h3 {
+  color: whitesmoke;
+}
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 10px;
+}
+
+.icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
+}
+.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+  font-size: 24px;
+  margin: 5px;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #763a03;
+}
+
+h2 {
+  color: #4d7ea8;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0);
+}
+
+p {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.priceBody {
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/cake-balls-4139982_1280.jpg);
+  margin: 0;
+}
+
+.price-wrapper {
+  margin-top: 167px;
+  height: 913px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.price-wrapper .card-body {
+  position: relative;
+  background: linear-gradient(rgba(229, 68, 224, 0.5), rgba(41, 99, 61, 0.5));
+  margin: 1.87% 4.87% 0.77% 5.13%;
+  width: 90%;
+  height: 867px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price-wrapper .image-box {
+  width: 155px;
+  height: 125px;
+}
+.price-wrapper .cards-heading {
+  width: 314px;
+  height: 30px;
+  margin-top: 22px;
+  overflow: visible;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 700;
+  position: relative;
+}
+.price-wrapper .cards-heading h1 {
+  position: absolute;
+  margin-top: -60px;
+}
+.price-wrapper p {
+  font-size: 10px;
+  font-weight: bold;
+}
+.price-wrapper .card {
+  width: 156px;
+  height: 250px;
+  margin-right: 8px;
+  margin-left: 8px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.price-wrapper .cards-wrapper {
+  margin-top: 29px;
+}
+.price-wrapper .first, .price-wrapper .second {
+  margin-bottom: 35px;
+}
+.price-wrapper .third, .price-wrapper .forth {
+  margin-bottom: 34px;
+}
+.price-wrapper .fifth {
+  margin-bottom: 6px;
+}
+.price-wrapper .image-box img {
+  width: 156px;
+  height: 128px;
+}
+.price-wrapper .content {
+  height: 125px;
+  width: 156px;
+  background-color: #CCAD8F;
+  position: relative;
+}
+.price-wrapper .service-text {
+  margin: 0;
+  text-align: center;
+}
+.price-wrapper .btn-box {
+  height: 43px;
+  width: 138px;
+  margin: 18px 8.99px 8px 8.9px;
+}
+.price-wrapper .btn-box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.price-wrapper .btn-box2 {
+  display: flex;
+  justify-content: center;
+}
+.price-wrapper .btn {
+  width: 65.62px;
+  height: 17px;
+  background: #4D7EA8;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 5px;
+  transition: background 0.5s;
+}
+.price-wrapper .btn:hover {
+  background: green;
+  cursor: pointer;
+}
+.price-wrapper .btn-txt {
+  width: 51.24px;
+  height: 7px;
+  left: 6.29px;
+  top: 4px;
+  text-align: center;
+  color: white;
+  font-size: 7px;
+  font-family: Tahoma;
+  font-weight: 700;
+}
+.price-wrapper .btn:active {
+  background-color: #815f33;
 }
 
 * {

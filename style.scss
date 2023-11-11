@@ -1,5 +1,11 @@
-@import "_design";
+@use 'header';
+@use 'footer';
+@use 'design';
+@use 'pricelist/priceList';
+
 
 *{
+    padding:0;
+    margin:0;
     font-family: tahoma, sans-serif;
 }

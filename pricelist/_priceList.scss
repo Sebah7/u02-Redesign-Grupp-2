@@ -1,28 +1,21 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .priceBody {
 width: 100%;
 background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,.5)), url(img/cake-balls-4139982_1280.jpg);
 margin: 0;
-padding: 0;
 }
 
 .price-wrapper {
-  // height: 908px;
   margin-top: 167px;
-  height: 913px; /* Use viewport height for full height */
+  height: 913px;
   display: flex;
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
+  justify-content: center; 
+  align-items: center; 
   margin-bottom: 7px;
   
 
   .card-body {
     position: relative;
-    background: linear-gradient(rgba(117, 106, 219, 0.5), rgba(41, 99, 61, 0.5));
+    background: linear-gradient(rgba(229, 68, 224, 0.5), rgba(41, 99, 61, 0.5));
     margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
     width: 90%;
     height: 867px;
@@ -54,7 +47,7 @@ padding: 0;
   }
   
   p {
-    color:$colorDB;
+    // color:$colorDB;
     font-size: 10px;
     font-weight: bold;
   }
@@ -97,21 +90,20 @@ padding: 0;
    
     .service-text {
       margin: 0;
+      text-align: center;
     }
   
   .btn-box{
     height: 43px;
     width: 138px;
-    margin-bottom: 8px;
-    margin-top: 18px;
-    margin-left: 8.9px;
-    margin-right: 8.99px;
+    margin: 18px 8.99px 8px 8.9px;
   }
 
   .btn-box1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 9px;
   }
 
   .btn-box2 {
@@ -126,8 +118,14 @@ padding: 0;
    border-radius: 50px;
    border: none;
    margin-bottom: 5px;
+   transition: background 0.5s;
    }
-   
+
+.btn:hover {
+    background: green;
+    cursor: pointer;
+}
+
    .btn-txt {
     width: 51.24px; 
     height: 7px; 
@@ -137,9 +135,11 @@ padding: 0;
     color: white; 
     font-size: 7px; 
     font-family: Tahoma; 
-    font-weight: 700; 
-    word-wrap: break-word;
+    font-weight: 700;  
    }
 
+   .btn:active {
+    background-color: #815f33; 
+  }
 }
 
