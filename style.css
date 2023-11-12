@@ -404,27 +404,21 @@ p {
   display: flex;
 }
 
-.phone-btn-container:hover .phone-card {
+/* .phone-btn-container:hover .phone-card {
   visibility: visible;
-}
-
-.ooo {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  font-style: italic;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+} */
 /* Phone button | Bottom of the page */
 .phone-dropdown {
   position: fixed;
-  width: 50px;
-  height: 50px;
   bottom: 235px;
   right: 0%;
+  width: 50px;
+  height: 50px;
   /* Toggle Button | Drop-down button */
+}
+.phone-dropdown .phone-toggle-btn {
+  width: 50px;
+  height: 50px;
 }
 .phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon {
   position: relative;
@@ -435,22 +429,28 @@ p {
   width: 100%;
   height: 100%;
   padding: 0;
+  z-index: 1;
 }
-.phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon img {
+.phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon .phone-toggle-btn-icon-1 {
   transition: transform 0.3s ease, border-radius 0.6s ease;
   border-radius: 0;
 }
-.phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon img:hover {
+.phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon .phone-toggle-btn-icon-1:hover {
   border-radius: 50%;
   transform: rotate(180deg);
 }
-.phone-dropdown .phone-dropdown-content {
-  visibility: hidden;
-  width: 294px;
+
+.phone-dropdown-content {
+  display: none;
+  position: absolute;
+  width: 210px;
   height: 100px;
   background-color: #4d7ea8;
+  left: -10rem;
+  bottom: 0;
+  border-radius: 30px 30px 0px 30px;
 }
-.phone-dropdown .phone-dropdown-content .phone-phone-nr, .phone-dropdown .phone-dropdown-content .phone-text {
+.phone-dropdown-content .phone-phone-nr {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -462,8 +462,8 @@ p {
   font-weight: 400;
   text-decoration-line: underline;
 }
-.phone-dropdown .phone-dropdown-content .phone-text {
-  width: 200px;
+.phone-dropdown-content .phone-text {
+  width: 100%;
   height: 50px;
   letter-spacing: 3px;
   font-size: 20px;
@@ -471,9 +471,13 @@ p {
   text-decoration-line: none;
   font-family: Tahoma;
   font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.phone-dropdown .phone-dropdown-content .phone-dropdown:hover .phone-dropdown-content {
-  visibility: visible;
+
+.phone-dropdown:hover .phone-dropdown-content {
+  display: block;
 }
 
 * h1 {
@@ -637,7 +641,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
 
 .price-wrapper {
   margin-top: 167px;
-  height: 913px;
+  min-height: 913px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,14 +652,15 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   background: linear-gradient(rgba(229, 68, 224, 0.5), rgba(41, 99, 61, 0.5));
   margin: 1.87% 4.87% 0.77% 5.13%;
   width: 90%;
-  height: 867px;
+  min-height: 867px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .price-wrapper .image-box {
-  width: 155px;
+  width: 100%;
+  min-width: 155px;
   height: 125px;
 }
 .price-wrapper .cards-heading {
@@ -678,15 +683,23 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   font-weight: bold;
 }
 .price-wrapper .card {
-  width: 156px;
-  height: 250px;
+  width: 30%;
+  min-width: 156px;
+  max-width: 692px;
+  min-height: 250px;
+  height: auto;
   margin-right: 8px;
   margin-left: 8px;
   display: inline-block;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.price-wrapper .card:hover {
+  transform: scale(1.1);
 }
 .price-wrapper .cards-wrapper {
   margin-top: 29px;
+  height: calc(100% - 30px);
 }
 .price-wrapper .first, .price-wrapper .second {
   margin-bottom: 35px;
@@ -698,12 +711,16 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   margin-bottom: 6px;
 }
 .price-wrapper .image-box img {
-  width: 156px;
-  height: 128px;
+  width: 100%;
+  min-height: 156px;
+  min-height: 128px;
+  height: auto;
 }
 .price-wrapper .content {
-  height: 125px;
-  width: 156px;
+  min-height: 125px;
+  min-height: 156px;
+  height: auto;
+  width: 100%;
   background-color: #CCAD8F;
   position: relative;
 }
@@ -715,6 +732,8 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   height: 43px;
   width: 138px;
   margin: 18px 8.99px 8px 8.9px;
+  justify-content: center;
+  align-items: center;
 }
 .price-wrapper .btn-box1 {
   display: flex;
@@ -733,10 +752,11 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   border-radius: 50px;
   border: none;
   margin-bottom: 5px;
-  transition: background 0.5s;
+  text-transform: uppercase;
+  transition: 0.3s linear;
 }
-.price-wrapper .btn:hover {
-  background: green;
+.price-wrapper .btnprice:hover {
+  background: #4d7ea8;
   cursor: pointer;
 }
 .price-wrapper .btn-txt {
@@ -750,17 +770,77 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   font-family: Tahoma;
   font-weight: 700;
 }
-.price-wrapper .btn:active {
+.price-wrapper .btnprice:active {
   background-color: #815f33;
 }
-@media only screen and (max-width: 1920px) {
-  .price-wrapper .price-wrapper .card {
-    width: 100%; /* Adjust the width based on your design */
-    height: auto; /* Allow the height to adjust according to content */
-    margin: 0 0 20px 0; /* Adjust margin if necessary */
+
+@media only screen and (min-width: 800px) and (max-width: 1920px) {
+  .price-wrapper {
+    height: auto;
+  }
+  .price-wrapper .cards-wrapper {
+    width: 85%;
+  }
+  .price-wrapper .card-body {
+    height: auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-wrapper .card {
+    min-width: 692px;
+    min-height: 654px;
+    width: 30%;
+    height: auto;
+  }
+  .price-wrapper .image-box img {
+    min-width: 692px;
+    min-height: 327px;
+    width: 100%;
+    height: auto;
+  }
+  .price-wrapper .content {
+    min-height: 327px;
+    min-width: 692px;
+    margin-top: 202px;
+  }
+  .price-wrapper .cards-heading {
+    width: 630px;
+    height: 62px;
+    margin-top: 11px;
+  }
+  .price-wrapper .cards-heading h1 {
+    font-size: 66px;
+    margin-top: -80px;
+  }
+  .price-wrapper .service-text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .price-wrapper .card-h {
+    font-size: 42px;
+  }
+  .price-wrapper .card-p {
+    font-size: 22px;
+  }
+  .price-wrapper .btn-box {
+    margin-top: 10px;
+    display: grid;
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
+  .price-wrapper .btnprice {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .price-wrapper .btn-txt {
+    font-size: 16px;
   }
 }
-
 * {
   padding: 0;
   margin: 0;

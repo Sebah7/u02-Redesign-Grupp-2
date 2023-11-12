@@ -7,13 +7,12 @@ $colorBlack: #0000;
 .priceBody {
 width: 100%;
 background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
-// background: linear-gradient(rgba(255, 255, 255, 0.5)rgba(255, 255, 255, 0.5)), url(img/cake-balls-4139982_1280.jpg);
 margin: 0;
 }
 
 .price-wrapper {
   margin-top: 167px;
-  height: 913px;
+  min-height: 913px;
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -25,7 +24,7 @@ margin: 0;
     background: linear-gradient(rgba(229, 68, 224, 0.5), rgba(41, 99, 61, 0.5));
     margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
     width: 90%;
-    height: 867px;
+    min-height: 867px;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -33,7 +32,8 @@ margin: 0;
   }
 
   .image-box {
-    width: 155px;
+    width: 100%;
+    min-width: 155px;
     height: 125px;
   }
   
@@ -60,16 +60,25 @@ margin: 0;
   }
   
   .card {
-    width: 156px;
-    height: 250px;
+    width: 30%;
+    min-width: 156px;
+    max-width: 692px;
+    min-height: 250px;
+    height: auto;
     margin-right: 8px;
     margin-left: 8px;
     display: inline-block;  
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
     }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
 
     .cards-wrapper {
       margin-top: 29px;
+      height: calc(100% - 30px); // Adjust this value based on your heading height
     }
   
     .first, .second {
@@ -84,13 +93,17 @@ margin: 0;
     }
    
   .image-box img{
-    width: 156px;
-    height: 128px;
+    width: 100%;
+    min-height: 156px;
+    min-height: 128px;
+    height: auto;
     }
    
   .content{
-    height: 125px;
-    width: 156px;
+    min-height: 125px;
+    min-height: 156px;
+    height: auto;
+    width: 100%;
     background-color: #CCAD8F;
     position: relative;
     }
@@ -104,6 +117,8 @@ margin: 0;
     height: 43px;
     width: 138px;
     margin: 18px 8.99px 8px 8.9px;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn-box1 {
@@ -125,11 +140,12 @@ margin: 0;
    border-radius: 50px;
    border: none;
    margin-bottom: 5px;
-   transition: background 0.5s;
+   text-transform: uppercase;
+   transition: .3s linear;
    }
 
-.btn:hover {
-    background: green;
+.btnprice:hover {
+    background: $colorDB;
     cursor: pointer;
 }
 
@@ -145,18 +161,90 @@ margin: 0;
     font-weight: 700;  
    }
 
-   .btn:active {
+   .btnprice:active {
     background-color: #815f33; 
   }
 
+}
 
-  @media only screen and (max-width: 1920px) {
-    .price-wrapper .card {
-      width: 100%; /* Adjust the width based on your design */
-      height: auto; /* Allow the height to adjust according to content */
-      margin: 0 0 20px 0; /* Adjust margin if necessary */
+@media only screen and (min-width: 800px) and (max-width: 1920px) {
+    
+  .price-wrapper {
+     height: auto;
+
+     .cards-wrapper {
+      width: 85%;
+     }
+
+     .card-body {
+      height: auto;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
     }
-  }
+    .card {
+      min-width: 692px;
+      min-height: 654px;
+      width: 30%;
+      height: auto;
+    }
+  
+    .image-box img{
+      min-width: 692px;
+      min-height: 327px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .content {
+      min-height: 327px;
+      min-width: 692px;
+      margin-top: 202px;
+    }
 
+    .cards-heading {
+      width: 630px; 
+      height: 62px; 
+      margin-top: 11px;
+    }
+    
+    .cards-heading h1 {
+      font-size: 66px;
+      margin-top: -80px;
+    }
+
+    .service-text {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .card-h {
+      font-size: 42px;
+    }
+
+    .card-p {
+      font-size: 22px;
+    }
+    .btn-box {
+      margin-top: 10px;
+      display: grid;
+      margin-left: 300px;
+      margin-top: 20px;
+      margin-bottom: 2px;
+    }
+
+    .btnprice {
+      width: 150px;
+      height: 40px;
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .btn-txt {
+      font-size: 16px;
+    }
+
+     }
 }
 
