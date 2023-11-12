@@ -1,6 +1,12 @@
-// body {
-//   // background-color: $colorSand; // Background-color
-// }
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+
+body {
+background-color: $colorSand; // Background-color
+}
 
 /* HEADER SECTION */
 header {
@@ -82,7 +88,7 @@ header {
         display: none; // Hides the dropdown menu
         flex-direction: column;
         align-items: center;
-        // background: $colorSand;
+        background: $colorSand;
       }
 
       /* Dropdown-Login | Container */

@@ -1,3 +1,9 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+
 .priceBody {
 width: 100%;
 background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,.5)), url(img/cake-balls-4139982_1280.jpg);
@@ -47,7 +53,7 @@ margin: 0;
   }
   
   p {
-    // color:$colorDB;
+    color:$colorDB;
     font-size: 10px;
     font-weight: bold;
   }
@@ -141,5 +147,15 @@ margin: 0;
    .btn:active {
     background-color: #815f33; 
   }
+
+
+  @media only screen and (max-width: 1920px) {
+    .price-wrapper .card {
+      width: 100%; /* Adjust the width based on your design */
+      height: auto; /* Allow the height to adjust according to content */
+      margin: 0 0 20px 0; /* Adjust margin if necessary */
+    }
+  }
+
 }
 
