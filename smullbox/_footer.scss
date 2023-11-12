@@ -1,4 +1,6 @@
-$colorWhite: whitesmoke;
+$colorText: whitesmoke;
+$colorBlack: #000;
+$colorDB: #4d7ea8;
 
 footer {
     width: 100%;
@@ -29,25 +31,30 @@ footer {
 
         .titleAddress {
           font-size: 20px;
-          color: $colorWhite;
+          color: $colorText
+        ;
         }
 
         p{
-          color: $colorWhite;
+          color: $colorText
+        ;
         }
       }
   
       .list {
         @extend .contact;
-        border-left: 1px solid $colorWhite;
+        border-left: 1px solid $colorText
+      ;
         padding-top: 15px;
 
         h3 {
-          color: $colorWhite;
+          color: $colorText
+        ;
         }
         a {
           text-decoration: none;
-          color: $colorWhite;
+          color: $colorText
+        ;
           font-size: 10px;
       }
 
@@ -61,12 +68,14 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      border-top: 1px solid $colorWhite;
+      border-top: 1px solid $colorText
+    ;
   
       .fb {
         font-size: 24px;
         margin: 5px;
-        color: $colorWhite;
+        color: $colorText
+      ;
       }
   
       .instagram {
@@ -92,7 +101,8 @@ footer {
 
     .bottomIcons {
       padding: 5px;
-      color: $colorWhite;
+      color: $colorText
+    ;
       font-size: 24px;
       display: none;
     
@@ -152,7 +162,8 @@ footer {
         .socialMedia, .payMethods{
           width: 50%;
           h3 {
-            color: $colorWhite;
+            color: $colorText
+          ;
             font-size: 0.6em;
           }
           ul {
