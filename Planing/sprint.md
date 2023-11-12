@@ -6,10 +6,10 @@
 ***Sprint 2 - UX/UI***
 - [x] Color
 - [x] Fonts
-- [ ] Icons
-- [ ] Logo
-- [ ] High-fi
-- [ ] Layout
+- [x] Icons
+- [x] Logo
+- [x] High-fi
+- [x] Layout
 
 ***Sprint 3 - Development***
 - [ ] HTML
@@ -19,6 +19,8 @@
 ***Sprint 4***
 - [ ]
 
+
+**NOTES**
 **Sprint 2 Meetings Notes**
 
 *Thursday:*
@@ -37,6 +39,17 @@
 - Project status and progress. 
 - Share individual tasks and responsibilities among the team.
 
+**Sprint 3 Meetings Notes**
+
+*Tuesday*
+- Discussed the projects structure forwards and the sharing of issues.
+- Structure of HTML and CSS and Sass. 
+- Created issues in github to kick off the sprint. 
+
+*Thursday*
+- Reviewed our progress and understanding of issue creation.
+- Clarified our understanding of the structure of Sass and Css and issues. 
+- To facilitate our redesign we created issues.
 
 
 

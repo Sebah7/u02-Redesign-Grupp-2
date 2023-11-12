@@ -1,23 +1,42 @@
+// DESIGN
 $colorBrown: #763a03;
 $colorLB: #c9f0ff;
 $colorDB: #4d7ea8;
 $colorSand: #ccad8f;
 $colorBlack: #0000;
-
-body {
-background-color: $colorSand; // Background-color
+* {
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: $colorBrown;
+  }
+  h2 {
+    color: $colorDB;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 15px;
+    color: $colorBlack;
+  }
+  p {
+    font-size: 10px;
+    color: $colorBlack;
+  }
 }
 
 /* HEADER SECTION */
-header {
+.header-container {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
 
   /* Header | Container */
-  section {
+  .header-section {
+    z-index: 1;
+
     background-image: linear-gradient(
       hsl(29, 95%, 24%, 20%),
       hsl(30, 37%, 68%, 20%)
@@ -30,18 +49,31 @@ header {
 
     /* Header-Login | Container */
     .login {
-      width: 41px;
-      height: 41px;
+      @extend .toggle-btn;
 
       /* Header-Login | BTN */
       .login-btn {
-        font-size: 41px;
-        color: rgba(0, 0, 0, 0.8);
         background: none;
         border: none;
-        padding: 0;
         cursor: pointer;
         outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        .login-btn-icon-2 {
+          display: none; // Döljer 'X' knappen när menyn är stängd
+        }
+
+        &:hover {
+          .login-btn-icon-1 {
+            display: none; // Döljer 'Meny' knappen när menyn är öppen
+          }
+
+          .login-btn-icon-2 {
+            display: inline-block;
+          }
+        }
       }
     }
 
@@ -51,6 +83,13 @@ header {
 
       .search-btn {
         @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(90deg); // Rotates the 'X' icon 180'
+          }
+        }
       }
     }
 
@@ -70,11 +109,36 @@ header {
     .dropdown {
       /* Toggle Button | Drop-down button */
       .toggle-btn {
-        @extend .login;
-        position: inherit;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
 
+          &:hover {
+            transform: rotate(180deg); // Rotates the 'X' icon 180'
+          }
+        }
         .toggle-btn-icon {
-          @extend .login-btn;
+          position: relative;
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+
+          .menu-btn-icon-2 {
+            display: none; // Döljer 'X' knappen när menyn är stängd
+          }
+
+          &:hover {
+            .menu-btn-icon-1 {
+              display: none; // Döljer 'Meny' knappen när menyn är öppen
+            }
+
+            .menu-btn-icon-2 {
+              display: inline-block;
+            }
+          }
         }
       }
 
@@ -88,7 +152,7 @@ header {
         display: none; // Hides the dropdown menu
         flex-direction: column;
         align-items: center;
-        background: $colorSand;
+        background-color: $colorSand;
       }
 
       /* Dropdown-Login | Container */
@@ -97,13 +161,51 @@ header {
         height: 43px;
         flex-shrink: 0;
       }
-      ul {
-        li {
-          width: 280px;
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 264px;
+        height: 45px;
+        font-size: 13px;
+
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.3rem;
+          width: 10px;
+          height: 10px;
+        }
+
+        span {
+          position: relative;
+          letter-spacing: 1.95px;
+          left: 10px;
+          margin-right: 5px;
+        }
+
+        input {
+          display: flex;
+          background: none;
+          position: relative;
+          border: none;
+          width: 146px;
           height: 15px;
-          flex-shrink: 0;
           margin-bottom: 6px;
-          border: 1px solid rgba(0, 0, 0, 0.788);
+          left: 10px;
+          color: #000;
+          letter-spacing: 1.95px;
+          border-bottom: 1px solid #000;
+        }
+
+        input:focus {
+          outline: none; // Removes the box around the input area on 'focus'
+        }
+
+        #dropdown-password {
+          width: 165px;
         }
       }
 
@@ -134,23 +236,27 @@ header {
           width: 310px;
           gap: 10px;
           border: 1px solid rgba(0, 0, 0, 0.788);
+          a {
+            all: unset;
+            display: contents;
 
-          h3 {
-            color: #000;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-left: 5px;
-          }
+            h3 {
+              color: #000;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              letter-spacing: 2px;
+              margin-left: 5px;
+            }
 
-          p {
-            color: #000;
-            text-align: right;
-            font-size: 10px;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-            margin-right: 5px;
+            p {
+              color: #000;
+              text-align: right;
+              font-size: 10px;
+              font-weight: 400;
+              letter-spacing: 1.5px;
+              margin-right: 5px;
+            }
           }
         }
       }
@@ -200,6 +306,86 @@ header {
         height: 227px;
         flex-shrink: 0;
         bottom: 0px;
+
+        .header-footer {
+          width: 100%;
+          height: 227px;
+          bottom: 0;
+          background-color: $colorBrown;
+
+          .text {
+            min-width: 330px;
+            max-height: 80%;
+            display: flex;
+            justify-content: space-evenly;
+          }
+
+          .contact {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 150px;
+            text-align: center;
+            padding-top: 35px;
+          }
+          address {
+            .titleAddress {
+              font-size: 20px;
+              color: whitesmoke;
+            }
+
+            p {
+              color: whitesmoke;
+              font-size: 15px;
+            }
+          }
+
+          .list {
+            @extend .contact;
+          }
+          h3 {
+            color: whitesmoke;
+          }
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 10px;
+          }
+
+          .icon {
+            min-width: 330px;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .fb {
+              font-size: 24px;
+              margin: 5px;
+              color: whitesmoke;
+            }
+
+            .instagram {
+              @extend .fb;
+            }
+
+            .twitter {
+              @extend .fb;
+            }
+
+            .klarna {
+              @extend .fb;
+            }
+
+            .visa {
+              @extend .fb;
+            }
+
+            .mastercard {
+              @extend .fb;
+            }
+          }
+        }
       }
     }
   }
@@ -209,11 +395,166 @@ header {
   }
 
   /* Phone button | Bottom of the page */
-  .phone {
-    width: 30px;
-    height: 30px;
+  /* .phone-btn-container {
+    position: fixed;
+    width: 50px;
+    height: 50px;
     bottom: 235px;
     right: 0%;
-    position: fixed;
+
+    .phone-toggle {
+      display: flex;
+      position: fixed;
+      width: 194px;
+      height: 100px;
+      bottom: 235px;
+      right: 0%;
+
+      img {
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
+
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
+      }
+      .phone-icon {
+        position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+    }
+
+    .phone {
+      @extend .phone-toggle;
+      width: 50px;
+      height: 50px;
+      border: 0;
+      background: none;
+    }
+
+    .phone-card {
+      visibility: hidden;
+      width: 294px;
+      height: 100px;
+      background-color: $colorDB;
+      position: static;
+    }
+
+    .phone-phone-nr {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      letter-spacing: 1.95px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    .phone-text {
+      @extend .phone-phone-nr;
+      width: 200px;
+      height: 50px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration-line: none;
+      font-family: Tahoma;
+      font-style: normal;
+    }
+  } */
+}
+.phone-btn-container:hover .phone-card {
+  visibility: visible;
+}
+
+// Just TEST for header behaviour
+.ooo {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Phone button | Bottom of the page */
+.phone-dropdown {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 235px;
+  right: 0%;
+
+  /* Toggle Button | Drop-down button */
+  .phone-toggle-btn {
+    .phone-toggle-btn-icon {
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
+      img {
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
+
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .phone-dropdown-content {
+    visibility: hidden;
+    width: 294px;
+    height: 100px;
+    background-color: $colorDB;
+
+    .phone-phone-nr {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      letter-spacing: 1.95px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    .phone-text {
+      @extend .phone-phone-nr;
+      width: 200px;
+      height: 50px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration-line: none;
+      font-family: Tahoma;
+      font-style: normal;
+    }
+
+    .phone-dropdown:hover .phone-dropdown-content {
+      visibility: visible;
+    }
   }
 }
