@@ -1,11 +1,55 @@
 @charset "UTF-8";
-<<<<<<< Updated upstream:News-Page/news.css
-=======
 /* NEWS SECTION */
->>>>>>> Stashed changes:css/news.css
-body {
+/* Style the button to look like a user icon */
+.login-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: rgba(118, 58, 3, 0.8);
+}
+
+/* Style the form */
+.login-form {
+  display: none;
   background-color: #ccad8f;
-  font-family: tahoma, sans-serif;
+  padding: 40px;
+  border: 1px solid #ccad8f;
+  border-radius: 10px;
+  max-width: 300px; /* Set a maximum width to control the form's size */
+  position: absolute;
+  top: 30px; /* Adjust the distance from the button */
+  left: 20px; /* Adjust the distance from the button */
+}
+
+/* Style form elements */
+.login-input[type=text],
+.login-input[type=password],
+.login-input[type=submit] {
+  display: block;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccad8f;
+  border-radius: 5px;
+}
+
+.login-input[type=submit] {
+  background-color: rgba(118, 58, 3, 0.8);
+  color: #fff;
+  font-weight: bold;
+  width: 90%;
+}
+
+.login:hover .login-form {
+  display: block;
 }
 
 .container-resto-culinair {
@@ -15,23 +59,21 @@ body {
 }
 
 .resto-culinair {
+  color: #ccad8f;
+  flex-shrink: 0;
+  margin-top: 79px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.resto-culinair {
   height: 40%;
   width: 100%;
-<<<<<<< Updated upstream:News-Page/news.css
   color: #ccad8f;
 }
 
-=======
-  margin-bottom: 1px;
-}
-
-@media (max-width: 768px) {
-  .center-hero-image {
-    margin-top: 15%;
-    flex-direction: column;
-  }
-}
->>>>>>> Stashed changes:css/news.css
 /* Centered text */
 .center-hero-image {
   position: absolute;
@@ -70,7 +112,8 @@ h3 {
   border-radius: 10px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
   background-color: #ccad8f;
 }
 
@@ -89,12 +132,12 @@ h3 {
   outline: 3px solid #ddd;
 }
 
-.dropdown1 {
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content1 {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f6f6f6;
@@ -104,7 +147,7 @@ h3 {
   z-index: 1;
 }
 
-.dropdown-content1 a {
+.dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -166,6 +209,37 @@ h3 {
 }
 
 p {
+  display: inline;
+}
+
+input[type=checkbox] {
+  height: 2em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label {
+  position: relative;
+  padding: 1em;
+  border: #ddd;
+  color: red;
+  cursor: pointer;
+}
+
+label:before {
+  content: "Läs mer";
+}
+
+input[type=checkbox]:checked ~ label:before {
+  content: "Läs mindre";
+}
+
+.dots:has(~ input[type=checkbox]:checked) {
+  display: none;
+}
+
+.extra:has(~ input[type=checkbox]:checked) {
   display: inline;
 }
 

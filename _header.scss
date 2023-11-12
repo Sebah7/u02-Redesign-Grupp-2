@@ -1,16 +1,42 @@
-body {
-  background-color: $colorSand; // Background-color
+// DESIGN
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+* {
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: $colorBrown;
+  }
+  h2 {
+    color: $colorDB;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 15px;
+    color: $colorBlack;
+  }
+  p {
+    font-size: 10px;
+    color: $colorBlack;
+  }
 }
 
 /* HEADER SECTION */
-header {
+.header-container {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
 
   /* Header | Container */
   .header-section {
+    z-index: 1;
+
     background-image: linear-gradient(
       hsl(29, 95%, 24%, 20%),
       hsl(30, 37%, 68%, 20%)
@@ -23,18 +49,31 @@ header {
 
     /* Header-Login | Container */
     .login {
-      width: 41px;
-      height: 41px;
+      @extend .toggle-btn;
 
       /* Header-Login | BTN */
       .login-btn {
-        font-size: 41px;
-        color: rgba(0, 0, 0, 0.8);
         background: none;
         border: none;
-        padding: 0;
         cursor: pointer;
         outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        .login-btn-icon-2 {
+          display: none; // Döljer 'X' knappen när menyn är stängd
+        }
+
+        &:hover {
+          .login-btn-icon-1 {
+            display: none; // Döljer 'Meny' knappen när menyn är öppen
+          }
+
+          .login-btn-icon-2 {
+            display: inline-block;
+          }
+        }
       }
     }
 
@@ -44,6 +83,13 @@ header {
 
       .search-btn {
         @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(90deg); // Rotates the 'X' icon 180'
+          }
+        }
       }
     }
 
@@ -63,11 +109,36 @@ header {
     .dropdown {
       /* Toggle Button | Drop-down button */
       .toggle-btn {
-        @extend .login;
-        position: inherit;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
 
+          &:hover {
+            transform: rotate(180deg); // Rotates the 'X' icon 180'
+          }
+        }
         .toggle-btn-icon {
-          @extend .login-btn;
+          position: relative;
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+
+          .menu-btn-icon-2 {
+            display: none; // Döljer 'X' knappen när menyn är stängd
+          }
+
+          &:hover {
+            .menu-btn-icon-1 {
+              display: none; // Döljer 'Meny' knappen när menyn är öppen
+            }
+
+            .menu-btn-icon-2 {
+              display: inline-block;
+            }
+          }
         }
       }
 
@@ -81,7 +152,7 @@ header {
         display: none; // Hides the dropdown menu
         flex-direction: column;
         align-items: center;
-        background: $colorSand;
+        background-color: $colorSand;
       }
 
       /* Dropdown-Login | Container */
@@ -123,7 +194,7 @@ header {
           width: 146px;
           height: 15px;
           margin-bottom: 6px;
-          left: 5px;
+          left: 10px;
           color: #000;
           letter-spacing: 1.95px;
           border-bottom: 1px solid #000;
@@ -165,23 +236,27 @@ header {
           width: 310px;
           gap: 10px;
           border: 1px solid rgba(0, 0, 0, 0.788);
+          a {
+            all: unset;
+            display: contents;
 
-          h3 {
-            color: #000;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-left: 5px;
-          }
+            h3 {
+              color: #000;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              letter-spacing: 2px;
+              margin-left: 5px;
+            }
 
-          p {
-            color: #000;
-            text-align: right;
-            font-size: 10px;
-            font-weight: 400;
-            letter-spacing: 1.5px;
-            margin-right: 5px;
+            p {
+              color: #000;
+              text-align: right;
+              font-size: 10px;
+              font-weight: 400;
+              letter-spacing: 1.5px;
+              margin-right: 5px;
+            }
           }
         }
       }
@@ -231,6 +306,86 @@ header {
         height: 227px;
         flex-shrink: 0;
         bottom: 0px;
+
+        .header-footer {
+          width: 100%;
+          height: 227px;
+          bottom: 0;
+          background-color: $colorBrown;
+
+          .text {
+            min-width: 330px;
+            max-height: 80%;
+            display: flex;
+            justify-content: space-evenly;
+          }
+
+          .contact {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 150px;
+            text-align: center;
+            padding-top: 35px;
+          }
+          address {
+            .titleAddress {
+              font-size: 20px;
+              color: whitesmoke;
+            }
+
+            p {
+              color: whitesmoke;
+              font-size: 15px;
+            }
+          }
+
+          .list {
+            @extend .contact;
+          }
+          h3 {
+            color: whitesmoke;
+          }
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 10px;
+          }
+
+          .icon {
+            min-width: 330px;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .fb {
+              font-size: 24px;
+              margin: 5px;
+              color: whitesmoke;
+            }
+
+            .instagram {
+              @extend .fb;
+            }
+
+            .twitter {
+              @extend .fb;
+            }
+
+            .klarna {
+              @extend .fb;
+            }
+
+            .visa {
+              @extend .fb;
+            }
+
+            .mastercard {
+              @extend .fb;
+            }
+          }
+        }
       }
     }
   }
@@ -240,7 +395,7 @@ header {
   }
 
   /* Phone button | Bottom of the page */
-  .phone-btn-container {
+  /* .phone-btn-container {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -255,46 +410,158 @@ header {
       bottom: 235px;
       right: 0%;
 
-      .phone {
-        @extend .phone-toggle;
-        width: 50px;
-        height: 50px;
-      }
+      img {
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
 
-      .phone-card {
-        display: none;
-        width: 294px;
-        height: 100px;
-        background-color: rgba(77, 126, 168, 0.8);
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
       }
-
-      .phone-phone-nr {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
-        width: 150px;
-        height: 50px;
-        letter-spacing: 1.95px;
-        font-weight: 400;
-        text-decoration-line: underline;
+      .phone-icon {
+        position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
       }
+    }
 
-      .phone-text {
-        @extend .phone-phone-nr;
-        width: 200px;
-        height: 50px;
-        letter-spacing: 3px;
-        font-size: 20px;
-        font-weight: 400;
-        text-decoration-line: none;
-        font-family: Tahoma;
-        font-style: normal;
+    .phone {
+      @extend .phone-toggle;
+      width: 50px;
+      height: 50px;
+      border: 0;
+      background: none;
+    }
+
+    .phone-card {
+      visibility: hidden;
+      width: 294px;
+      height: 100px;
+      background-color: $colorDB;
+      position: static;
+    }
+
+    .phone-phone-nr {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      letter-spacing: 1.95px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+
+    .phone-text {
+      @extend .phone-phone-nr;
+      width: 200px;
+      height: 50px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      font-weight: 400;
+      text-decoration-line: none;
+      font-family: Tahoma;
+      font-style: normal;
+    }
+  } */
+}
+
+/* .phone-btn-container:hover .phone-card {
+  visibility: visible;
+} */
+
+/* Phone button | Bottom of the page */
+.phone-dropdown {
+  // Phone dropdown container
+  position: fixed;
+  bottom: 235px;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+
+  /* Toggle Button | Drop-down button */
+  .phone-toggle-btn {
+    // Phone dropdown button container
+    width: 50px;
+    height: 50px;
+
+    .phone-toggle-btn-icon {
+      // Phone dropdown button element
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      z-index: 1;
+
+      .phone-toggle-btn-icon-1 {
+        // Phine img in the button element
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
+
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
       }
     }
   }
-  .phone-btn-container:hover .phone-card {
-    display: block;
+}
+.phone-dropdown-content {
+  // Phone content container
+  display: none;
+  position: absolute;
+  width: 210px;
+  height: 100px;
+  background-color: #4d7ea8;
+  left: -10rem;
+  bottom: 0;
+  border-radius: 30px 30px 0px 30px;
+
+  .phone-phone-nr {
+    // Phone number content
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    letter-spacing: 1.95px;
+    font-weight: 400;
+    text-decoration-line: underline;
   }
+
+  .phone-text {
+    // Phone text content
+    width: 100%;
+    height: 50px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration-line: none;
+    font-family: Tahoma;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.phone-dropdown:hover .phone-dropdown-content {
+  display: block;
 }
