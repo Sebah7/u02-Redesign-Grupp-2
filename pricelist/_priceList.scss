@@ -6,7 +6,8 @@ $colorBlack: #0000;
 
 .priceBody {
 width: 100%;
-background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,.5)), url(img/cake-balls-4139982_1280.jpg);
+background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
+// background: linear-gradient(rgba(255, 255, 255, 0.5)rgba(255, 255, 255, 0.5)), url(img/cake-balls-4139982_1280.jpg);
 margin: 0;
 }
 
@@ -117,7 +118,7 @@ margin: 0;
     justify-content: center;
   }
   
-   .btn {
+   .btnprice {
    width: 65.62px; 
    height: 17px;  
    background: #4D7EA8; 

@@ -17,31 +17,46 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://kit.fontawesome.com/a0315d2788.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a0315d2788.js"
+      crossorigin="anonymous"
+    ></script>
 
   </head>
   <body class="priceBody">
     <!-- HEADER SECTION -->
-    <header>
+    <header class="header-container">
       <!-- Background gradient | Container -->
-      <!-- <div class="header-bg"></div> -->
 
       <!-- Header Section -->
       <section class="header-section">
         <!-- Container for login logo -->
         <div class="login">
-          <button class="login-btn material-icons">person</button>
+          <button class="login-btn">
+            <img
+              class="login-btn-icon-1"
+              src="/assets/person-vector.svg"
+              alt="Login button"
+            />
+            <img
+              class="login-btn-icon-2"
+              src="/assets/person-dark.svg"
+              alt="Login button (clicked)"
+            />
+          </button>
         </div>
 
         <!-- Container for search logo -->
         <div class="search">
-          <button class="search-btn material-icons">search</button>
+          <button class="search-btn">
+            <img src="/assets/search.svg" alt="Search button" />
+          </button>
         </div>
 
         <!-- Container for Resto Culinair logo -->
         <div class="resto">
           <img
-            src="img/Resto-logo-text-and-icon.png"
+            src="/img/Resto-logo-text-and-icon.png"
             alt="Resto Culinair Logo"
           />
         </div>
@@ -50,41 +65,78 @@
         <div class="dropdown">
           <!-- Container for drop-down logo -->
           <div class="toggle-btn">
-            <button class="toggle-btn-icon material-icons">menu</button>
+            <button class="toggle-btn-icon">
+              <img
+                class="menu-btn-icon-1"
+                src="/assets/menu.svg"
+                alt="Menu button"
+              />
+              <img
+                class="menu-btn-icon-2"
+                src="/assets/x.svg"
+                alt="Menu button"
+              />
+            </button>
           </div>
 
           <!-- Dropdown-Content | Container -->
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
             <div class="dropdown-content-login">
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
+              <form action="/login" method="post">
+                <i class="dropdown-login-icon material-icons">person</i>
+                <span>customer nr:</span>
+                <input
+                  type="text"
+                  name="customer nr"
+                  id="dropdown-customer-nr"
+                  size="10"
+                  maxlength="6"
+                />
+                <i class="dropdown-lock-icon material-icons">lock</i>
+                <span>password:</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="dropdown-password"
+                  size="10"
+                  maxlength="25"
+                />
+              </form>
             </div>
 
             <!-- Dropdown-Menu | Container -->
             <div class="dropdown-content-menu">
               <ol>
                 <li>
-                  <h3>News</h3>
-                  <p>Read what´s going on in your area</p>
+                  <a href="">
+                    <h3>News</h3>
+                    <p>Read what´s going on in your area</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Contacts</h3>
-                  <p>Contact Resto Culinair</p>
+                  <a href="">
+                    <h3>Contacts</h3>
+                    <p>Contact Resto Culinair</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Rentals</h3>
-                  <p>Rentals & Event must havs</p>
+                  <a href="">
+                    <h3>Rentals</h3>
+                    <p>Rentals & Event must havs</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Partners</h3>
-                  <p>Our partners and locations</p>
+                  <a href="">
+                    <h3>Partners</h3>
+                    <p>Our partners and locations</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Menu & Board</h3>
-                  <p>Design a menu</p>
+                  <a href="">
+                    <h3>Menu & Board</h3>
+                    <p>Design a menu</p>
+                  </a>
                 </li>
               </ol>
             </div>
@@ -96,11 +148,75 @@
             </div>
 
             <!-- Dropdown-Footer | Container -->
-            <div class="dropdown-footer"></div>
+            <div class="dropdown-footer">
+              <section class="header-footer">
+                <!-- Text and information Section -->
+                <section class="text">
+                  <!-- Container for contact information -->
+                  <address class="contact">
+                    <p class="titleAddress">Adress</p>
+                    <br />
+                    <p>Resto Culinair</p>
+                    <p>leftline 5</p>
+                    <p>111 11 Stockholm</p>
+                  </address>
+                  <!-- Container for list information -->
+                  <div class="list">
+                    <h3>Genvägar</h3>
+                    <div><a href="#">Startsidan</a></div>
+                    <div><a href="#">Nyheter</a></div>
+                    <div><a href="#">Medlem</a></div>
+                    <div><a href="#">Prislista</a></div>
+                    <div><a href="/smullbox.html">Smullbox</a></div>
+                    <div><a href="#">Kontakt</a></div>
+                  </div>
+                </section>
+                <!-- Icon Section -->
+                <section class="icon">
+                  <!-- Conatiner for icon 1 -->
+                  <div class="fb">
+                    <span><i class="fa-brands fa-square-facebook"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 2 -->
+                  <div class="instagram">
+                    <span><i class="fa-brands fa-square-instagram"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 3 -->
+                  <div class="twitter">
+                    <span><i class="fa-brands fa-square-twitter"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 4 -->
+                  <div class="klarna"><span>K.</span></div>
+                  <!-- Conatiner for icon 5 -->
+                  <div class="visa">
+                    <span><i class="fa-brands fa-cc-visa"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 6 -->
+                  <div class="mastercard">
+                    <span><i class="fa-brands fa-cc-mastercard"></i></span>
+                  </div>
+                </section>
+              </section>
+            </div>
           </div>
         </div>
+
         <!-- Container for phone icon -->
-        <div class="phone" style="border: 1px solid red"></div>
+        <div class="phone-dropdown">
+          <div class="phone-toggle-btn">
+            <button class="phone-toggle-btn-icon">
+              <img
+                class="phone-toggle-btn-icon"
+                src="/assets/Phone-Icon.svg"
+                alt="Phone-Button"
+              />
+            </button>
+          </div>
+          <div class="phone-dropdown-content">
+            <span class="phone-text">Call & Order</span>
+            <div class="phone-phone-nr">08 555 69 76</div>
+          </div>
+        </div>
       </section>
     </header>
 
@@ -129,11 +245,11 @@
      </div>
      <div class="btn-box">
       <div class="btn-box1">
-      <button type="button" class="btn btn1"><span class="btn-txt">5$ per dag</span></button>
-      <button type="button" class="btn btn2"><span class="btn-txt">20$ per månad</span></button>
+      <button type="button" class="btnprice btn1"><span class="btn-txt">5$ per dag</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">20$ per månad</span></button>
     </div>
       <div class="btn-box2">
-        <button type="button" class="btn btn3"><span class="btn-txt">60$ i år</span></button>
+        <button type="button" class="btnprice btn3"><span class="btn-txt">60$ i år</span></button>
       </div>
     </div>
     </div>
@@ -152,11 +268,11 @@
      </div>
      <div class="btn-box">
       <div class="btn-box1">
-      <button type="button" class="btn btn1"><span class="btn-txt">10$ per meny</span></button>
-      <button type="button" class="btn btn2"><span class="btn-txt">60$ per meny</span></button>
+      <button type="button" class="btnprice btn1"><span class="btn-txt">10$ per meny</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">60$ per meny</span></button>
     </div>
       <div class="btn-box2">
-        <button type="button" class="btn btn3"><span class="btn-txt">30$ per month</span></button>
+        <button type="button" class="btnprice btn3"><span class="btn-txt">30$ per month</span></button>
       </div>
     </div>
     </div>
@@ -175,11 +291,11 @@
      </div>
      <div class="btn-box">
       <div class="btn-box1">
-      <button type="button" class="btn btn1"><span class="btn-txt">20$ per service</span></button>
-      <button type="button" class="btn btn2"><span class="btn-txt">50$ i månad</span></button>
+      <button type="button" class="btnprice btn1"><span class="btn-txt">20$ per service</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">50$ i månad</span></button>
     </div>
       <div class="btn-box2">
-        <button type="button" class="btn btn3"><span class="btn-txt">600$ i år</span></button>
+        <button type="button" class="btnprice btn3"><span class="btn-txt">600$ i år</span></button>
       </div>
     </div>
       </div>
@@ -197,11 +313,11 @@
       </div>
       <div class="btn-box">
         <div class="btn-box1">
-        <button type="button" class="btn btn1"><span class="btn-txt">400$ per service</span></button>
-        <button type="button" class="btn btn2"><span class="btn-txt">300$ i månad</span></button>
+        <button type="button" class="btnprice btn1"><span class="btn-txt">400$ per service</span></button>
+        <button type="button" class="btnprice btn2"><span class="btn-txt">300$ i månad</span></button>
       </div>
         <div class="btn-box2">
-          <button type="button" class="btn btn3"><span class="btn-txt">600$ i år</span></button>
+          <button type="button" class="btnprice btn3"><span class="btn-txt">600$ i år</span></button>
         </div>
       </div>
      </div>
@@ -219,11 +335,11 @@
      </div>
      <div class="btn-box">
       <div class="btn-box1">
-      <button type="button" class="btn btn1"><span class="btn-txt">20$ per service</span></button>
-      <button type="button" class="btn btn2"><span class="btn-txt">2$ i månad</span></button>
+      <button type="button" class="btnprice btn1"><span class="btn-txt">20$ per service</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">2$ i månad</span></button>
     </div>
       <div class="btn-box2">
-        <button type="button" class="btn btn3"><span class="btn-txt">60$ i år</span></button>
+        <button type="button" class="btnprice btn3"><span class="btn-txt">60$ i år</span></button>
       </div>
     </div>
     </div>
@@ -234,16 +350,17 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer >
+    <footer>
       <!-- Text and information Section -->
-      <section class="text" >
+      <section class="text">
         <!-- Container for contact information -->
-          <address class="contact">
-              <p class="titleAddress">Adress</p><br>
-              <p>Resto Culinair</p>
-              <p>leftline 5</p>
-              <p>111 11 Stockholm</p>
-          </address>
+        <address class="contact">
+          <p class="titleAddress">Adress</p>
+          <br />
+          <p>Resto Culinair</p>
+          <p>leftline 5</p>
+          <p>111 11 Stockholm</p>
+        </address>
         <!-- Container for list information -->
         <div class="list">
           <h3>Genvägar</h3>
@@ -253,22 +370,32 @@
           <div><a href="#">Prislista</a></div>
           <div><a href="/smullbox.html">Smullbox</a></div>
           <div><a href="#">Kontakt</a></div>
-         </div>
+        </div>
       </section>
       <!-- Icon Section -->
       <section class="icon">
         <!-- Conatiner for icon 1 -->
-        <div class="fb"> <span><i class="fa-brands fa-square-facebook"></i></span></div>
+        <div class="fb">
+          <span><i class="fa-brands fa-square-facebook"></i></span>
+        </div>
         <!-- Conatiner for icon 2 -->
-        <div class="instagram" ><span><i class="fa-brands fa-square-instagram"></i></span></div>
+        <div class="instagram">
+          <span><i class="fa-brands fa-square-instagram"></i></span>
+        </div>
         <!-- Conatiner for icon 3 -->
-        <div class="twitter" ><span><i class="fa-brands fa-square-twitter"></i></span></div>
+        <div class="twitter">
+          <span><i class="fa-brands fa-square-twitter"></i></span>
+        </div>
         <!-- Conatiner for icon 4 -->
-        <div class="klarna" ><span >K.</span></div>
+        <div class="klarna"><span>K.</span></div>
         <!-- Conatiner for icon 5 -->
-        <div class="visa"><span><i class="fa-brands fa-cc-visa"></i></span></div>
+        <div class="visa">
+          <span><i class="fa-brands fa-cc-visa"></i></span>
+        </div>
         <!-- Conatiner for icon 6 -->
-        <div class="mastercard"> <span><i class="fa-brands fa-cc-mastercard"></i></span></div>
+        <div class="mastercard">
+          <span><i class="fa-brands fa-cc-mastercard"></i></span>
+        </div>
       </section>
     </footer>
   </body>
