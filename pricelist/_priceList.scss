@@ -1,0 +1,162 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+
+.priceBody {
+width: 100%;
+background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
+// background: linear-gradient(rgba(255, 255, 255, 0.5)rgba(255, 255, 255, 0.5)), url(img/cake-balls-4139982_1280.jpg);
+margin: 0;
+}
+
+.price-wrapper {
+  margin-top: 167px;
+  height: 913px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 7px;
+  
+
+  .card-body {
+    position: relative;
+    background: linear-gradient(rgba(229, 68, 224, 0.5), rgba(41, 99, 61, 0.5));
+    margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
+    width: 90%;
+    height: 867px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .image-box {
+    width: 155px;
+    height: 125px;
+  }
+  
+  .cards-heading {
+    width: 314px; 
+    height: 30px; 
+    margin-top: 22px;
+    overflow: visible;
+    text-align: center; 
+    word-wrap: break-word;
+    font-weight: 700;
+    position: relative; 
+  }
+  
+  .cards-heading h1 {
+    position: absolute; 
+    margin-top: -60px;
+  }
+  
+  p {
+    color:$colorDB;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .card {
+    width: 156px;
+    height: 250px;
+    margin-right: 8px;
+    margin-left: 8px;
+    display: inline-block;  
+    border-radius: 5px;
+    }
+
+    .cards-wrapper {
+      margin-top: 29px;
+    }
+  
+    .first, .second {
+      margin-bottom: 35px;
+    }
+  
+    .third, .forth {
+      margin-bottom: 34px;
+    }
+    .fifth {
+      margin-bottom: 6px;
+    }
+   
+  .image-box img{
+    width: 156px;
+    height: 128px;
+    }
+   
+  .content{
+    height: 125px;
+    width: 156px;
+    background-color: #CCAD8F;
+    position: relative;
+    }
+   
+    .service-text {
+      margin: 0;
+      text-align: center;
+    }
+  
+  .btn-box{
+    height: 43px;
+    width: 138px;
+    margin: 18px 8.99px 8px 8.9px;
+  }
+
+  .btn-box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 9px;
+  }
+
+  .btn-box2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+   .btnprice {
+   width: 65.62px; 
+   height: 17px;  
+   background: #4D7EA8; 
+   border-radius: 50px;
+   border: none;
+   margin-bottom: 5px;
+   transition: background 0.5s;
+   }
+
+.btn:hover {
+    background: green;
+    cursor: pointer;
+}
+
+   .btn-txt {
+    width: 51.24px; 
+    height: 7px; 
+    left: 6.29px; 
+    top: 4px;  
+    text-align: center; 
+    color: white; 
+    font-size: 7px; 
+    font-family: Tahoma; 
+    font-weight: 700;  
+   }
+
+   .btn:active {
+    background-color: #815f33; 
+  }
+
+
+  @media only screen and (max-width: 1920px) {
+    .price-wrapper .card {
+      width: 100%; /* Adjust the width based on your design */
+      height: auto; /* Allow the height to adjust according to content */
+      margin: 0 0 20px 0; /* Adjust margin if necessary */
+    }
+  }
+
+}
+
