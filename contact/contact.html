@@ -6,10 +6,12 @@
     <!-- Tab Text -->
     <title>Resto Culinair | Supply</title>
 
-    <link rel="stylesheet" href="/style.css" />
+    <!-- STYLE SHEETS -->
 
     <!-- Reset file for margin & padding -->
     <link rel="stylesheet" href="/reset.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- FONTS & ICONS -->
     <!-- Icons -->
@@ -60,10 +62,26 @@
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
             <div class="dropdown-content-login">
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
+              <form action="" method="post">
+                <i class="dropdown-login-icon material-icons">person</i>
+                <span>customer nr:</span>
+                <input
+                  type="text"
+                  name="customer nr"
+                  id="dropdown-customer-nr"
+                  size="10"
+                  maxlength="6"
+                />
+                <i class="dropdown-lock-icon material-icons">lock</i>
+                <span>password:</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="dropdown-password"
+                  size="10"
+                  maxlength="25"
+                />
+              </form>
             </div>
 
             <!-- Dropdown-Menu | Container -->
@@ -102,47 +120,65 @@
             <div class="dropdown-footer"></div>
           </div>
         </div>
+
         <!-- Container for phone icon -->
-        <div class="phone" style="border: 1px solid red"></div>
+        <div class="phone-btn-container">
+          <div class="phone-toggle">
+            <button class="phone material-icons">
+              <img
+                class="phone-icon"
+                src="assets/Phone Icon.svg"
+                alt="Phone-Button"
+              />
+            </button>
+            <section class="phone-card">
+              <span class="phone-text">Call & Order</span>
+              <div class="phone-phone-nr">08 555 69 76</div>
+            </section>
+          </div>
+        </div>
       </section>
     </header>
 
     <!-- WRAPPER -->
     <main class="wrapper">
-      <section class="contact-us">
-        <div class="contact-text">
-          <h1>GET IN CONTACT</h1>
-        </div>
-
-        <div class="container">
-          <div class="contact-wrapper">
-            <input class="field" type="text" placeholder="first name" />
-            <input class="field" type="text" placeholder="last name" />
-            <input class="field" type="email" placeholder="email@gmail.com" />
-
-            <div class="row">
-              <input class="field" type="email" placeholder="zipCode" />
-              <span class="field">or</span>
-              <input class="field" type="email" placeholder="city" />
-            </div>
-            <select class="select" name="subject">
-              <option value="">subject</option>
-              <option value="delivery">Orders</option>
-              <option value="delivery">Delivery</option>
-              <option value="other">Other</option>
-            </select>
-
-            <textarea class="field" rows="7" placeholder=""></textarea>
-            <button type="button">send</button>
+      <div class="main-wrapper">
+        <section class="contact-us">
+          <div class="contact-text">
+            <h1>GET IN CONTACT</h1>
           </div>
-        </div>
-      </section>
+
+          <div class="container">
+            <div class="contact-wrapper">
+              <input class="field" type="text" placeholder="first name" />
+              <input class="field" type="text" placeholder="last name" />
+              <input class="field" type="email" placeholder="email@gmail.com" />
+
+              <div class="row">
+                <input class="field" type="email" placeholder="zipCode" />
+                <span class="field">or</span>
+                <input class="field" type="email" placeholder="city" />
+              </div>
+              <select class="select" name="subject">
+                <option value="">subject</option>
+                <option value="delivery">Orders</option>
+                <option value="delivery">Delivery</option>
+                <option value="other">Other</option>
+              </select>
+
+              <textarea class="field" rows="7" placeholder=""></textarea>
+              <button type="button">send</button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- FOOTER SECTION -->
+    <!-- Container for the Footer -->
     <footer>
       <!-- Text and information Section -->
-      <section class="footer-text">
+      <section class="text">
         <!-- Container for contact information -->
         <address class="contact">
           <p class="titleAddress">Adress</p>
