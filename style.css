@@ -548,6 +548,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   margin: 5px;
   color: whitesmoke;
 }
+/* SEARCH-BAR */
 .search-bar {
   width: 100%;
   display: inline-flex;
@@ -615,6 +616,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   height: 24px;
 }
 
+/* FRONT PAGE GRID LAYOUT */
 .fp-grid {
   border: 1px solid black;
 }

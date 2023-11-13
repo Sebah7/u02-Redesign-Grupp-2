@@ -1,4 +1,6 @@
+/* SEARCH-BAR */
 .search-bar {
+  // Container for the search unction
   width: 100%;
   display: inline-flex;
   gap: 5px;
@@ -6,6 +8,7 @@
   align-items: center;
 
   .search-box {
+    // Container for the text field
     display: flex;
     align-items: center;
     width: 265px;
@@ -15,6 +18,7 @@
     background: rgba(0, 0, 0, 0.8);
 
     .search-box-icon {
+      // Location icon container
       width: 13px;
       height: 20px;
       position: relative;
@@ -22,12 +26,14 @@
     }
 
     .search-box-input-form {
+      // Input field
       all: unset;
       width: 250px;
       left: 20px;
       position: relative;
 
       ::placeholder {
+        // Tex styling for the input field
         font-family: Tahoma, sans-serif;
         font-weight: 400;
         color: #ffffff;
@@ -40,6 +46,7 @@
   }
 
   .search-btn-container {
+    // Search button container
     display: flex;
     width: 40px;
     height: 40px;
@@ -50,12 +57,14 @@
     align-items: center;
 
     .search-btn {
+      // Button element for the search icon
       display: flex;
       width: 40px;
       height: 40px;
       all: unset;
 
       .search-btn-icon {
+        // Search icon/img
         width: 24px;
         height: 24px;
       }
@@ -63,6 +72,7 @@
   }
 }
 
+/* FRONT PAGE GRID LAYOUT */
 .fp-grid {
   border: 1px solid black;
 }
