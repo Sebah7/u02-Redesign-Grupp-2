@@ -3,8 +3,9 @@
 @use "footer";
 @use "frontPage";
 @use "Contact-Page/contact";
-@use "News-Page/news.scss";
-@use "PriceList-Page/priceList";
+// @use "News-Page/news.scss";
+// @use "PriceList-Page/priceList";
+@use "smullbox/smullbox";
 
 * {
   padding: 0;
