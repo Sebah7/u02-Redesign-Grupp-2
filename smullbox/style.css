@@ -12,14 +12,192 @@ h2 {
 
 h3 {
   font-size: 15px;
-  color: rgba(0, 0, 0, 0);
+  color: #000;
 }
 
 p {
   font-size: 10px;
-  color: rgba(0, 0, 0, 0);
+  color: #000;
 }
 
+footer {
+  width: 100%;
+  height: 227px;
+  background-color: #000;
+  bottom: 0;
+  margin-top: auto;
+}
+footer .text {
+  min-width: 330px;
+  max-height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .contact, footer .list {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+}
+footer address {
+  padding-top: 20px;
+}
+footer address .titleAddress {
+  font-size: 20px;
+  color: whitesmoke;
+}
+footer address p {
+  color: whitesmoke;
+}
+footer .list {
+  border-left: 1px solid whitesmoke;
+  padding-top: 15px;
+}
+footer .list h3 {
+  color: whitesmoke;
+}
+footer .list a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 10px;
+}
+footer .icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid whitesmoke;
+}
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+  font-size: 24px;
+  margin: 5px;
+  color: whitesmoke;
+}
+footer .bottomIcons {
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 24px;
+  display: none;
+}
+footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15%;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  footer .text {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .contact address, footer .text .list address, footer .text .contact p, footer .text .list p {
+    font-size: 1.4em;
+  }
+  footer .text .list {
+    border: none;
+  }
+  footer .text .list a:hover {
+    color: #4d7ea8;
+  }
+  footer .text .list h3, footer .text .list a {
+    font-size: 1.3em;
+  }
+  footer .text .bottomIcons {
+    display: flex;
+    text-align: center;
+    padding-top: 15px;
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    width: 100%;
+  }
+  footer .text .bottomIcons .socialMedia, footer .text .bottomIcons .payMethods {
+    width: 50%;
+  }
+  footer .text .bottomIcons .socialMedia h3, footer .text .bottomIcons .payMethods h3 {
+    color: whitesmoke;
+    font-size: 0.6em;
+  }
+  footer .text .bottomIcons .socialMedia ul, footer .text .bottomIcons .payMethods ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .bottomIcons .socialMedia ul :hover, footer .text .bottomIcons .payMethods ul :hover {
+    color: #4d7ea8;
+    cursor: pointer;
+  }
+  footer .icon {
+    display: none;
+  }
+}
+.smullBody {
+  background-image: url(assets/oranges.webp);
+  background-color: #c9f0ff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.smullBody .container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.smullBody .container .smullCard {
+  display: flex;
+  margin: 15px;
+  width: 360px;
+  height: 140px;
+  background-image: linear-gradient(#ccad8f, whitesmoke);
+  border-radius: 5px;
+}
+.smullBody .container .smullCard img {
+  height: 140px;
+  width: 164px;
+}
+.smullBody .container .smullCard .smullContainer {
+  display: flex;
+  align-items: center;
+}
+.smullBody .container .smullCard .smullContainer .smullText {
+  padding-top: 5px;
+  padding-left: 15px;
+  text-align: left;
+  width: 144px;
+  height: 132px;
+}
+.smullBody .container .smullCard .smullContainer .smullText p {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .smullBody .container section.smullCard {
+    width: 600px;
+    height: 250px;
+  }
+  .smullBody .container section.smullCard img {
+    width: 200px;
+    height: 230px;
+    margin: 10px;
+  }
+  .smullBody .container section.smullCard .smullContainer {
+    width: 400px;
+    height: 200px;
+  }
+  .smullBody .container section.smullCard .smullContainer .smullText {
+    padding-left: 100px;
+  }
+  .smullBody .container section.smullCard .smullContainer .smullText p {
+    font-size: 0.8em;
+    padding-top: 10px;
+  }
+}
 body {
   background-color: #ccad8f;
 }
@@ -67,6 +245,13 @@ header .header-section .resto {
 header .header-section .resto img {
   width: inherit;
   height: inherit;
+}
+header .header-section .dropdown {
+  /* Toggle Button | Drop-down button */
+  /* Dropdown-Content | Container */
+  /* Dropdown-Login | Container */
+  /* Dropdown-Menu | Container */
+  /* Dropdown-Footer */
 }
 header .header-section .dropdown .toggle-btn {
   position: inherit;
@@ -268,9 +453,10 @@ header .phone-btn-container:hover .phone-card {
   width: 310px;
   height: 119px;
   flex-shrink: 0;
-  margin-top: 79px;
   display: flex;
   position: relative;
+  margin-left: 43px;
+  padding-top: 130px;
 }
 
 .search-box {
@@ -282,7 +468,6 @@ header .phone-btn-container:hover .phone-card {
   border-radius: 15px 0px 0px 15px;
   border: 2px solid rgba(118, 58, 3, 0.8);
   padding: 0px 10px;
-  margin: 275px 85px 2209px 40px;
 }
 
 .btn {
@@ -350,130 +535,8 @@ button {
   line-height: 16px;
 }
 
-footer {
-  width: 100%;
-  height: 227px;
-  background-color: #000;
-  bottom: 0;
-}
-footer .text {
-  min-width: 330px;
-  max-height: 80%;
-  display: flex;
-  justify-content: space-evenly;
-}
-footer .contact, footer .list {
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 150px;
-  text-align: center;
-  padding-top: 35px;
-}
-footer address .titleAddress {
-  font-size: 20px;
-  color: whitesmoke;
-}
-footer address p {
-  color: whitesmoke;
-}
-footer .list {
-  border-left: 1px solid whitesmoke;
-  padding-top: 15px;
-}
-footer .list h3 {
-  color: whitesmoke;
-}
-footer .list a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 10px;
-}
-footer .icon {
-  min-width: 330px;
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-top: 1px solid whitesmoke;
-}
-footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
-  font-size: 24px;
-  margin: 5px;
-  color: whitesmoke;
-}
-footer .bottomIcons {
-  padding: 5px;
-  color: whitesmoke;
-  font-size: 24px;
-  display: none;
-}
-footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15%;
-  list-style: none;
-}
-@media screen and (min-width: 768px) {
-  footer .text {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  footer .text .contact address, footer .text .list address, footer .text .contact p, footer .text .list p {
-    font-size: 1.4em;
-  }
-  footer .text .list {
-    border: none;
-  }
-  footer .text .list a:hover {
-    color: #4d7ea8;
-  }
-  footer .text .list h3, footer .text .list a {
-    font-size: 1.3em;
-  }
-  footer .text .bottomIcons {
-    display: flex;
-    text-align: center;
-    padding-top: 15px;
-    margin: 10px;
-    padding-left: 20px;
-    font-size: 32px;
-    width: 100%;
-  }
-  footer .text .bottomIcons .socialMedia, footer .text .bottomIcons .payMethods {
-    width: 50%;
-  }
-  footer .text .bottomIcons .socialMedia h3, footer .text .bottomIcons .payMethods h3 {
-    color: whitesmoke;
-    font-size: 0.6em;
-  }
-  footer .text .bottomIcons .socialMedia ul, footer .text .bottomIcons .payMethods ul {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  footer .text .bottomIcons .socialMedia ul :hover, footer .text .bottomIcons .payMethods ul :hover {
-    color: #4d7ea8;
-    cursor: pointer;
-  }
-  footer .icon {
-    display: none;
-  }
-}
 * {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  min-width: 100%;
-  min-height: 1600px;
 }/*# sourceMappingURL=style.css.map */
