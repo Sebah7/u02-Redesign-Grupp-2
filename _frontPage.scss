@@ -1,18 +1,10 @@
-$colorBrown: #763a03;
-$colorLB: #c9f0ff;
-$colorDB: #4d7ea8;
-$colorSand: #ccad8f;
-$colorBlack: #000;
-
 .search-bar {
   width: 310px;
   height: 119px;
   flex-shrink: 0;
-  // margin-top: 79px;
+  margin-top: 79px;
   display: flex;
   position: relative;
-  margin-left: 43px;
-  padding-top: 130px;
 }
 
 .search-box {
@@ -24,7 +16,7 @@ $colorBlack: #000;
   border-radius: 15px 0px 0px 15px;
   border: 2px solid #763a03cc;
   padding: 0px 10px;
-  // margin: 275px 85px 2209px 40px;
+  margin: 275px 85px 2209px 40px;
 }
 
 .btn {
@@ -38,7 +30,7 @@ $colorBlack: #000;
   margin-top: -40px;
 }
 
-button {
+.front-page-btn {
   background: transparent;
   border: none;
   padding: 0;
