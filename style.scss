@@ -1,15 +1,8 @@
 @use "design";
-@use "Member-Page/test/membership";
 @use "header";
 @use "footer";
 @use "frontPage";
-
-// @import "design";
-// //@import "_smullbox";
-// @import "membership";
-// @import "header";
-// @import "footer";
-// @import "frontPage";
+@use "membership-page/membership";
 
 * {
   padding: 0;
