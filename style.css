@@ -564,7 +564,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
 }
 .hero-wrapper .hero-background .hero-heading {
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: inline-flex;
   flex-direction: column;
   align-content: center;
@@ -642,7 +642,6 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 220px;
 }
 .hero-wrapper .hero-card .hero-card-bg {
   display: flex;
@@ -655,7 +654,48 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   border: 2px solid rgba(118, 58, 3, 0.8);
   background: rgba(204, 173, 143, 0.8);
 }
-
+.hero-wrapper .hero-cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 57px;
+  width: 100%;
+  height: 250px;
+  border: 1px solid purple;
+}
+.hero-wrapper .hero-cta .hero-cta-heading, .hero-wrapper .hero-cta .hero-cta-btns, .hero-wrapper .hero-cta .hero-cta-img {
+  display: flex;
+  justify-content: center;
+  width: 298px;
+  height: 24px;
+  border: 1px solid red;
+}
+.hero-wrapper .hero-cta .hero-cta-heading .hero-cta-h1-1, .hero-wrapper .hero-cta .hero-cta-btns .hero-cta-h1-1, .hero-wrapper .hero-cta .hero-cta-img .hero-cta-h1-1 {
+  width: 50%;
+}
+.hero-wrapper .hero-cta .hero-cta-heading .hero-cta-h1-2, .hero-wrapper .hero-cta .hero-cta-btns .hero-cta-h1-2, .hero-wrapper .hero-cta .hero-cta-img .hero-cta-h1-2 {
+  width: 50%;
+}
+.hero-wrapper .hero-cta .hero-cta-img {
+  height: 175px;
+}
+.hero-wrapper .hero-cta .hero-cta-img .hero-cta-img-1, .hero-wrapper .hero-cta .hero-cta-img .hero-cta-img-2 {
+  width: 50%;
+  height: auto;
+  border: 1px solid greenyellow;
+}
+.hero-wrapper .hero-cta .hero-cta-img .hero-cta-img-1 img, .hero-wrapper .hero-cta .hero-cta-img .hero-cta-img-2 img {
+  width: 100%;
+  height: auto;
+}
+.hero-wrapper .hero-cta .hero-cta-btns {
+  justify-content: space-evenly;
+}
+.hero-wrapper .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-cta .hero-cta-btns .hero-cta-btn-2 {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
 /* FRONT PAGE GRID LAYOUT */
 .fp-grid {
   border: 1px solid black;
