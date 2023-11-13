@@ -652,7 +652,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
 }
 .price-wrapper .card-body {
   position: relative;
-  background: linear-gradient(rgba(168, 97, 39, 0.5), rgba(41, 99, 61, 0.5));
+  background: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   margin: 1.87% 4.87% 0.77% 5.13%;
   width: 90%;
   min-height: 867px;
@@ -777,7 +777,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   background-color: #815f33;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1920px) {
+@media only screen and (min-width: 800px) {
   .price-wrapper {
     height: auto;
   }
@@ -815,16 +815,19 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
     margin-top: -90px;
   }
   .price-wrapper .service-text {
+    height: 163.5px;
     margin-top: 20px;
     font-size: 18px;
   }
   .price-wrapper .card-h {
+    margin-top: 20px;
     font-size: 42px;
   }
   .price-wrapper .card-p {
     font-size: 22px;
   }
   .price-wrapper .btn-box {
+    height: 163.5px;
     margin-top: 10px;
     display: grid;
     margin-left: 300px;
