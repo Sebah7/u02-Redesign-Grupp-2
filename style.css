@@ -34,7 +34,10 @@ header {
   /* Phone button | Bottom of the page */
 }
 header .header-section {
-  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
+  background-image: linear-gradient(
+    hsla(29, 95%, 24%, 0.2),
+    hsla(30, 37%, 68%, 0.2)
+  );
   max-width: 100%;
   height: 100px;
   display: flex;
@@ -46,12 +49,18 @@ header .header-section {
   /* DROPDOWN */
   /* Dropdown | Container */
 }
-header .header-section .login, header .header-section .dropdown .toggle-btn, header .header-section .search {
+header .header-section .login,
+header .header-section .dropdown .toggle-btn,
+header .header-section .search {
   width: 41px;
   height: 41px;
   /* Header-Login | BTN */
 }
-header .header-section .login .login-btn, header .header-section .dropdown .toggle-btn .login-btn, header .header-section .dropdown .toggle-btn .toggle-btn-icon, header .header-section .search .login-btn, header .header-section .search .search-btn {
+header .header-section .login .login-btn,
+header .header-section .dropdown .toggle-btn .login-btn,
+header .header-section .dropdown .toggle-btn .toggle-btn-icon,
+header .header-section .search .login-btn,
+header .header-section .search .search-btn {
   font-size: 41px;
   color: rgba(0, 0, 0, 0.8);
   background: none;
@@ -68,13 +77,7 @@ header .header-section .resto img {
   width: inherit;
   height: inherit;
 }
-header .header-section .dropdown {
-  /* Toggle Button | Drop-down button */
-  /* Dropdown-Content | Container */
-  /* Dropdown-Login | Container */
-  /* Dropdown-Menu | Container */
-  /* Dropdown-Footer */
-}
+
 header .header-section .dropdown .toggle-btn {
   position: inherit;
 }
@@ -227,7 +230,8 @@ header .phone-btn-container {
   bottom: 235px;
   right: 0%;
 }
-header .phone-btn-container .phone-toggle, header .phone-btn-container .phone-toggle .phone {
+header .phone-btn-container .phone-toggle,
+header .phone-btn-container .phone-toggle .phone {
   display: flex;
   position: fixed;
   width: 194px;
@@ -245,7 +249,8 @@ header .phone-btn-container .phone-toggle .phone-card {
   height: 100px;
   background-color: rgba(77, 126, 168, 0.8);
 }
-header .phone-btn-container .phone-toggle .phone-phone-nr, header .phone-btn-container .phone-toggle .phone-text {
+header .phone-btn-container .phone-toggle .phone-phone-nr,
+header .phone-btn-container .phone-toggle .phone-text {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -369,7 +374,8 @@ footer .text {
   display: flex;
   justify-content: space-evenly;
 }
-footer .contact, footer .list {
+footer .contact,
+footer .list {
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -405,7 +411,12 @@ footer a {
   align-items: center;
   border-top: 1px solid #ccad8f;
 }
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+.icon .fb,
+.icon .mastercard,
+.icon .visa,
+.icon .klarna,
+.icon .twitter,
+.icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -425,4 +436,4 @@ body {
 .wrapper {
   min-width: 100%;
   min-height: 1600px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
