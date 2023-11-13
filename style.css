@@ -548,15 +548,38 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   margin: 5px;
   color: whitesmoke;
 }
-/* SEARCH-BAR */
-.search-bar {
+/* HERO SECTION */
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  /* SEARCH-BAR */
+}
+.hero-wrapper .hero-background {
+  width: 94%;
+  height: 694px;
+  flex-shrink: 0;
+  background: url(/img/food_drawing.png), lightgray 50%/cover no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.hero-wrapper .hero-background .hero-heading {
+  width: 100%;
+  height: 150px;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wrapper .search-bar {
   width: 100%;
   display: inline-flex;
   gap: 5px;
   justify-content: center;
   align-items: center;
 }
-.search-bar .search-box {
+.hero-wrapper .search-bar .search-box {
   display: flex;
   align-items: center;
   width: 265px;
@@ -565,19 +588,19 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   border: 2px solid rgba(118, 58, 3, 0.8);
   background: rgba(0, 0, 0, 0.8);
 }
-.search-bar .search-box .search-box-icon {
+.hero-wrapper .search-bar .search-box .search-box-icon {
   width: 13px;
   height: 20px;
   position: relative;
   left: 10px;
 }
-.search-bar .search-box .search-box-input-form {
+.hero-wrapper .search-bar .search-box .search-box-input-form {
   all: unset;
   width: 250px;
   left: 20px;
   position: relative;
 }
-.search-bar .search-box .search-box-input-form ::-moz-placeholder {
+.hero-wrapper .search-bar .search-box .search-box-input-form ::-moz-placeholder {
   font-family: Tahoma, sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -586,7 +609,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   letter-spacing: 1.2px;
   line-height: 16px;
 }
-.search-bar .search-box .search-box-input-form ::placeholder {
+.hero-wrapper .search-bar .search-box .search-box-input-form ::placeholder {
   font-family: Tahoma, sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -595,7 +618,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   letter-spacing: 1.2px;
   line-height: 16px;
 }
-.search-bar .search-btn-container {
+.hero-wrapper .search-bar .search-btn-container {
   display: flex;
   width: 40px;
   height: 40px;
@@ -605,15 +628,32 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   justify-content: center;
   align-items: center;
 }
-.search-bar .search-btn-container .search-btn {
+.hero-wrapper .search-bar .search-btn-container .search-btn {
   display: flex;
   width: 40px;
   height: 40px;
   all: unset;
 }
-.search-bar .search-btn-container .search-btn .search-btn-icon {
+.hero-wrapper .search-bar .search-btn-container .search-btn .search-btn-icon {
   width: 24px;
   height: 24px;
+}
+.hero-wrapper .hero-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 220px;
+}
+.hero-wrapper .hero-card .hero-card-bg {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 310px;
+  height: 220px;
+  flex-shrink: 0;
+  margin-top: 41px;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  background: rgba(204, 173, 143, 0.8);
 }
 
 /* FRONT PAGE GRID LAYOUT */
