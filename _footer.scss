@@ -1,7 +1,10 @@
+$colorText: whitesmoke;
+$colorBlack: #000;
+
 footer {
     width: 100%;
     height: 227px;
-    background-color: $colorBrown;
+    background-color: $colorBlack;
     bottom: 0;
   
   
@@ -27,28 +30,29 @@ footer {
 
         .titleAddress {
           font-size: 20px;
-          color: whitesmoke;
+          color: $colorText;
         }
 
         p{
-          color: whitesmoke;
-          font-size: 15px
+          color: $colorText;
         }
       }
   
       .list {
         @extend .contact;
-        border-left: 1px solid $colorSand;
-      }
-      h3 {
-        color: whitesmoke;
-      }
-      a {
-        text-decoration: none;
-        color: whitesmoke;
-        font-size: 10px;
+        border-left: 1px solid $colorText;
+        padding-top: 15px;
 
-    }
+        h3 {
+          color: $colorText;
+        }
+        a {
+          text-decoration: none;
+          color: $colorText;
+          font-size: 10px;
+      }
+
+
 
     }
   
@@ -58,12 +62,12 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      border-top: 1px solid $colorSand;
+      border-top: 1px solid $colorText;
   
       .fb {
         font-size: 24px;
         margin: 5px;
-        color: whitesmoke;
+        color: $colorText;
       }
   
       .instagram {
@@ -86,3 +90,86 @@ footer {
         @extend .fb;
       }
     }
+
+    .bottomIcons {
+      padding: 5px;
+      color: $colorText;
+      font-size: 24px;
+      display: none;
+    
+      .socialMedia {
+
+          ul {
+              display: none; 
+              flex-direction: column;
+              justify-content: center;
+              gap: 15%;
+              list-style: none;
+              
+          }
+      }
+      .payMethods{
+          @extend .socialMedia;
+      }
+    }  
+}
+ // For Tablets Ipads portrait mode and up
+ @media screen and (min-width: 768px) {
+  footer {
+    
+    .text {
+      display: flex;
+      justify-content: space-evenly;
+
+
+      .contact {
+        address, p {
+          font-size: 1.4em;
+        }
+      }
+      .list{
+        border: none;
+
+        a:hover {
+         color: $colorDB;
+        }
+
+        h3, a {
+          font-size: 1.3em;
+        }
+      }
+
+      .bottomIcons {
+        display: flex;
+        text-align: center;
+        padding-top: 15px;
+        margin: 10px;
+        padding-left: 20px;
+        font-size: 32px;
+        width: 100%;
+      
+        .socialMedia, .payMethods{
+          width: 50%;
+          h3 {
+            color: $colorText;
+            font-size: 0.6em;
+          }
+          ul {
+            padding-top: 20px;
+            display: flex;  
+            justify-content: space-evenly; 
+            
+            :hover {
+              color: $colorDB;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+    }
+    .icon {
+      display: none;
+    }
+  }
+}

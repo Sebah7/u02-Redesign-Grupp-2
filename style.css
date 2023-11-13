@@ -360,7 +360,7 @@ button {
 footer {
   width: 100%;
   height: 227px;
-  background-color: #763a03;
+  background-color: #000;
   bottom: 0;
 }
 footer .text {
@@ -383,32 +383,90 @@ footer address .titleAddress {
 }
 footer address p {
   color: whitesmoke;
-  font-size: 15px;
 }
 footer .list {
-  border-left: 1px solid #ccad8f;
+  border-left: 1px solid whitesmoke;
+  padding-top: 15px;
 }
-footer h3 {
+footer .list h3 {
   color: whitesmoke;
 }
-footer a {
+footer .list a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 10px;
 }
-
-.icon {
+footer .icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid #ccad8f;
+  border-top: 1px solid whitesmoke;
 }
-.icon .fb, .icon .mastercard, .icon .visa, .icon .klarna, .icon .twitter, .icon .instagram {
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
+}
+footer .bottomIcons {
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 24px;
+  display: none;
+}
+footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15%;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  footer .text {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .contact address, footer .text .list address, footer .text .contact p, footer .text .list p {
+    font-size: 1.4em;
+  }
+  footer .text .list {
+    border: none;
+  }
+  footer .text .list a:hover {
+    color: #4d7ea8;
+  }
+  footer .text .list h3, footer .text .list a {
+    font-size: 1.3em;
+  }
+  footer .text .bottomIcons {
+    display: flex;
+    text-align: center;
+    padding-top: 15px;
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    width: 100%;
+  }
+  footer .text .bottomIcons .socialMedia, footer .text .bottomIcons .payMethods {
+    width: 50%;
+  }
+  footer .text .bottomIcons .socialMedia h3, footer .text .bottomIcons .payMethods h3 {
+    color: whitesmoke;
+    font-size: 0.6em;
+  }
+  footer .text .bottomIcons .socialMedia ul, footer .text .bottomIcons .payMethods ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .text .bottomIcons .socialMedia ul :hover, footer .text .bottomIcons .payMethods ul :hover {
+    color: #4d7ea8;
+    cursor: pointer;
+  }
+  footer .icon {
+    display: none;
+  }
 }
 * {
   padding: 0;
