@@ -88,7 +88,6 @@ footer {
     .bottomIcons {
       padding: 5px;
       color: $colorText;
-      font-size: 24px;
       display: none;
     
       .socialMedia {
@@ -103,6 +102,13 @@ footer {
               justify-content: center;
               gap: 15%;
               list-style: none;
+
+              .icons{
+                font-size: 24px;
+                background-color: $colorBlack;
+                color: $colorText;
+                border: none;
+              }
               
           }
       }
