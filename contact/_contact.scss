@@ -16,11 +16,13 @@ body {
 }
 
 .contact-us {
-  display: grid; //change this
+  display: grid;
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 700px;
+  top: 100px;
+  position: relative;
 }
 
 //add this

@@ -1,0 +1,102 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: $colorBrown;
+}
+h2 {
+  color: $colorDB;
+  font-size: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 18px;
+  color: $colorBlack;
+}
+
+footer {
+  width: 100%;
+  height: 227px;
+  background-color: $colorBrown;
+  bottom: 0;
+
+  .footer-text {
+    min-width: 330px;
+    max-height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    padding-top: 35px;
+  }
+  address {
+    .titleAddress {
+      font-size: 20px;
+      color: whitesmoke;
+    }
+
+    p {
+      color: whitesmoke;
+      font-size: 15px;
+    }
+  }
+
+  .list {
+    @extend .contact;
+    border-left: 1px solid $colorSand;
+  }
+  h3 {
+    color: whitesmoke;
+  }
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 10px;
+  }
+}
+
+.icon {
+  min-width: 330px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid $colorSand;
+
+  .fb {
+    font-size: 24px;
+    margin: 5px;
+    color: whitesmoke;
+  }
+
+  .instagram {
+    @extend .fb;
+  }
+
+  .twitter {
+    @extend .fb;
+  }
+
+  .klarna {
+    @extend .fb;
+  }
+
+  .visa {
+    @extend .fb;
+  }
+
+  .mastercard {
+    @extend .fb;
+  }
+}

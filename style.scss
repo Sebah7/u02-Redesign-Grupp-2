@@ -1,0 +1,19 @@
+@use "design";
+@use "header";
+@use "contact/contact";
+@use "footer";
+
+* {
+  font-family: tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 1600px;
+}
