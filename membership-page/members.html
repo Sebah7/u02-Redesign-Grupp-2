@@ -3,44 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- Reset file for margin & padding -->
     <!-- <link rel="stylesheet" href="reset.css" /> -->
 
     <!-- FONTS & ICONS -->
     <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <script
       src="https://kit.fontawesome.com/a0315d2788.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Document</title>
   </head>
-  <body>
-    <header>
+  <body class="member-body">
+    <header class="header-container">
       <!-- Background gradient | Container -->
-      <!-- <div class="header-bg"></div> -->
 
       <!-- Header Section -->
       <section class="header-section">
         <!-- Container for login logo -->
         <div class="login">
-          <button class="login-btn material-icons">person</button>
+          <button class="login-btn">
+            <img
+              class="login-btn-icon-1"
+              src="/assets/person-vector.svg"
+              alt="Login button"
+            />
+            <img
+              class="login-btn-icon-2"
+              src="/assets/person-dark.svg"
+              alt="Login button (clicked)"
+            />
+          </button>
         </div>
 
         <!-- Container for search logo -->
         <div class="search">
-          <button class="search-btn material-icons">search</button>
+          <button class="search-btn">
+            <img src="/assets/search.svg" alt="Search button" />
+          </button>
         </div>
 
         <!-- Container for Resto Culinair logo -->
         <div class="resto">
           <img
-            src="img/Resto-logo-text-and-icon.png"
+            src="/img/Resto-logo-text-and-icon.png"
             alt="Resto Culinair Logo"
           />
         </div>
@@ -49,14 +59,25 @@
         <div class="dropdown">
           <!-- Container for drop-down logo -->
           <div class="toggle-btn">
-            <button class="toggle-btn-icon material-icons">menu</button>
+            <button class="toggle-btn-icon">
+              <img
+                class="menu-btn-icon-1"
+                src="/assets/menu.svg"
+                alt="Menu button"
+              />
+              <img
+                class="menu-btn-icon-2"
+                src="/assets/x.svg"
+                alt="Menu button"
+              />
+            </button>
           </div>
 
           <!-- Dropdown-Content | Container -->
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
             <div class="dropdown-content-login">
-              <form action="" method="post">
+              <form action="/login" method="post">
                 <i class="dropdown-login-icon material-icons">person</i>
                 <span>customer nr:</span>
                 <input
@@ -82,24 +103,34 @@
             <div class="dropdown-content-menu">
               <ol>
                 <li>
-                  <h3>News</h3>
-                  <p>Read what´s going on in your area</p>
+                  <a href="">
+                    <h3>News</h3>
+                    <p>Read what´s going on in your area</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Contacts</h3>
-                  <p>Contact Resto Culinair</p>
+                  <a href="">
+                    <h3>Contacts</h3>
+                    <p>Contact Resto Culinair</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Rentals</h3>
-                  <p>Rentals & Event must havs</p>
+                  <a href="">
+                    <h3>Rentals</h3>
+                    <p>Rentals & Event must havs</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Partners</h3>
-                  <p>Our partners and locations</p>
+                  <a href="">
+                    <h3>Partners</h3>
+                    <p>Our partners and locations</p>
+                  </a>
                 </li>
                 <li>
-                  <h3>Menu & Board</h3>
-                  <p>Design a menu</p>
+                  <a href="">
+                    <h3>Menu & Board</h3>
+                    <p>Design a menu</p>
+                  </a>
                 </li>
               </ol>
             </div>
@@ -111,35 +142,85 @@
             </div>
 
             <!-- Dropdown-Footer | Container -->
-            <div class="dropdown-footer"></div>
+            <div class="dropdown-footer">
+              <section class="header-footer">
+                <!-- Text and information Section -->
+                <section class="text">
+                  <!-- Container for contact information -->
+                  <address class="contact">
+                    <p class="titleAddress">Adress</p>
+                    <br />
+                    <p>Resto Culinair</p>
+                    <p>leftline 5</p>
+                    <p>111 11 Stockholm</p>
+                  </address>
+                  <!-- Container for list information -->
+                  <div class="list">
+                    <h3>Genvägar</h3>
+                    <div><a href="#">Startsidan</a></div>
+                    <div><a href="#">Nyheter</a></div>
+                    <div><a href="#">Medlem</a></div>
+                    <div><a href="#">Prislista</a></div>
+                    <div><a href="/smullbox.html">Smullbox</a></div>
+                    <div><a href="#">Kontakt</a></div>
+                  </div>
+                </section>
+                <!-- Icon Section -->
+                <section class="icon">
+                  <!-- Conatiner for icon 1 -->
+                  <div class="fb">
+                    <span><i class="fa-brands fa-square-facebook"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 2 -->
+                  <div class="instagram">
+                    <span><i class="fa-brands fa-square-instagram"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 3 -->
+                  <div class="twitter">
+                    <span><i class="fa-brands fa-square-twitter"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 4 -->
+                  <div class="klarna"><span>K.</span></div>
+                  <!-- Conatiner for icon 5 -->
+                  <div class="visa">
+                    <span><i class="fa-brands fa-cc-visa"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 6 -->
+                  <div class="mastercard">
+                    <span><i class="fa-brands fa-cc-mastercard"></i></span>
+                  </div>
+                </section>
+              </section>
+            </div>
           </div>
         </div>
 
         <!-- Container for phone icon -->
-        <div class="phone-btn-container">
-          <div class="phone-toggle">
-            <button class="phone material-icons">
+        <div class="phone-dropdown">
+          <div class="phone-toggle-btn">
+            <button class="phone-toggle-btn-icon">
               <img
-                class="phone-icon"
-                src="assets/Phone Icon.svg"
+                class="phone-toggle-btn-icon-1"
+                src="/assets/Phone-Icon.svg"
                 alt="Phone-Button"
               />
             </button>
-            <section class="phone-card">
-              <span class="phone-text">Call & Order</span>
-              <div class="phone-phone-nr">08 555 69 76</div>
-            </section>
+          </div>
+          <div class="phone-dropdown-content">
+            <span class="phone-text">Call & Order</span>
+            <div class="phone-phone-nr">08 555 69 76</div>
           </div>
         </div>
       </section>
     </header>
+
     <!-- WRAPPER -->
     <main class="wrapper">
-      <section class="search-bar">
-        <div class="search-box">
+      <section class="member-search-bar">
+        <div class="member-search-box">
           <form role="search" class="search-form">
             <div class="text-and-icon">
-              <img alt="vectoricon" class="vector" src="assets/Vector.png" />
+              <img alt="vectoricon" class="vector" src="/assets/Vector.png" />
               <input
                 type="search"
                 name="type"
@@ -148,8 +229,13 @@
               />
             </div>
             <div class="btn">
-              <button type="submit" aria-label="Submit">
+              <button
+                class="member-search-button"
+                type="submit"
+                aria-label="Submit"
+              >
                 <svg
+                  class="search-world"
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
@@ -191,6 +277,7 @@
           </form>
         </div>
       </section>
+
       <div class="member-container">
         <section class="member-card">
           <div class="member-customer-image">
@@ -198,7 +285,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Martin & Servera</h3>
+              <h3 class="membersH3">Martin & Servera</h3>
               <ul>
                 <li>08-123 65 47</li>
                 <li>servera@martin.com</li>
@@ -214,7 +301,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Storköksgrossisten</h3>
+              <h3 class="membersH3">Storköksgrossisten</h3>
               <ul>
                 <li>031-388 79 00</li>
                 <li>info@skg.se</li>
@@ -230,7 +317,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Axfood</h3>
+              <h3 class="membersH3">Axfood</h3>
               <ul>
                 <li>08-553 99 00</li>
                 <li>info@axfood.se</li>
@@ -246,7 +333,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Unik Cafe</h3>
+              <h3 class="membersH3">Unik Cafe</h3>
               <ul>
                 <li>08-553 99 00</li>
                 <li>kontakt@uniksweden.se</li>
@@ -262,7 +349,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Cervera</h3>
+              <h3 class="membersH3">Cervera</h3>
               <ul>
                 <li>044-12 14 12</li>
                 <li>kontakt@cervera.se</li>
@@ -278,7 +365,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Jensen Bofhus</h3>
+              <h3 class="membersH3">Jensen Bofhus</h3>
               <ul>
                 <li>+45 70 30 40 50</li>
                 <li>kontakt@jensenbofhus.dk</li>
@@ -297,7 +384,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Bc Catering</h3>
+              <h3 class="membersH3">Bc Catering</h3>
               <ul>
                 <li>+45 46 77 35 00</li>
                 <li>kontakt@bccatering.dk</li>
@@ -313,7 +400,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Gima Catering</h3>
+              <h3 class="membersH3">Gima Catering</h3>
               <ul>
                 <li>+45 43 47 47 11</li>
                 <li>kontakt@gimacatering.dk</li>
@@ -329,7 +416,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Mega House</h3>
+              <h3 class="membersH3">Mega House</h3>
               <ul>
                 <li>+45 43 64 59 59</li>
                 <li>kontakt@megahouse.dk</li>
@@ -348,7 +435,7 @@
           </div>
           <div class="member-customer-details">
             <div class="member-details-container">
-              <h3>Inco</h3>
+              <h3 class="membersH3">Inco</h3>
               <ul>
                 <li>+45 33 21 14 21</li>
                 <li>kontakt@inco.dk</li>
@@ -359,7 +446,9 @@
         </section>
       </div>
     </main>
+
     <footer>
+      <!-- Text and information Section -->
       <section class="text">
         <!-- Container for contact information -->
         <address class="contact">
