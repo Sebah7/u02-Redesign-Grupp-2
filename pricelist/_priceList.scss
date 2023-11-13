@@ -6,8 +6,12 @@ $colorBlack: #0000;
 
 .priceBody {
 width: 100%;
-background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
 margin: 0;
+background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+
 }
 
 .price-wrapper {
@@ -21,7 +25,7 @@ margin: 0;
 
   .card-body {
     position: relative;
-    background: linear-gradient(rgba(229, 68, 224, 0.5), rgba(41, 99, 61, 0.5));
+    background: linear-gradient(rgba(168, 97, 39, 0.5), rgba(41, 99, 61, 0.5));
     margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
     width: 90%;
     min-height: 867px;
@@ -104,7 +108,7 @@ margin: 0;
     min-height: 156px;
     height: auto;
     width: 100%;
-    background-color: #CCAD8F;
+    background: linear-gradient(#CCAD8F, white,#CCAD8F);
     position: relative;
     }
    
@@ -191,9 +195,9 @@ margin: 0;
   
     .image-box img{
       min-width: 692px;
-      min-height: 327px;
+      height: 327px;
       width: 100%;
-      height: auto;
+
     }
   
     .content {
@@ -203,14 +207,13 @@ margin: 0;
     }
 
     .cards-heading {
-      width: 630px; 
-      height: 62px; 
+      width: 1300px; 
       margin-top: 11px;
     }
     
     .cards-heading h1 {
       font-size: 66px;
-      margin-top: -80px;
+      margin-top: -90px;
     }
 
     .service-text {
