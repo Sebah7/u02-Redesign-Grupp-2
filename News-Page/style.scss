@@ -1,0 +1,21 @@
+@import "_design";
+@import "_header";
+@import "_frontPage";
+@import "_footer";
+@import "_news";
+
+* {
+  padding:0;
+  margin:0;
+  font-family: tahoma, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 1600px;
+}

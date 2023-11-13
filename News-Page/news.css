@@ -1,4 +1,8 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream:News-Page/news.css
+=======
+/* NEWS SECTION */
+>>>>>>> Stashed changes:css/news.css
 body {
   background-color: #ccad8f;
   font-family: tahoma, sans-serif;
@@ -13,9 +17,21 @@ body {
 .resto-culinair {
   height: 40%;
   width: 100%;
+<<<<<<< Updated upstream:News-Page/news.css
   color: #ccad8f;
 }
 
+=======
+  margin-bottom: 1px;
+}
+
+@media (max-width: 768px) {
+  .center-hero-image {
+    margin-top: 15%;
+    flex-direction: column;
+  }
+}
+>>>>>>> Stashed changes:css/news.css
 /* Centered text */
 .center-hero-image {
   position: absolute;
@@ -73,12 +89,12 @@ h3 {
   outline: 3px solid #ddd;
 }
 
-.dropdown {
+.dropdown1 {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content1 {
   display: none;
   position: absolute;
   background-color: #f6f6f6;
@@ -88,7 +104,7 @@ h3 {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content1 a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;

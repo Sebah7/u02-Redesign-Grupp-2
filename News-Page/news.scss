@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     background-color: #ccad8f;
     font-family: tahoma, sans-serif;
@@ -6,6 +7,73 @@ body {
   
   
   .container-resto-culinair {
+=======
+/* NEWS SECTION */
+
+/* Style the button to look like a user icon */
+.login-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #763a03cc;
+}
+
+/* Style the form */
+.login-form {
+  display: none;
+  background-color:#ccad8f;
+  padding: 40px;
+  border: 1px solid #ccad8f;
+  border-radius: 10px;
+  max-width: 300px; /* Set a maximum width to control the form's size */
+  position: absolute;
+  top: 30px; /* Adjust the distance from the button */
+  left: 20px; /* Adjust the distance from the button */
+}
+
+/* Style form elements */
+.login-input[type="text"], .login-input[type="password"], .login-input[type="submit"] {
+  display: block;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid#ccad8f;
+  border-radius: 5px;
+}
+
+.login-input[type="submit"] {
+  background-color:#763a03cc;
+  color: #fff;
+  font-weight: bold;
+  width: 90%;
+}
+
+.login:hover .login-form {
+  display: block;
+}
+
+
+.container-resto-culinair {
+  position: relative;
+  text-align: center;
+  color: black;
+
+}
+
+  .resto-culinair {
+    color: #ccad8f;
+    flex-shrink: 0;
+    margin-top: 79px;
+    display: flex;
+>>>>>>> Stashed changes
     position: relative;
     text-align: center;
     color: black;
@@ -200,4 +268,43 @@ body {
   .extra:has(~input[type="checkbox"]:checked){
   display: inline;
   }
+<<<<<<< Updated upstream
   
+=======
+
+
+
+   input[type="checkbox"] {
+    height: 2em;
+    appearance: none;
+  }
+
+  label {
+    position: relative;
+    padding: 1em;
+  
+    border:#ddd;
+    color: red;
+    cursor: pointer;
+
+  }
+
+  label:before{
+  content: "Läs mer";
+  }
+
+  input[type="checkbox"]:checked ~ label:before 
+  {
+    content: "Läs mindre";
+  }
+
+.dots:has(~input[type="checkbox"]:checked) {
+  display: none;
+}
+.extra:has(~input[type="checkbox"]:checked){
+display: inline;
+}
+
+
+
+>>>>>>> Stashed changes
