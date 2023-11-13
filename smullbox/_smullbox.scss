@@ -5,16 +5,17 @@ $colorSand: #ccad8f;
 $colorBlack: #000;
 
 .smullBody{
-    background-image: url(assets/oranges.webp);
+    background-image: url(/smullbox/assets/oranges.webp);
     background-color: $colorLB;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 
-    .container{
+    .smullWrapper{
+        width: 100%;
+        padding-top: 120px;
+
+    .containerSmullbox{
         display: flex;
         flex-wrap: wrap;
         row-gap: 1rem;
@@ -27,7 +28,7 @@ $colorBlack: #000;
             background-image: linear-gradient($colorSand, whitesmoke);
             border-radius: 5px; 
     
-                img {
+                .imgBx {
                     height: 140px;
                     width: 164px;
                 }
@@ -42,40 +43,60 @@ $colorBlack: #000;
                         width: 144px;
                         height: 132px;
 
-                        p {
+                        .smullH3{
+                            font-size: 15px;
+                            color: $colorBlack;
+                        }
+                        .smullP {
                             padding-top: 20px;
+                            color: $colorBlack;
+                            font-size: 10px;
                         }
                     }
                 }
         }
     }
 }
+}
 
 @media screen and (min-width: 768px) {
     .smullBody {
-        .container{
+        .smullWrapper {
+
+        .containerSmullbox{
+            width: 100%;
+
            section.smullCard{
                 width: 600px;
-                height: 250px;
+                height: 280px;
+                margin: 20px;
 
-                img{
-                    width: 200px;
-                    height: 230px;
-                    margin:10px;
+                .imgBx{
+                    padding-top: 60px;
+                    padding-left: 10px;
                 }
+
                 .smullContainer{
                     width: 400px;
                     height: 200px;
+
                     .smullText{
-                        padding-left: 100px;
-                        p{
-                            font-size: 0.8em;
-                            padding-top: 10px;
+                        padding-left: 10%;
+
+                    .smullH3{
+                        width: 350px;
+                        font-size: 1.4em;
+                    }
+
+                    .smullP{
+                        width: 300px;
+                        font-size: 1.2em;
                         }
                     }
                 }
             }
         }
     }
+}
 }
 
