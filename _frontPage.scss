@@ -1,11 +1,11 @@
-.search-bar1 {
+.search-bar {
   width: 100%;
   display: inline-flex;
   gap: 5px;
   justify-content: center;
   align-items: center;
 
-  .search-box1 {
+  .search-box {
     display: flex;
     align-items: center;
     width: 265px;
@@ -14,7 +14,7 @@
     border: 2px solid rgba(118, 58, 3, 0.8);
     background: rgba(0, 0, 0, 0.8);
 
-    .search-box-icon1 {
+    .search-box-icon {
       width: 13px;
       height: 20px;
       position: relative;
@@ -39,7 +39,7 @@
     }
   }
 
-  .search-btn-container1 {
+  .search-btn-container {
     display: flex;
     width: 40px;
     height: 40px;
@@ -49,13 +49,13 @@
     justify-content: center;
     align-items: center;
 
-    .search-btn1 {
+    .search-btn {
       display: flex;
       width: 40px;
       height: 40px;
       all: unset;
 
-      .search-btn-icon1 {
+      .search-btn-icon {
         width: 24px;
         height: 24px;
       }
