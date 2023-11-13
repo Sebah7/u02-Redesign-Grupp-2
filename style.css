@@ -27,43 +27,39 @@ footer {
   bottom: 0;
   margin-top: auto;
 }
-footer .text {
+footer .textFooter {
   min-width: 330px;
   max-height: 80%;
   display: flex;
   justify-content: space-evenly;
 }
-footer .contact, footer .list {
+footer .textFooter .contactF, footer .textFooter .listFooter {
   justify-content: center;
   align-items: center;
   width: 50%;
   height: 150px;
   margin: 10px;
   text-align: center;
-}
-footer address {
   padding-top: 20px;
 }
-footer address .titleAddress {
-  font-size: 20px;
+footer .textFooter .contactF .footerP, footer .textFooter .listFooter .footerP {
   color: whitesmoke;
+  font-size: 10px;
 }
-footer address p {
-  color: whitesmoke;
-}
-footer .list {
+footer .textFooter .listFooter {
   border-left: 1px solid whitesmoke;
   padding-top: 15px;
 }
-footer .list h3 {
+footer .textFooter .listFooter .footerH3 {
   color: whitesmoke;
+  font-size: 15px;
 }
-footer .list a {
+footer .textFooter .listFooter .footerA {
   text-decoration: none;
   color: whitesmoke;
   font-size: 10px;
 }
-footer .icon {
+footer .iconFooter {
   min-width: 330px;
   height: 50px;
   display: flex;
@@ -71,7 +67,7 @@ footer .icon {
   align-items: center;
   border-top: 1px solid whitesmoke;
 }
-footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
+footer .iconFooter .fb, footer .iconFooter .mastercard, footer .iconFooter .visa, footer .iconFooter .klarna, footer .iconFooter .twitter, footer .iconFooter .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -82,6 +78,9 @@ footer .bottomIcons {
   font-size: 24px;
   display: none;
 }
+footer .bottomIcons .socialMedia .footerH3, footer .bottomIcons .payMethods .footerH3 {
+  font-size: 15px;
+}
 footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   display: none;
   flex-direction: column;
@@ -90,23 +89,24 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  footer .text {
+  footer .textFooter {
     display: flex;
     justify-content: space-evenly;
   }
-  footer .text .contact address, footer .text .list address, footer .text .contact p, footer .text .list p {
+  footer .textFooter .contactF .footerP, footer .textFooter .listFooter .footerP {
     font-size: 1.4em;
   }
-  footer .text .list {
+  footer .textFooter .listFooter {
     border: none;
   }
-  footer .text .list a:hover {
+  footer .textFooter .listFooter .footerA:hover {
     color: #4d7ea8;
   }
-  footer .text .list h3, footer .text .list a {
+  footer .textFooter .listFooter .footerH3, footer .textFooter .listFooter .footerA {
     font-size: 1.3em;
+    margin: 5px;
   }
-  footer .text .bottomIcons {
+  footer .textFooter .bottomIcons {
     display: flex;
     text-align: center;
     padding-top: 15px;
@@ -115,23 +115,23 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
     font-size: 32px;
     width: 100%;
   }
-  footer .text .bottomIcons .socialMedia, footer .text .bottomIcons .payMethods {
+  footer .textFooter .bottomIcons .socialMedia, footer .textFooter .bottomIcons .payMethods {
     width: 50%;
   }
-  footer .text .bottomIcons .socialMedia h3, footer .text .bottomIcons .payMethods h3 {
+  footer .textFooter .bottomIcons .socialMedia .footerH3, footer .textFooter .bottomIcons .payMethods .footerH3 {
     color: whitesmoke;
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
-  footer .text .bottomIcons .socialMedia ul, footer .text .bottomIcons .payMethods ul {
+  footer .textFooter .bottomIcons .socialMedia ul, footer .textFooter .bottomIcons .payMethods ul {
     padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
   }
-  footer .text .bottomIcons .socialMedia ul :hover, footer .text .bottomIcons .payMethods ul :hover {
+  footer .textFooter .bottomIcons .socialMedia ul :hover, footer .textFooter .bottomIcons .payMethods ul :hover {
     color: #4d7ea8;
     cursor: pointer;
   }
-  footer .icon {
+  footer .iconFooter {
     display: none;
   }
 }
