@@ -253,7 +253,7 @@ p {
   background: none;
   position: relative;
   border: none;
-  width: 146px;
+  width: 151px;
   height: 15px;
   margin-bottom: 6px;
   left: 10px;
@@ -265,7 +265,7 @@ p {
   outline: none;
 }
 .header-container .header-section .dropdown form #dropdown-password {
-  width: 165px;
+  width: 170px;
 }
 .header-container .header-section .dropdown .dropdown-content-menu {
   display: flex;

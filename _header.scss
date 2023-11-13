@@ -191,7 +191,7 @@ $colorBlack: #0000;
           background: none;
           position: relative;
           border: none;
-          width: 146px;
+          width: 151px;
           height: 15px;
           margin-bottom: 6px;
           left: 10px;
@@ -205,7 +205,7 @@ $colorBlack: #0000;
         }
 
         #dropdown-password {
-          width: 165px;
+          width: 170px;
         }
       }
 
@@ -509,9 +509,7 @@ $colorBlack: #0000;
 
       .phone-toggle-btn-icon-1 {
         // Phine img in the button element
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
+        transition: transform 0.3s ease, border-radius 0.6s ease;
         border-radius: 0;
 
         &:hover {
