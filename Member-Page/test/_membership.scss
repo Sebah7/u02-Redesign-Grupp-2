@@ -1,0 +1,55 @@
+body {
+  background-color: $colorBrown;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .member-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin-left: 10px;
+    margin-right: 20px;
+
+    .member-card {
+      display: flex;
+      margin: 15px;
+      width: 355px;
+      height: 82px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      border: 1px solid $colorBrown;
+      background: #d9d9d9;
+
+      .member-customer-image {
+        border-right: 1px solid $colorBrown;
+
+        img {
+          width: 144px;
+          height: 82px;
+        }
+      }
+
+      .member-customer-details {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        .member-details-container {
+          text-align: left;
+          width: 144px;
+          height: 60px;
+
+          ul {
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "Member-Page/test/design";
+@use "Member-Page/test/membership";
+@use "Member-Page/test/header";
+@use "Member-Page/test/footer";
+@use "Member-Page/test/frontPage";
+
+// @import "design";
+// //@import "_smullbox";
+// @import "membership";
+// @import "header";
+// @import "footer";
+// @import "frontPage";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
