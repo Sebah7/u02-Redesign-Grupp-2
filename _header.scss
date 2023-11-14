@@ -160,26 +160,17 @@ $colorBlack: #0000;
         width: 280px;
         height: 43px;
         flex-shrink: 0;
+        overflow: hidden;
       }
-      form {
+      .dd-form {
         display: flex;
         flex-wrap: wrap;
-        align-content: center;
         align-items: center;
-        width: 264px;
+        align-content: center;
         height: 45px;
-        font-size: 13px;
+        font-size: 15px;
 
-        i {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.3rem;
-          width: 10px;
-          height: 10px;
-        }
-
-        span {
+        .dd-lable {
           position: relative;
           letter-spacing: 1.95px;
           left: 10px;
@@ -509,7 +500,9 @@ $colorBlack: #0000;
 
       .phone-toggle-btn-icon-1 {
         // Phine img in the button element
-        transition: transform 0.3s ease, border-radius 0.6s ease;
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
         border-radius: 0;
 
         &:hover {
