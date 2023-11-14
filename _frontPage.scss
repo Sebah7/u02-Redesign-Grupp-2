@@ -1,4 +1,4 @@
-/* HERO SECTION */
+/* MAIN WRAPPER */
 .fp-wrapper {
   min-width: 100%;
   min-height: 1000px;
@@ -8,31 +8,31 @@
   scroll-behavior: smooth;
 }
 
+/* HERO SECTION */
 .hero-wrapper {
   // Hero Wrapper for content
   display: flex;
   justify-content: center;
-  scroll-snap-align: start; /* Adds a startingpoint for the snap-scroll function in the * element */
+  scroll-snap-align: start; // Adds a startingpoint for the snap-scroll function
+  margin: 10px;
 
   .hero-background {
+    // Background secound color
     background: #fefeff;
     display: flex;
     justify-content: center;
-    width: 370px;
+    width: 100%;
     height: 730px;
-    padding: 10px;
-    gap: 10px;
-    flex-shrink: 0;
+    padding: inherit;
 
     .hero-background-img {
       // Hero background
-      width: 94%;
-      height: 694px;
-      flex-shrink: 0;
+      width: 100%;
       background:
         url(/img/food_drawing.png),
         lightgray 50% / cover no-repeat;
 
+      /* HERO HEADING TEXT */
       .hero-heading {
         width: 100%;
         height: 100px;
@@ -63,172 +63,203 @@
           letter-spacing: 8.4px;
         }
       }
-    }
 
-    /* SEARCH-BAR */
-    .search-bar {
-      // Container for the search function
-      width: 100%;
-      display: inline-flex;
-      gap: 5px;
-      justify-content: center;
-      align-items: center;
-      margin: 18px 0px 41px 0px;
-      .search-box {
-        // Container for the text field
-        display: flex;
-        align-items: center;
-        width: 265px;
-        height: 40px;
-        border-radius: 15px 0px 0px 15px;
-        border: 2px solid rgba(118, 58, 3, 0.8);
-        background: rgba(0, 0, 0, 0.8);
-
-        .search-box-icon {
-          // img icon container
-          width: 13px;
-          height: 20px;
-          position: relative;
-          left: 10px;
-        }
-
-        .search-box-input-form {
-          // Input field
-          all: unset;
-          width: 250px;
-          left: 20px;
-          position: relative;
-
-          ::placeholder {
-            // Tex styling for the input field
-            font-family: Tahoma, sans-serif;
-            font-weight: 400;
-            color: #ffffff;
-            text-align: right;
-            font-size: 15px;
-            letter-spacing: 1.2px;
-            line-height: 16px;
-          }
-        }
-      }
-
-      .search-btn-container {
-        // Search button container
-        display: flex;
-        width: 40px;
-        height: 40px;
-        border-radius: 0px 15px 15px 0px;
-        border: 2px solid rgba(118, 58, 3, 0.8);
-        background: #4d7ea8;
+      /* SEARCH-BAR */
+      .search-bar {
+        // Container for the search function
+        width: 100%;
+        display: inline-flex;
+        gap: 5px;
         justify-content: center;
         align-items: center;
+        margin: 18px 0px 41px 0px;
+        .search-box {
+          // Container for the text field
+          display: flex;
+          align-items: center;
+          width: 265px;
+          height: 40px;
+          border-radius: 15px 0px 0px 15px;
+          border: 2px solid rgba(118, 58, 3, 0.8);
+          background: rgba(0, 0, 0, 0.8);
 
-        .search-btn {
-          // Button element for the search icon
+          .search-box-icon {
+            // img icon container
+            width: 13px;
+            height: 20px;
+            position: relative;
+            left: 10px;
+          }
+
+          .search-box-input-form {
+            // Input field
+            all: unset;
+            width: 250px;
+            left: 20px;
+            position: relative;
+
+            ::placeholder {
+              // Tex styling for the input field
+              font-family: Tahoma, sans-serif;
+              font-weight: 400;
+              color: #ffffff;
+              text-align: right;
+              font-size: 15px;
+              letter-spacing: 1.2px;
+              line-height: 16px;
+            }
+          }
+        }
+
+        .search-btn-container {
+          // Search button container
           display: flex;
           width: 40px;
           height: 40px;
-          all: unset;
-
-          .search-btn-icon {
-            // Search icon/img
-            width: 24px;
-            height: 24px;
-          }
-        }
-      }
-    }
-
-    .hero-card {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-
-      .hero-card-bg {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 310px;
-        height: 220px;
-        flex-shrink: 0;
-        border: 2px solid rgba(118, 58, 3, 0.8);
-        background: rgba(204, 173, 143, 0.8);
-      }
-    }
-
-    .hero-cta {
-      // Section
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 57px;
-      width: 100%;
-      height: 250px;
-
-      .hero-cta-heading {
-        // H1 Container
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 24px;
-        gap: 10px;
-
-        .hero-cta-h1-1 {
-          // H1 1
-          font-size: 20px;
-          line-height: normal;
-          letter-spacing: 4px;
-          background: linear-gradient(180deg, #000 0%, rgb(118, 58, 3) 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        .hero-cta-h1-2 {
-          // H1 2
-          @extend .hero-cta-h1-1;
-        }
-      }
-
-      .hero-cta-img {
-        // Image Container
-        @extend .hero-cta-heading;
-        height: 175px;
-        display: flex;
-
-        .hero-cta-img-1 {
-          width: 50%;
-          height: auto;
-          flex: 1 0 0;
-          align-self: stretch;
-
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-
-        .hero-cta-img-2 {
-          @extend .hero-cta-img-1;
-          display: inline-flex;
-          flex-direction: column;
+          border-radius: 0px 15px 15px 0px;
+          border: 2px solid rgba(118, 58, 3, 0.8);
+          background: #4d7ea8;
           justify-content: center;
           align-items: center;
-          gap: 16px;
-          background: rgba(255, 255, 255, 0.8);
+
+          .search-btn {
+            // Button element for the search icon
+            display: flex;
+            width: 40px;
+            height: 40px;
+            all: unset;
+
+            .search-btn-icon {
+              // Search icon/img
+              width: 24px;
+              height: 24px;
+            }
+          }
         }
       }
 
-      .hero-cta-btns {
-        @extend .hero-cta-heading;
-        justify-content: space-evenly;
+      /* INFORMATION CARD */
+      .hero-card {
+        // Card Container
+        display: flex;
+        justify-content: center;
+        width: 100%;
 
-        .hero-cta-btn-1 {
-          width: 40px;
-          height: 40px;
+        .hero-card-bg {
+          // Card background
+
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 310px;
+          height: 220px;
+          flex-shrink: 0;
+          border: 2px solid rgba(118, 58, 3, 0.8);
+          background: rgba(204, 173, 143, 0.8);
+
+          .hero-card-h2 {
+            color: #000;
+            font-size: 29px;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          .hero-card-text {
+            color: #000;
+            font-size: 18.498px;
+            line-height: normal;
+          }
+        }
+      }
+
+      /* CALL TO ACTION SECTION */
+      .hero-cta {
+        // Section Container
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 57px;
+        width: 100%;
+        height: 250px;
+
+        /* CTA HEADING */
+        .hero-cta-heading {
+          // H1 Container
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 24px;
+
+          .hero-cta-h1-1 {
+            // H1 1
+            font-size: 20px;
+            width: 50%;
+            line-height: normal;
+            letter-spacing: 4px;
+            background: linear-gradient(180deg, #000 0%, rgb(118, 58, 3) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align-last: center;
+          }
+
+          .hero-cta-h1-2 {
+            // H1 2
+            @extend .hero-cta-h1-1;
+          }
         }
 
-        .hero-cta-btn-2 {
-          @extend .hero-cta-btn-1;
+        /* CTA IMAGES */
+        .hero-cta-img {
+          // Image Container
+          @extend .hero-cta-heading;
+          height: 175px;
+          display: flex;
+          gap: 10px;
+
+          .hero-cta-img-1 {
+            width: 172px;
+            height: 172px;
+            flex-shrink: 0;
+            border: 2px solid rgba(118, 58, 3, 0.8);
+            background:
+              url(<path-to-image>),
+              lightgray 50% / cover no-repeat;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .hero-cta-img-2 {
+            @extend .hero-cta-img-1;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            background: rgba(255, 255, 255, 0.8);
+          }
+        }
+
+        /* CTA BUTTON */
+        .hero-cta-btns {
+          display: flex;
+          width: 100%;
+          height: 24px;
+          align-items: center;
+          justify-content: space-around;
+
+          .hero-cta-btn-1 {
+            width: 40px;
+            height: 40px;
+            all: unset;
+          }
+
+          .hero-cta-btn-2 {
+            @extend .hero-cta-btn-1;
+          }
         }
       }
     }
