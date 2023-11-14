@@ -12,7 +12,7 @@
     <!-- STYLE SHEETS -->
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Reset file for margin & padding -->
     <link rel="stylesheet" href="reset.css">
@@ -36,18 +36,21 @@
         <div class="login">
           <button class="login-btn material-icons">person</button>
               <!-- Login form -->
+             
               <form target="_blank" action="action.php" class="login-form" method="post" >
                 <input type="text" class="login-input" placeholder="Användarnamn" required>
                 <input type="password" class="login-input" placeholder="Lösenord" required>
                 <input onclick="window.location.pathname = '/Nyheter.html';" type="submit" class="login-input" value="LOGGA IN">
               </form>
         </div>
-        
+      
 
         <!-- Container for search logo -->
-        <div class="search">
+        <!--
+          <div class="search">
           <button class="search-btn material-icons">search</button>
         </div>
+      -->
 
         <!-- Container for Resto Culinair logo -->
         <div class="resto">
@@ -59,13 +62,15 @@
           <!-- Container for drop-down logo -->
           <div class="toggle-btn">
             <button class="toggle-btn-icon material-icons">menu</button>
+           
           </div>
+        
 
           <!-- Dropdown-Content | Container -->
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
             <div class="dropdown-content-login">
-              <form action="" method="post">
+              <form action="action.php" method="post">
                 <i class="dropdown-login-icon material-icons">person</i>
                 <span>customer nr:</span>
                 <input type="text" name="customer nr" id="dropdown-customer-nr" size="10" maxlength="6">
@@ -118,10 +123,10 @@
             <button class="phone material-icons">
               <img class="phone-icon" src="Phone Icon.svg" alt="Phone-Button">
             </button>
-            <section class="phone-card">
+            <div class="phone-card">
               <span class="phone-text">Call & Order</span>
               <div class="phone-phone-nr">08 555 69 76</div>
-            </section>
+            </div>
           </div>
         </div>
       </section>
@@ -187,7 +192,8 @@
     <div id="Date1">2023.09.21 09:00</div>
    
   </div> 
-</div>
+  </div>
+
 
 <div class="flex-item-left">
 <img src="svenskkött.webp" alt="Salami" class="cafe" style="width:100%" loading="lazy">
@@ -293,7 +299,7 @@
         </div>
       </section>
       <!-- Icon Section -->
-      <section class="icon">
+      <div class="icon">
         <!-- Conatiner for icon 1 -->
         <div class="fb">
           <span><i class="fa-brands fa-square-facebook"></i></span>
@@ -316,61 +322,61 @@
         <div class="mastercard">
           <span><i class="fa-brands fa-cc-mastercard"></i></span>
         </div>
-      </section>
+      </div>
     </footer>
 
 
 
-
-<script>
+    
+   // <script>
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
-  function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-  }
+  //function myFunction1() {
+   // document.getElementById("myDropdown1").classList.toggle("show");
+ // }
   
-  function filterFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown1");
-    a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-      txtValue = a[i].textContent || a[i].innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        a[i].style.display = "";
-      } else {
-        a[i].style.display = "none";
-      }
-    }
-  }
-  </script>
+  // function filterFunction() {
+  //   var input, filter, ul, li, a, i;
+   //  input = document.getElementById("myInput");
+    // filter = input.value.toUpperCase();
+   //  div = document.getElementById("myDropdown1");
+   //  a = div.getElementsByTagName("a");
+    // for (i = 0; i < a.length; i++) {
+    //   txtValue = a[i].textContent || a[i].innerText;
+     //  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      //   a[i].style.display = "";
+      // } else {
+      //   a[i].style.display = "none";
+      // }
+   //  }
+  // }
+  // </script>
   
 
 
   <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
-    function myFunction2() {
-      document.getElementById("myDropdown2").classList.toggle("show");
-    }
+   // function myFunction2() {
+   //   document.getElementById("myDropdown2").classList.toggle("show");
+   // }
     
-    function filterFunction() {
-      var input, filter, ul, li, a, i;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      div = document.getElementById("myDropdown2");
-      a = div.getElementsByTagName("a");
-      for (i = 0; i < a.length; i++) {
-        txtValue = a[i].textContent || a[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          a[i].style.display = "";
-        } else {
-          a[i].style.display = "none";
-        }
-      }
-    }
-    </script>
+   // function filterFunction() {
+    //  var input, filter, ul, li, a, i;
+    //  input = document.getElementById("myInput");
+    //  filter = input.value.toUpperCase();
+     // div = document.getElementById("myDropdown2");
+     // a = div.getElementsByTagName("a");
+     // for (i = 0; i < a.length; i++) {
+     //   txtValue = a[i].textContent || a[i].innerText;
+      //  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //  a[i].style.display = "";
+        //} else {
+        //  a[i].style.display = "none";
+        //}
+      //}
+    //}
+   // </script>
 
 
 
