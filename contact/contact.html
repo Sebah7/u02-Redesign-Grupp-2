@@ -25,9 +25,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="contactBody">
     <!-- HEADER SECTION -->
-
     <header>
       <!-- Background gradient | Container -->
       <!-- <div class="header-bg"></div> -->
@@ -47,7 +46,7 @@
         <!-- Container for Resto Culinair logo -->
         <div class="resto">
           <img
-            src="img/Resto-logo-text-and-icon.png"
+            src="../img/Resto-logo-text-and-icon.png"
             alt="Resto Culinair Logo"
           />
         </div>
@@ -128,7 +127,7 @@
             <button class="phone material-icons">
               <img
                 class="phone-icon"
-                src="assets/Phone Icon.svg"
+                src="../assets/Phone-Icon.svg"
                 alt="Phone-Button"
               />
             </button>
@@ -141,28 +140,29 @@
       </section>
     </header>
 
-    <form  action="">
-      <input style="background-color: black; " type="text" placeholder="test">
-    </form>
-       <!-- WRAPPER -->
+    <!-- <form action="">
+      <input style="background-color: black" type="text" placeholder="test" />
+    </form> -->
+    <!-- WRAPPER -->
     <main class="contact-first-wrapper">
       <div class="main-wrapper">
         <section class="contact-us">
           <div class="contact-text">
-            <h1>GET IN CONTACT</h1>
+            <h1 class="contactH1">Kontakta oss</h1>
           </div>
 
-          <div class="container">
+          <div class="containerContact">
             <div class="contact-wrapper">
-              <input class="field" type="text" placeholder="first name" />
-              <input class="field" type="text" placeholder="last name" />
-              <input class="field" type="email" placeholder="email@gmail.com" />
+              <input class="field" type="text" placeholder="Förnamn">
+              <input class="field" type="text" placeholder="Efternamn">
+              <input class="field" type="email" placeholder="Email@gmail.com">
 
               <div class="row">
-                <input class="field" type="email" placeholder="zipCode" />
-                <span class="field">or</span>
-                <input class="field" type="email" placeholder="city" />
+                <input class="field" type="text" placeholder="Postnr">
+                <span class="fieldSpan">eller</span>
+                <input class="field" type="text" placeholder="Stad">
               </div>
+
               <select class="select" name="subject">
                 <option value="">Subject</option>
                 <option value="delivery">Orders</option>
@@ -171,13 +171,13 @@
               </select>
 
               <textarea class="field" rows="7" placeholder=""></textarea>
-              <button type="button">send</button>
+
+              <button class="sendButtonContact" type="button">Skicka  <i class="fa-solid fa-envelope"></i></button>
+
             </div>
           </div>
         </section>
       </div>
-    </main>
-
     <!-- FOOTER SECTION -->
     <!-- Container for the Footer -->
     <footer>
