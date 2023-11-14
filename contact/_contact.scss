@@ -8,9 +8,21 @@ body {
   width: 100%;
 }
 
-.main-wrapper {
-  height: 728px;
+.contact-first-wrapper {
   background: url("/contact/img/background.png");
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+.main-wrapper {
+  height: 728px; 
+  // background: url("/contact/img/background.png");
+  // background-repeat: no-repeat;
 
   .contact-us {
     display: grid;
@@ -46,6 +58,7 @@ body {
     margin: 10px;
     padding: 20px;
   }
+   
 
   .field {
     width: 100%;
