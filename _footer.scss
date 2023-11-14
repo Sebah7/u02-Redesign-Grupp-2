@@ -2,63 +2,55 @@ $colorText: whitesmoke;
 $colorBlack: #000;
 $colorDB: #4d7ea8;
 
-
 footer {
     width: 100%;
     height: 227px;
     background-color: $colorBlack;
-    bottom: 0;
+    bottom: 0%;
+    position: absolute;
 
   
-    .text {
+    .textFooter {
       min-width: 330px;
       max-height: 80%;
       display: flex;
       justify-content: space-evenly;
     
-    }
+
       
-  
-      .contact {
+     .contactF {
         justify-content: center;
         align-items: center;
         width: 50%;
         height: 150px;
         text-align: center;
-        padding-top: 35px;
+        padding-top: 20px;
 
-      }
-      address{
-
-        .titleAddress {
-          font-size: 20px;
-          color: $colorText;
-        }
-
-        p{
-          color: $colorText;
-        }
+          .footerP{
+            color: $colorText;
+            font-size: 10px
+          }
       }
   
-      .list {
-        @extend .contact;
+      .listFooter {
+        @extend .contactF;
         border-left: 1px solid $colorText;
         padding-top: 15px;
 
-        h3 {
+        .footerH3 {
           color: $colorText;
+          font-size: 15px;
         }
-        a {
+        .footerA {
           text-decoration: none;
           color: $colorText;
           font-size: 10px;
+        }
       }
-
-
 
     }
   
-    .icon {
+    .iconFooter {
       min-width: 330px;
       height: 50px;
       display: flex;
@@ -96,10 +88,13 @@ footer {
     .bottomIcons {
       padding: 5px;
       color: $colorText;
-      font-size: 24px;
       display: none;
     
       .socialMedia {
+
+        .footerH3{
+          font-size: 15px;
+        }
 
           ul {
               display: none; 
@@ -107,6 +102,13 @@ footer {
               justify-content: center;
               gap: 15%;
               list-style: none;
+
+              .icons{
+                font-size: 24px;
+                background-color: $colorBlack;
+                color: $colorText;
+                border: none;
+              }
               
           }
       }
@@ -121,25 +123,25 @@ footer {
  @media screen and (min-width: 768px) {
   footer {
     
-    .text {
+    .textFooter {
       display: flex;
       justify-content: space-evenly;
 
-
-      .contact {
-        address, p {
+      .contactF {
+        .footerP {
           font-size: 1.4em;
         }
       }
-      .list{
+      .listFooter{
         border: none;
 
-        a:hover {
+        .footerA:hover {
          color: $colorDB;
         }
 
-        h3, a {
+        .footerH3, .footerA {
           font-size: 1.3em;
+          margin: 5px;
         }
       }
 
@@ -154,9 +156,9 @@ footer {
       
         .socialMedia, .payMethods{
           width: 50%;
-          h3 {
+          .footerH3 {
             color: $colorText;
-            font-size: 0.6em;
+            font-size: 0.7em;
           }
           ul {
             padding-top: 20px;
@@ -172,7 +174,7 @@ footer {
       }
 
     }
-    .icon {
+    .iconFooter {
       display: none;
     }
   }

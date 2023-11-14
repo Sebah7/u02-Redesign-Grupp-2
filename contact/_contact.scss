@@ -6,7 +6,7 @@ $colorBlack: #000;
 $colorText: whitesmoke;
   
   .contactBody {
-    width: 100%;
+    // width: 100%;
     background-image: url("/contact/img/background.png");
     background-color: $colorLB;
     background-repeat: no-repeat;
@@ -37,6 +37,8 @@ $colorText: whitesmoke;
 
                 .contactH1{
                     text-shadow: 2px 2px grey;
+                    text-transform: uppercase;
+                    margin: 10px 20px 10px 10px;
                 }
             }
   
@@ -64,6 +66,7 @@ $colorText: whitesmoke;
                     // Change color on text in input
                     ::placeholder{
                       color: $colorBlack;
+                      text-align: left;
                     }
   
                     .field {
@@ -110,6 +113,7 @@ $colorText: whitesmoke;
                         margin-top: 15px;
                         margin-bottom: 15px;
                         border-radius: 5px;
+                        border: 1px solid $colorBlack;
                     }
                 } 
             }  
