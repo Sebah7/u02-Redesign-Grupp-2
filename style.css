@@ -224,31 +224,23 @@ p {
   width: 280px;
   height: 43px;
   flex-shrink: 0;
+  overflow: hidden;
 }
-.header-container .header-section .dropdown form {
+.header-container .header-section .dropdown .dd-form {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   align-content: center;
-  align-items: center;
-  width: 264px;
   height: 45px;
-  font-size: 13px;
+  font-size: 15px;
 }
-.header-container .header-section .dropdown form i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.3rem;
-  width: 10px;
-  height: 10px;
-}
-.header-container .header-section .dropdown form span {
+.header-container .header-section .dropdown .dd-form .dd-lable {
   position: relative;
   letter-spacing: 1.95px;
   left: 10px;
   margin-right: 5px;
 }
-.header-container .header-section .dropdown form input {
+.header-container .header-section .dropdown .dd-form input {
   display: flex;
   background: none;
   position: relative;
@@ -261,10 +253,10 @@ p {
   letter-spacing: 1.95px;
   border-bottom: 1px solid #000;
 }
-.header-container .header-section .dropdown form input:focus {
+.header-container .header-section .dropdown .dd-form input:focus {
   outline: none;
 }
-.header-container .header-section .dropdown form #dropdown-password {
+.header-container .header-section .dropdown .dd-form #dropdown-password {
   width: 170px;
 }
 .header-container .header-section .dropdown .dropdown-content-menu {
