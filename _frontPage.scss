@@ -64,5 +64,109 @@
 }
 
 .fp-grid {
+  width: 370px;
+  height: 819px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #F4EEE9;
   border: 1px solid black;
+}
+
+.fp-grid-wrapper{
+width: 356px;
+height: 725.78px;
+left: 7px;
+top: 9.94px;
+position: absolute;
+}
+
+.fp-video-card-1 {
+  width: 220px;
+    height: 115.42px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.fp-image-card-1 {
+  width: 126px;
+    height: 115.2px;
+    left: 230px;
+    top: 0px;
+    position: absolute;
+}
+
+.fp-image-card-2 {
+  width: 172px;
+    height: 170.96px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.fp-image-card-3 {
+  width: 172px;
+  height: 170.96px;
+  left: 182px;
+  top: 0px;
+  position: absolute;
+}
+
+.fp-story-card-1 {
+  width: 171px;
+  height: 302.16px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.fp-image-card-4 {
+  width: 172px;
+  height: 128.22px;
+  left: 181px;
+  top: 0px;
+  position: absolute;
+}
+
+.fp-text-card {
+  width: 172px;
+    height: 40px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    left: 181px;
+    top: 131.2px;
+    position: absolute;
+    border: 1px rgba(0, 0, 0, 0.80) solid;
+    justify-content: center;
+    align-items: center;
+    gap: 5.04px;
+    display: inline-flex;
+}
+
+.fp-image-card-5 {
+    width: 172px;
+    height: 128.22px;
+    left: 181px;
+    top: 173.94px;
+    position: absolute;
+}
+
+.fp-image-card-6 {
+  width: 172px;
+  height: 170.96px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: blue($color: #000000);
+}
+
+.fp-image-card-7 {
+  width: 172px;
+  height: 170.96px;
+  left: 182px;
+  top: 0px;
+  position: absolute;
 }
