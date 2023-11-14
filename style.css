@@ -34,7 +34,7 @@ header {
   /* Phone button | Bottom of the page */
 }
 header .header-section {
-  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
+  background-color: #c9f0ff;
   max-width: 100%;
   height: 100px;
   display: flex;
@@ -391,6 +391,9 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .smullBody .smullWrapper {
   width: 100%;
@@ -463,18 +466,142 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
     font-size: 1.2em;
   }
 }
+.contactBody {
+  width: 100%;
+  background-image: url("/contact-page/img/background.png");
+  background-color: #c9f0ff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contactBody .main-wrapper .contact-us {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 700px;
+  top: 100px;
+}
+.contactBody .main-wrapper .contact-us .contact-text {
+  margin-top: 7px;
+  margin-bottom: 39px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contactBody .main-wrapper .contact-us .contact-text .contactH1 {
+  text-shadow: 2px 2px grey;
+}
+.contactBody .main-wrapper .contact-us .containerContact {
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ccad8f;
+  z-index: 0;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper {
+  width: 248px;
+  margin: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::-moz-placeholder {
+  color: #000;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::placeholder {
+  color: #000;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .field {
+  width: 100%;
+  padding: 3px 5px;
+  margin: 3px;
+  background: whitesmoke;
+  border: 1px solid #000;
+  color: whitesmoke;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
+  width: 265px;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row span {
+  flex-basis: 50%;
+  padding-top: 5px;
+  align-items: center;
+  text-align: center;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper button {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  margin-left: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4d7ea8;
+  color: white;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper select {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* @media (max-width: 400px) {
+  body{
+    width: 100%;
+    background-size: contain;
+    padding: 0 0;
+    margin-top: 20px;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 80%;
+
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .field {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+}
+/* Media query for desktop screens */
+/*@media screen and (min-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+}
+*/
 * {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
 }
 
+/* Put this in your body for the footer and name your body ex sideNameBody when you should style it in your scss
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
+*/
 .wrapper {
   min-width: 100%;
   min-height: 1600px;

@@ -1,22 +1,27 @@
 @use "design";
 @use "header";
 @use "footer";
+@use "smullbox/smullbox";
+@use "Contact-Page/contact";
+
 // @use "frontPage";
 // @use "Contact-Page/contact";
 // @use "News-Page/news.scss";
 // @use "PriceList-Page/priceList";
-@use "smullbox/smullbox";
 
 * {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
 }
+
+/* Put this in your body for the footer and name your body ex sideNameBody when you should style it in your scss
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+*/
 
 .wrapper {
   min-width: 100%;
