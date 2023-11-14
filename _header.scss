@@ -32,20 +32,20 @@ $colorBlack: #0000;
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--lightBrownBaseColor, #ccad8f);
 
   /* Header | Container */
   .header-section {
-    z-index: 1;
-
     background-image: linear-gradient(
-      hsl(29, 95%, 24%, 20%),
-      hsl(30, 37%, 68%, 20%)
+      hsla(29, 95%, 24%, 0.2),
+      hsla(30, 37%, 68%, 0.2)
     );
     max-width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 7%;
 
     /* Header-Login | Container */
     .login {
@@ -102,6 +102,12 @@ $colorBlack: #0000;
         width: inherit;
         height: inherit;
       }
+
+      // Makes the logo image larger on a bigger screen
+      @media screen and (min-width: 880px) {
+        width: fit-content;
+        height: auto;
+      }
     }
 
     /* DROPDOWN */
@@ -140,6 +146,11 @@ $colorBlack: #0000;
             }
           }
         }
+
+        // Removes the menu button on larger screens.
+        @media screen and (min-width: 880px) {
+          display: none;
+        }
       }
 
       /* Dropdown-Content | Container */
@@ -153,6 +164,11 @@ $colorBlack: #0000;
         flex-direction: column;
         align-items: center;
         background-color: $colorSand;
+
+        // Adds dropdown menu to larger screen
+        @media screen and (min-width: 880px) {
+          display: flex;
+        }
       }
 
       /* Dropdown-Login | Container */
@@ -161,6 +177,11 @@ $colorBlack: #0000;
         height: 43px;
         flex-shrink: 0;
         overflow: hidden;
+
+        // Removes the login form in dropdown on larger screens.
+        @media screen and (min-width: 880px) {
+          display: none;
+        }
       }
       .dd-form {
         display: flex;
@@ -216,6 +237,12 @@ $colorBlack: #0000;
         gap: 36px;
         flex-shrink: 0;
 
+        // Makes the list vertical on larger screens
+        @media screen and (min-width: 880px) {
+          display: flex;
+          flex-direction: row;
+        }
+
         li:hover {
           background: rgba(255, 255, 255, 0.5);
         }
@@ -227,6 +254,13 @@ $colorBlack: #0000;
           width: 310px;
           gap: 10px;
           border: 1px solid rgba(0, 0, 0, 0.788);
+
+          // Makes the list buttons smaller on a bigger screen
+          @media screen and (min-width: 880px) {
+            width: fit-content;
+            padding: 2px;
+          }
+
           a {
             all: unset;
             display: contents;
@@ -247,6 +281,11 @@ $colorBlack: #0000;
               font-weight: 400;
               letter-spacing: 1.5px;
               margin-right: 5px;
+
+              // Removes the menu text on larger screens.
+              @media screen and (min-width: 880px) {
+                display: none;
+              }
             }
           }
         }
@@ -259,6 +298,14 @@ $colorBlack: #0000;
         gap: 10px;
         bottom: 44px;
         border: 1px solid black;
+
+        // Moves the language option on a bigger screen
+        @media screen and (min-width: 880px) {
+          top: -65px;
+          position: relative;
+          border: none;
+          right: -35%;
+        }
 
         button {
           width: 100%;
@@ -297,6 +344,11 @@ $colorBlack: #0000;
         height: 227px;
         flex-shrink: 0;
         bottom: 0px;
+
+        // Removes the Dropdown-footer on a bigger screen
+        @media screen and (min-width: 880px) {
+          display: none;
+        }
 
         .header-footer {
           width: 100%;
@@ -384,87 +436,6 @@ $colorBlack: #0000;
   .dropdown:hover .dropdown-content {
     display: flex;
   }
-
-  /* Phone button | Bottom of the page */
-  /* .phone-btn-container {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 235px;
-    right: 0%;
-
-    .phone-toggle {
-      display: flex;
-      position: fixed;
-      width: 194px;
-      height: 100px;
-      bottom: 235px;
-      right: 0%;
-
-      img {
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
-        border-radius: 0;
-
-        &:hover {
-          border-radius: 50%;
-          transform: rotate(180deg);
-        }
-      }
-      .phone-icon {
-        position: relative;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: inherit;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-    }
-
-    .phone {
-      @extend .phone-toggle;
-      width: 50px;
-      height: 50px;
-      border: 0;
-      background: none;
-    }
-
-    .phone-card {
-      visibility: hidden;
-      width: 294px;
-      height: 100px;
-      background-color: $colorDB;
-      position: static;
-    }
-
-    .phone-phone-nr {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      width: 150px;
-      height: 50px;
-      letter-spacing: 1.95px;
-      font-weight: 400;
-      text-decoration-line: underline;
-    }
-
-    .phone-text {
-      @extend .phone-phone-nr;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 3px;
-      font-size: 20px;
-      font-weight: 400;
-      text-decoration-line: none;
-      font-family: Tahoma;
-      font-style: normal;
-    }
-  } */
 }
 
 /* .phone-btn-container:hover .phone-card {

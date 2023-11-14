@@ -46,90 +46,10 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--lightBrownBaseColor, #ccad8f);
   /* Header | Container */
-  /* Phone button | Bottom of the page */
-  /* .phone-btn-container {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 235px;
-    right: 0%;
-
-    .phone-toggle {
-      display: flex;
-      position: fixed;
-      width: 194px;
-      height: 100px;
-      bottom: 235px;
-      right: 0%;
-
-      img {
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
-        border-radius: 0;
-
-        &:hover {
-          border-radius: 50%;
-          transform: rotate(180deg);
-        }
-      }
-      .phone-icon {
-        position: relative;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: inherit;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-    }
-
-    .phone {
-      @extend .phone-toggle;
-      width: 50px;
-      height: 50px;
-      border: 0;
-      background: none;
-    }
-
-    .phone-card {
-      visibility: hidden;
-      width: 294px;
-      height: 100px;
-      background-color: $colorDB;
-      position: static;
-    }
-
-    .phone-phone-nr {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      width: 150px;
-      height: 50px;
-      letter-spacing: 1.95px;
-      font-weight: 400;
-      text-decoration-line: underline;
-    }
-
-    .phone-text {
-      @extend .phone-phone-nr;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 3px;
-      font-size: 20px;
-      font-weight: 400;
-      text-decoration-line: none;
-      font-family: Tahoma;
-      font-style: normal;
-    }
-  } */
 }
 .header-container .header-section {
-  z-index: 1;
   background-image: linear-gradient(
     hsla(29, 95%, 24%, 0.2),
     hsla(30, 37%, 68%, 0.2)
@@ -137,8 +57,9 @@ p {
   max-width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 7%;
   /* Header-Login | Container */
   /* Search Button */
   /* Resto Logo */
@@ -186,7 +107,20 @@ p {
   width: inherit;
   height: inherit;
 }
-
+@media screen and (min-width: 880px) {
+  .header-container .header-section .resto {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+  }
+}
+.header-container .header-section .dropdown {
+  /* Toggle Button | Drop-down button */
+  /* Dropdown-Content | Container */
+  /* Dropdown-Login | Container */
+  /* Dropdown-Menu | Container */
+  /* Dropdown-Footer */
+}
 .header-container .header-section .dropdown .toggle-btn img,
 .header-container .header-section .dropdown .login img,
 .header-container .header-section .dropdown .search img {
@@ -269,6 +203,13 @@ p {
   .menu-btn-icon-2 {
   display: inline-block;
 }
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown .toggle-btn,
+  .header-container .header-section .dropdown .login,
+  .header-container .header-section .dropdown .search {
+    display: none;
+  }
+}
 .header-container .header-section .dropdown .dropdown-content {
   width: 100%;
   height: 536px;
@@ -280,11 +221,21 @@ p {
   align-items: center;
   background-color: #ccad8f;
 }
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown .dropdown-content {
+    display: flex;
+  }
+}
 .header-container .header-section .dropdown .dropdown-content-login {
   width: 280px;
   height: 43px;
   flex-shrink: 0;
   overflow: hidden;
+}
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown .dropdown-content-login {
+    display: none;
+  }
 }
 .header-container .header-section .dropdown .dd-form {
   display: flex;
@@ -333,6 +284,12 @@ p {
   gap: 36px;
   flex-shrink: 0;
 }
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown ol {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .header-container .header-section .dropdown ol li:hover {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -343,6 +300,13 @@ p {
   width: 310px;
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.788);
+}
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown ol li {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2px;
+  }
 }
 .header-container .header-section .dropdown ol li a {
   all: unset;
@@ -364,6 +328,11 @@ p {
   letter-spacing: 1.5px;
   margin-right: 5px;
 }
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown ol li a p {
+    display: none;
+  }
+}
 .header-container .header-section .dropdown .dropdown-language {
   display: flex;
   align-items: center;
@@ -372,6 +341,14 @@ p {
   gap: 10px;
   bottom: 44px;
   border: 1px solid black;
+}
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown .dropdown-language {
+    top: -65px;
+    position: relative;
+    border: none;
+    right: -35%;
+  }
 }
 .header-container .header-section .dropdown .dropdown-language button {
   width: 100%;
@@ -403,6 +380,11 @@ p {
   height: 227px;
   flex-shrink: 0;
   bottom: 0px;
+}
+@media screen and (min-width: 880px) {
+  .header-container .header-section .dropdown .dropdown-footer {
+    display: none;
+  }
 }
 .header-container .header-section .dropdown .dropdown-footer .header-footer {
   width: 100%;
