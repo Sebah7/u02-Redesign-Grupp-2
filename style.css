@@ -635,6 +635,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
 
 .priceBody {
   width: 100%;
+  height: auto;
   margin: 0;
   background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
   background-repeat: no-repeat;
