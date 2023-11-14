@@ -703,6 +703,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   width: 250px;
   left: 20px;
   position: relative;
+  color: white;
 }
 .hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-input-form ::-moz-placeholder {
   font-family: Tahoma, sans-serif;
