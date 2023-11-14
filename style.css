@@ -46,6 +46,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--lightBrownBaseColor, #ccad8f);
   /* Header | Container */
   /* Phone button | Bottom of the page */
   /* .phone-btn-container {
