@@ -23,8 +23,6 @@
       src="https://kit.fontawesome.com/a0315d2788.js"
       crossorigin="anonymous"
     ></script>
-
-
   </head>
   <body>
     <!-- HEADER SECTION -->
@@ -87,18 +85,26 @@
           <div class="dropdown-content">
             <!-- Dropdown-Login | Container -->
             <div class="dropdown-content-login">
-              <form action="/login" method="post">
-                <i class="dropdown-login-icon material-icons">person</i>
-                <span>customer nr:</span>
+              <form class="dd-form" action="/login" method="post">
+                <img
+                  class="dd-login-icon"
+                  src="/assets/person-small.svg"
+                  alt="Profile icon"
+                />
+                <lable class="dd-lable">customer nr:</lable>
                 <input
                   type="text"
                   name="customer nr"
-                  id="dropdown-customer-nr"
+                  id="dd-customer-nr"
                   size="10"
                   maxlength="6"
                 />
-                <i class="dropdown-lock-icon material-icons">lock</i>
-                <span>password:</span>
+                <img
+                  class="dd-login-icon"
+                  src="/assets/lock.svg"
+                  alt="password icon"
+                />
+                <lable class="dd-lable">password:</lable>
                 <input
                   type="password"
                   name="password"
@@ -302,6 +308,7 @@
       </section>
 
     </main>
+
     <!-- FOOTER SECTION -->
     <!-- Container for the Footer -->
     <footer>
@@ -318,16 +325,59 @@
         <!-- Container for list information -->
         <div class="list">
           <h3>Genvägar</h3>
-          <div><a href="#">Startsidan</a></div>
-          <div><a href="#">Nyheter</a></div>
-          <div><a href="#">Medlem</a></div>
-          <div><a href="#">Prislista</a></div>
+          <div><a href="/index.html">Startsidan</a></div>
+          <div><a href="/nyheter_test.html">Nyheter</a></div>
+          <div><a href="/members.html">Medlem</a></div>
+          <div><a href="/priceList.html">Prislista</a></div>
           <div><a href="/smullbox.html">Smullbox</a></div>
-          <div><a href="#">Kontakt</a></div>
+          <div><a href="/contact.html">Kontakt</a></div>
+        </div>
+
+        <!-- Not visible on a small screen, appears when the smallest px is 768-->
+        <div class="bottomIcons">
+          <div class="socialMedia">
+            <h3>Följ oss</h3>
+            <ul>
+              <li>
+                <span class="icons"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></span>
+              </li>
+              <li>
+                <span class="icons"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></span>
+              </li>
+              <li>
+                <span class="icons"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="payMethods">
+            <h3>Betalmedel</h3>
+            <ul>
+              <li>
+                <span class="icons">K.</span>
+              </li>
+              <li>
+                <span class="icons"><i class="fa-brands fa-cc-visa"></i></span>
+              </li>
+              <li>
+                <span class="icons"
+                  ><i class="fa-brands fa-cc-mastercard"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+
       <!-- Icon Section -->
-      <section class="icon">
+      <!-- Not visible on large screen, appears when max px is 767 -->
+      <div class="icon">
         <!-- Conatiner for icon 1 -->
         <div class="fb">
           <span><i class="fa-brands fa-square-facebook"></i></span>
@@ -350,7 +400,7 @@
         <div class="mastercard">
           <span><i class="fa-brands fa-cc-mastercard"></i></span>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
