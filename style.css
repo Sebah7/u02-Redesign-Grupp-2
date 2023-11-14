@@ -20,6 +20,10 @@ p {
   color: rgba(0, 0, 0, 0);
 }
 
+body {
+  background-color: #ccad8f;
+}
+
 /* HEADER SECTION */
 header {
   position: fixed;
@@ -33,7 +37,6 @@ header .header-section {
   background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   max-width: 100%;
   height: 100px;
-  background-color: #ccad8f;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -517,11 +520,11 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   padding-top: 10px;
 }
 .contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::-moz-placeholder {
-  color: #000;
+  color: rgba(0, 0, 0, 0.4);
   text-align: left;
 }
 .contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::placeholder {
-  color: #000;
+  color: rgba(0, 0, 0, 0.4);
   text-align: left;
 }
 .contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .field {

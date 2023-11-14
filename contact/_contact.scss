@@ -65,7 +65,7 @@ $colorText: whitesmoke;
 
           // Change color on text in input
           ::placeholder {
-            color: $colorBlack;
+            color: rgba(0, 0, 0, 0.40);
             text-align: left;
           }
 

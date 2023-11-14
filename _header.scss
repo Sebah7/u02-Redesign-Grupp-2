@@ -4,9 +4,9 @@ $colorDB: #4d7ea8;
 $colorSand: #ccad8f;
 $colorBlack: #000;
 
-// body {
-//   background-color: $colorSand; // Background-color
-// }
+body {
+  background-color: $colorSand; // Background-color
+}
 
 //remove body styling and add background-color to header-section!!!
 
@@ -25,7 +25,6 @@ header {
     );
     max-width: 100%;
     height: 100px;
-    background-color: $colorSand;
     display: flex;
     justify-content: space-around;
     align-items: center;
