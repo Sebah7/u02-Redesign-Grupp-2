@@ -48,95 +48,15 @@ p {
   width: 100%;
   background: var(--lightBrownBaseColor, #ccad8f);
   /* Header | Container */
-  /* Phone button | Bottom of the page */
-  /* .phone-btn-container {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 235px;
-    right: 0%;
-
-    .phone-toggle {
-      display: flex;
-      position: fixed;
-      width: 194px;
-      height: 100px;
-      bottom: 235px;
-      right: 0%;
-
-      img {
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
-        border-radius: 0;
-
-        &:hover {
-          border-radius: 50%;
-          transform: rotate(180deg);
-        }
-      }
-      .phone-icon {
-        position: relative;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: inherit;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-    }
-
-    .phone {
-      @extend .phone-toggle;
-      width: 50px;
-      height: 50px;
-      border: 0;
-      background: none;
-    }
-
-    .phone-card {
-      visibility: hidden;
-      width: 294px;
-      height: 100px;
-      background-color: $colorDB;
-      position: static;
-    }
-
-    .phone-phone-nr {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      width: 150px;
-      height: 50px;
-      letter-spacing: 1.95px;
-      font-weight: 400;
-      text-decoration-line: underline;
-    }
-
-    .phone-text {
-      @extend .phone-phone-nr;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 3px;
-      font-size: 20px;
-      font-weight: 400;
-      text-decoration-line: none;
-      font-family: Tahoma;
-      font-style: normal;
-    }
-  } */
 }
 .header-container .header-section {
-  z-index: 1;
   background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   max-width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 7%;
   /* Header-Login | Container */
   /* Search Button */
   /* Resto Logo */

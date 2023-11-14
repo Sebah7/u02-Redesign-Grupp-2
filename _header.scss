@@ -36,17 +36,16 @@ $colorBlack: #0000;
 
   /* Header | Container */
   .header-section {
-    z-index: 1;
-
     background-image: linear-gradient(
-      hsl(29, 95%, 24%, 20%),
-      hsl(30, 37%, 68%, 20%)
+      hsla(29, 95%, 24%, 0.2),
+      hsla(30, 37%, 68%, 0.2)
     );
     max-width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 7%;
 
     /* Header-Login | Container */
     .login {
@@ -385,87 +384,6 @@ $colorBlack: #0000;
   .dropdown:hover .dropdown-content {
     display: flex;
   }
-
-  /* Phone button | Bottom of the page */
-  /* .phone-btn-container {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 235px;
-    right: 0%;
-
-    .phone-toggle {
-      display: flex;
-      position: fixed;
-      width: 194px;
-      height: 100px;
-      bottom: 235px;
-      right: 0%;
-
-      img {
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
-        border-radius: 0;
-
-        &:hover {
-          border-radius: 50%;
-          transform: rotate(180deg);
-        }
-      }
-      .phone-icon {
-        position: relative;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: inherit;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-    }
-
-    .phone {
-      @extend .phone-toggle;
-      width: 50px;
-      height: 50px;
-      border: 0;
-      background: none;
-    }
-
-    .phone-card {
-      visibility: hidden;
-      width: 294px;
-      height: 100px;
-      background-color: $colorDB;
-      position: static;
-    }
-
-    .phone-phone-nr {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      width: 150px;
-      height: 50px;
-      letter-spacing: 1.95px;
-      font-weight: 400;
-      text-decoration-line: underline;
-    }
-
-    .phone-text {
-      @extend .phone-phone-nr;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 3px;
-      font-size: 20px;
-      font-weight: 400;
-      text-decoration-line: none;
-      font-family: Tahoma;
-      font-style: normal;
-    }
-  } */
 }
 
 /* .phone-btn-container:hover .phone-card {
@@ -556,4 +474,281 @@ $colorBlack: #0000;
 }
 .phone-dropdown:hover .phone-dropdown-content {
   display: block;
+}
+// @media screen and (max-width: 880px) {
+//   .dropdown {
+//     /* Toggle Button | Drop-down button */
+//     .toggle-btn {
+//       img {
+//         transition: transform 0.3s ease; // Speed of the transform
+
+//         &:hover {
+//           transform: rotate(180deg); // Rotates the 'X' icon 180'
+//         }
+//       }
+//       .toggle-btn-icon {
+//         position: relative;
+//         background: none;
+//         border: none;
+//         cursor: pointer;
+//         outline: inherit;
+//         width: 100%;
+//         height: 100%;
+//         padding: 0;
+
+//         .menu-btn-icon-2 {
+//           display: none; // Döljer 'X' knappen när menyn är stängd
+//         }
+
+//         &:hover {
+//           .menu-btn-icon-1 {
+//             display: none; // Döljer 'Meny' knappen när menyn är öppen
+//           }
+
+//           .menu-btn-icon-2 {
+//             display: inline-block;
+//           }
+//         }
+//       }
+//     }
+
+//     /* Dropdown-Content | Container */
+//     .dropdown-content {
+//       width: 100%;
+//       height: 536px;
+//       top: 100px;
+//       left: 0;
+//       position: absolute;
+//       display: none; // Hides the dropdown menu
+//       flex-direction: column;
+//       align-items: center;
+//       background-color: $colorSand;
+//     }
+
+//     /* Dropdown-Login | Container */
+//     .dropdown-content-login {
+//       width: 280px;
+//       height: 43px;
+//       flex-shrink: 0;
+//       overflow: hidden;
+//     }
+//     .dd-form {
+//       display: flex;
+//       flex-wrap: wrap;
+//       align-items: center;
+//       align-content: center;
+//       height: 45px;
+//       font-size: 15px;
+
+//       .dd-lable {
+//         position: relative;
+//         letter-spacing: 1.95px;
+//         left: 10px;
+//         margin-right: 5px;
+//       }
+
+//       input {
+//         display: flex;
+//         background: none;
+//         position: relative;
+//         border: none;
+//         width: 151px;
+//         height: 15px;
+//         margin-bottom: 6px;
+//         left: 10px;
+//         color: #000;
+//         letter-spacing: 1.95px;
+//         border-bottom: 1px solid #000;
+//       }
+
+//       input:focus {
+//         outline: none; // Removes the box around the input area on 'focus'
+//       }
+
+//       #dropdown-password {
+//         width: 170px;
+//       }
+//     }
+
+//     /* Dropdown-Menu | Container */
+//     .dropdown-content-menu {
+//       display: flex;
+//       width: 310px;
+//       height: 266px;
+//       top: 78px;
+//       position: absolute;
+//     }
+
+//     ol {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       gap: 36px;
+//       flex-shrink: 0;
+
+//       li:hover {
+//         background: rgba(255, 255, 255, 0.5);
+//       }
+
+//       li {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 310px;
+//         gap: 10px;
+//         border: 1px solid rgba(0, 0, 0, 0.788);
+//         a {
+//           all: unset;
+//           display: contents;
+
+//           h3 {
+//             color: #000;
+//             font-size: 20px;
+//             font-style: normal;
+//             font-weight: 600;
+//             letter-spacing: 2px;
+//             margin-left: 5px;
+//           }
+
+//           p {
+//             color: #000;
+//             text-align: right;
+//             font-size: 10px;
+//             font-weight: 400;
+//             letter-spacing: 1.5px;
+//             margin-right: 5px;
+//           }
+//         }
+//       }
+//     }
+//     .dropdown-language {
+//       display: flex;
+//       align-items: center;
+//       position: absolute;
+//       padding: 8px;
+//       gap: 10px;
+//       bottom: 44px;
+//       border: 1px solid black;
+
+//       button {
+//         width: 100%;
+//         height: 100%;
+//         letter-spacing: 3px;
+//         font-size: 15px;
+//         background: local;
+//         border: none;
+//         cursor: pointer;
+//         outline: inherit;
+
+//         :hover {
+//           background: rgba(255, 255, 255, 0.5);
+//         }
+//       }
+
+//       .se {
+//         font-weight: 700;
+//       }
+
+//       .separator {
+//         width: 1px;
+//         height: 15px;
+//         border: 1px solid black;
+//       }
+
+//       .en {
+//         font-weight: 400;
+//       }
+//     }
+
+//     /* Dropdown-Footer */
+//     .dropdown-footer {
+//       position: fixed;
+//       width: 390px;
+//       height: 227px;
+//       flex-shrink: 0;
+//       bottom: 0px;
+
+//       .header-footer {
+//         width: 100%;
+//         height: 227px;
+//         bottom: 0;
+//         background-color: $colorBrown;
+
+//         .text {
+//           min-width: 330px;
+//           max-height: 80%;
+//           display: flex;
+//           justify-content: space-evenly;
+//         }
+
+//         .contact {
+//           justify-content: center;
+//           align-items: center;
+//           width: 50%;
+//           height: 150px;
+//           text-align: center;
+//           padding-top: 35px;
+//         }
+//         address {
+//           .titleAddress {
+//             font-size: 20px;
+//             color: whitesmoke;
+//           }
+
+//           p {
+//             color: whitesmoke;
+//             font-size: 15px;
+//           }
+//         }
+
+//         .list {
+//           @extend .contact;
+//         }
+//         h3 {
+//           color: whitesmoke;
+//         }
+//         a {
+//           text-decoration: none;
+//           color: whitesmoke;
+//           font-size: 10px;
+//         }
+
+//         .icon {
+//           min-width: 330px;
+//           height: 50px;
+//           display: flex;
+//           justify-content: space-evenly;
+//           align-items: center;
+
+//           .fb {
+//             font-size: 24px;
+//             margin: 5px;
+//             color: whitesmoke;
+//           }
+
+//           .instagram {
+//             @extend .fb;
+//           }
+
+//           .twitter {
+//             @extend .fb;
+//           }
+
+//           .klarna {
+//             @extend .fb;
+//           }
+
+//           .visa {
+//             @extend .fb;
+//           }
+
+//           .mastercard {
+//             @extend .fb;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+@media screen and (min-width: 880px) {
 }
