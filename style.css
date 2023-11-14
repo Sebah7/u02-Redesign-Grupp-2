@@ -468,183 +468,130 @@ button {
   line-height: 16px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.wrapper {
-  background: url("/u02-redesign-grupp-2-1/Contact-Page/images/background.png");
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* @media (max-width: 400px) {
-    body{
-      width: 100%;
-      background-size: contain;
-      padding: 0 0;
-      margin-top: 20px;
-    }
-    .container {
-      align-items: center;
-      justify-content: center;
-      height: 50vh;
-      width: 80%;
-
-    }
-    .wrapper {
-      width: 100%;
-    }
-    .field {
-      width: 100%;
-    }
-    .row {
-      width: 100%;
-    }
-  }
-  /* Media query for desktop screens */
-  /*@media screen and (min-width: 1024px) {
-    header {
-        font-size: 24px;
-    }
-
-    .content {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-  }
-   */
-}
-.wrapper .container {
-  position: relative;
-  max-width: 300px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  background: #ccad8f;
-}
-.wrapper .card {
-  padding: 20px 40px;
-  margin: 3px;
+.contactBody {
   width: 100%;
-}
-.wrapper h1 {
-  color: #4d7ea8;
-  font-size: 20px;
-  font-weight: bold;
-}
-.wrapper .field {
-  width: 100%;
-  padding: 3px 5px;
-  margin: 3px;
-  outline: none;
-}
-.wrapper .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.wrapper .row span {
-  flex-basis: 50%;
-  margin-left: 20px;
-  align-items: center;
-}
-.wrapper button {
-  margin-bottom: 10px;
-  padding: 0 20px;
-  margin-left: 150px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4d7ea8;
-  color: white;
-}
-.wrapper select {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.smullBody {
-  background-image: url(/smullbox/assets/oranges.webp);
+  background-image: url("/contact/img/background.png");
   background-color: #c9f0ff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.smullBody .smullWrapper {
+.contactBody .main-wrapper .contact-us {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 700px;
+  top: 100px;
+}
+.contactBody .main-wrapper .contact-us .contact-text {
+  margin-top: 7px;
+  margin-bottom: 39px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contactBody .main-wrapper .contact-us .contact-text .contactH1 {
+  text-shadow: 2px 2px grey;
+}
+.contactBody .main-wrapper .contact-us .containerContact {
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ccad8f;
+  z-index: 0;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper {
+  width: 248px;
+  margin: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::-moz-placeholder {
+  color: #000;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::placeholder {
+  color: #000;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .field {
   width: 100%;
-  padding-top: 120px;
+  padding: 3px 5px;
+  margin: 3px;
+  background: whitesmoke;
+  border: 1px solid #000;
+  text-align: left;
 }
-.smullBody .smullWrapper .containerSmullbox {
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 1rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
+  width: 265px;
 }
-.smullBody .smullWrapper .containerSmullbox .smullCard {
-  display: flex;
-  margin: 15px;
-  width: 360px;
-  height: 140px;
-  background-image: linear-gradient(#ccad8f, whitesmoke);
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row .fieldSpan {
+  flex-basis: 50%;
+  padding-top: 5px;
+  align-items: center;
+  text-align: center;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .sendButtonContact {
+  width: 70px;
+  margin-bottom: 10px;
+  padding: 2px;
+  margin-left: 190px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #4d7ea8;
+  color: white;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper select {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border-radius: 5px;
 }
-.smullBody .smullWrapper .containerSmullbox .smullCard .imgBx {
-  height: 140px;
-  width: 164px;
-}
-.smullBody .smullWrapper .containerSmullbox .smullCard .smullContainer {
-  display: flex;
-  align-items: center;
-}
-.smullBody .smullWrapper .containerSmullbox .smullCard .smullContainer .smullText {
-  padding-top: 5px;
-  padding-left: 15px;
-  text-align: left;
-  width: 144px;
-  height: 132px;
-}
-.smullBody .smullWrapper .containerSmullbox .smullCard .smullContainer .smullText .smullH3 {
-  font-size: 20px;
-  color: #000;
-}
-.smullBody .smullWrapper .containerSmullbox .smullCard .smullContainer .smullText .smullP {
-  padding-top: 20px;
-  color: #000;
-  font-size: 10px;
-}
 
-@media screen and (min-width: 768px) {
-  .smullBody .smullWrapper {
-    height: 850px;
+/* @media (max-width: 400px) {
+  body{
+    width: 100%;
+    background-size: contain;
+    padding: 0 0;
+    margin-top: 20px;
   }
-  .smullBody .smullWrapper .containerSmullbox {
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 80%;
+
+  }
+  .wrapper {
     width: 100%;
   }
-  .smullBody .smullWrapper .containerSmullbox section.smullCard {
-    width: 600px;
-    height: 250px;
+  .field {
+    width: 100%;
   }
-  .smullBody .smullWrapper .containerSmullbox section.smullCard .imgBx {
-    width: 200px;
-    height: 230px;
-    margin: 10px;
-  }
-  .smullBody .smullWrapper .containerSmullbox section.smullCard .smullContainer .smullText {
-    padding-left: 20px;
-  }
-  .smullBody .smullWrapper .containerSmullbox section.smullCard .smullContainer .smullText .smullH3 {
-    width: 350px;
-    padding-bottom: 15px;
-    font-size: 1.2em;
-  }
-  .smullBody .smullWrapper .containerSmullbox section.smullCard .smullContainer .smullText .smullP {
-    width: 350px;
-    font-size: 0.9em;
+  .row {
+    width: 100%;
   }
 }
+/* Media query for desktop screens */
+/*@media screen and (min-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+}
+*/
 * {
   padding: 0;
   margin: 0;

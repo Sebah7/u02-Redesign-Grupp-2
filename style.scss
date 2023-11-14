@@ -2,16 +2,14 @@
 @use "header";
 @use "footer";
 @use "frontPage";
-@use "Contact-Page/contact";
-// @use "News-Page/news.scss";
-// @use "PriceList-Page/priceList";
-@use "smullbox/smullbox";
+@use "contact/contact";
 
 * {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
 }
+
 body {
   min-height: 100vh;
   display: flex;
