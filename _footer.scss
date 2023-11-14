@@ -84,7 +84,7 @@ footer {
         @extend .fb;
       }
     }
-
+// Not visible on smaller screens
     .bottomIcons {
       padding: 5px;
       color: $colorText;
@@ -166,6 +166,7 @@ footer {
             :hover {
               color: $colorDB;
               cursor: pointer;
+              
             }
           }
         }
