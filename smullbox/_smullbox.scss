@@ -1,0 +1,107 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #000;
+
+.smullBody{
+    background-image: url(/smullbox/assets/oranges.webp);
+    background-color: $colorLB;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .smullWrapper{
+        width: 100%;
+        padding-top: 120px;
+
+    .containerSmullbox{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+
+        .smullCard{
+            display: flex;
+            margin: 15px;
+            width: 360px;
+            height: 140px;
+            background-image: linear-gradient($colorSand, whitesmoke);
+            border-radius: 5px; 
+    
+                .imgBx {
+                    height: 140px;
+                    width: 164px;
+                }
+                .smullContainer{
+                    display: flex;
+                    align-items: center;
+
+                    .smullText{
+                        padding-top: 5px;
+                        padding-left: 15px;
+                        text-align: left;
+                        width: 144px;
+                        height: 132px;
+
+                        .smullH3{
+                            font-size: 15px;
+                            color: $colorBlack;
+                        }
+                        .smullP {
+                            padding-top: 20px;
+                            color: $colorBlack;
+                            font-size: 10px;
+                        }
+                    }
+                }
+        }
+    }
+}
+}
+
+
+// For ipad and desktop
+@media screen and (min-width: 768px) {
+    .smullBody {
+        .smullWrapper {
+
+        .containerSmullbox{
+            width: 100%;
+
+           section.smullCard{
+                width: 600px;
+                height: 280px;
+                margin: 20px;
+
+                .imgBx{
+                    padding-top: 60px;
+                    padding-left: 10px;
+                }
+
+                .smullContainer{
+                    width: 400px;
+                    height: 200px;
+
+                    .smullText{
+                        padding-left: 10%;
+
+                    .smullH3{
+                        width: 350px;
+                        font-size: 1.4em;
+                    }
+
+                    .smullP{
+                        width: 300px;
+                        font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
