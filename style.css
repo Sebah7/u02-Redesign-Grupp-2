@@ -661,7 +661,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   justify-content: center;
   align-items: center;
 }
-.price-wrapper .image-box {
+.price-wrapper .card-image-box {
   width: 100%;
   min-width: 155px;
   height: 125px;
@@ -685,7 +685,7 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   font-size: 10px;
   font-weight: bold;
 }
-.price-wrapper .card {
+.price-wrapper .price-card {
   width: 30%;
   min-width: 156px;
   max-width: 692px;
@@ -704,22 +704,22 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   margin-top: 29px;
   height: calc(100% - 30px);
 }
-.price-wrapper .first, .price-wrapper .second {
+.price-wrapper .first-card, .price-wrapper .second-card {
   margin-bottom: 35px;
 }
-.price-wrapper .third, .price-wrapper .forth {
+.price-wrapper .third-card, .price-wrapper .forth-card {
   margin-bottom: 34px;
 }
-.price-wrapper .fifth {
+.price-wrapper .fifth-card {
   margin-bottom: 6px;
 }
-.price-wrapper .image-box img {
+.price-wrapper .card-image-box img {
   width: 100%;
   min-height: 156px;
   min-height: 128px;
   height: auto;
 }
-.price-wrapper .content {
+.price-wrapper .card-content {
   min-height: 125px;
   min-height: 156px;
   height: auto;
@@ -731,20 +731,20 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   margin: 0;
   text-align: center;
 }
-.price-wrapper .btn-box {
+.price-wrapper .price-btn-box {
   height: 43px;
   width: 138px;
   margin: 18px 8.99px 8px 8.9px;
   justify-content: center;
   align-items: center;
 }
-.price-wrapper .btn-box1 {
+.price-wrapper .price-btn-box1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 9px;
 }
-.price-wrapper .btn-box2 {
+.price-wrapper .price-btn-box2 {
   display: flex;
   justify-content: center;
 }
@@ -790,18 +790,18 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
     justify-content: center;
     align-items: center;
   }
-  .price-wrapper .card {
+  .price-wrapper .price-card {
     min-width: 692px;
     min-height: 654px;
     width: 30%;
     height: auto;
   }
-  .price-wrapper .image-box img {
+  .price-wrapper .card-image-box img {
     min-width: 692px;
     height: 327px;
     width: 100%;
   }
-  .price-wrapper .content {
+  .price-wrapper .card-content {
     min-height: 327px;
     min-width: 692px;
     margin-top: 202px;
@@ -815,18 +815,19 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
     margin-top: -90px;
   }
   .price-wrapper .service-text {
+    display: grid;
     height: 163.5px;
     margin-top: 20px;
     font-size: 18px;
   }
-  .price-wrapper .card-h {
+  .price-wrapper .price-card-h {
     margin-top: 20px;
     font-size: 42px;
   }
-  .price-wrapper .card-p {
+  .price-wrapper .price-card-p {
     font-size: 22px;
   }
-  .price-wrapper .btn-box {
+  .price-wrapper .price-btn-box {
     height: 163.5px;
     margin-top: 10px;
     display: grid;

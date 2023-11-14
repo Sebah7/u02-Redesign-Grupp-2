@@ -39,7 +39,7 @@ background-attachment: fixed;
     align-items: center; 
   }
 
-  .image-box {
+  .card-image-box {
     width: 100%;
     min-width: 155px;
     height: 125px;
@@ -67,7 +67,7 @@ background-attachment: fixed;
     font-weight: bold;
   }
   
-  .card {
+  .price-card{
     width: 30%;
     min-width: 156px;
     max-width: 692px;
@@ -86,28 +86,28 @@ background-attachment: fixed;
 
     .cards-wrapper {
       margin-top: 29px;
-      height: calc(100% - 30px); // Adjust this value based on your heading height
+      height: calc(100% - 30px);
     }
   
-    .first, .second {
+    .first-card, .second-card {
       margin-bottom: 35px;
     }
   
-    .third, .forth {
+    .third-card, .forth-card {
       margin-bottom: 34px;
     }
-    .fifth {
+    .fifth-card {
       margin-bottom: 6px;
     }
    
-  .image-box img{
+  .card-image-box img{
     width: 100%;
     min-height: 156px;
     min-height: 128px;
     height: auto;
     }
    
-  .content{
+  .card-content{
     min-height: 125px;
     min-height: 156px;
     height: auto;
@@ -121,7 +121,7 @@ background-attachment: fixed;
       text-align: center;
     }
   
-  .btn-box{
+  .price-btn-box{
     height: 43px;
     width: 138px;
     margin: 18px 8.99px 8px 8.9px;
@@ -129,14 +129,14 @@ background-attachment: fixed;
     align-items: center;
   }
 
-  .btn-box1 {
+  .price-btn-box1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 9px;
   }
 
-  .btn-box2 {
+  .price-btn-box2 {
     display: flex;
     justify-content: center;
   }
@@ -190,21 +190,21 @@ background-attachment: fixed;
       justify-content: center;
       align-items: center;
     }
-    .card {
+    .price-card {
       min-width: 692px;
       min-height: 654px;
       width: 30%;
       height: auto;
     }
   
-    .image-box img{
+    .card-image-box img{
       min-width: 692px;
       height: 327px;
       width: 100%;
 
     }
   
-    .content {
+    .card-content {
       min-height: 327px;
       min-width: 692px;
       margin-top: 202px;
@@ -221,20 +221,21 @@ background-attachment: fixed;
     }
 
     .service-text {
+      display: grid;
       height: 163.5px;
       margin-top: 20px;
       font-size: 18px;
     }
 
-    .card-h {
+    .price-card-h {
       margin-top: 20px;
       font-size: 42px;
     }
 
-    .card-p {
+    .price-card-p {
       font-size: 22px;
     }
-    .btn-box {
+    .price-btn-box {
       height: 163.5px;
       margin-top: 10px;
       display: grid;
