@@ -561,7 +561,9 @@ p {
   .phone-toggle-btn
   .phone-toggle-btn-icon
   .phone-toggle-btn-icon-1 {
-  transition: transform 0.3s ease, border-radius 0.6s ease;
+  transition:
+    transform 0.3s ease,
+    border-radius 0.6s ease;
   border-radius: 0;
 }
 .phone-dropdown
@@ -632,6 +634,7 @@ p {
 }
 
 footer {
+  position: relative;
   width: 100%;
   height: 227px;
   background-color: #000;
@@ -758,6 +761,349 @@ footer .bottomIcons .payMethods ul {
     display: none;
   }
 }
+/* MAIN WRAPPER */
+.fp-wrapper {
+  min-width: 100%;
+  min-height: 1000px;
+  margin-top: 100px;
+  background-color: #ccad8f;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+  margin: 10px;
+}
+.hero-wrapper .hero-background {
+  background: #fefeff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 730px;
+  padding: inherit;
+}
+.hero-wrapper .hero-background .hero-background-img {
+  width: 100%;
+  background:
+    url(/img/food_drawing.png),
+    lightgray 50% / cover no-repeat;
+  /* HERO HEADING TEXT */
+  /* SEARCH-BAR */
+  /* INFORMATION CARD */
+  /* CALL TO ACTION SECTION */
+}
+.hero-wrapper .hero-background .hero-background-img .hero-heading {
+  width: 100%;
+  height: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wrapper .hero-background .hero-background-img .hero-heading .hero-h1 {
+  color: #763a03;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+.hero-wrapper .hero-background .hero-background-img .hero-heading .hero-h2 {
+  background: linear-gradient(180deg, #4d7ea8 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: normal;
+  letter-spacing: 8.4px;
+}
+.hero-wrapper .hero-background .hero-background-img .search-bar {
+  width: 100%;
+  display: inline-flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0px 41px 0px;
+}
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-box {
+  display: flex;
+  align-items: center;
+  width: 265px;
+  height: 40px;
+  border-radius: 15px 0px 0px 15px;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-box
+  .search-box-icon {
+  width: 13px;
+  height: 20px;
+  position: relative;
+  left: 10px;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-box
+  .search-box-input-form {
+  all: unset;
+  width: 250px;
+  left: 20px;
+  position: relative;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-box
+  .search-box-input-form
+  ::-moz-placeholder {
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-box
+  .search-box-input-form
+  ::placeholder {
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: right;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-btn-container {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px 15px 15px 0px;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  background: #4d7ea8;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-btn-container
+  .search-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  all: unset;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .search-bar
+  .search-btn-container
+  .search-btn
+  .search-btn-icon {
+  width: 24px;
+  height: 24px;
+}
+.hero-wrapper .hero-background .hero-background-img .hero-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 310px;
+  height: 220px;
+  flex-shrink: 0;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  background: rgba(204, 173, 143, 0.8);
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-card
+  .hero-card-bg
+  .hero-card-h2 {
+  color: #000;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-card
+  .hero-card-bg
+  .hero-card-text {
+  color: #000;
+  font-size: 18.498px;
+  line-height: normal;
+}
+.hero-wrapper .hero-background .hero-background-img .hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 57px;
+  width: 100%;
+  height: 250px;
+  /* CTA HEADING */
+  /* CTA IMAGES */
+  /* CTA BUTTON */
+}
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading,
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 24px;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-heading
+  .hero-cta-h1-1,
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-h1-1,
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-heading
+  .hero-cta-h1-2,
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-h1-2 {
+  font-size: 20px;
+  width: 50%;
+  line-height: normal;
+  letter-spacing: 4px;
+  background: linear-gradient(180deg, #000 0%, rgb(118, 58, 3) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img {
+  height: 175px;
+  display: flex;
+  gap: 10px;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-img-1,
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-img-2 {
+  width: 172px;
+  height: 172px;
+  flex-shrink: 0;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  background:
+    url(<path-to-image>),
+    lightgray 50% / cover no-repeat;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-img-1
+  img,
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-img-2
+  img {
+  width: 100%;
+  height: auto;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-img
+  .hero-cta-img-2 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns {
+  display: flex;
+  width: 100%;
+  height: 24px;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-btns
+  .hero-cta-btn-1,
+.hero-wrapper
+  .hero-background
+  .hero-background-img
+  .hero-cta
+  .hero-cta-btns
+  .hero-cta-btn-2 {
+  width: 40px;
+  height: 40px;
+  all: unset;
+}
+/* FRONT PAGE GRID LAYOUT */
+.fp-grid-1 {
+  border: 1px solid black;
+  scroll-margin: 12rem;
+  scroll-snap-align: center;
+}
+
+.fp-grid-2 {
+  border: 1px solid black;
+  scroll-margin: 12rem;
+  scroll-snap-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -784,6 +1130,7 @@ footer .bottomIcons .payMethods ul {
 
 .wrapper {
   min-width: 100%;
-  min-height: 1600px;
+  min-height: 1000px;
+  margin-top: 100px;
   background-color: #ccad8f;
 } /*# sourceMappingURL=style.css.map */
