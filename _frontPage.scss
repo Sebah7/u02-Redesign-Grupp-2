@@ -218,13 +218,13 @@
 
         /* CTA HEADING */
         .hero-cta-heading {
-          // H1 Container
+          // h2 Container
           display: flex;
           justify-content: center;
           gap: 10px;
 
-          .hero-cta-h1-1 {
-            // H1 1
+          .hero-cta-h2-1 {
+            // h2 1
             font-size: 24px;
             width: 172px;
             line-height: normal;
@@ -242,9 +242,9 @@
             }
           }
 
-          .hero-cta-h1-2 {
-            // H1 2
-            @extend .hero-cta-h1-1;
+          .hero-cta-h2-2 {
+            // h2 2
+            @extend .hero-cta-h2-1;
           }
         }
 

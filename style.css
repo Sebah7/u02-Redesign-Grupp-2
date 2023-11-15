@@ -372,11 +372,12 @@ p {
   font-weight: 700;
 }
 .header-container .header-section .dropdown .dropdown-footer {
-  position: fixed;
-  width: 390px;
+  position: relative;
+  width: 100%;
   height: 227px;
-  flex-shrink: 0;
-  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  bottom: 0;
+  margin-top: auto;
 }
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-footer {
@@ -400,16 +401,22 @@ p {
   align-items: center;
   width: 50%;
   height: 150px;
+  margin: 10px;
   text-align: center;
-  padding-top: 35px;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer address {
+  padding-top: 20px;
 }
 .header-container .header-section .dropdown .dropdown-footer .header-footer address .titleAddress {
-  font-size: 20px;
+  font-size: 1.4em;
   color: whitesmoke;
 }
 .header-container .header-section .dropdown .dropdown-footer .header-footer address p {
   color: whitesmoke;
-  font-size: 15px;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer .list {
+  border-left: 1px solid whitesmoke;
+  padding-top: 15px;
 }
 .header-container .header-section .dropdown .dropdown-footer .header-footer h3 {
   color: whitesmoke;
@@ -425,19 +432,30 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-top: 1px solid whitesmoke;
 }
 .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .fb, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .mastercard, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .visa, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .klarna, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .twitter, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
 }
+.header-container .header-section .dropdown .dropdown-footer .header-footer .bottomIcons {
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 24px;
+  display: none;
+}
+.header-container .header-section .dropdown .dropdown-footer .header-footer .bottomIcons .socialMedia ul, .header-container .header-section .dropdown .dropdown-footer .header-footer .bottomIcons .payMethods ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15%;
+  list-style: none;
+}
 .header-container .dropdown:hover .dropdown-content {
   display: flex;
 }
 
-/* .phone-btn-container:hover .phone-card {
-  visibility: visible;
-} */
 /* Phone button | Bottom of the page */
 .phone-dropdown {
   position: fixed;
@@ -866,7 +884,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   justify-content: center;
   gap: 10px;
 }
-.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h2-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h2-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h2-2 {
   font-size: 24px;
   width: 172px;
   line-height: normal;
@@ -879,7 +897,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
        text-align-last: center;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h2-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h2-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h2-2 {
     font-size: 2vw;
     width: 18vw;
     height: auto;

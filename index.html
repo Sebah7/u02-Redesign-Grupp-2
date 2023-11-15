@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -54,7 +54,7 @@
             <img src="/assets/search.svg" alt="Search button" />
           </button>
         </div>
- 
+
         <!-- Container for Resto Culinair logo -->
         <div class="resto">
           <img
@@ -91,7 +91,7 @@
                   src="/assets/person-small.svg"
                   alt="Profile icon"
                 />
-                <lable class="dd-lable">customer nr:</lable>
+                <span class="dd-lable">customer nr:</span>
                 <input
                   type="text"
                   name="customer nr"
@@ -104,7 +104,7 @@
                   src="/assets/lock.svg"
                   alt="password icon"
                 />
-                <lable class="dd-lable">password:</lable>
+                <span class="dd-lable">password:</span>
                 <input
                   type="password"
                   name="password"
@@ -159,7 +159,7 @@
 
             <!-- Dropdown-Footer | Container -->
             <div class="dropdown-footer">
-              <section class="header-footer">
+              <div class="header-footer">
                 <!-- Text and information Section -->
                 <section class="text">
                   <!-- Container for contact information -->
@@ -173,16 +173,61 @@
                   <!-- Container for list information -->
                   <div class="list">
                     <h3>Genvägar</h3>
-                    <div><a href="#">Startsidan</a></div>
-                    <div><a href="#">Nyheter</a></div>
-                    <div><a href="#">Medlem</a></div>
-                    <div><a href="#">Prislista</a></div>
+                    <div><a href="/index.html">Startsidan</a></div>
+                    <div><a href="/nyheter_test.html">Nyheter</a></div>
+                    <div><a href="/members.html">Medlem</a></div>
+                    <div><a href="/priceList.html">Prislista</a></div>
                     <div><a href="/smullbox.html">Smullbox</a></div>
-                    <div><a href="#">Kontakt</a></div>
+                    <div><a href="/contact.html">Kontakt</a></div>
+                  </div>
+
+                  <!-- Not visible on a small screen, appears when the smallest px is 768-->
+                  <div class="bottomIcons">
+                    <div class="socialMedia">
+                      <h3>Följ oss</h3>
+                      <ul>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-facebook"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-instagram"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-twitter"></i
+                          ></span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="payMethods">
+                      <h3>Betalmedel</h3>
+                      <ul>
+                        <li>
+                          <span class="icons">K.</span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-cc-visa"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-cc-mastercard"></i
+                          ></span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </section>
+
                 <!-- Icon Section -->
-                <section class="icon">
+                <!-- Not visible on large screen, appears when max px is 767 -->
+                <div class="icon">
                   <!-- Conatiner for icon 1 -->
                   <div class="fb">
                     <span><i class="fa-brands fa-square-facebook"></i></span>
@@ -205,8 +250,8 @@
                   <div class="mastercard">
                     <span><i class="fa-brands fa-cc-mastercard"></i></span>
                   </div>
-                </section>
-              </section>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -232,67 +277,118 @@
 
     <!-- WRAPPER -->
     <main class="fp-wrapper">
-
       <!-- HERO SECTION | FRONT PAGE -->
-      <section class="hero-wrapper"> <!-- Hero wrapper -->
+      <section class="hero-wrapper">
+        <!-- Hero wrapper -->
         <div class="hero-background">
-        <div class="hero-background-img"> <!-- Hero Background image -->
-        <div class="hero-heading"> <!-- Hero heading container --> 
-          <h1 class="hero-h1">SUPPLY NETWORK</h1> <!-- Hero h1 --> 
-          <h2 class="hero-h2">catering / events<br> & resataurants</h2> <!-- Hero h2 --> 
-        </div>
-
-        <section class="search-bar"> <!-- Container for the searchbar function --> 
-          <div class="search-box"> <!-- Container for the text field --> 
-            <img class="search-box-icon" src="/assets/Vector.png" alt="Pin button for position">
-            </img>
-            <form role="search" class="search-form">
-              <input
-              type="search"
-              name="type"
-              class="search-box-input-form"
-              placeholder="Find your closest business"
-            />
-            </form>
-            <div class="search-box-input"></div>
-          </div>
-          <div class="search-btn-container">
-            <button class="search-btn">
-              <img class="search-btn-icon" src="/assets/travel_explore.svg" alt="Search button" />
-            </button>
-          </div>
-        </section>
-
-        <section class="hero-card">
-          <div class="hero-card-bg">
-          <h2 class="hero-card-h2">This is the front page. <br> We are Resto Culinair. <br> Food is our passion!</h2>
-          <p class="hero-card-text">Smaller text for sime additional <br> information about Resto Culinair <br> and other things we offer!</p>
-          </div>
-        </section>
-
-        <section class="hero-cta">
-          <div class="hero-cta-heading">
-            <h1 class="hero-cta-h1-1">EVENTS</h1>
-            <h1 class="hero-cta-h1-2">PARTNERS</h1>
-          </div>
-          <div class="hero-cta-img">
-            <div class="hero-cta-img-1"><img src="/img/guacc.png" alt="Guaccamole" class="hero-cta-img-1-1"></div>
-            <div class="hero-cta-img-2">
-              <img src="/img/herrgurka.png" alt="herrgurka logo" class="hero-cta-img-2-1">
-              <img src="/img/varsego.png" alt="Varsego logo" class="hero-cta-img-2-2">
-              <img src="/img/snabbgross.png" alt="Snabbgrossen" class="hero-cta-img-2-3">
-
+          <div class="hero-background-img">
+            <!-- Hero Background image -->
+            <div class="hero-heading">
+              <!-- Hero heading container -->
+              <h1 class="hero-h1">SUPPLY NETWORK</h1>
+              <!-- Hero h1 -->
+              <h2 class="hero-h2">
+                catering / events<br />
+                & resataurants
+              </h2>
+              <!-- Hero h2 -->
             </div>
-          </div>
-          <div class="hero-cta-btns">
-            <button class="hero-cta-btn-1"><img src="/assets/keyboard_double_arrow_down.svg" alt="Arrow down button"></button>
-            <button class="hero-cta-btn-2"><img src="/assets/keyboard_double_arrow_down.svg" alt="Arrow down button"></button>
-          </div>
-          </section>
-        </div>
-      </div>
-      </section>
 
+            <div class="search-bar">
+              <!-- Container for the searchbar function -->
+              <div class="search-box">
+                <!-- Container for the text field -->
+                <img
+                  class="search-box-icon"
+                  src="/assets/Vector.png"
+                  alt="Pin button for position"
+                />
+
+                <form role="search" class="search-form">
+                  <input
+                    type="search"
+                    name="type"
+                    class="search-box-input-form"
+                    placeholder="Find your closest business"
+                  />
+                </form>
+                <div class="search-box-input"></div>
+              </div>
+              <div class="search-btn-container">
+                <button class="search-btn">
+                  <img
+                    class="search-btn-icon"
+                    src="/assets/travel_explore.svg"
+                    alt="Search button"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <section class="hero-card">
+              <div class="hero-card-bg">
+                <h2 class="hero-card-h2">
+                  This is the front page. <br />
+                  We are Resto Culinair. <br />
+                  Food is our passion!
+                </h2>
+                <p class="hero-card-text">
+                  Smaller text for sime additional <br />
+                  information about Resto Culinair <br />
+                  and other things we offer!
+                </p>
+              </div>
+            </section>
+
+            <section class="hero-cta">
+              <div class="hero-cta-heading">
+                <h2 class="hero-cta-h2-1">EVENTS</h2>
+                <h2 class="hero-cta-h2-2">PARTNERS</h2>
+              </div>
+              <div class="hero-cta-img">
+                <div class="hero-cta-img-1">
+                  <img
+                    src="/img/guacc.png"
+                    alt="Guaccamole"
+                    class="hero-cta-img-1-1"
+                  />
+                </div>
+                <div class="hero-cta-img-2">
+                  <img
+                    src="/img/herrgurka.png"
+                    alt="herrgurka logo"
+                    class="hero-cta-img-2-1"
+                  />
+                  <img
+                    src="/img/varsego.png"
+                    alt="Varsego logo"
+                    class="hero-cta-img-2-2"
+                  />
+                  <img
+                    src="/img/snabbgross.png"
+                    alt="Snabbgrossen"
+                    class="hero-cta-img-2-3"
+                  />
+                </div>
+              </div>
+              <div class="hero-cta-btns">
+                <button class="hero-cta-btn-1">
+                  <img
+                    src="/assets/keyboard_double_arrow_down.svg"
+                    alt="Arrow down button"
+                  />
+                </button>
+                <button class="hero-cta-btn-2">
+                  <img
+                    src="/assets/keyboard_double_arrow_down.svg"
+                    alt="Arrow down button"
+                  />
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
 
       <section class="fp-grid">
         <div class="fp-video-card-1"></div>
@@ -306,7 +402,6 @@
         <div class="fp-image-card-6"></div>
         <div class="fp-image-card-7"></div>
       </section>
-
     </main>
 
     <!-- FOOTER SECTION -->
