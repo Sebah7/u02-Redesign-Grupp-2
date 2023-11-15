@@ -1,11 +1,14 @@
 /* MAIN WRAPPER */
 .fp-wrapper {
   min-width: 100%;
-  min-height: 1000px;
   margin-top: 100px;
   background-color: #ccad8f;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
+  @media screen and (min-width: 970px) {
+    margin-top: 160px;
+  }
 }
 
 /* HERO SECTION */
@@ -13,8 +16,9 @@
   // Hero Wrapper for content
   display: flex;
   justify-content: center;
-  scroll-snap-align: start; // Adds a startingpoint for the snap-scroll function
+  scroll-snap-align: start;
   margin: 10px;
+  height: calc(100vh - 170px);
 
   .hero-background {
     // Background secound color
@@ -22,20 +26,19 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 730px;
+    height: calc(100% - 10px);
     padding: inherit;
 
     .hero-background-img {
-      // Hero background
-      width: 100%;
+      width: inherit;
+      height: inherit;
       background:
-        url(/img/food_drawing.png),
-        lightgray 50% / cover no-repeat;
+        url("/img/food_drawing.png") center/cover no-repeat,
+        lightgray 50%;
 
       /* HERO HEADING TEXT */
       .hero-heading {
         width: 100%;
-        height: 100px;
         display: inline-flex;
         flex-direction: column;
         align-content: center;
@@ -48,6 +51,10 @@
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
           line-height: normal;
           letter-spacing: 3.2px;
+
+          @media screen and (min-width: 970px) {
+            font-size: 3vw;
+          }
         }
 
         .hero-h2 {
@@ -61,7 +68,10 @@
           -webkit-text-fill-color: transparent;
           line-height: normal;
           letter-spacing: 8.4px;
-          text-align: center;
+
+          @media screen and (min-width: 970px) {
+            font-size: 3vw;
+          }
         }
       }
 
@@ -84,6 +94,10 @@
           border: 2px solid rgba(118, 58, 3, 0.8);
           background: rgba(0, 0, 0, 0.8);
 
+          @media screen and (min-width: 970px) {
+            width: 25vw;
+          }
+
           .search-box-icon {
             // img icon container
             width: 13px;
@@ -98,7 +112,11 @@
             width: 250px;
             left: 20px;
             position: relative;
-            color: $colorWhite;
+
+            @media screen and (min-width: 970px) {
+              font-size: 1.3vw;
+              width: 25vw;
+            }
 
             ::placeholder {
               // Tex styling for the input field
@@ -149,12 +167,13 @@
 
         .hero-card-bg {
           // Card background
-
           display: flex;
-          justify-content: center;
           flex-wrap: wrap;
-          width: 310px;
-          height: 220px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: -moz-fit-content;
+          width: fit-content;
           flex-shrink: 0;
           border: 2px solid rgba(118, 58, 3, 0.8);
           background: rgba(204, 173, 143, 0.8);
@@ -164,12 +183,22 @@
             font-size: 29px;
             font-weight: 400;
             line-height: normal;
+            margin: 23px;
+
+            @media screen and (min-width: 970px) {
+              font-size: 3vw;
+            }
           }
 
           .hero-card-text {
             color: #000;
             font-size: 18.498px;
             line-height: normal;
+            margin: 0px 13px 20px 13px;
+
+            @media screen and (min-width: 970px) {
+              font-size: 2vw;
+            }
           }
         }
       }
@@ -178,24 +207,22 @@
       .hero-cta {
         // Section Container
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
         margin-top: 57px;
         width: 100%;
-        height: 250px;
 
         /* CTA HEADING */
         .hero-cta-heading {
           // H1 Container
           display: flex;
           justify-content: center;
-          width: 100%;
-          height: 24px;
+          gap: 10px;
 
           .hero-cta-h1-1 {
             // H1 1
-            font-size: 20px;
-            width: 50%;
+            font-size: 24px;
+            width: 172px;
             line-height: normal;
             letter-spacing: 4px;
             background: linear-gradient(180deg, #000 0%, rgb(118, 58, 3) 100%);
@@ -203,6 +230,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align-last: center;
+
+            @media screen and (min-width: 970px) {
+              font-size: 2vw;
+              width: 18vw;
+              height: auto;
+            }
           }
 
           .hero-cta-h1-2 {
@@ -215,9 +248,6 @@
         .hero-cta-img {
           // Image Container
           @extend .hero-cta-heading;
-          height: 175px;
-          display: flex;
-          gap: 10px;
 
           .hero-cta-img-1 {
             width: 172px;
@@ -228,9 +258,16 @@
               url(<path-to-image>),
               lightgray 50% / cover no-repeat;
 
-            img {
+            .hero-cta-img-1-1 {
               width: 100%;
               height: auto;
+              margin-bottom: -4px;
+            }
+
+            @media screen and (min-width: 970px) {
+              font-size: 2vw;
+              width: 18vw;
+              height: 100%;
             }
           }
 
@@ -242,21 +279,30 @@
             align-items: center;
             gap: 16px;
             background: rgba(255, 255, 255, 0.8);
+
+            .hero-cta-img-2-1,
+            .hero-cta-img-2-2,
+            .hero-cta-img-2-3 {
+              width: calc(100% - 10px);
+            }
+
+            @media screen and (min-width: 970px) {
+              font-size: 2vw;
+              width: 18vw;
+              height: auto;
+            }
           }
         }
 
         /* CTA BUTTON */
         .hero-cta-btns {
-          display: flex;
-          width: 100%;
-          height: 24px;
-          align-items: center;
-          justify-content: space-around;
+          @extend .hero-cta-heading;
 
           .hero-cta-btn-1 {
-            width: 40px;
-            height: 40px;
             all: unset;
+            display: flex;
+            justify-content: center;
+            width: 172px;
           }
 
           .hero-cta-btn-2 {
