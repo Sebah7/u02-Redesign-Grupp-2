@@ -273,7 +273,7 @@ header .phone-btn-container:hover .phone-card {
 
 footer {
   width: 100%;
-  height: 200px;
+  height: 210px;
   background-color: #000;
   bottom: 0;
   margin-top: auto;
@@ -288,7 +288,7 @@ footer .textFooter .contactF, footer .textFooter .listFooter {
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 110px;
+  height: 130px;
   margin: 10px;
   text-align: center;
   padding-top: 20px;
@@ -392,6 +392,10 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   footer .textFooter .bottomIcons .payMethods ul :hover {
     color: #4d7ea8;
     cursor: pointer;
+  }
+  footer .textFooter .bottomIcons .socialMedia ul .icons,
+  footer .textFooter .bottomIcons .payMethods ul .icons {
+    font-size: 36px;
   }
   footer .iconFooter {
     display: none;
