@@ -12,7 +12,6 @@ background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
-}
 
 .price-wrapper {
   margin-top: 167px;
@@ -21,159 +20,160 @@ background-size: cover;
   justify-content: center; 
   align-items: center; 
   margin-bottom: 7px;
-  
+}
 
-  .card-body {
-    position: relative;
-    background: linear-gradient(
-      hsl(29, 95%, 24%, 20%),
-      hsl(30, 37%, 68%, 20%)
-    );
-    
-    margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
-    width: 90%;
-    min-height: 867px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-  }
+.card-body {
+  position: relative;
+  background: linear-gradient(
+    hsl(29, 95%, 24%, 20%),
+    hsl(30, 37%, 68%, 20%)
+  );
+  
+  margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
+  width: 90%;
+  min-height: 867px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
 
-  .card-image-box {
-    width: 100%;
-    min-width: 155px;
-    height: 125px;
-  }
-  
-  .cards-heading {
-    width: 314px; 
-    height: 30px; 
-    margin-top: 22px;
-    overflow: visible;
-    text-align: center; 
-    word-wrap: break-word;
-    font-weight: 700;
-    position: relative; 
-  }
-  
-  .cards-heading h1 {
-    position: absolute; 
-    margin-top: -60px;
-  }
-  
-  p {
-    color:$colorDB;
-    font-size: 10px;
-    font-weight: bold;
-  }
-  
-  .price-card{
-    width: 30%;
-    min-width: 156px;
-    max-width: 692px;
-    min-height: 250px;
-    height: auto;
-    margin-right: 8px;
-    margin-left: 8px;
-    display: inline-block;  
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    }
+.card-image-box {
+  width: 100%;
+  min-width: 155px;
+  height: 125px;
+}
 
-  .card:hover {
-    transform: scale(1.1);
+.cards-heading {
+  width: 314px; 
+  height: 30px; 
+  margin-top: 22px;
+  overflow: visible;
+  text-align: center; 
+  word-wrap: break-word;
+  font-weight: 700;
+  position: relative; 
+}
+
+.cards-heading h1 {
+  position: absolute; 
+  margin-top: -60px;
+}
+
+p {
+  color:$colorDB;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.price-card{
+  width: 30%;
+  min-width: 156px;
+  max-width: 692px;
+  min-height: 250px;
+  height: auto;
+  margin-right: 8px;
+  margin-left: 8px;
+  display: inline-block;  
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
   }
 
-    .cards-wrapper {
-      margin-top: 29px;
-      height: calc(100% - 30px);
-    }
-  
-    .first-card, .second-card {
-      margin-bottom: 35px;
-    }
-  
-    .third-card, .forth-card {
-      margin-bottom: 34px;
-    }
-    .fifth-card {
-      margin-bottom: 6px;
-    }
-   
-  .card-image-box img{
-    width: 100%;
-    min-height: 156px;
-    min-height: 128px;
-    height: auto;
-    }
-   
-  .card-content{
-    min-height: 125px;
-    min-height: 156px;
-    height: auto;
-    width: 100%;
-    background: linear-gradient(#CCAD8F, white,#CCAD8F);
-    position: relative;
-    }
-   
-    .service-text {
-      margin: 0;
-      text-align: center;
-    }
-  
-  .price-btn-box{
-    height: 43px;
-    width: 138px;
-    margin: 18px 8.99px 8px 8.9px;
-    justify-content: center;
-    align-items: center;
+.card:hover {
+  transform: scale(1.1);
+}
+
+  .cards-wrapper {
+    margin-top: 29px;
+    height: calc(100% - 30px);
   }
 
-  .price-btn-box1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 9px;
+  .first-card, .second-card {
+    margin-bottom: 35px;
   }
 
-  .price-btn-box2 {
-    display: flex;
-    justify-content: center;
+  .third-card, .forth-card {
+    margin-bottom: 34px;
   }
-  
-   .btnprice {
-   width: 65.62px; 
-   height: 17px;  
-   background: #4D7EA8; 
-   border-radius: 50px;
-   border: none;
-   margin-bottom: 5px;
-   text-transform: uppercase;
-   transition: .3s linear;
-   }
+  .fifth-card {
+    margin-bottom: 6px;
+  }
+ 
+.card-image-box img{
+  width: 100%;
+  min-height: 156px;
+  min-height: 128px;
+  height: auto;
+  }
+ 
+.card-content{
+  min-height: 125px;
+  min-height: 156px;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(#CCAD8F, white,#CCAD8F);
+  position: relative;
+  }
+ 
+  .service-text {
+    margin: 0;
+    text-align: center;
+  }
+
+.price-btn-box{
+  height: 43px;
+  width: 138px;
+  margin: 18px 8.99px 8px 8.9px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-btn-box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.price-btn-box2 {
+  display: flex;
+  justify-content: center;
+}
+
+ .btnprice {
+ width: 65.62px; 
+ height: 17px;  
+ background: #4D7EA8; 
+ border-radius: 50px;
+ border: none;
+ margin-bottom: 5px;
+ text-transform: uppercase;
+ transition: .3s linear;
+ }
 
 .btnprice:hover {
-    background: $colorDB;
-    cursor: pointer;
+  background: $colorDB;
+  cursor: pointer;
 }
 
-   .btn-txt {
-    width: 51.24px; 
-    height: 7px; 
-    left: 6.29px; 
-    top: 4px;  
-    text-align: center; 
-    color: white; 
-    font-size: 7px; 
-    font-family: Tahoma; 
-    font-weight: 700;  
-   }
+ .btn-txt {
+  width: 51.24px; 
+  height: 7px; 
+  left: 6.29px; 
+  top: 4px;  
+  text-align: center; 
+  color: white; 
+  font-size: 7px; 
+  font-family: Tahoma; 
+  font-weight: 700;  
+ }
 
-   .btnprice:active {
-    background-color: #815f33; 
-  }
+ .btnprice:active {
+  background-color: #815f33; 
+}
 
 }
+
 
 @media only screen and (min-width: 800px) {
     
