@@ -18,7 +18,11 @@
   justify-content: center;
   scroll-snap-align: start;
   margin: 10px;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 100px);
+
+  @media screen and (min-width: 970px) {
+    height: 100%;
+  }
 
   .hero-background {
     // Background secound color
@@ -303,6 +307,11 @@
             display: flex;
             justify-content: center;
             width: 172px;
+            margin: 10px;
+
+            @media screen and (min-width: 970px) {
+              width: 18vw;
+            }
           }
 
           .hero-cta-btn-2 {

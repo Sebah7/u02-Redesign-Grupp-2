@@ -55,10 +55,7 @@ p {
   }
 }
 .header-container .header-section {
-  background-image: linear-gradient(
-    hsla(29, 95%, 24%, 0.2),
-    hsla(30, 37%, 68%, 0.2)
-  );
+  background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   max-width: 100%;
   height: 100px;
   display: flex;
@@ -76,13 +73,10 @@ p {
     height: 160px;
   }
 }
-.header-container .header-section .login,
-.header-container .header-section .search {
+.header-container .header-section .login, .header-container .header-section .search {
   /* Header-Login | BTN */
 }
-.header-container .header-section .login .login-btn,
-.header-container .header-section .search .login-btn,
-.header-container .header-section .search .search-btn {
+.header-container .header-section .login .login-btn, .header-container .header-section .search .login-btn, .header-container .header-section .search .search-btn {
   background: none;
   border: none;
   cursor: pointer;
@@ -91,19 +85,13 @@ p {
   height: 100%;
   padding: 0;
 }
-.header-container .header-section .login .login-btn .login-btn-icon-2,
-.header-container .header-section .search .login-btn .login-btn-icon-2,
-.header-container .header-section .search .search-btn .login-btn-icon-2 {
+.header-container .header-section .login .login-btn .login-btn-icon-2, .header-container .header-section .search .login-btn .login-btn-icon-2, .header-container .header-section .search .search-btn .login-btn-icon-2 {
   display: none;
 }
-.header-container .header-section .login .login-btn:hover .login-btn-icon-1,
-.header-container .header-section .search .login-btn:hover .login-btn-icon-1,
-.header-container .header-section .search .search-btn:hover .login-btn-icon-1 {
+.header-container .header-section .login .login-btn:hover .login-btn-icon-1, .header-container .header-section .search .login-btn:hover .login-btn-icon-1, .header-container .header-section .search .search-btn:hover .login-btn-icon-1 {
   display: none;
 }
-.header-container .header-section .login .login-btn:hover .login-btn-icon-2,
-.header-container .header-section .search .login-btn:hover .login-btn-icon-2,
-.header-container .header-section .search .search-btn:hover .login-btn-icon-2 {
+.header-container .header-section .login .login-btn:hover .login-btn-icon-2, .header-container .header-section .search .login-btn:hover .login-btn-icon-2, .header-container .header-section .search .search-btn:hover .login-btn-icon-2 {
   display: inline-block;
 }
 .header-container .header-section .search .search-btn img {
@@ -134,19 +122,13 @@ p {
   /* Dropdown-Menu | Container */
   /* Dropdown-Footer */
 }
-.header-container .header-section .dropdown .toggle-btn img,
-.header-container .header-section .dropdown .login img,
-.header-container .header-section .dropdown .search img {
+.header-container .header-section .dropdown .toggle-btn img, .header-container .header-section .dropdown .login img, .header-container .header-section .dropdown .search img {
   transition: transform 0.3s ease;
 }
-.header-container .header-section .dropdown .toggle-btn img:hover,
-.header-container .header-section .dropdown .login img:hover,
-.header-container .header-section .dropdown .search img:hover {
+.header-container .header-section .dropdown .toggle-btn img:hover, .header-container .header-section .dropdown .login img:hover, .header-container .header-section .dropdown .search img:hover {
   transform: rotate(180deg);
 }
-.header-container .header-section .dropdown .toggle-btn .toggle-btn-icon,
-.header-container .header-section .dropdown .login .toggle-btn-icon,
-.header-container .header-section .dropdown .search .toggle-btn-icon {
+.header-container .header-section .dropdown .toggle-btn .toggle-btn-icon, .header-container .header-section .dropdown .login .toggle-btn-icon, .header-container .header-section .dropdown .search .toggle-btn-icon {
   position: relative;
   background: none;
   border: none;
@@ -156,70 +138,17 @@ p {
   height: 100%;
   padding: 0;
 }
-.header-container
-  .header-section
-  .dropdown
-  .toggle-btn
-  .toggle-btn-icon
-  .menu-btn-icon-2,
-.header-container
-  .header-section
-  .dropdown
-  .login
-  .toggle-btn-icon
-  .menu-btn-icon-2,
-.header-container
-  .header-section
-  .dropdown
-  .search
-  .toggle-btn-icon
-  .menu-btn-icon-2 {
+.header-container .header-section .dropdown .toggle-btn .toggle-btn-icon .menu-btn-icon-2, .header-container .header-section .dropdown .login .toggle-btn-icon .menu-btn-icon-2, .header-container .header-section .dropdown .search .toggle-btn-icon .menu-btn-icon-2 {
   display: none;
 }
-.header-container
-  .header-section
-  .dropdown
-  .toggle-btn
-  .toggle-btn-icon:hover
-  .menu-btn-icon-1,
-.header-container
-  .header-section
-  .dropdown
-  .login
-  .toggle-btn-icon:hover
-  .menu-btn-icon-1,
-.header-container
-  .header-section
-  .dropdown
-  .search
-  .toggle-btn-icon:hover
-  .menu-btn-icon-1 {
+.header-container .header-section .dropdown .toggle-btn .toggle-btn-icon:hover .menu-btn-icon-1, .header-container .header-section .dropdown .login .toggle-btn-icon:hover .menu-btn-icon-1, .header-container .header-section .dropdown .search .toggle-btn-icon:hover .menu-btn-icon-1 {
   display: none;
 }
-.header-container
-  .header-section
-  .dropdown
-  .toggle-btn
-  .toggle-btn-icon:hover
-  .menu-btn-icon-2,
-.header-container
-  .header-section
-  .dropdown
-  .login
-  .toggle-btn-icon:hover
-  .menu-btn-icon-2,
-.header-container
-  .header-section
-  .dropdown
-  .search
-  .toggle-btn-icon:hover
-  .menu-btn-icon-2 {
+.header-container .header-section .dropdown .toggle-btn .toggle-btn-icon:hover .menu-btn-icon-2, .header-container .header-section .dropdown .login .toggle-btn-icon:hover .menu-btn-icon-2, .header-container .header-section .dropdown .search .toggle-btn-icon:hover .menu-btn-icon-2 {
   display: inline-block;
 }
 @media screen and (min-width: 970px) {
-  .header-container .header-section .dropdown .toggle-btn,
-  .header-container .header-section .dropdown .login,
-  .header-container .header-section .dropdown .search {
+  .header-container .header-section .dropdown .toggle-btn, .header-container .header-section .dropdown .login, .header-container .header-section .dropdown .search {
     visibility: hidden;
   }
 }
@@ -405,8 +334,7 @@ p {
     font-size: 20px;
   }
 }
-.header-container .header-section .dropdown .dropdown-language .se:hover,
-.header-container .header-section .dropdown .dropdown-language .se:focus {
+.header-container .header-section .dropdown .dropdown-language .se:hover, .header-container .header-section .dropdown .dropdown-language .se:focus {
   font-weight: 700;
 }
 .header-container .header-section .dropdown .dropdown-language .separator {
@@ -422,8 +350,7 @@ p {
     font-size: 20px;
   }
 }
-.header-container .header-section .dropdown .dropdown-language .en:hover,
-.header-container .header-section .dropdown .dropdown-language .en:focus {
+.header-container .header-section .dropdown .dropdown-language .en:hover, .header-container .header-section .dropdown .dropdown-language .en:focus {
   font-weight: 700;
 }
 .header-container .header-section .dropdown .dropdown-footer {
@@ -444,29 +371,13 @@ p {
   bottom: 0;
   background-color: #763a03;
 }
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .text {
+.header-container .header-section .dropdown .dropdown-footer .header-footer .text {
   min-width: 330px;
   max-height: 80%;
   display: flex;
   justify-content: space-evenly;
 }
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .contact,
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .list {
+.header-container .header-section .dropdown .dropdown-footer .header-footer .contact, .header-container .header-section .dropdown .dropdown-footer .header-footer .list {
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -474,23 +385,11 @@ p {
   text-align: center;
   padding-top: 35px;
 }
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  address
-  .titleAddress {
+.header-container .header-section .dropdown .dropdown-footer .header-footer address .titleAddress {
   font-size: 20px;
   color: whitesmoke;
 }
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  address
-  p {
+.header-container .header-section .dropdown .dropdown-footer .header-footer address p {
   color: whitesmoke;
   font-size: 15px;
 }
@@ -502,60 +401,14 @@ p {
   color: whitesmoke;
   font-size: 10px;
 }
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon {
+.header-container .header-section .dropdown .dropdown-footer .header-footer .icon {
   min-width: 330px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon
-  .fb,
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon
-  .mastercard,
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon
-  .visa,
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon
-  .klarna,
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon
-  .twitter,
-.header-container
-  .header-section
-  .dropdown
-  .dropdown-footer
-  .header-footer
-  .icon
-  .instagram {
+.header-container .header-section .dropdown .dropdown-footer .header-footer .icon .fb, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .mastercard, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .visa, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .klarna, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .twitter, .header-container .header-section .dropdown .dropdown-footer .header-footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -591,19 +444,11 @@ p {
   padding: 0;
   z-index: 1;
 }
-.phone-dropdown
-  .phone-toggle-btn
-  .phone-toggle-btn-icon
-  .phone-toggle-btn-icon-1 {
-  transition:
-    transform 0.3s ease,
-    border-radius 0.6s ease;
+.phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon .phone-toggle-btn-icon-1 {
+  transition: transform 0.3s ease, border-radius 0.6s ease;
   border-radius: 0;
 }
-.phone-dropdown
-  .phone-toggle-btn
-  .phone-toggle-btn-icon
-  .phone-toggle-btn-icon-1:hover {
+.phone-dropdown .phone-toggle-btn .phone-toggle-btn-icon .phone-toggle-btn-icon-1:hover {
   border-radius: 50%;
   transform: rotate(180deg);
 }
@@ -684,8 +529,7 @@ footer .text {
   display: flex;
   justify-content: space-evenly;
 }
-footer .contact,
-footer .list {
+footer .contact, footer .list {
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -723,12 +567,7 @@ footer .icon {
   align-items: center;
   border-top: 1px solid whitesmoke;
 }
-footer .icon .fb,
-footer .icon .mastercard,
-footer .icon .visa,
-footer .icon .klarna,
-footer .icon .twitter,
-footer .icon .instagram {
+footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .klarna, footer .icon .twitter, footer .icon .instagram {
   font-size: 24px;
   margin: 5px;
   color: whitesmoke;
@@ -739,8 +578,7 @@ footer .bottomIcons {
   font-size: 24px;
   display: none;
 }
-footer .bottomIcons .socialMedia ul,
-footer .bottomIcons .payMethods ul {
+footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -752,8 +590,7 @@ footer .bottomIcons .payMethods ul {
     display: flex;
     justify-content: space-evenly;
   }
-  footer .text .contact address,
-  footer .text .list address,
+  footer .text .contact address, footer .text .list address,
   footer .text .contact p,
   footer .text .list p {
     font-size: 1.4em;
@@ -821,7 +658,12 @@ footer .bottomIcons .payMethods ul {
   justify-content: center;
   scroll-snap-align: start;
   margin: 10px;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 100px);
+}
+@media screen and (min-width: 970px) {
+  .hero-wrapper {
+    height: 100%;
+  }
 }
 .hero-wrapper .hero-background {
   background: #fefeff;
@@ -834,9 +676,7 @@ footer .bottomIcons .payMethods ul {
 .hero-wrapper .hero-background .hero-background-img {
   width: inherit;
   height: inherit;
-  background:
-    url("/img/food_drawing.png") center/cover no-repeat,
-    lightgray 50%;
+  background: url("/img/food_drawing.png") center/cover no-repeat, lightgray 50%;
   /* HERO HEADING TEXT */
   /* SEARCH-BAR */
   /* INFORMATION CARD */
@@ -897,46 +737,25 @@ footer .bottomIcons .payMethods ul {
     width: 25vw;
   }
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-box
-  .search-box-icon {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-icon {
   width: 13px;
   height: 20px;
   position: relative;
   left: 10px;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-box
-  .search-box-input-form {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-input-form {
   all: unset;
   width: 250px;
   left: 20px;
   position: relative;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .search-bar
-    .search-box
-    .search-box-input-form {
+  .hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-input-form {
     font-size: 1.3vw;
     width: 25vw;
   }
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-box
-  .search-box-input-form
-  ::-moz-placeholder {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-input-form ::-moz-placeholder {
   font-family: Tahoma, sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -945,13 +764,7 @@ footer .bottomIcons .payMethods ul {
   letter-spacing: 1.2px;
   line-height: 16px;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-box
-  .search-box-input-form
-  ::placeholder {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-input-form ::placeholder {
   font-family: Tahoma, sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -960,11 +773,7 @@ footer .bottomIcons .payMethods ul {
   letter-spacing: 1.2px;
   line-height: 16px;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-btn-container {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-btn-container {
   display: flex;
   width: 40px;
   height: 40px;
@@ -974,24 +783,13 @@ footer .bottomIcons .payMethods ul {
   justify-content: center;
   align-items: center;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-btn-container
-  .search-btn {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-btn-container .search-btn {
   display: flex;
   width: 40px;
   height: 40px;
   all: unset;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .search-bar
-  .search-btn-container
-  .search-btn
-  .search-btn-icon {
+.hero-wrapper .hero-background .hero-background-img .search-bar .search-btn-container .search-btn .search-btn-icon {
   width: 24px;
   height: 24px;
 }
@@ -1012,12 +810,7 @@ footer .bottomIcons .payMethods ul {
   border: 2px solid rgba(118, 58, 3, 0.8);
   background: rgba(204, 173, 143, 0.8);
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-card
-  .hero-card-bg
-  .hero-card-h2 {
+.hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg .hero-card-h2 {
   color: #000;
   font-size: 29px;
   font-weight: 400;
@@ -1025,33 +818,18 @@ footer .bottomIcons .payMethods ul {
   margin: 23px;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-card
-    .hero-card-bg
-    .hero-card-h2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg .hero-card-h2 {
     font-size: 3vw;
   }
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-card
-  .hero-card-bg
-  .hero-card-text {
+.hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg .hero-card-text {
   color: #000;
   font-size: 18.498px;
   line-height: normal;
   margin: 0px 13px 20px 13px;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-card
-    .hero-card-bg
-    .hero-card-text {
+  .hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg .hero-card-text {
     font-size: 2vw;
   }
 }
@@ -1065,49 +843,12 @@ footer .bottomIcons .payMethods ul {
   /* CTA IMAGES */
   /* CTA BUTTON */
 }
-.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading,
-.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns,
-.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-heading
-  .hero-cta-h1-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-btns
-  .hero-cta-h1-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-h1-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-heading
-  .hero-cta-h1-2,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-btns
-  .hero-cta-h1-2,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-h1-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-2 {
   font-size: 24px;
   width: 172px;
   line-height: normal;
@@ -1117,112 +858,35 @@ footer .bottomIcons .payMethods ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-align-last: center;
-  text-align-last: center;
+       text-align-last: center;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-heading
-    .hero-cta-h1-1,
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-btns
-    .hero-cta-h1-1,
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-img
-    .hero-cta-h1-1,
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-heading
-    .hero-cta-h1-2,
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-btns
-    .hero-cta-h1-2,
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-img
-    .hero-cta-h1-2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h1-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h1-2 {
     font-size: 2vw;
     width: 18vw;
     height: auto;
   }
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
   width: 172px;
   height: 172px;
   flex-shrink: 0;
   border: 2px solid rgba(118, 58, 3, 0.8);
-  background:
-    url(<path-to-image>),
-    lightgray 50% / cover no-repeat;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-1
-  .hero-cta-img-1-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-2
-  .hero-cta-img-1-1 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-1 .hero-cta-img-1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-1-1 {
   width: 100%;
   height: auto;
   margin-bottom: -4px;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-img
-    .hero-cta-img-1,
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-img
-    .hero-cta-img-2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
     font-size: 2vw;
     width: 18vw;
     height: 100%;
   }
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -1230,57 +894,29 @@ footer .bottomIcons .payMethods ul {
   gap: 16px;
   background: rgba(255, 255, 255, 0.8);
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-2
-  .hero-cta-img-2-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-2
-  .hero-cta-img-2-2,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-img
-  .hero-cta-img-2
-  .hero-cta-img-2-3 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-2-1,
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-2-2,
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-2-3 {
   width: calc(100% - 10px);
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper
-    .hero-background
-    .hero-background-img
-    .hero-cta
-    .hero-cta-img
-    .hero-cta-img-2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
     font-size: 2vw;
     width: 18vw;
     height: auto;
   }
 }
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-btns
-  .hero-cta-btn-1,
-.hero-wrapper
-  .hero-background
-  .hero-background-img
-  .hero-cta
-  .hero-cta-btns
-  .hero-cta-btn-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-2 {
   all: unset;
   display: flex;
   justify-content: center;
   width: 172px;
+  margin: 10px;
+}
+@media screen and (min-width: 970px) {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-2 {
+    width: 18vw;
+  }
 }
 /* FRONT PAGE GRID LAYOUT */
 .fp-grid-1 {
@@ -1324,4 +960,4 @@ footer .bottomIcons .payMethods ul {
   min-height: 1000px;
   margin-top: 100px;
   background-color: #ccad8f;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
