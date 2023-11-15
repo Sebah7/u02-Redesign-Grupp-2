@@ -489,14 +489,14 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
 
 .priceBody {
   width: 100%;
+  height: auto;
   margin: 0;
   background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-
-.price-wrapper {
+.priceBody .price-wrapper {
   margin-top: 167px;
   min-height: 913px;
   display: flex;
@@ -504,9 +504,9 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   align-items: center;
   margin-bottom: 7px;
 }
-.price-wrapper .card-body {
+.priceBody .card-body {
   position: relative;
-  background: linear-gradient(rgba(168, 97, 39, 0.5), rgba(41, 99, 61, 0.5));
+  background: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   margin: 1.87% 4.87% 0.77% 5.13%;
   width: 90%;
   min-height: 867px;
@@ -515,12 +515,12 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   justify-content: center;
   align-items: center;
 }
-.price-wrapper .image-box {
+.priceBody .card-image-box {
   width: 100%;
   min-width: 155px;
   height: 125px;
 }
-.price-wrapper .cards-heading {
+.priceBody .cards-heading {
   width: 314px;
   height: 30px;
   margin-top: 22px;
@@ -530,16 +530,16 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   font-weight: 700;
   position: relative;
 }
-.price-wrapper .cards-heading h1 {
+.priceBody .cards-heading h1 {
   position: absolute;
   margin-top: -60px;
 }
-.price-wrapper p {
+.priceBody p {
   color: #4d7ea8;
   font-size: 10px;
   font-weight: bold;
 }
-.price-wrapper .card {
+.priceBody .price-card {
   width: 30%;
   min-width: 156px;
   max-width: 692px;
@@ -551,29 +551,29 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
-.price-wrapper .card:hover {
+.priceBody .card:hover {
   transform: scale(1.1);
 }
-.price-wrapper .cards-wrapper {
+.priceBody .cards-wrapper {
   margin-top: 29px;
   height: calc(100% - 30px);
 }
-.price-wrapper .first, .price-wrapper .second {
+.priceBody .first-card, .priceBody .second-card {
   margin-bottom: 35px;
 }
-.price-wrapper .third, .price-wrapper .forth {
+.priceBody .third-card, .priceBody .forth-card {
   margin-bottom: 34px;
 }
-.price-wrapper .fifth {
+.priceBody .fifth-card {
   margin-bottom: 6px;
 }
-.price-wrapper .image-box img {
+.priceBody .card-image-box img {
   width: 100%;
   min-height: 156px;
   min-height: 128px;
   height: auto;
 }
-.price-wrapper .content {
+.priceBody .card-content {
   min-height: 125px;
   min-height: 156px;
   height: auto;
@@ -581,28 +581,28 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   background: linear-gradient(#CCAD8F, white, #CCAD8F);
   position: relative;
 }
-.price-wrapper .service-text {
+.priceBody .service-text {
   margin: 0;
   text-align: center;
 }
-.price-wrapper .btn-box {
+.priceBody .price-btn-box {
   height: 43px;
   width: 138px;
   margin: 18px 8.99px 8px 8.9px;
   justify-content: center;
   align-items: center;
 }
-.price-wrapper .btn-box1 {
+.priceBody .price-btn-box1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 9px;
 }
-.price-wrapper .btn-box2 {
+.priceBody .price-btn-box2 {
   display: flex;
   justify-content: center;
 }
-.price-wrapper .btnprice {
+.priceBody .btnprice {
   width: 65.62px;
   height: 17px;
   background: #4D7EA8;
@@ -612,11 +612,11 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   text-transform: uppercase;
   transition: 0.3s linear;
 }
-.price-wrapper .btnprice:hover {
+.priceBody .btnprice:hover {
   background: #4d7ea8;
   cursor: pointer;
 }
-.price-wrapper .btn-txt {
+.priceBody .btn-txt {
   width: 51.24px;
   height: 7px;
   left: 6.29px;
@@ -627,11 +627,11 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   font-family: Tahoma;
   font-weight: 700;
 }
-.price-wrapper .btnprice:active {
+.priceBody .btnprice:active {
   background-color: #815f33;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1920px) {
+@media only screen and (min-width: 800px) {
   .price-wrapper {
     height: auto;
   }
@@ -644,18 +644,18 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
     justify-content: center;
     align-items: center;
   }
-  .price-wrapper .card {
+  .price-wrapper .price-card {
     min-width: 692px;
     min-height: 654px;
     width: 30%;
     height: auto;
   }
-  .price-wrapper .image-box img {
+  .price-wrapper .card-image-box img {
     min-width: 692px;
     height: 327px;
     width: 100%;
   }
-  .price-wrapper .content {
+  .price-wrapper .card-content {
     min-height: 327px;
     min-width: 692px;
     margin-top: 202px;
@@ -669,16 +669,20 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
     margin-top: -90px;
   }
   .price-wrapper .service-text {
+    display: grid;
+    height: 163.5px;
     margin-top: 20px;
     font-size: 18px;
   }
-  .price-wrapper .card-h {
+  .price-wrapper .price-card-h {
+    margin-top: 20px;
     font-size: 42px;
   }
-  .price-wrapper .card-p {
+  .price-wrapper .price-card-p {
     font-size: 22px;
   }
-  .price-wrapper .btn-box {
+  .price-wrapper .price-btn-box {
+    height: 163.5px;
     margin-top: 10px;
     display: grid;
     margin-left: 300px;
