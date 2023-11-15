@@ -36,7 +36,7 @@ $colorBlack: #0000;
 
   @media screen and (min-width: 970px) {
     // Adds height to the header container on bigger screens
-    height: 150px;
+    height: 160px;
   }
 
   /* Header | Container */
@@ -54,7 +54,7 @@ $colorBlack: #0000;
 
     @media screen and (min-width: 970px) {
       // Adds height to the header content on bigger screens
-      height: 150px;
+      height: 160px;
     }
 
     /* Header-Login | Container */
@@ -354,7 +354,16 @@ $colorBlack: #0000;
         }
 
         .se {
-          font-weight: 700;
+          font-weight: 400;
+
+          @media screen and (min-width: 970px) {
+            font-size: 20px;
+          }
+
+          &:hover,
+          &:focus {
+            font-weight: 700;
+          }
         }
 
         .separator {
@@ -365,6 +374,15 @@ $colorBlack: #0000;
 
         .en {
           font-weight: 400;
+
+          @media screen and (min-width: 970px) {
+            font-size: 20px;
+          }
+
+          &:hover,
+          &:focus {
+            font-weight: 700;
+          }
         }
       }
 

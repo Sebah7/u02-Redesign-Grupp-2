@@ -51,7 +51,7 @@ p {
 }
 @media screen and (min-width: 970px) {
   .header-container {
-    height: 150px;
+    height: 160px;
   }
 }
 .header-container .header-section {
@@ -70,7 +70,7 @@ p {
 }
 @media screen and (min-width: 970px) {
   .header-container .header-section {
-    height: 150px;
+    height: 160px;
   }
 }
 .header-container .header-section .login, .header-container .header-section .search {
@@ -327,6 +327,14 @@ p {
   background: rgba(255, 255, 255, 0.5);
 }
 .header-container .header-section .dropdown .dropdown-language .se {
+  font-weight: 400;
+}
+@media screen and (min-width: 970px) {
+  .header-container .header-section .dropdown .dropdown-language .se {
+    font-size: 20px;
+  }
+}
+.header-container .header-section .dropdown .dropdown-language .se:hover, .header-container .header-section .dropdown .dropdown-language .se:focus {
   font-weight: 700;
 }
 .header-container .header-section .dropdown .dropdown-language .separator {
@@ -336,6 +344,14 @@ p {
 }
 .header-container .header-section .dropdown .dropdown-language .en {
   font-weight: 400;
+}
+@media screen and (min-width: 970px) {
+  .header-container .header-section .dropdown .dropdown-language .en {
+    font-size: 20px;
+  }
+}
+.header-container .header-section .dropdown .dropdown-language .en:hover, .header-container .header-section .dropdown .dropdown-language .en:focus {
+  font-weight: 700;
 }
 .header-container .header-section .dropdown .dropdown-footer {
   position: fixed;
