@@ -478,72 +478,321 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   line-height: 16px;
 }
 
-.contactBody {
-  background-image: url("/contact/img/background.png");
-  background-color: #c9f0ff;
+.priceBody {
+  width: 100%;
+  margin: 0;
+  background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.contactBody .main-wrapper .contact-us {
-  display: grid;
+
+.price-wrapper {
+  margin-top: 167px;
+  min-height: 913px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  height: 700px;
-  top: 100px;
+  margin-bottom: 7px;
 }
-.contactBody .main-wrapper .contact-us .contact-text {
-  margin-top: 7px;
-  margin-bottom: 39px;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.contactBody .main-wrapper .contact-us .contact-text .contactH1 {
-  text-shadow: 2px 2px grey;
-  text-transform: uppercase;
-  margin: 10px 20px 10px 10px;
-}
-.contactBody .main-wrapper .contact-us .containerContact {
-  max-width: 300px;
+.price-wrapper .card-body {
+  position: relative;
+  background: linear-gradient(rgba(168, 97, 39, 0.5), rgba(41, 99, 61, 0.5));
+  margin: 1.87% 4.87% 0.77% 5.13%;
+  width: 90%;
+  min-height: 867px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  background-color: #ccad8f;
-  z-index: 0;
 }
-.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper {
-  width: 248px;
-  margin: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-}
-.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-  text-align: left;
-}
-.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-  text-align: left;
-}
-.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .field {
+.price-wrapper .image-box {
   width: 100%;
-  padding: 3px 5px;
-  margin: 3px;
-  background: whitesmoke;
-  border: 1px solid #000;
-  text-align: left;
+  min-width: 155px;
+  height: 125px;
 }
-.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row {
+.price-wrapper .cards-heading {
+  width: 314px;
+  height: 30px;
+  margin-top: 22px;
+  overflow: visible;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 700;
+  position: relative;
+}
+.price-wrapper .cards-heading h1 {
+  position: absolute;
+  margin-top: -60px;
+}
+.price-wrapper p {
+  color: #4d7ea8;
+  font-size: 10px;
+  font-weight: bold;
+}
+.price-wrapper .card {
+  width: 30%;
+  min-width: 156px;
+  max-width: 692px;
+  min-height: 250px;
+  height: auto;
+  margin-right: 8px;
+  margin-left: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.price-wrapper .card:hover {
+  transform: scale(1.1);
+}
+.price-wrapper .cards-wrapper {
+  margin-top: 29px;
+  height: calc(100% - 30px);
+}
+.price-wrapper .first, .price-wrapper .second {
+  margin-bottom: 35px;
+}
+.price-wrapper .third, .price-wrapper .forth {
+  margin-bottom: 34px;
+}
+.price-wrapper .fifth {
+  margin-bottom: 6px;
+}
+.price-wrapper .image-box img {
+  width: 100%;
+  min-height: 156px;
+  min-height: 128px;
+  height: auto;
+}
+.price-wrapper .content {
+  min-height: 125px;
+  min-height: 156px;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(#CCAD8F, white, #CCAD8F);
+  position: relative;
+}
+.price-wrapper .service-text {
+  margin: 0;
+  text-align: center;
+}
+.price-wrapper .btn-box {
+  height: 43px;
+  width: 138px;
+  margin: 18px 8.99px 8px 8.9px;
+  justify-content: center;
+  align-items: center;
+}
+.price-wrapper .btn-box1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 15px;
-  width: 265px;
+  justify-content: space-between;
+  margin-bottom: 9px;
 }
-.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row .fieldSpan {
-  flex-basis: 50%;
-  padding-top: 5px;
+.price-wrapper .btn-box2 {
+  display: flex;
+  justify-content: center;
+}
+.price-wrapper .btnprice {
+  width: 65.62px;
+  height: 17px;
+  background: #4D7EA8;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+.price-wrapper .btnprice:hover {
+  background: #4d7ea8;
+  cursor: pointer;
+}
+.price-wrapper .btn-txt {
+  width: 51.24px;
+  height: 7px;
+  left: 6.29px;
+  top: 4px;
+  text-align: center;
+  color: white;
+  font-size: 7px;
+  font-family: Tahoma;
+  font-weight: 700;
+}
+.price-wrapper .btnprice:active {
+  background-color: #815f33;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1920px) {
+  .price-wrapper {
+    height: auto;
+  }
+  .price-wrapper .cards-wrapper {
+    width: 85%;
+  }
+  .price-wrapper .card-body {
+    height: auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-wrapper .card {
+    min-width: 692px;
+    min-height: 654px;
+    width: 30%;
+    height: auto;
+  }
+  .price-wrapper .image-box img {
+    min-width: 692px;
+    height: 327px;
+    width: 100%;
+  }
+  .price-wrapper .content {
+    min-height: 327px;
+    min-width: 692px;
+    margin-top: 202px;
+  }
+  .price-wrapper .cards-heading {
+    width: 1300px;
+    margin-top: 11px;
+  }
+  .price-wrapper .cards-heading h1 {
+    font-size: 66px;
+    margin-top: -90px;
+  }
+  .price-wrapper .service-text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .price-wrapper .card-h {
+    font-size: 42px;
+  }
+  .price-wrapper .card-p {
+    font-size: 22px;
+  }
+  .price-wrapper .btn-box {
+    margin-top: 10px;
+    display: grid;
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
+  .price-wrapper .btnprice {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .price-wrapper .btn-txt {
+    font-size: 16px;
+  }
+}
+.member-body {
+  background-color: #763a03;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.member-body .member-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.member-body .member-container .member-card {
+  display: flex;
+  margin-bottom: 7px;
+  margin-left: 10px;
+  margin-right: 18px;
+  width: 355px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #763a03;
+  background: #d9d9d9;
+}
+.member-body .member-container .member-card .member-customer-image {
+  border-right: 1px solid #763a03;
+}
+.member-body .member-container .member-card .member-customer-image img {
+  width: 144px;
+  height: 82px;
+}
+.member-body .member-container .member-card .member-customer-details {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.member-body .member-container .member-card .member-customer-details .member-details-container {
+  text-align: left;
+  width: 144px;
+  height: 60px;
+}
+.member-body .member-container .member-card .member-customer-details .member-details-container .membersH3 {
+  font-size: 15px;
+  color: #000;
+}
+.member-body .member-container .member-card .member-customer-details .member-details-container ul {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+}
+.member-body .member-search-bar {
+  width: 310px;
+  height: 119px;
+  flex-shrink: 0;
+  margin-top: 65px;
+  margin-left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.member-body .member-search-box {
+  align-items: center;
+  gap: 20px;
+  width: 265px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px 0px 0px 15px;
+  border: 2px solid rgba(118, 58, 3, 0.8);
+  padding: 0px 10px;
+  margin: 32px 85px 34px 40px;
+}
+.member-body .member-search-button {
+  background-color: transparent;
+  border: none;
+}
+.member-body .text-wrapper {
+  flex: 1;
+  width: 100%;
+  height: 48px;
+  vertical-align: top;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.member-body .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px, 15px, 15px, 0px;
+  margin-left: 285px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: -40px;
+}
+.member-body .front-page-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.member-body .text-and-icon {
+  display: flex;
   align-items: center;
   box-sizing: border-box;
   margin: 10px 15px 10px 0px;
@@ -724,6 +973,94 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
     font-size: 1.2em;
   }
 }
+.contactBody {
+  background-image: url("/contact/img/background.png");
+  background-color: #c9f0ff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contactBody .main-wrapper .contact-us {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 700px;
+  top: 100px;
+}
+.contactBody .main-wrapper .contact-us .contact-text {
+  margin-top: 7px;
+  margin-bottom: 39px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contactBody .main-wrapper .contact-us .contact-text .contactH1 {
+  text-shadow: 2px 2px grey;
+  text-transform: uppercase;
+  margin: 10px 20px 10px 10px;
+}
+.contactBody .main-wrapper .contact-us .containerContact {
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ccad8f;
+  z-index: 0;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper {
+  width: 248px;
+  margin: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper ::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .field {
+  width: 100%;
+  padding: 3px 5px;
+  margin: 3px;
+  background: whitesmoke;
+  border: 1px solid #000;
+  text-align: left;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
+  width: 265px;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .row .fieldSpan {
+  flex-basis: 50%;
+  padding-top: 5px;
+  align-items: center;
+  text-align: center;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper .sendButtonContact {
+  width: 70px;
+  margin-bottom: 10px;
+  padding: 2px;
+  margin-left: 190px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #4d7ea8;
+  color: white;
+}
+.contactBody .main-wrapper .contact-us .containerContact .contact-wrapper select {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -751,5 +1088,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+*/
+/* try this in your wrapper (main) for footer
+.wrapper {
+      flex: 1 0 auto;
 }
 *//*# sourceMappingURL=style.css.map */
