@@ -172,7 +172,7 @@ p {
 }
 .header-container .header-section .dropdown .dropdown-content {
   width: 100%;
-  height: 536px;
+  height: 100vh;
   top: 100px;
   left: 0;
   position: absolute;
