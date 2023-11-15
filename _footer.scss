@@ -4,7 +4,7 @@ $colorLB: #c9f0ff;
 $colorDB: #4d7ea8;
 $colorSand: #ccad8f;
 $colorBlack: #000;
-
+$colorText: whitesmoke;
 footer {
   width: 100%;
   height: 227px;
@@ -12,61 +12,56 @@ footer {
   bottom: 0;
   margin-top: auto;
 
-  .text {
+  .textFooter {
     min-width: 330px;
     max-height: 80%;
     display: flex;
     justify-content: space-evenly;
-  }
 
-  .contact {
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 150px;
-    margin: 10px;
-    text-align: center;
-  }
-  address {
-    padding-top: 20px;
+    .contactF {
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 150px;
+      margin: 10px;
+      text-align: center;
+      padding-top: 20px;
 
-    .titleAddress {
-      font-size: 20px;
-      color: $colorWhite;
+      .footerP {
+        color: $colorText;
+        font-size: 10px;
+      }
     }
 
-    p {
-      color: $colorWhite;
-    }
-  }
+    .listFooter {
+      @extend .contactF;
+      border-left: 1px solid $colorText;
+      padding-top: 15px;
 
-  .list {
-    @extend .contact;
-    border-left: 1px solid $colorWhite;
-    padding-top: 15px;
-
-    h3 {
-      color: $colorWhite;
-    }
-    a {
-      text-decoration: none;
-      color: $colorWhite;
-      font-size: 10px;
+      .footerH3 {
+        color: $colorText;
+        font-size: 15px;
+      }
+      .footerA {
+        text-decoration: none;
+        color: $colorText;
+        font-size: 10px;
+      }
     }
   }
 
-  .icon {
+  .iconFooter {
     min-width: 330px;
     height: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid $colorWhite;
+    border-top: 1px solid $colorText;
 
     .fb {
       font-size: 24px;
       margin: 5px;
-      color: $colorWhite;
+      color: $colorText;
     }
 
     .instagram {
@@ -89,20 +84,30 @@ footer {
       @extend .fb;
     }
   }
-
+  // Not visible on smaller screens
   .bottomIcons {
     padding: 5px;
-    color: $colorWhite;
-    font-size: 24px;
+    color: $colorText;
     display: none;
 
     .socialMedia {
+      .footerH3 {
+        font-size: 15px;
+      }
+
       ul {
         display: none;
         flex-direction: column;
         justify-content: center;
         gap: 15%;
         list-style: none;
+
+        .icons {
+          font-size: 24px;
+          background-color: $colorBlack;
+          color: $colorText;
+          border: none;
+        }
       }
     }
     .payMethods {
@@ -113,26 +118,26 @@ footer {
 // For Tablets Ipads portrait mode and up
 @media screen and (min-width: 768px) {
   footer {
-    .text {
+    .textFooter {
       display: flex;
       justify-content: space-evenly;
 
-      .contact {
-        address,
-        p {
+      .contactF {
+        .footerP {
           font-size: 1.4em;
         }
       }
-      .list {
+      .listFooter {
         border: none;
 
-        a:hover {
+        .footerA:hover {
           color: $colorDB;
         }
 
-        h3,
-        a {
+        .footerH3,
+        .footerA {
           font-size: 1.3em;
+          margin: 5px;
         }
       }
 
@@ -148,9 +153,9 @@ footer {
         .socialMedia,
         .payMethods {
           width: 50%;
-          h3 {
-            color: $colorWhite;
-            font-size: 0.6em;
+          .footerH3 {
+            color: $colorText;
+            font-size: 0.7em;
           }
           ul {
             padding-top: 20px;
@@ -165,7 +170,7 @@ footer {
         }
       }
     }
-    .icon {
+    .iconFooter {
       display: none;
     }
   }
