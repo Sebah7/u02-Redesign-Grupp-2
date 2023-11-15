@@ -49,6 +49,11 @@ p {
   background: var(--lightBrownBaseColor, #ccad8f);
   /* Header | Container */
 }
+@media screen and (min-width: 970px) {
+  .header-container {
+    height: 150px;
+  }
+}
 .header-container .header-section {
   background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   max-width: 100%;
@@ -62,6 +67,11 @@ p {
   /* Resto Logo */
   /* DROPDOWN */
   /* Dropdown | Container */
+}
+@media screen and (min-width: 970px) {
+  .header-container .header-section {
+    height: 150px;
+  }
 }
 .header-container .header-section .login, .header-container .header-section .search {
   /* Header-Login | BTN */
@@ -98,7 +108,7 @@ p {
   width: inherit;
   height: inherit;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .resto {
     width: -moz-fit-content;
     width: fit-content;
@@ -137,7 +147,7 @@ p {
 .header-container .header-section .dropdown .toggle-btn .toggle-btn-icon:hover .menu-btn-icon-2, .header-container .header-section .dropdown .login .toggle-btn-icon:hover .menu-btn-icon-2, .header-container .header-section .dropdown .search .toggle-btn-icon:hover .menu-btn-icon-2 {
   display: inline-block;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .toggle-btn, .header-container .header-section .dropdown .login, .header-container .header-section .dropdown .search {
     visibility: hidden;
   }
@@ -153,10 +163,14 @@ p {
   align-items: center;
   background-color: #ccad8f;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-content {
     display: flex;
+    align-items: flex-end;
     background-color: unset;
+    width: 100%;
+    height: auto;
+    top: 0px;
   }
 }
 .header-container .header-section .dropdown .dropdown-content-login {
@@ -165,7 +179,7 @@ p {
   flex-shrink: 0;
   overflow: hidden;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-content-login {
     display: none;
   }
@@ -210,12 +224,11 @@ p {
   top: 78px;
   position: absolute;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-content-menu {
-    position: fixed;
-    justify-content: center;
-    top: 63px;
     width: 100%;
+    height: auto;
+    top: 130px;
   }
 }
 .header-container .header-section .dropdown ol {
@@ -225,13 +238,11 @@ p {
   gap: 36px;
   flex-shrink: 0;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol {
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    gap: 36px;
-    margin-top: 15px;
   }
 }
 .header-container .header-section .dropdown ol li:hover {
@@ -245,11 +256,12 @@ p {
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.788);
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol li {
-    width: -moz-fit-content;
-    width: fit-content;
+    max-width: 160px;
     padding: 2px;
+    display: flex;
+    justify-content: center;
   }
 }
 .header-container .header-section .dropdown ol li a {
@@ -264,7 +276,7 @@ p {
   letter-spacing: 2px;
   margin-left: 5px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol li a h3 {
     margin: 0;
   }
@@ -277,7 +289,7 @@ p {
   letter-spacing: 1.5px;
   margin-right: 5px;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol li a p {
     display: none;
   }
@@ -291,12 +303,14 @@ p {
   bottom: 44px;
   border: 1px solid black;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-language {
-    top: -65px;
     position: relative;
     border: none;
-    right: -35%;
+    right: 7%;
+    bottom: 0;
+    padding: 0;
+    top: 65px;
   }
 }
 .header-container .header-section .dropdown .dropdown-language button {
@@ -330,7 +344,7 @@ p {
   flex-shrink: 0;
   bottom: 0px;
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-footer {
     display: none;
   }
