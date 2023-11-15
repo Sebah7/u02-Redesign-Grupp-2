@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -51,8 +51,16 @@
         <!-- Container for search logo -->
         <div class="search">
           <button class="search-btn">
-            <img src="/assets/search.svg" alt="Search button" />
+            <label for="searchInput" class="search-label">
+              <img src="/assets/search.svg" alt="Search button" />
+            </label>
           </button>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search..."
+          />
         </div>
 
         <!-- Container for Resto Culinair logo -->

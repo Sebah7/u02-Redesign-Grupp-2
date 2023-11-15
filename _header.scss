@@ -107,9 +107,57 @@ $colorWhite: whitesmoke;
           transition: transform 0.3s ease; // Speed of the transform
 
           &:hover {
-            transform: rotate(90deg); // Rotates the 'X' icon 180'
+            transform: rotate(90deg);
           }
         }
+        &:focus {
+          transform: translateX(10vw);
+        }
+      }
+    }
+
+    .search {
+      @extend .login;
+      left: 18vw;
+      display: inline-block;
+
+      .search-label {
+        cursor: pointer;
+      }
+
+      .search-btn {
+        cursor: pointer;
+        @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      .search-input {
+        display: none;
+        position: absolute;
+        background: none;
+        border: none;
+        width: 10vw;
+        color: #000;
+        letter-spacing: 1.95px;
+        border-bottom: 1px solid #000;
+        top: 5px;
+
+        @media screen and (max-width: 800px) {
+          top: 30px;
+          left: -12vw;
+          width: 20vw;
+        }
+      }
+
+      .search-btn:focus + .search-input,
+      .search-input:focus {
+        display: block;
       }
     }
 
@@ -558,9 +606,7 @@ $colorWhite: whitesmoke;
 
       .phone-toggle-btn-icon-1 {
         // Phine img in the button element
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
+        transition: transform 0.3s ease, border-radius 0.6s ease;
         border-radius: 0;
 
         &:hover {

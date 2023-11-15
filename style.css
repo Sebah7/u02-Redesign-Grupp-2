@@ -110,6 +110,47 @@ p {
 .header-container .header-section .search .search-btn img:hover {
   transform: rotate(90deg);
 }
+.header-container .header-section .search .search-btn:focus {
+  transform: translateX(10vw);
+}
+.header-container .header-section .search {
+  left: 18vw;
+  display: inline-block;
+}
+.header-container .header-section .search .search-label {
+  cursor: pointer;
+}
+.header-container .header-section .search .search-btn {
+  cursor: pointer;
+}
+.header-container .header-section .search .search-btn img {
+  transition: transform 0.3s ease;
+}
+.header-container .header-section .search .search-btn img:hover {
+  transform: rotate(90deg);
+}
+.header-container .header-section .search .search-input {
+  display: none;
+  position: absolute;
+  background: none;
+  border: none;
+  width: 10vw;
+  color: #000;
+  letter-spacing: 1.95px;
+  border-bottom: 1px solid #000;
+  top: 5px;
+}
+@media screen and (max-width: 800px) {
+  .header-container .header-section .search .search-input {
+    top: 30px;
+    left: -12vw;
+    width: 20vw;
+  }
+}
+.header-container .header-section .search .search-btn:focus + .search-input,
+.header-container .header-section .search .search-input:focus {
+  display: block;
+}
 .header-container .header-section .resto {
   width: 203px;
   height: 59px;
