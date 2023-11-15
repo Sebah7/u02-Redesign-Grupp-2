@@ -361,7 +361,6 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   }
   footer .textFooter .listFooter .footerH3,
   footer .textFooter .listFooter .footerA {
-  footer .textFooter .listFooter .footerH3, footer .textFooter .listFooter .footerA {
     font-size: 1.3em;
     margin: 5px;
   }
@@ -376,25 +375,21 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   }
   footer .textFooter .bottomIcons .socialMedia,
   footer .textFooter .bottomIcons .payMethods {
-  footer .textFooter .bottomIcons .socialMedia, footer .textFooter .bottomIcons .payMethods {
     width: 50%;
   }
   footer .textFooter .bottomIcons .socialMedia .footerH3,
   footer .textFooter .bottomIcons .payMethods .footerH3 {
-  footer .textFooter .bottomIcons .socialMedia .footerH3, footer .textFooter .bottomIcons .payMethods .footerH3 {
     color: whitesmoke;
     font-size: 0.7em;
   }
   footer .textFooter .bottomIcons .socialMedia ul,
   footer .textFooter .bottomIcons .payMethods ul {
-  footer .textFooter .bottomIcons .socialMedia ul, footer .textFooter .bottomIcons .payMethods ul {
     padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
   }
   footer .textFooter .bottomIcons .socialMedia ul :hover,
   footer .textFooter .bottomIcons .payMethods ul :hover {
-  footer .textFooter .bottomIcons .socialMedia ul :hover, footer .textFooter .bottomIcons .payMethods ul :hover {
     color: #4d7ea8;
     cursor: pointer;
   }
@@ -899,7 +894,7 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   }
 }
 .smullBody {
-  background-image: url(/smullbox/assets/oranges.webp);
+  background-image: url(/smullbox/assets/background.webp);
   background-color: #c9f0ff;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -923,7 +918,7 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   margin: 15px;
   width: 360px;
   height: 140px;
-  background-image: linear-gradient(#ccad8f, whitesmoke);
+  background-image: linear-gradient(to bottom right, #c9f0ff, whitesmoke, #c9f0ff);
   border-radius: 5px;
 }
 .smullBody .smullWrapper .containerSmullbox .smullCard .imgBx {
@@ -938,23 +933,21 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   padding-top: 5px;
   padding-left: 15px;
   text-align: left;
-  width: 144px;
+  width: 160px;
   height: 132px;
 }
 .smullBody .smullWrapper .containerSmullbox .smullCard .smullContainer .smullText .smullH3 {
   font-size: 15px;
   color: #000;
+  padding: 5px;
 }
 .smullBody .smullWrapper .containerSmullbox .smullCard .smullContainer .smullText .smullP {
-  padding-top: 20px;
+  padding-top: 10px;
   color: #000;
   font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .smullBody .smullWrapper {
-    padding-top: 150px;
-  }
   .smullBody .smullWrapper .containerSmullbox {
     width: 100%;
   }
@@ -962,10 +955,13 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
     width: 600px;
     height: 280px;
     margin: 20px;
+    background-image: linear-gradient(to bottom right, #c9f0ff, whitesmoke, #c9f0ff);
   }
   .smullBody .smullWrapper .containerSmullbox section.smullCard .imgBx {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 10px;
+    width: 200px;
+    height: 200px;
   }
   .smullBody .smullWrapper .containerSmullbox section.smullCard .smullContainer {
     width: 400px;
@@ -976,11 +972,11 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   }
   .smullBody .smullWrapper .containerSmullbox section.smullCard .smullContainer .smullText .smullH3 {
     width: 350px;
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   .smullBody .smullWrapper .containerSmullbox section.smullCard .smullContainer .smullText .smullP {
-    width: 300px;
-    font-size: 1.2em;
+    width: 350px;
+    font-size: 1.4em;
   }
 }
 .contactBody {
