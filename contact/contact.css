@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.main-wrapper {
+  height: 728px;
+}
+.main-wrapper .contact-us {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 700px;
+  top: 100px;
+  position: relative;
+}
+.main-wrapper .contact-text {
+  margin-top: 7px;
+  margin-bottom: 39px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.main-wrapper .container {
+  position: relative;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #ccad8f;
+  z-index: 0;
+}
+.main-wrapper .contact-wrapper {
+  float: right;
+  margin: 10px;
+  padding: 20px;
+}
+.main-wrapper .field {
+  width: 100%;
+  padding: 3px 5px;
+  margin: 3px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  text-align: left;
+  outline: none;
+}
+.main-wrapper .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main-wrapper .row span {
+  flex-basis: 50%;
+  margin-left: 20px;
+  align-items: center;
+}
+.main-wrapper button {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  margin-left: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4d7ea8;
+  color: white;
+}
+.main-wrapper select {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* @media (max-width: 400px) {
+  body{
+    width: 100%;
+    background-size: contain;
+    padding: 0 0;
+    margin-top: 20px;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 80%;
+
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .field {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+}
+/* Media query for desktop screens */
+/*@media screen and (min-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+}
+*//*# sourceMappingURL=contact.css.map */
