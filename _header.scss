@@ -52,6 +52,10 @@ $colorBlack: #0000;
     align-items: center;
     gap: 7%;
 
+    &:nth-child(3) {
+      justify-self: center;
+    }
+
     @media screen and (min-width: 970px) {
       // Adds height to the header content on bigger screens
       height: 160px;
@@ -59,7 +63,10 @@ $colorBlack: #0000;
 
     /* Header-Login | Container */
     .login {
-      @extend .toggle-btn;
+      position: absolute;
+      top: 50%;
+      left: 8vw;
+      transform: translate(-50%, -50%);
 
       /* Header-Login | BTN */
       .login-btn {
@@ -90,6 +97,7 @@ $colorBlack: #0000;
     /* Search Button */
     .search {
       @extend .login;
+      left: 18vw;
 
       .search-btn {
         @extend .login-btn;
@@ -107,6 +115,10 @@ $colorBlack: #0000;
     .resto {
       width: 203px;
       height: 59px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       img {
         width: inherit;
@@ -125,6 +137,8 @@ $colorBlack: #0000;
     .dropdown {
       /* Toggle Button | Drop-down button */
       .toggle-btn {
+        position: relative;
+        right: -39vw;
         img {
           transition: transform 0.3s ease; // Speed of the transform
 
