@@ -149,6 +149,11 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 970px) {
+  .header-container .header-section .resto {
+    top: 40%;
+  }
+}
 .header-container .header-section .resto .resto-logo-1 {
   display: flex;
 }
