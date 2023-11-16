@@ -745,7 +745,6 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   }
 }
 .hero-wrapper .hero-background {
-  background: #fefeff;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -755,11 +754,31 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
 .hero-wrapper .hero-background .hero-background-img {
   width: inherit;
   height: inherit;
-  background: url("/img/food_drawing.png") center/cover no-repeat, lightgray 50%;
+  background: url(/img/black-board-vegetable-min.png) center/cover no-repeat;
   /* HERO HEADING TEXT */
   /* SEARCH-BAR */
   /* INFORMATION CARD */
   /* CALL TO ACTION SECTION */
+}
+@media screen and (max-width: 520px) {
+  .hero-wrapper .hero-background .hero-background-img {
+    position: relative;
+    background-size: cover;
+    background-position-x: -10vw;
+    background-position-y: -14vw;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 970px) {
+  .hero-wrapper .hero-background .hero-background-img {
+    position: relative;
+    background-size: cover;
+    background-position-y: -10vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-wrapper .hero-background .hero-background-img {
+    background: url(/img/black-board-vegetable.png) center/cover no-repeat;
+  }
 }
 .hero-wrapper .hero-background .hero-background-img .hero-heading {
   width: 100%;
@@ -779,10 +798,11 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
 @media screen and (min-width: 970px) {
   .hero-wrapper .hero-background .hero-background-img .hero-heading .hero-h1 {
     font-size: 3vw;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
   }
 }
 .hero-wrapper .hero-background .hero-background-img .hero-heading .hero-h2 {
-  background: linear-gradient(180deg, #4d7ea8 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(180deg, #4d7ea8 40%, #c9f0ff 130%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -827,6 +847,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   width: 250px;
   left: 20px;
   position: relative;
+  color: whitesmoke;
 }
 @media screen and (min-width: 970px) {
   .hero-wrapper .hero-background .hero-background-img .search-bar .search-box .search-box-input-form {
@@ -916,7 +937,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 57px;
+  margin-top: 30px;
   width: 100%;
   /* CTA HEADING */
   /* CTA IMAGES */
@@ -932,7 +953,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   width: 172px;
   line-height: normal;
   letter-spacing: 4px;
-  background: linear-gradient(180deg, #000 0%, rgb(118, 58, 3) 100%);
+  background: linear-gradient(180deg, #4d7ea8 20%, #c9f0ff 130%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -985,7 +1006,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
     height: auto;
   }
 }
-.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn {
   all: unset;
   display: flex;
   justify-content: center;
@@ -993,10 +1014,27 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   margin: 10px;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn {
     width: 18vw;
   }
 }
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-1 {
+  display: flex;
+}
+@media screen and (min-width: 815px) {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-1 {
+    display: none;
+  }
+}
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-2 {
+  display: none;
+}
+@media screen and (min-width: 815px) {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-2 {
+    display: flex;
+  }
+}
+
 /* FRONT PAGE GRID LAYOUT */
 .fp-grid {
   display: grid;
