@@ -549,6 +549,10 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   color: whitesmoke;
 }
 /* MAIN WRAPPER */
+body {
+  min-height: 100%;
+}
+
 .fp-wrapper {
   min-width: 100%;
   min-height: 1000px;
@@ -768,11 +772,8 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   display: grid;
   width: 94.8%;
   height: 97.045%;
-  margin-left: 9px;
   margin-right: 11px;
   margin-top: 21px;
-  margin-bottom: 9px;
-  background-color: #f4eee9;
 }
 .fp-grid .fp-grid-wrapper {
   display: grid;
@@ -781,6 +782,9 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   width: 98%;
   height: 97.045%;
   grid-gap: 9px;
+  background-color: #f4eee9;
+  padding: 2.3076923077%;
+  padding-bottom: 3.0769230769%;
 }
 .fp-grid .fp-grid-background {
   margin-left: 9px;
@@ -849,10 +853,11 @@ footer .icon .fb, footer .icon .mastercard, footer .icon .visa, footer .icon .kl
   font-family: "Roboto Serif-Regular", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 2.56vw;
+  font-size: 3vw;
   text-align: center;
   letter-spacing: 0.77vw;
   white-space: nowrap;
+  line-height: 35.5px;
   text-overflow: ellipsis;
 }
 
