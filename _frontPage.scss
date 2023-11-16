@@ -1,4 +1,7 @@
 /* MAIN WRAPPER */
+body {
+  min-height: 100%
+}
 .fp-wrapper {
   min-width: 100%;
   min-height: 1000px;
@@ -272,11 +275,9 @@
   display: grid;
   width: 94.80%; //for responsivness original width 370px
   height: 97.045%; //for responsivness original height 819px
-  margin-left: 9px;
   margin-right: 11px;
   margin-top: 21px;
-  margin-bottom: 9px;
-  background-color: #f4eee9;
+  
 
   .fp-grid-wrapper {
     display: grid;
@@ -285,6 +286,11 @@
     width: 98%; //for responsivness original width 370px
     height: 97.045%; //for responsivness original height 819px
     grid-gap: 9px;
+    background-color: #f4eee9;
+    // padding: 9px;
+    // padding-bottom: 12px;
+    padding: calc((9 / 390) * 100%);
+    padding-bottom: calc((12 / 390) * 100%);
   }
   
   .fp-grid-background {
@@ -360,15 +366,15 @@
   }
   
   .fp-grid-customer-1 {
-    
     height: 4.62vw; //for responsivness original height 36px;
     font-family: "Roboto Serif-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
-    font-size: 2.56vw; //for responsivness original 20px;
+    font-size: 3vw; //for responsivness original 20px;
     text-align: center;
     letter-spacing: 0.77vw; //for responsivness original 3px;
     white-space: nowrap;
+    line-height: 35.5px;
     text-overflow: ellipsis;
    }
 }
