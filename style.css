@@ -814,9 +814,9 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
 }
 .hero-wrapper .hero-background .hero-background-img .hero-heading .hero-h2 {
   background: linear-gradient(180deg, #4d7ea8 40%, #c9f0ff 130%);
-  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
   line-height: normal;
   letter-spacing: 8.4px;
 }
@@ -965,9 +965,9 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   line-height: normal;
   letter-spacing: 4px;
   background: linear-gradient(180deg, #4d7ea8 20%, #c9f0ff 130%);
-  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
   -moz-text-align-last: center;
        text-align-last: center;
 }
