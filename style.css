@@ -103,6 +103,11 @@ p {
 .header-container .header-section .search .search-btn:focus {
   transform: translateX(10vw);
 }
+@media screen and (max-width: 970px) {
+  .header-container .header-section .search .search-btn:focus {
+    transform: translateX(0vw);
+  }
+}
 .header-container .header-section .search {
   left: 18vw;
   display: inline-block;
@@ -140,6 +145,12 @@ p {
 .header-container .header-section .search .search-btn:focus + .search-input,
 .header-container .header-section .search .search-input:focus {
   display: block;
+}
+@media screen and (max-width: 970px) {
+  .header-container .header-section .search .search-btn:hover + .search-input,
+  .header-container .header-section .search .search-input:focus {
+    display: block;
+  }
 }
 .header-container .header-section .resto {
   width: 203px;

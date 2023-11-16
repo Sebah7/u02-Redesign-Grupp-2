@@ -102,6 +102,10 @@ $colorWhite: whitesmoke;
         }
         &:focus {
           transform: translateX(10vw);
+
+          @media screen and (max-width: 970px) {
+            transform: translateX(0vw);
+          }
         }
       }
     }
@@ -148,6 +152,13 @@ $colorWhite: whitesmoke;
       .search-btn:focus + .search-input,
       .search-input:focus {
         display: block;
+      }
+
+      @media screen and (max-width: 970px) {
+        .search-btn:hover + .search-input,
+        .search-input:focus {
+          display: block;
+        }
       }
     }
 
