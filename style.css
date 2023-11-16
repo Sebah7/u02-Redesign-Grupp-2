@@ -605,10 +605,10 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
 .priceBody .btnprice {
   width: 65.62px;
   height: 17px;
+  padding: 10px; /* For tap target size */
   background: #4D7EA8;
   border-radius: 50px;
   border: none;
-  margin-bottom: 5px;
   text-transform: uppercase;
   transition: 0.3s linear;
 }
@@ -629,6 +629,10 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
 }
 .priceBody .btnprice:active {
   background-color: #815f33;
+}
+
+.price-card:focus, .btnprice:focus {
+  outline: 2px solid #4d7ea8;
 }
 
 @media only screen and (min-width: 800px) {
@@ -663,6 +667,7 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   .price-wrapper .cards-heading {
     width: 1300px;
     margin-top: 11px;
+    margin-left: 2px;
   }
   .price-wrapper .cards-heading h1 {
     font-size: 66px;
