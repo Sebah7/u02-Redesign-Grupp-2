@@ -1004,7 +1004,7 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
     height: auto;
   }
 }
-.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-2 {
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn {
   all: unset;
   display: flex;
   justify-content: center;
@@ -1012,10 +1012,27 @@ footer .bottomIcons .socialMedia ul, footer .bottomIcons .payMethods ul {
   margin: 10px;
 }
 @media screen and (min-width: 970px) {
-  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn-2 {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn {
     width: 18vw;
   }
 }
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-1 {
+  display: flex;
+}
+@media screen and (min-width: 815px) {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-1 {
+    display: none;
+  }
+}
+.hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-2 {
+  display: none;
+}
+@media screen and (min-width: 815px) {
+  .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn .hero-cta-btn-2 {
+    display: flex;
+  }
+}
+
 /* FRONT PAGE GRID LAYOUT */
 .fp-grid {
   display: grid;
