@@ -51,17 +51,33 @@
         <!-- Container for search logo -->
         <div class="search">
           <button class="search-btn">
-            <img src="/assets/search.svg" alt="Search button" />
+            <label for="searchInput" class="search-label">
+              <img src="/assets/search.svg" alt="Search button" />
+            </label>
           </button>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search..."
+          />
         </div>
 
         <!-- Container for Resto Culinair logo -->
-        <div class="resto">
-          <img
-            src="/img/Resto-logo-text-and-icon.png"
-            alt="Resto Culinair Logo"
-          />
-        </div>
+        <a href="/index.html">
+          <div class="resto">
+            <img
+              class="resto-logo-1"
+              src="/img/Resto-logo-text-and-icon.png"
+              alt="Resto Culinair Logo"
+            />
+            <img
+              class="resto-logo-2"
+              src="/img/desktop-logo-resto-culinair.png"
+              alt="Resto Culinair Logo"
+            />
+          </div>
+        </a>
 
         <!-- DROPDOWN -->
         <div class="dropdown">
@@ -119,31 +135,31 @@
             <div class="dropdown-content-menu">
               <ol>
                 <li>
-                  <a href="">
+                  <a href="/news/news.html">
                     <h3>News</h3>
                     <p>Read what´s going on in your area</p>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/contact/contact.html">
                     <h3>Contacts</h3>
                     <p>Contact Resto Culinair</p>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/smullbox/smullbox.html">
                     <h3>Rentals</h3>
                     <p>Rentals & Event must havs</p>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/members/members.html">
                     <h3>Partners</h3>
                     <p>Our partners and locations</p>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/pricelist/pricelist.html">
                     <h3>Menu & Board</h3>
                     <p>Design a menu</p>
                   </a>
@@ -157,12 +173,16 @@
               <button class="en">English</button>
             </div>
 
-            <!-- Dropdown-Footer | Container -->
+            <!-- DROPDOWN FOOTER SECTION -->
             <div class="dropdown-footer">
+              <!-- Container | DD Footer -->
+
               <div class="header-footer">
-                <!-- Text and information Section -->
+                <!-- Container | Text and information -->
+
                 <section class="text">
-                  <!-- Container for contact information -->
+                  <!-- Container | contact information -->
+
                   <address class="contact">
                     <p class="titleAddress">Adress</p>
                     <br />
