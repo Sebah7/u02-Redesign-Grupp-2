@@ -49,11 +49,6 @@ p {
   background: var(--lightBrownBaseColor, #ccad8f);
   /* Header | Container */
 }
-@media screen and (min-width: 970px) {
-  .header-container {
-    height: 160px;
-  }
-}
 .header-container .header-section {
   background-image: linear-gradient(hsla(29, 95%, 24%, 0.2), hsla(30, 37%, 68%, 0.2));
   max-width: 100%;
@@ -70,11 +65,6 @@ p {
 }
 .header-container .header-section:nth-child(3) {
   justify-self: center;
-}
-@media screen and (min-width: 970px) {
-  .header-container .header-section {
-    height: 160px;
-  }
 }
 .header-container .header-section .login, .header-container .header-section .search {
   position: absolute;
@@ -158,6 +148,22 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.header-container .header-section .resto .resto-logo-1 {
+  display: flex;
+}
+@media screen and (min-width: 970px) {
+  .header-container .header-section .resto .resto-logo-1 {
+    display: none;
+  }
+}
+.header-container .header-section .resto .resto-logo-2 {
+  display: none;
+}
+@media screen and (min-width: 970px) {
+  .header-container .header-section .resto .resto-logo-2 {
+    display: flex;
+  }
 }
 .header-container .header-section .resto img {
   width: inherit;
@@ -287,7 +293,7 @@ p {
   .header-container .header-section .dropdown .dropdown-content-menu {
     width: 100%;
     height: auto;
-    top: 130px;
+    top: 80xp;
   }
 }
 .header-container .header-section .dropdown ol {
@@ -318,7 +324,7 @@ p {
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol li {
     max-width: 160px;
-    padding: 2px;
+    padding: 1px;
     display: flex;
     justify-content: center;
   }
@@ -369,7 +375,7 @@ p {
     right: 7%;
     bottom: 0;
     padding: 0;
-    top: 65px;
+    top: 35px;
   }
 }
 .header-container .header-section .dropdown .dropdown-language button {
@@ -390,14 +396,13 @@ p {
 }
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-language .se {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .header-container .header-section .dropdown .dropdown-language .se:hover, .header-container .header-section .dropdown .dropdown-language .se:focus {
   font-weight: 700;
 }
 .header-container .header-section .dropdown .dropdown-language .separator {
-  width: 1px;
   height: 15px;
   border: 1px solid black;
 }
@@ -406,7 +411,7 @@ p {
 }
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-language .en {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .header-container .header-section .dropdown .dropdown-language .en:hover, .header-container .header-section .dropdown .dropdown-language .en:focus {
