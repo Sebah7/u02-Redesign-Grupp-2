@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   font-size: 32px;
   font-weight: bold;
@@ -774,6 +775,7 @@ body {
   height: 97.045%;
   margin-right: 11px;
   margin-top: 21px;
+  /* Utveckla systemet så att det går att hantera med enbart tangentbordet */
 }
 .fp-grid .grid-h1-validate {
   position: absolute;
@@ -871,6 +873,16 @@ body {
   white-space: nowrap;
   line-height: 35.5px;
   text-overflow: ellipsis;
+}
+.fp-grid .fp-grid-wrapper:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-grid-wrapper .fp-grid-video-1:focus, .fp-grid .fp-grid-wrapper .fp-grid-image-1:focus,
+.fp-grid .fp-grid-wrapper .fp-grid-image-2:focus, .fp-grid .fp-grid-wrapper .fp-grid-image-3:focus,
+.fp-grid .fp-grid-wrapper .fp-grid-story-1:focus, .fp-grid .fp-grid-wrapper .fp-grid-image-4:focus,
+.fp-grid .fp-grid-wrapper .fp-grid-customer-1:focus, .fp-grid .fp-grid-wrapper .fp-grid-image-5:focus,
+.fp-grid .fp-grid-wrapper .fp-grid-image-6:focus, .fp-grid .fp-grid-wrapper .fp-grid-image-7:focus {
+  outline: 2px solid blue;
 }
 
 * {
