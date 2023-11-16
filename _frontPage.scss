@@ -388,5 +388,21 @@ body {
     line-height: 35.5px;
     text-overflow: ellipsis;
    }
-}
 
+   /* Utveckla systemet så att det går att hantera med enbart tangentbordet */
+.fp-grid-wrapper {
+  &:focus {
+    outline: 2px solid blue;
+  }
+
+  .fp-grid-video-1, .fp-grid-image-1,
+  .fp-grid-image-2, .fp-grid-image-3,
+  .fp-grid-story-1, .fp-grid-image-4,
+  .fp-grid-customer-1, .fp-grid-image-5,
+  .fp-grid-image-6, .fp-grid-image-7 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+}
+}
