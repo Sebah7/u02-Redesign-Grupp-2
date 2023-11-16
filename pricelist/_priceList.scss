@@ -152,11 +152,7 @@ p {
  transition: .3s linear;
  }
 
- .price-card, .btnprice {
-  &:focus {
-      outline: 2px solid $colorDB;
-  }
-} //FOucs for tab navigation
+ 
 .btnprice:hover {
   background: $colorDB;
   cursor: pointer;
@@ -178,7 +174,13 @@ p {
   background-color: #815f33; 
 }
 
+//Foucs for tab navigation
 }
+.price-card, .btnprice {
+  &:focus {
+      outline: 2px solid $colorDB;
+  }
+} 
 
 
 @media only screen and (min-width: 800px) {
@@ -219,6 +221,7 @@ p {
     .cards-heading {
       width: 1300px; 
       margin-top: 11px;
+      margin-left: 2px;
     }
     
     .cards-heading h1 {
