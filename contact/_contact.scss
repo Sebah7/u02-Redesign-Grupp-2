@@ -18,7 +18,7 @@ $colorText: whitesmoke;
 
   .main-wrapper {
     // height: 728px;
-
+    flex: 1 0 auto;
     .contact-us {
       display: grid;
       justify-content: center;
@@ -50,7 +50,7 @@ $colorText: whitesmoke;
         align-content: center;
         background-color: $colorSand;
 
-        z-index: 0;
+        // z-index: 0;
 
         .contact-wrapper {
           //padding: 20px 40px;
