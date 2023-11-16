@@ -994,6 +994,9 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   background-attachment: fixed;
   background-size: cover;
 }
+.contactBody .main-wrapper {
+  flex: 1 0 auto;
+}
 .contactBody .main-wrapper .contact-us {
   display: grid;
   justify-content: center;
@@ -1019,7 +1022,6 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   align-items: center;
   align-content: center;
   background-color: #ccad8f;
-  z-index: 0;
 }
 .contactBody .main-wrapper .contact-us .containerContact .contact-wrapper {
   width: 248px;
@@ -1108,4 +1110,4 @@ body {
 .wrapper {
       flex: 1 0 auto;
 }
-*/
+*//*# sourceMappingURL=style.css.map */
