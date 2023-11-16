@@ -814,12 +814,15 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
 .priceBody .btnprice {
   width: 65.62px;
   height: 17px;
+  padding: 10px; /* For tap target size */
   background: #4D7EA8;
   border-radius: 50px;
   border: none;
-  margin-bottom: 5px;
   text-transform: uppercase;
   transition: 0.3s linear;
+}
+.priceBody .price-card:focus, .priceBody .btnprice:focus {
+  outline: 2px solid #4d7ea8;
 }
 .priceBody .btnprice:hover {
   background: #4d7ea8;

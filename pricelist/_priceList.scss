@@ -143,14 +143,20 @@ p {
  .btnprice {
  width: 65.62px; 
  height: 17px;  
+ padding: 10px; /* For tap target size */
  background: #4D7EA8; 
  border-radius: 50px;
  border: none;
- margin-bottom: 5px;
+//  margin-bottom: 5px;
  text-transform: uppercase;
  transition: .3s linear;
  }
 
+ .price-card, .btnprice {
+  &:focus {
+      outline: 2px solid $colorDB;
+  }
+} //FOucs for tab navigation
 .btnprice:hover {
   background: $colorDB;
   cursor: pointer;
