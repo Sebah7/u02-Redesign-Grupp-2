@@ -111,7 +111,7 @@ p {
   min-height: 156px;
   height: auto;
   width: 100%;
-  background: linear-gradient(#CCAD8F, white,#CCAD8F);
+  background: #CCAD8F;
   position: relative;
   }
  
@@ -143,12 +143,11 @@ p {
  .btnprice {
  width: 65.62px; 
  height: 17px;  
- padding: 10px; /* For tap target size */
+//  padding: 10px; /* For tap target size */
  background: #4D7EA8; 
  border-radius: 50px;
  border: none;
-//  margin-bottom: 5px;
- text-transform: uppercase;
+ margin-bottom: 5px;
  transition: .3s linear;
  }
 
@@ -159,10 +158,11 @@ p {
 }
 
  .btn-txt {
-  width: 51.24px; 
+  width: /*51.24px*/ 100%; 
   height: 7px; 
-  left: 6.29px; 
-  top: 4px;  
+  left: /*6.29px*/50%; 
+  top: /*4px*/50%;  
+  transform: translate(-50%, -50%);
   text-align: center; 
   color: white; 
   font-size: 7px; 
@@ -175,12 +175,17 @@ p {
 }
 
 //Foucs for tab navigation
-}
-.price-card, .btnprice {
+.price-card {
+  &:focus {
+      outline: 2px solid $colorBrown;
+  }
+}  
+.btnprice {
   &:focus {
       outline: 2px solid $colorDB;
   }
 } 
+}
 
 
 @media only screen and (min-width: 800px) {
@@ -226,7 +231,7 @@ p {
     
     .cards-heading h1 {
       font-size: 66px;
-      margin-top: -80px;
+      margin-top: -60px;
     }
 
     .service-text {
