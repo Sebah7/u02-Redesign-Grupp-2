@@ -1147,19 +1147,34 @@ body {
   line-height: 35.5px;
   text-overflow: ellipsis;
 }
-.fp-grid .fp-grid-wrapper:focus {
+.fp-grid .fp-video-card-1:focus {
   outline: 2px solid blue;
 }
-.fp-grid .fp-grid-wrapper .fp-grid-video-1:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-1:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-2:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-3:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-story-1:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-4:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-customer-1:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-5:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-6:focus,
-.fp-grid .fp-grid-wrapper .fp-grid-image-7:focus {
+.fp-grid .fp-image-card-1:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-image-card-2:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-image-card-3:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-story-card-1:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-image-card-4:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-text-card:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-image-card-5:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-image-card-6:focus {
+  outline: 2px solid blue;
+}
+.fp-grid .fp-image-card-7:focus {
   outline: 2px solid blue;
 }
 
@@ -1254,7 +1269,7 @@ body {
   min-height: 156px;
   height: auto;
   width: 100%;
-  background: linear-gradient(#CCAD8F, white, #CCAD8F);
+  background: #CCAD8F;
   position: relative;
 }
 .priceBody .service-text {
@@ -1281,11 +1296,10 @@ body {
 .priceBody .btnprice {
   width: 65.62px;
   height: 17px;
-  padding: 10px; /* For tap target size */
   background: #4D7EA8;
   border-radius: 50px;
   border: none;
-  text-transform: uppercase;
+  margin-bottom: 5px;
   transition: 0.3s linear;
 }
 .priceBody .btnprice:hover {
@@ -1293,10 +1307,11 @@ body {
   cursor: pointer;
 }
 .priceBody .btn-txt {
-  width: 51.24px;
+  width: 100%;
   height: 7px;
-  left: 6.29px;
-  top: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-size: 7px;
@@ -1306,8 +1321,10 @@ body {
 .priceBody .btnprice:active {
   background-color: #815f33;
 }
-
-.price-card:focus, .btnprice:focus {
+.priceBody .price-card:focus {
+  outline: 2px solid #763a03;
+}
+.priceBody .btnprice:focus {
   outline: 2px solid #4d7ea8;
 }
 
@@ -1347,7 +1364,7 @@ body {
   }
   .price-wrapper .cards-heading h1 {
     font-size: 66px;
-    margin-top: -80px;
+    margin-top: -60px;
   }
   .price-wrapper .service-text {
     display: grid;
