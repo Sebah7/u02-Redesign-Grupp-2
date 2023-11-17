@@ -814,11 +814,10 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
 .priceBody .btnprice {
   width: 65.62px;
   height: 17px;
-  padding: 10px; /* For tap target size */
   background: #4D7EA8;
   border-radius: 50px;
   border: none;
-  text-transform: uppercase;
+  margin-bottom: 5px;
   transition: 0.3s linear;
 }
 .priceBody .btnprice:hover {
@@ -826,10 +825,11 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   cursor: pointer;
 }
 .priceBody .btn-txt {
-  width: 51.24px;
+  width: 100%;
   height: 7px;
-  left: 6.29px;
-  top: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-size: 7px;
@@ -839,8 +839,10 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
 .priceBody .btnprice:active {
   background-color: #815f33;
 }
-
-.price-card:focus, .btnprice:focus {
+.priceBody .price-card:focus {
+  outline: 2px solid #763a03;
+}
+.priceBody .btnprice:focus {
   outline: 2px solid #4d7ea8;
 }
 
