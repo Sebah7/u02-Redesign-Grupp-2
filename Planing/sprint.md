@@ -12,12 +12,15 @@
 - [x] Layout
 
 ***Sprint 3 - Development***
-- [ ] HTML
-- [ ] CSS / SASS
+- [x] HTML
+- [x] Issues
+- [x] CSS / SASS 
 
 
 ***Sprint 4***
-- [ ]
+- [ ] Final touches HTML
+- [ ] Final CSS / SASS
+- [ ] Merges
 
 
 **NOTES**
@@ -50,6 +53,25 @@
 - Reviewed our progress and understanding of issue creation.
 - Clarified our understanding of the structure of Sass and Css and issues. 
 - To facilitate our redesign we created issues.
+
+
+*Friday*
+- We successfully created and closed our main issues.
+- Merged branches for testing and into main branch.
+- Integrated the header and footer across all pages.
+
+  
+**Sprint 4 Meeting Notes**
+
+*Monday and Tuesday*
+- Discord meetups, sharing screens to showcase progress.
+
+*Thursday*
+- Restructured our folder system in the main branch.
+- Updated SCSS imports to use @use.
+- Put a landing page in the main branch.
+- Ongoing work on branch updates and merging...
+ 
 
 
 

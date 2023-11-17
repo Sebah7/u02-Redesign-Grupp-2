@@ -10,7 +10,6 @@ $colorWhite: whitesmoke;
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
-
   h1 {
     font-size: 32px;
     font-weight: bold;
@@ -105,12 +104,13 @@ $colorWhite: whitesmoke;
         img {
           transition: transform 0.3s ease; // Speed of the transform
 
-          &:hover {
+          &:hover,
+          :focus {
             transform: rotate(90deg);
           }
         }
         &:focus {
-          transform: translateX(10vw);
+          transform: translateX(-2vw);
 
           @media screen and (max-width: 970px) {
             transform: translateX(0vw);
@@ -293,11 +293,13 @@ $colorWhite: whitesmoke;
       }
       .dd-form {
         display: flex;
+        height: 45px;
+        font-size: 15px;
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
-        height: 45px;
-        font-size: 15px;
+        align-items: center;
+        justify-content: flex-start;
 
         .dd-lable {
           position: relative;
@@ -335,14 +337,15 @@ $colorWhite: whitesmoke;
         font-family: Tahoma;
         width: 310px;
         height: 266px;
-        top: 78px;
+        top: 9vh;
         position: absolute;
 
         // Makes the menu container thinner
         @media screen and (min-width: 970px) {
           width: 100%;
           height: auto;
-          top: 80xp;
+          position: relative;
+          top: 79px;
         }
       }
 
@@ -370,6 +373,8 @@ $colorWhite: whitesmoke;
           justify-content: space-between;
           width: 310px;
           gap: 10px;
+          padding: 6px;
+          font-weight: 400;
           border: 1px solid rgba(0, 0, 0, 0.788);
 
           // Makes the list buttons smaller on a bigger screen
@@ -378,6 +383,7 @@ $colorWhite: whitesmoke;
             padding: 1px;
             display: flex;
             justify-content: center;
+            cursor: pointer;
           }
 
           a {
@@ -416,11 +422,11 @@ $colorWhite: whitesmoke;
       .dropdown-language {
         display: flex;
         align-items: center;
-        position: absolute;
+        position: relative;
         padding: 8px;
         gap: 10px;
-        bottom: 44px;
         border: 1px solid black;
+        top: 50vh;
 
         // Moves the language option on a bigger screen
         @media screen and (min-width: 970px) {
@@ -429,7 +435,7 @@ $colorWhite: whitesmoke;
           right: 7%;
           bottom: 0;
           padding: 0;
-          top: 35px;
+          top: 2vh;
         }
 
         button {
@@ -606,10 +612,14 @@ $colorWhite: whitesmoke;
 .phone-dropdown {
   // Phone dropdown container
   position: fixed;
-  bottom: 235px;
-  right: 0%;
+  bottom: 47px;
+  right: 5px;
   width: 50px;
   height: 50px;
+
+  @media screen and (min-width: 970px) {
+    display: none;
+  }
 
   /* Toggle Button | Drop-down button */
   .phone-toggle-btn {
