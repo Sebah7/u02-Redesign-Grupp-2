@@ -359,6 +359,7 @@ p {
     padding: 1px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
 }
 .header-container .header-section .dropdown ol li a {
@@ -859,6 +860,7 @@ body {
   border-radius: 15px 0px 0px 15px;
   border: 2px solid rgba(118, 58, 3, 0.8);
   background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
 @media screen and (min-width: 970px) {
   .hero-wrapper .hero-background .hero-background-img .search-bar .search-box {
@@ -911,6 +913,7 @@ body {
   background: #4d7ea8;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .hero-wrapper .hero-background .hero-background-img .search-bar .search-btn-container .search-btn {
   display: flex;
