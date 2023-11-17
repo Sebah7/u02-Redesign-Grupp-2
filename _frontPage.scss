@@ -1,17 +1,17 @@
 /* MAIN WRAPPER */
-* {
+/* * {
   scroll-snap-type: y mandatory; // Snap-scroll function to index.html only
-}
+} */
 
 body {
   min-height: 100%;
 }
-.fp-snap-scroll-anker {
+/* .fp-snap-scroll-anker {
   visibility: hidden;
   width: 0px;
   height: 0px;
-  scroll-snap-align: start;
-}
+  // scroll-snap-align: start; 
+} */
 
 .fp-wrapper {
   min-width: 100%;
@@ -361,7 +361,7 @@ body {
   margin-right: 11px;
   margin-top: 21px;
   margin-left: 10px;
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 
   // Visually hidden h1
   .grid-h1-validate {
