@@ -115,6 +115,7 @@ body {
           border-radius: 15px 0px 0px 15px;
           border: 2px solid rgba(118, 58, 3, 0.8);
           background: rgba(0, 0, 0, 0.8);
+          overflow: hidden;
 
           @media screen and (min-width: 970px) {
             width: 25vw;
@@ -164,6 +165,7 @@ body {
           background: #4d7ea8;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
 
           .search-btn {
             // Button element for the search icon
@@ -299,7 +301,7 @@ body {
             justify-content: center;
             align-items: center;
             gap: 16px;
-            background: rgba(255, 255, 255, 0.8);
+            background: linear-gradient(233deg, #000000 7%, #aaaaaa 153%);
 
             .hero-cta-img-2-1,
             .hero-cta-img-2-2,
@@ -475,44 +477,44 @@ body {
       outline: 2px solid blue;
     }
   }
-    .fp-image-card-2 {
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-image-card-3{
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-story-card-1{
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-image-card-4{
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-text-card{
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-image-card-5{
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-image-card-6{
-      &:focus {
-        outline: 2px solid blue;
-      }
-    }
-    .fp-image-card-7{
-      &:focus {
-        outline: 2px solid blue;
-      }
+  .fp-image-card-2 {
+    &:focus {
+      outline: 2px solid blue;
     }
   }
+  .fp-image-card-3 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+  .fp-story-card-1 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+  .fp-image-card-4 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+  .fp-text-card {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+  .fp-image-card-5 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+  .fp-image-card-6 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+  .fp-image-card-7 {
+    &:focus {
+      outline: 2px solid blue;
+    }
+  }
+}
