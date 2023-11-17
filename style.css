@@ -108,11 +108,12 @@ p {
 .header-container .header-section .search .search-btn img {
   transition: transform 0.3s ease;
 }
-.header-container .header-section .search .search-btn img:hover {
+.header-container .header-section .search .search-btn img:hover,
+.header-container .header-section .search .search-btn img :focus {
   transform: rotate(90deg);
 }
 .header-container .header-section .search .search-btn:focus {
-  transform: translateX(10vw);
+  transform: translateX(-2vw);
 }
 @media screen and (max-width: 970px) {
   .header-container .header-section .search .search-btn:focus {
@@ -314,14 +315,15 @@ p {
   font-family: Tahoma;
   width: 310px;
   height: 266px;
-  top: 78px;
+  top: 9vh;
   position: absolute;
 }
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-content-menu {
     width: 100%;
     height: auto;
-    top: 80xp;
+    position: relative;
+    top: 79px;
   }
 }
 .header-container .header-section .dropdown ol {
@@ -347,6 +349,8 @@ p {
   justify-content: space-between;
   width: 310px;
   gap: 10px;
+  padding: 6px;
+  font-weight: 400;
   border: 1px solid rgba(0, 0, 0, 0.788);
 }
 @media screen and (min-width: 970px) {
@@ -389,11 +393,11 @@ p {
 .header-container .header-section .dropdown .dropdown-language {
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
   padding: 8px;
   gap: 10px;
-  bottom: 44px;
   border: 1px solid black;
+  top: 50vh;
 }
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown .dropdown-language {
@@ -402,7 +406,7 @@ p {
     right: 7%;
     bottom: 0;
     padding: 0;
-    top: 35px;
+    top: 2vh;
   }
 }
 .header-container .header-section .dropdown .dropdown-language button {
@@ -529,11 +533,16 @@ p {
 /* Phone button | Bottom of the page */
 .phone-dropdown {
   position: fixed;
-  bottom: 235px;
-  right: 0%;
+  bottom: 10px;
+  right: 10px;
   width: 50px;
   height: 50px;
   /* Toggle Button | Drop-down button */
+}
+@media screen and (min-width: 970px) {
+  .phone-dropdown {
+    display: none;
+  }
 }
 .phone-dropdown .phone-toggle-btn {
   width: 50px;
@@ -730,23 +739,31 @@ footer .bottomIcons .socialMedia ul .icons, footer .bottomIcons .payMethods ul .
   }
 }
 /* MAIN WRAPPER */
+* {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   min-height: 100%;
+}
+
+.fp-snap-scroll-anker {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  scroll-snap-align: start;
 }
 
 .fp-wrapper {
   min-width: 100%;
   margin-top: 100px;
   background-color: #ccad8f;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 /* HERO SECTION */
 .hero-wrapper {
   display: flex;
   justify-content: center;
-  scroll-snap-align: start;
   margin: 10px;
   height: calc(100vh - 100px);
 }
@@ -995,7 +1012,8 @@ body {
   .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
     font-size: 2vw;
     width: 18vw;
-    height: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
@@ -1015,7 +1033,7 @@ body {
   .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
     font-size: 2vw;
     width: 18vw;
-    height: auto;
+    height: -webkit-fill-available;
   }
 }
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn {
@@ -1055,6 +1073,7 @@ body {
   margin-right: 11px;
   margin-top: 21px;
   margin-left: 10px;
+  scroll-snap-align: center;
   /* Utveckla systemet så att det går att hantera med enbart tangentbordet */
 }
 .fp-grid .grid-h1-validate {
@@ -1776,9 +1795,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
