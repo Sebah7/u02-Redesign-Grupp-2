@@ -1767,14 +1767,7 @@ body {
   background-color: #ccad8f;
 }
 
-/* Add this to your body for the footer
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-*/
-/* try this in your wrapper (main) for footer
+/* try this in your wrapper (main) for footer, so it is stuck to the bottom
 .wrapper {
       flex: 1 0 auto;
 }
