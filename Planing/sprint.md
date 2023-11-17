@@ -22,6 +22,43 @@
 - [ ] Final CSS / SASS
 - [ ] Merges
 
+----------------------------------------
+***Future Sprint 1.2***
+- [ ] Add JS to all the pages
+
+- [ ] Frontpage:
+clickable images (links)
+
+- [ ] Smullbox:
+clickable cards (linked to member and contact pages)
+hover effect when holding over card
+
+- [ ] Contact:
+Make the message sendable
+Add error messege if something is missing
+
+- [ ] Members:
+clickable cards (links to company homepage)
+
+- [ ] Pricelist:
+Clickable buttons
+
+- [ ] News:
+Add function to "sort"
+Add function to "filter"
+clickable cards (new side that you can read more about the topick)
+
+- [ ] Header:
+Make loggin function
+make searce icon functionable
+
+- [ ] Phone button:
+Conect to real phonenumber and call able
+
+- [ ] Search field:
+Make functional
+
+------------------------------------------
 
 **NOTES**
 **Sprint 2 Meetings Notes**
@@ -71,6 +108,10 @@
 - Updated SCSS imports to use @use.
 - Put a landing page in the main branch.
 - Ongoing work on branch updates and merging...
+
+**Final Sprint Meeting notes** 
+- Merged our individual branches with a test branch and solved bugs accordingly.
+- Discussed the changes we want to make to design and proceded once agreed.
  
 
 
