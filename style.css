@@ -69,6 +69,11 @@ p {
   /* DROPDOWN */
   /* Dropdown | Container */
 }
+@media screen and (min-width: 970px) {
+  .header-container .header-section {
+    margin-bottom: 10px;
+  }
+}
 .header-container .header-section:nth-child(3) {
   justify-self: center;
 }
