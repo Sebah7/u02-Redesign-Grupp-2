@@ -1,16 +1,28 @@
+// Stylesheets
 @use "design";
 @use "header";
 @use "footer";
 @use "frontPage";
-@use "Contact-Page/contact";
-@use "News-Page/news.scss";
-@use "PriceList-Page/priceList";
+@use "pricelist/priceList";
+@use "membership-page/membership";
+@use "smullbox/smullbox";
+@use "./contact/contact";
+// Design
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
 
 * {
   padding: 0;
   margin: 0;
   font-family: tahoma, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -19,5 +31,21 @@ body {
 
 .wrapper {
   min-width: 100%;
-  min-height: 1600px;
+  min-height: 1000px;
+  margin-top: 100px;
+  background-color: #ccad8f;
 }
+
+/* Add this to your body for the footer
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+/* try this in your wrapper (main) for footer
+.wrapper {
+      flex: 1 0 auto;
+}
+*/
