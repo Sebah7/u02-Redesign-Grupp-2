@@ -7,6 +7,10 @@ $colorBlack: #000000;
 $colorWhite: whitesmoke;
 
 * {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+
   h1 {
     font-size: 32px;
     font-weight: bold;
@@ -48,6 +52,11 @@ $colorWhite: whitesmoke;
     justify-content: center;
     align-items: center;
     gap: 7%;
+
+    @media screen and (min-width: 970px) {
+      // Adds a margin to the header to diasplay the nav-buttons
+      margin-bottom: 10px;
+    }
 
     &:nth-child(3) {
       justify-self: center;
@@ -323,6 +332,7 @@ $colorWhite: whitesmoke;
       /* Dropdown-Menu | Container */
       .dropdown-content-menu {
         display: flex;
+        font-family: Tahoma;
         width: 310px;
         height: 266px;
         top: 78px;
@@ -378,7 +388,6 @@ $colorWhite: whitesmoke;
               color: #000;
               font-size: 20px;
               font-style: normal;
-              font-weight: 600;
               letter-spacing: 2px;
               margin-left: 5px;
 
