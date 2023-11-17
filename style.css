@@ -21,6 +21,11 @@ p {
   color: rgba(0, 0, 0, 0);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
 * h1 {
   font-size: 32px;
   font-weight: bold;
@@ -301,6 +306,7 @@ p {
 }
 .header-container .header-section .dropdown .dropdown-content-menu {
   display: flex;
+  font-family: Tahoma;
   width: 310px;
   height: 266px;
   top: 78px;
@@ -354,7 +360,6 @@ p {
   color: #000;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
   letter-spacing: 2px;
   margin-left: 5px;
 }
@@ -809,6 +814,7 @@ body {
   color: transparent;
   line-height: normal;
   letter-spacing: 8.4px;
+  text-align: center;
 }
 @media screen and (min-width: 970px) {
   .hero-wrapper .hero-background .hero-background-img .hero-heading .hero-h2 {
@@ -916,7 +922,7 @@ body {
   font-size: 29px;
   font-weight: 400;
   line-height: normal;
-  margin: 23px;
+  margin: 10px;
 }
 @media screen and (min-width: 970px) {
   .hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg .hero-card-h2 {
@@ -927,7 +933,7 @@ body {
   color: #000;
   font-size: 18.498px;
   line-height: normal;
-  margin: 0px 13px 20px 13px;
+  margin: 5px;
 }
 @media screen and (min-width: 970px) {
   .hero-wrapper .hero-background .hero-background-img .hero-card .hero-card-bg .hero-card-text {
@@ -950,7 +956,7 @@ body {
   gap: 10px;
 }
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h2-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-heading .hero-cta-h2-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-h2-2, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-h2-2 {
-  font-size: 24px;
+  font-size: 21px;
   width: 172px;
   line-height: normal;
   letter-spacing: 4px;

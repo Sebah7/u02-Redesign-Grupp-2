@@ -81,6 +81,7 @@ body {
           color: transparent;
           line-height: normal;
           letter-spacing: 8.4px;
+          text-align: center;
 
           @media screen and (min-width: 970px) {
             font-size: 3vw;
@@ -196,7 +197,7 @@ body {
             font-size: 29px;
             font-weight: 400;
             line-height: normal;
-            margin: 23px;
+            margin: 10px;
 
             @media screen and (min-width: 970px) {
               font-size: 3vw;
@@ -207,7 +208,7 @@ body {
             color: #000;
             font-size: 18.498px;
             line-height: normal;
-            margin: 0px 13px 20px 13px;
+            margin: 5px;
 
             @media screen and (min-width: 970px) {
               font-size: 2vw;
@@ -234,7 +235,7 @@ body {
 
           .hero-cta-h2-1 {
             // h2 1
-            font-size: 24px;
+            font-size: 21px;
             width: 172px;
             line-height: normal;
             letter-spacing: 4px;
@@ -266,9 +267,7 @@ body {
             height: 172px;
             flex-shrink: 0;
             border: 2px solid rgba(118, 58, 3, 0.8);
-            background:
-              url(<path-to-image>),
-              lightgray 50% / cover no-repeat;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 
             .hero-cta-img-1-1 {
               width: 100%;
