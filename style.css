@@ -279,11 +279,12 @@ p {
 }
 .header-container .header-section .dropdown .dd-form {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
   height: 45px;
   font-size: 15px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 .header-container .header-section .dropdown .dd-form .dd-lable {
   position: relative;
@@ -1025,7 +1026,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(233deg, #000000 7%, #aaaaaa 153%);
 }
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-2-1,
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-2-2,

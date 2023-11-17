@@ -293,11 +293,12 @@ $colorWhite: whitesmoke;
       }
       .dd-form {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
         height: 45px;
         font-size: 15px;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
 
         .dd-lable {
           position: relative;
