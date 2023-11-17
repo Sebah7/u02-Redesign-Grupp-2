@@ -3,8 +3,14 @@ $colorBrown: #763a03;
 $colorLB: #c9f0ff;
 $colorDB: #4d7ea8;
 $colorSand: #ccad8f;
-$colorBlack: #0000;
+$colorBlack: #000000;
+$colorWhite: whitesmoke;
+
 * {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+
   h1 {
     font-size: 32px;
     font-weight: bold;
@@ -32,24 +38,36 @@ $colorBlack: #0000;
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--lightBrownBaseColor, #ccad8f);
 
   /* Header | Container */
   .header-section {
-    z-index: 1;
-
     background-image: linear-gradient(
-      hsl(29, 95%, 24%, 20%),
-      hsl(30, 37%, 68%, 20%)
+      hsla(29, 95%, 24%, 0.2),
+      hsla(30, 37%, 68%, 0.2)
     );
     max-width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 7%;
+
+    @media screen and (min-width: 970px) {
+      // Adds a margin to the header to diasplay the nav-buttons
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(3) {
+      justify-self: center;
+    }
 
     /* Header-Login | Container */
     .login {
-      @extend .toggle-btn;
+      position: absolute;
+      top: 50%;
+      left: 8vw;
+      transform: translate(-50%, -50%);
 
       /* Header-Login | BTN */
       .login-btn {
@@ -80,6 +98,7 @@ $colorBlack: #0000;
     /* Search Button */
     .search {
       @extend .login;
+      left: 18vw;
 
       .search-btn {
         @extend .login-btn;
@@ -87,8 +106,67 @@ $colorBlack: #0000;
           transition: transform 0.3s ease; // Speed of the transform
 
           &:hover {
-            transform: rotate(90deg); // Rotates the 'X' icon 180'
+            transform: rotate(90deg);
           }
+        }
+        &:focus {
+          transform: translateX(10vw);
+
+          @media screen and (max-width: 970px) {
+            transform: translateX(0vw);
+          }
+        }
+      }
+    }
+
+    .search {
+      @extend .login;
+      left: 18vw;
+      display: inline-block;
+
+      .search-label {
+        cursor: pointer;
+      }
+
+      .search-btn {
+        cursor: pointer;
+        @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      .search-input {
+        display: none;
+        position: absolute;
+        background: none;
+        border: none;
+        width: 10vw;
+        color: #000;
+        letter-spacing: 1.95px;
+        border-bottom: 1px solid #000;
+        top: 5px;
+
+        @media screen and (max-width: 800px) {
+          top: 30px;
+          left: -12vw;
+          width: 20vw;
+        }
+      }
+
+      .search-btn:focus + .search-input,
+      .search-input:focus {
+        display: block;
+      }
+
+      @media screen and (max-width: 970px) {
+        .search-btn:hover + .search-input,
+        .search-input:focus {
+          display: block;
         }
       }
     }
@@ -97,10 +175,39 @@ $colorBlack: #0000;
     .resto {
       width: 203px;
       height: 59px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
+      @media screen and (min-width: 970px) {
+        top: 40%;
+      }
+
+      .resto-logo-1 {
+        display: flex;
+
+        @media screen and (min-width: 970px) {
+          display: none;
+        }
+      }
+
+      .resto-logo-2 {
+        display: none;
+
+        @media screen and (min-width: 970px) {
+          display: flex;
+        }
+      }
       img {
         width: inherit;
         height: inherit;
+      }
+
+      // Makes the logo image larger on a bigger screen
+      @media screen and (min-width: 970px) {
+        width: fit-content;
+        height: auto;
       }
     }
 
@@ -109,6 +216,8 @@ $colorBlack: #0000;
     .dropdown {
       /* Toggle Button | Drop-down button */
       .toggle-btn {
+        position: relative;
+        right: -39vw;
         img {
           transition: transform 0.3s ease; // Speed of the transform
 
@@ -140,12 +249,17 @@ $colorBlack: #0000;
             }
           }
         }
+
+        // Removes the menu button on larger screens.
+        @media screen and (min-width: 970px) {
+          visibility: hidden;
+        }
       }
 
       /* Dropdown-Content | Container */
       .dropdown-content {
         width: 100%;
-        height: 536px;
+        height: 100vh;
         top: 100px;
         left: 0;
         position: absolute;
@@ -153,6 +267,16 @@ $colorBlack: #0000;
         flex-direction: column;
         align-items: center;
         background-color: $colorSand;
+
+        // Adds dropdown menu to larger screen
+        @media screen and (min-width: 970px) {
+          display: flex;
+          align-items: flex-end;
+          background-color: unset;
+          width: 100%;
+          height: auto;
+          top: 0px;
+        }
       }
 
       /* Dropdown-Login | Container */
@@ -160,26 +284,22 @@ $colorBlack: #0000;
         width: 280px;
         height: 43px;
         flex-shrink: 0;
+        overflow: hidden;
+
+        // Removes the login form in dropdown on larger screens.
+        @media screen and (min-width: 970px) {
+          display: none;
+        }
       }
-      form {
+      .dd-form {
         display: flex;
         flex-wrap: wrap;
-        align-content: center;
         align-items: center;
-        width: 264px;
+        align-content: center;
         height: 45px;
-        font-size: 13px;
+        font-size: 15px;
 
-        i {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.3rem;
-          width: 10px;
-          height: 10px;
-        }
-
-        span {
+        .dd-lable {
           position: relative;
           letter-spacing: 1.95px;
           left: 10px;
@@ -191,7 +311,7 @@ $colorBlack: #0000;
           background: none;
           position: relative;
           border: none;
-          width: 146px;
+          width: 151px;
           height: 15px;
           margin-bottom: 6px;
           left: 10px;
@@ -205,17 +325,25 @@ $colorBlack: #0000;
         }
 
         #dropdown-password {
-          width: 165px;
+          width: 170px;
         }
       }
 
       /* Dropdown-Menu | Container */
       .dropdown-content-menu {
         display: flex;
+        font-family: Tahoma;
         width: 310px;
         height: 266px;
         top: 78px;
         position: absolute;
+
+        // Makes the menu container thinner
+        @media screen and (min-width: 970px) {
+          width: 100%;
+          height: auto;
+          top: 80xp;
+        }
       }
 
       ol {
@@ -224,6 +352,13 @@ $colorBlack: #0000;
         align-items: flex-start;
         gap: 36px;
         flex-shrink: 0;
+
+        // Makes the list vertical on larger screens
+        @media screen and (min-width: 970px) {
+          justify-content: center;
+          flex-direction: row;
+          width: 100%;
+        }
 
         li:hover {
           background: rgba(255, 255, 255, 0.5);
@@ -236,6 +371,15 @@ $colorBlack: #0000;
           width: 310px;
           gap: 10px;
           border: 1px solid rgba(0, 0, 0, 0.788);
+
+          // Makes the list buttons smaller on a bigger screen
+          @media screen and (min-width: 970px) {
+            max-width: 160px;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+          }
+
           a {
             all: unset;
             display: contents;
@@ -244,9 +388,12 @@ $colorBlack: #0000;
               color: #000;
               font-size: 20px;
               font-style: normal;
-              font-weight: 600;
               letter-spacing: 2px;
               margin-left: 5px;
+
+              @media screen and (min-width: 970px) {
+                margin: 0;
+              }
             }
 
             p {
@@ -256,10 +403,16 @@ $colorBlack: #0000;
               font-weight: 400;
               letter-spacing: 1.5px;
               margin-right: 5px;
+
+              // Removes the menu text on larger screens.
+              @media screen and (min-width: 970px) {
+                display: none;
+              }
             }
           }
         }
       }
+
       .dropdown-language {
         display: flex;
         align-items: center;
@@ -268,6 +421,16 @@ $colorBlack: #0000;
         gap: 10px;
         bottom: 44px;
         border: 1px solid black;
+
+        // Moves the language option on a bigger screen
+        @media screen and (min-width: 970px) {
+          position: relative;
+          border: none;
+          right: 7%;
+          bottom: 0;
+          padding: 0;
+          top: 35px;
+        }
 
         button {
           width: 100%;
@@ -285,33 +448,53 @@ $colorBlack: #0000;
         }
 
         .se {
-          font-weight: 700;
+          font-weight: 400;
+
+          @media screen and (min-width: 970px) {
+            font-size: 18px;
+          }
+
+          &:hover,
+          &:focus {
+            font-weight: 700;
+          }
         }
 
         .separator {
-          width: 1px;
           height: 15px;
           border: 1px solid black;
         }
 
         .en {
           font-weight: 400;
+
+          @media screen and (min-width: 970px) {
+            font-size: 18px;
+          }
+
+          &:hover,
+          &:focus {
+            font-weight: 700;
+          }
         }
       }
 
       /* Dropdown-Footer */
       .dropdown-footer {
-        position: fixed;
-        width: 390px;
-        height: 227px;
-        flex-shrink: 0;
-        bottom: 0px;
+        position: absolute;
+        width: 100%;
+        height: 327px;
+        background-color: $colorBlack;
+        bottom: 0;
+
+        // Removes the Dropdown-footer on a bigger screen
+        @media screen and (min-width: 970px) {
+          display: none;
+        }
 
         .header-footer {
-          width: 100%;
           height: 227px;
           bottom: 0;
-          background-color: $colorBrown;
 
           .text {
             min-width: 330px;
@@ -325,30 +508,33 @@ $colorBlack: #0000;
             align-items: center;
             width: 50%;
             height: 150px;
+            margin: 10px;
             text-align: center;
-            padding-top: 35px;
           }
           address {
+            padding-top: 20px;
+
             .titleAddress {
-              font-size: 20px;
-              color: whitesmoke;
+              font-size: 1.4em;
+              color: $colorWhite;
             }
 
             p {
-              color: whitesmoke;
-              font-size: 15px;
+              color: $colorWhite;
             }
           }
 
           .list {
             @extend .contact;
+            border-left: 1px solid $colorWhite;
+            padding-top: 15px;
           }
           h3 {
-            color: whitesmoke;
+            color: $colorWhite;
           }
           a {
             text-decoration: none;
-            color: whitesmoke;
+            color: $colorWhite;
             font-size: 10px;
           }
 
@@ -358,11 +544,12 @@ $colorBlack: #0000;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            border-top: 1px solid $colorWhite;
 
             .fb {
               font-size: 24px;
               margin: 5px;
-              color: whitesmoke;
+              color: $colorWhite;
             }
 
             .instagram {
@@ -385,6 +572,26 @@ $colorBlack: #0000;
               @extend .fb;
             }
           }
+
+          .bottomIcons {
+            padding: 5px;
+            color: $colorWhite;
+            font-size: 24px;
+            display: none;
+
+            .socialMedia {
+              ul {
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15%;
+                list-style: none;
+              }
+            }
+            .payMethods {
+              @extend .socialMedia;
+            }
+          }
         }
       }
     }
@@ -393,92 +600,7 @@ $colorBlack: #0000;
   .dropdown:hover .dropdown-content {
     display: flex;
   }
-
-  /* Phone button | Bottom of the page */
-  /* .phone-btn-container {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 235px;
-    right: 0%;
-
-    .phone-toggle {
-      display: flex;
-      position: fixed;
-      width: 194px;
-      height: 100px;
-      bottom: 235px;
-      right: 0%;
-
-      img {
-        transition:
-          transform 0.3s ease,
-          border-radius 0.6s ease;
-        border-radius: 0;
-
-        &:hover {
-          border-radius: 50%;
-          transform: rotate(180deg);
-        }
-      }
-      .phone-icon {
-        position: relative;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: inherit;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-      }
-    }
-
-    .phone {
-      @extend .phone-toggle;
-      width: 50px;
-      height: 50px;
-      border: 0;
-      background: none;
-    }
-
-    .phone-card {
-      visibility: hidden;
-      width: 294px;
-      height: 100px;
-      background-color: $colorDB;
-      position: static;
-    }
-
-    .phone-phone-nr {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      width: 150px;
-      height: 50px;
-      letter-spacing: 1.95px;
-      font-weight: 400;
-      text-decoration-line: underline;
-    }
-
-    .phone-text {
-      @extend .phone-phone-nr;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 3px;
-      font-size: 20px;
-      font-weight: 400;
-      text-decoration-line: none;
-      font-family: Tahoma;
-      font-style: normal;
-    }
-  } */
 }
-
-/* .phone-btn-container:hover .phone-card {
-  visibility: visible;
-} */
 
 /* Phone button | Bottom of the page */
 .phone-dropdown {
