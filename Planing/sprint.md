@@ -18,9 +18,9 @@
 
 
 ***Sprint 4***
-- [ ] Final touches HTML
-- [ ] Final CSS / SASS
-- [ ] Merges
+- [x] Final touches HTML
+- [x] Final CSS / SASS
+- [x] Merges
 
 ----------------------------------------
 ***Future Sprint 1.2***
@@ -112,6 +112,14 @@ Make functional
 **Final Sprint Meeting notes** 
 - Merged our individual branches with a test branch and solved bugs accordingly.
 - Discussed the changes we want to make to design and proceded once agreed.
+
+**Last Touches Sprint**
+- Changed image size for increacced performance.
+- Modified html code and merged to main.
+- Validated CSS and HTML.
+- Validated in Lighthouse.
+- Final design changes to improve contrast.
+- [x] WCAG-nivå A.
  
 
 
