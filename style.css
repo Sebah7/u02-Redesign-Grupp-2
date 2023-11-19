@@ -369,7 +369,6 @@ p {
 }
 .header-container .header-section .dropdown ol li a h3 {
   color: #000;
-  font-size: 20px;
   font-style: normal;
   letter-spacing: 2px;
   margin-left: 5px;
@@ -377,6 +376,7 @@ p {
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol li a h3 {
     margin: 0;
+    font-size: 20px;
   }
 }
 .header-container .header-section .dropdown ol li a p {
