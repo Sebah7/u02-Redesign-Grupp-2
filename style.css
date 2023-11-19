@@ -1876,7 +1876,7 @@ body {
 
 
 
-.container-resto-culinair,.newsBody {
+.container-resto-culinair,.newsBody, .newsWrapper {
   position: relative;
   text-align: center;
   color: black;
@@ -1884,7 +1884,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container-resto-culinair,.newsBody {
+  .container-resto-culinair,.newsBody, .newsWrapper {
       flex-direction: column;
     }
 }
@@ -2063,16 +2063,18 @@ h3 {
  
   .extra {
     display: none;
+    font-size: 1.1vw;
 
   }
 
-  p {
+  .FoodMenu_FoodIngredient {
     display: inline;
     font-size: 1.1vw;
   }
 
   @media (max-width: 768px) {
-    p {
+   
+      .FoodMenu_FoodIngredient, .extra{
       font-size: 3vw;
     }
   }
