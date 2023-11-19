@@ -1803,6 +1803,8 @@ body {
   overflow: scroll; /* or overflow: scroll; */
 }
   
+
+  
 .newsWrapper {
   width: 100%;
   padding-top: 120px;
@@ -1873,46 +1875,47 @@ body {
     }
 }
 
-  .resto-culinair {
+
+  .center-resto-culinair {
     color: #ccad8f;
     flex-shrink: 0;
-    margin-top: 79px;
     display: flex;
     position: relative;
     flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1rem;
   }
-}
+
 @media (max-width: 768px) {
   .resto-culinair, .newsBody {
-    margin-top: 10%;
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .center-resto-culinair, .newsBody {
+    flex-direction: column;
+  }
+}
+
 .resto-culinair {
   color: #ccad8f;
   flex-shrink: 0;
-  margin-top: 79px;
   display: flex;
   position: relative;
   flex-direction: column;
   width: 100%;
   margin-bottom: 1px;
-  margin-top: 5%;
   justify-content: flex-start;
 
 }
 
-.resto-culinair img {
-  height: 300px;
-  margin-top: 20px; 
-}
-.hero-image {
-  height: 50%;
-}
+
+
 
 @media (max-width: 768px) {
   .center-hero-image {
-    margin-top: 15%;
+ 
     flex-direction: column;
   }
 }
@@ -1920,7 +1923,7 @@ body {
 .center-hero-image {
   position: absolute;
   text-align: center;
-  top: 40%;
+  top:40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -2051,7 +2054,6 @@ h3 {
   .extra {
     display: none;
     font-size: 1.1vw;
-
   }
 
   .FoodMenu_FoodIngredient {
