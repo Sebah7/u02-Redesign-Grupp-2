@@ -391,13 +391,13 @@ $colorWhite: whitesmoke;
 
             h3 {
               color: #000;
-              font-size: 20px;
               font-style: normal;
               letter-spacing: 2px;
               margin-left: 5px;
 
               @media screen and (min-width: 970px) {
                 margin: 0;
+                font-size: 20px;
               }
             }
 

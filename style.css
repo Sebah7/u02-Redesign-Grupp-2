@@ -369,7 +369,6 @@ p {
 }
 .header-container .header-section .dropdown ol li a h3 {
   color: #000;
-  font-size: 20px;
   font-style: normal;
   letter-spacing: 2px;
   margin-left: 5px;
@@ -377,6 +376,7 @@ p {
 @media screen and (min-width: 970px) {
   .header-container .header-section .dropdown ol li a h3 {
     margin: 0;
+    font-size: 20px;
   }
 }
 .header-container .header-section .dropdown ol li a p {
@@ -1003,7 +1003,7 @@ body {
   height: 172px;
   flex-shrink: 0;
   border: 2px solid rgba(118, 58, 3, 0.8);
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background: linear-gradient(233deg, #000000 7%, #aaaaaa 153%);
 }
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-1 .hero-cta-img-1-1, .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 .hero-cta-img-1-1 {
   width: 100%;
@@ -1035,7 +1035,7 @@ body {
   .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-img .hero-cta-img-2 {
     font-size: 2vw;
     width: 18vw;
-    height: -webkit-fill-available;
+    height: calc(100% - 4px);
   }
 }
 .hero-wrapper .hero-background .hero-background-img .hero-cta .hero-cta-btns .hero-cta-btn {
@@ -1796,33 +1796,18 @@ body {
   border: 1px solid #000;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: tahoma, sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  min-width: 100%;
-  min-height: 1000px;
-  margin-top: 100px;
-  background-color: #ccad8f;
-}
-
-
-/* NewsBody */
-.newsBody{
+/* NEWS SECTION */
+.newsBody {
   background-color: #ccad8f;
   font-family: tahoma, sans-serif;
+  overflow: scroll; /* or overflow: scroll; */
 }
-
+  
+.newsWrapper {
+  width: 100%;
+  padding-top: 120px;
+  flex: 1 0 auto;
+}
 
 /* Style the button login */
 .login-btn {
@@ -1837,13 +1822,13 @@ body {
 }
 
 .login-btn:hover {
-  background-color: #763a03cc;
+  background-color: rgba(118, 58, 3, 0.8);
 }
 
 /* Style the form */
 .login-form {
   display: none;
-  background-color:#ccad8f;
+  background-color: #ccad8f;
   padding: 40px;
   border: 1px solid #ccad8f;
   border-radius: 10px;
@@ -1854,17 +1839,17 @@ body {
 }
 
 /* Style form elements */
-.login-input[type="text"], .login-input[type="password"], .login-input[type="submit"] {
+.login-input[type=text], .login-input[type=password], .login-input[type=submit] {
   display: block;
   width: 90%;
   margin: 10px 0;
   padding: 10px;
-  border: 1px solid#ccad8f;
+  border: 1px solid #ccad8f;
   border-radius: 5px;
 }
 
-.login-input[type="submit"] {
-  background-color:#763a03cc;
+.login-input[type=submit] {
+  background-color: rgba(118, 58, 3, 0.8);
   color: #fff;
   font-weight: bold;
   width: 90%;
@@ -1880,7 +1865,6 @@ body {
   position: relative;
   text-align: center;
   color: black;
-
 }
 
 @media (max-width: 768px) {
@@ -1896,70 +1880,76 @@ body {
     display: flex;
     position: relative;
     flex-direction: column;
-    height:40%;
-    width: 100%;
-    margin-bottom: 1px;
-    
   }
-  
-
-  @media (max-width: 768px) {
-    .resto-culinair,.newsBody {
-        flex-direction: column;
-      }
+}
+@media (max-width: 768px) {
+  .resto-culinair, .newsBody {
+    margin-top: 10%;
+    flex-direction: column;
   }
+}
+.resto-culinair {
+  color: #ccad8f;
+  flex-shrink: 0;
+  margin-top: 79px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1px;
+  margin-top: 5%;
+  justify-content: flex-start;
 
-
-  @media (max-width: 768px) {
-    .center-hero-image,.newsBody {
-      margin-top: 5%;
-        flex-direction: column;
-      }
 }
 
-   /* Centered text */
-   .center-hero-image,.newsBody {
-    position: absolute;
-    text-align: center;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color:#763a03cc;
-    margin-bottom: 30x;
-    margin-top: 30x;
+.resto-culinair img {
+  height: 300px;
+  margin-top: 20px; 
+}
+.hero-image {
+  height: 50%;
+}
 
+@media (max-width: 768px) {
+  .center-hero-image {
+    margin-top: 15%;
+    flex-direction: column;
   }
-
-
-
+}
+/* Centered text */
+.center-hero-image {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: rgba(118, 58, 3, 0.8);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 
 p {
-  color: #763a03cc;
+  color: rgba(118, 58, 3, 0.8);
 }
 
 h3 {
-  color: #763a03cc;
+  color: rgba(118, 58, 3, 0.8);
 }
- /* Sort | Filter */
 
-  .centered-dropdown {
-      text-align: center;
-  
-
-  }
-
-
+/* Sort | Filter */
+.centered-dropdown {
+  text-align: center;
+}
 
 .dropbtn {
-  background-color: none ;
-  color: #763a03cc;
+  background-color: none;
+  color: rgba(118, 58, 3, 0.8);
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 10px;
- 
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -1968,7 +1958,7 @@ h3 {
 
 #myInput {
   box-sizing: border-box;
-  background-image: url('searchicon.png');
+  background-image: url("searchicon.png");
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
@@ -1977,7 +1967,9 @@ h3 {
   border-bottom: 1px solid #ddd;
 }
 
-#myInput:focus {outline: 3px solid #ddd;}
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
 
 .dropdown1 {
   position: relative;
@@ -2001,15 +1993,13 @@ h3 {
   display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+  background-color: #ddd;
+}
 
-.show {display: block;}
-
-
-
-
-
-
+.show {
+  display: block;
+}
 
 .flex-container {
   display: flex;
@@ -2018,39 +2008,36 @@ h3 {
   border-radius: 8px;
   width: 100%;
 }
- 
 
-.flex-item-left
-{
+.flex-item-left {
   flex: 1;
-
   padding: 10px;
   border: 1px solid #ccad8f;
-  background-color:#ccad8f;
+  background-color: #ccad8f;
   border-radius: 8px;
 }
 
 .flex-item img {
-
   border-radius: 8px;
 }
 
 .flex-item-right {
   flex: 1;
-  color: #763a03cc;
+  color: rgba(118, 58, 3, 0.8);
   padding: 10px;
   border: 1px solid lightgrey;
-  background:lightgrey;
+  background: lightgrey;
   border-radius: 8px;
 }
 
-
 @media (max-width: 768px) {
-  .flex-container, .newsBody  {
+  .flex-container {
     flex-direction: column;
   }
 }
- 
+.cafe {
+  border-radius: 10px;
+}
 
   .cafe {
     border-radius: 10px;
@@ -2106,8 +2093,62 @@ h3 {
 .dots:has(~input[type="checkbox"]:checked) {
   display: none;
 }
-.extra:has(~input[type="checkbox"]:checked){
-display: inline;
+
+.extra {
+  display: none;
+}
+
+
+
+input[type=checkbox] {
+  height: 2em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label {
+  position: relative;
+  padding: 1em;
+  border: #ddd;
+  color: red;
+  cursor: pointer;
+}
+
+label:before {
+  content: "Läs mer";
+}
+
+input[type=checkbox]:checked ~ label:before {
+  content: "Läs mindre";
+}
+
+.dots:has(~ input[type=checkbox]:checked) {
+  display: none;
+}
+
+.extra:has(~ input[type=checkbox]:checked) {
+  display: inline;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 1000px;
+  margin-top: 100px;
+  background-color: #ccad8f;
 }
 
 /* try this in your wrapper (main) for footer, so it is stuck to the bottom
