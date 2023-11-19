@@ -1,20 +1,7 @@
 /* NEWS SECTION */
-$colorBrown: #763a03;
-$colorLB: #c9f0ff;
-$colorDB: #4d7ea8;
-$colorSand: #ccad8f;
-$colorBlack: #000;
-
-.newsBody {
+body {
   background-color: #ccad8f;
   font-family: tahoma, sans-serif;
-  overflow: scroll; /* or overflow: scroll; */
-}
-
-.newsWrapper{
-  width: 100%;
-  padding-top: 120px;
-  flex: 1 0 auto;
 }
 
 /* Style the button login */
@@ -69,23 +56,11 @@ $colorBlack: #000;
 
 
 
-.container-resto-culinair,.newsBody {
+.container-resto-culinair {
   position: relative;
   text-align: center;
   color: black;
 
-}
-
-@media (max-width: 768px) {
-  .container-resto-culinair,.newsBody {
-      flex-direction: column;
-    }
-}
-@media (max-width: 768px) {
-  .resto-culinair,.newsBody {
-      margin-top: 10%;
-      flex-direction: column;
-    }
 }
 
   .resto-culinair {
@@ -291,4 +266,17 @@ h3 {
 .extra:has(~input[type="checkbox"]:checked){
 display: inline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
