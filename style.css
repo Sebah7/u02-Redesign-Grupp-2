@@ -1296,6 +1296,10 @@ body {
   margin: 0;
   text-align: center;
 }
+.priceBody .price-card-p, .priceBody .price-card-h {
+  color: #000000;
+  padding: 5px;
+}
 .priceBody .price-btn-box {
   height: 43px;
   width: 138px;
@@ -1316,14 +1320,14 @@ body {
 .priceBody .btnprice {
   width: 65.62px;
   height: 17px;
-  background: #4D7EA8;
+  background: #f5f5f5;
   border-radius: 50px;
   border: none;
   margin-bottom: 5px;
   transition: 0.3s linear;
 }
 .priceBody .btnprice:hover {
-  background: #4d7ea8;
+  background: #c9f0ff;
   cursor: pointer;
 }
 .priceBody .btn-txt {
@@ -1333,13 +1337,13 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #000000;
   font-size: 7px;
   font-family: Tahoma;
   font-weight: 700;
 }
 .priceBody .btnprice:active {
-  background-color: #815f33;
+  background-color: #c9f0ff;
 }
 .priceBody .price-card:focus {
   outline: 2px solid #763a03;
