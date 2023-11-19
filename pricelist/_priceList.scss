@@ -2,7 +2,8 @@ $colorBrown: #763a03;
 $colorLB: #c9f0ff;
 $colorDB: #4d7ea8;
 $colorSand: #ccad8f;
-$colorBlack: #0000;
+$colorBlack: #000000;
+$colorW: #f5f5f5;
 
 .priceBody {
 width: 100%;
@@ -120,6 +121,10 @@ p {
     text-align: center;
   }
 
+  .price-card-p, .price-card-h {
+    color: $colorBlack;
+    padding: 5px;
+  }
 .price-btn-box{
   height: 43px;
   width: 138px;
@@ -144,7 +149,7 @@ p {
  width: 65.62px; 
  height: 17px;  
 //  padding: 10px; /* For tap target size */
- background: #4D7EA8; 
+ background: $colorW; 
  border-radius: 50px;
  border: none;
  margin-bottom: 5px;
@@ -153,7 +158,7 @@ p {
 
  
 .btnprice:hover {
-  background: $colorDB;
+  background: $colorLB;
   cursor: pointer;
 }
 
@@ -164,14 +169,14 @@ p {
   top: /*4px*/50%;  
   transform: translate(-50%, -50%);
   text-align: center; 
-  color: white; 
+  color: $colorBlack; 
   font-size: 7px; 
   font-family: Tahoma; 
   font-weight: 700;  
  }
 
  .btnprice:active {
-  background-color: #815f33; 
+  background-color: $colorLB; 
 }
 
 //Foucs for tab navigation
